@@ -3,7 +3,6 @@ import os
 import shutil
 
 def getfilelist(f=None):
-
 	"""Reads in meta data"""
 	if (f==None):
 		os.chdir(".")
@@ -24,6 +23,8 @@ def getfilelist(f=None):
 
 
 def dirbuild():
+	"Builds data directory tree"
+
 	origpath=os.getcwd()+"/data"
 	if not os.path.exists(origpath): 
 		print ('Creating Data Directory')
@@ -66,6 +67,8 @@ def dirbuild():
 
 
 def datasort(f):
+	"Sorts meta,kin,accel into correct data folders"
+	
 	jab = []
 	cross = []
 	lhook = []
