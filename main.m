@@ -1,8 +1,4 @@
-A = loadKinectData2();
-
-%Remove initial 0 value
-%M(1:1,:) = [];
-[Xm,EV,Ev]=createES(A,3);
-U = EV;
-i = 1;
-%reconstructBeaks(M,Xm,EV);
+M = loadKinectData2();
+[Xm,EV,Ev]=createES(M,3);
+reconstructPose(M,Xm,EV);
+diffM = diff(M,1,1);
