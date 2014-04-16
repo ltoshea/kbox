@@ -1,0 +1,268 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+<html xmlns:mwsh="http://www.mathworks.com/namespace/mcode/v1/syntaxhighlight.dtd">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <!--
+This HTML is auto-generated from an M-file.
+To make changes, update the M-file and republish this document.
+      -->
+      <title>DCTN - discrete cosine transform</title>
+	  <meta name="description" content="N-dimensional Discrete Cosine Transform">	  	  
+      <meta name="generator" content="MATLAB 7.5">
+      <meta name="date" content="2008-10-15">
+      <meta name="m-file" content="simps-html"><style>
+
+body {
+  background-color: white;
+  margin:10px;
+  font:"Times New Roman", Times, serif
+}
+
+h1 {
+  color: #330099; 
+  font-size: x-large;
+}
+
+h2 {
+  color: #330099;
+  font-size: large;
+}
+
+/* Make the text shrink to fit narrow windows, but not stretch too far in 
+wide windows. */ 
+p,h1,h2,div.content div {
+  max-width: 600px;
+  /* Hack for IE6 */
+  width: auto !important; width: 600px;
+}
+
+pre.codeinput {
+  background: #FFF9DD;
+  padding: 10px;
+}
+@media print {
+  pre.codeinput {word-wrap:break-word; width:100%;}
+} 
+
+span.keyword {color: #0000FF}
+span.comment {color: #228B22}
+span.string {color: #A020F0}
+span.untermstring {color: #B20000}
+span.syscmd {color: #B28C00}
+
+pre.codeoutput {
+  color: #666666;
+  padding: 10px;
+}
+
+pre.error {
+  color: red;
+}
+
+p.footer {
+  text-align: right;
+  font-size: xx-small;
+  font-weight: lighter;
+  font-style: italic;
+  color: gray;
+}
+.Style2 {font-weight: bold}
+      .Style5 {color: #FFCC00}
+      </style>
+      <script type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+   </head>
+
+
+   <body link="#330099" vlink="#330099" alink="#330099" onload="MM_preloadImages('../images/home2.gif')">
+   <table width="100%" border="0" bgcolor="#330099"><tr> 
+    <td height="65" colspan="2" align="left" valign="middle"> <p><font color="#FFFFFF" size="4" face="Geneva, Arial, Helvetica, sans-serif"> 
+    <font size="5">Matlab&nbsp;functions</font>&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;&nbsp;B</font><font size="4" face="Geneva, Arial, Helvetica, sans-serif"><span class="Style5">io</span></font><font color="#FFFFFF" size="4" face="Geneva, Arial, Helvetica, sans-serif">méCard</font><font size="4" face="Geneva, Arial, Helvetica, sans-serif"><span class="Style5">io</span></font><font color="#FFFFFF" size="4" face="Geneva, Arial, Helvetica, sans-serif">&nbsp;&nbsp;&nbsp;&nbsp;</font><a href="../indexfr.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('home','','../images/home2.gif',1)"><img src="../images/home1.gif" width="23" height="22" border="0" id="home" /></a></p></td>
+  </tr></table>
+  
+  
+   <font size="1">&nbsp;</font>
+  <table width="100%" border="0" bgcolor="#E8DDFF">
+  <tr>
+    <td width="33%" height="23" valign="middle"><div align="left"  class="Style2">&nbsp;<img src="../images/prev.gif" alt="" width="17" height="17" />&nbsp;&nbsp;<a href="cumsimps.html"><strong>cumsimps</strong></a></div></td>
+    <td width="33%" valign="middle"><div align="center" class="Style2"><img src="../images/list.gif" alt="" width="18" height="16" />&nbsp;&nbsp;<strong><a href="index.html">Complete list</a></strong></div></td>
+    <td width="33%" valign="middle"><div align="right"><span class="Style2"><strong><a href="evar.html">evar</a></strong></span>&nbsp;&nbsp;<img src="../images/next.gif" alt="" />&nbsp;</div></td>
+  </tr>
+</table>
+
+
+
+      <div class="content">
+         <h1>dctn</h1>
+         <introduction>
+            <p>N-dimensional Discrete Cosine Transform</p>
+         </introduction>
+         <h2>Contents</h2>
+         <div>
+            <ul>
+               <li><a href="#1">Download</a></li>
+               <li><a href="#2">Syntax</a></li>
+               <li><a href="#3">Description</a></li>
+               <li><a href="#4">Example</a></li>
+               <li><a href="#10">Reference &amp; Information</a></li>
+               <li><a href="#12">See also</a></li>
+               <li><a href="#13">About the author</a></li>
+            </ul>
+         </div>
+         <h2>Download<a name="1"></a></h2>
+         <p><tt><a href="dctn.m">dctn.m</a></tt></p>
+         <h2>Syntax<a name="2"></a></h2>
+         <pre>   Y = dctn(X)
+</pre>
+         <h2>Description<a name="3"></a></h2>
+         <p><tt>Y = dctn(X)</tt> returns the discrete cosine transform of <tt>X</tt>. <tt>X</tt> can be a vector, a matrix or a multi-dimensional array. The array <tt>Y</tt> is the same size as <tt>X</tt> and contains the discrete cosine transform coefficients. This transform can be inverted using <tt>idctn</tt>.</p>
+         <p><b>Notes:</b> The returned array is of class double. For vectors and matrices, <tt>dctn(X)</tt> is similar to <tt>dct(X)</tt> and <tt>dct2(X)</tt> within round-off errors. <tt>dct</tt> and <tt>dct2</tt> are included in the Signal and Image Processing Toolboxes.<tt> </tt>No toolbox is required for <tt>dctn</tt>.         </p>
+         <h2>Example<a name="4"></a></h2>
+         <p>Perform the discrete cosine transform (DCT) of an image using <tt>dctn</tt> and display the resulting coefficients.
+         </p><pre class="codeinput">RGB = imread(<span class="string">'autumn.tif'</span>);
+I = rgb2gray(RGB);
+imshow(I) <span class="comment">% original gray-scaled image</span>
+</pre>
+         <p><img src="dctn1.png" width="400" height="257" hspace="5" vspace="5"> </p>
+         <pre class="codeinput">J = dctn(I); <span class="comment">% discrete cosine transform</span>
+imshow(log(abs(J)),[])
+</pre>
+<p><img src="dctn2.png" width="380" height="247" hspace="5" vspace="5"> </p>
+         <p>The commands below set values less than magnitude 10 in the DCT matrix to zero, then recover the image using the inverse DCT.
+            DCT can be used as an image compressor.
+         </p>
+         <pre class="codeinput">J(abs(J)&lt;10) = 0; <span class="comment">% lossy compression</span>
+K = idctn(J); <span class="comment">% inverse DCT</span>
+imshow(K,[0 255])
+</pre>
+         <p><img src="dctn3.png" width="398" height="262" hspace="5" vspace="5"> </p>
+         <h2>Reference &amp; Information<a name="10"></a></h2>
+         <p>Narasimha M. et al, <a href="http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=1094144">On the computation of the discrete cosine transform</a>, IEEE Trans Comm, 26, 6, 1978, pp 934-936.
+         </p>
+         <p><a href="http://en.wikipedia.org/wiki/Discrete_cosine_transform">Discrete Cosine Transform</a> on Wikipedia.
+         </p>
+         <h2>See also<a name="12"></a></h2>
+         <p><a href="http://www.mathworks.com/access/helpdesk/help/toolbox/signal/dct.html">dct</a>, <a href="http://www.mathworks.com/access/helpdesk/help/toolbox/images/dct2.html">dct2</a>, <a href="idctn.html">idctn</a>, <a href="smoothn.html">smoothn</a></p>
+         <h2>About the author<a name="13"></a></h2><pre>Damien Garcia, Eng., Ph.D.
+Assistant professor, Department of radiology
+CRCHUM, University of Montreal Hospital
+Montreal, QC, Canada
+Damien.Garcia.REMOVE-THIS@BiomeCardio.com</pre><p><a href="http://www.biomecardio.com">www.biomecardio.com</a></p>
+         <p class="footer"><br>
+            Published with MATLAB&reg; 7.5<br></p>
+      </div>
+      <!--
+##### SOURCE BEGIN #####
+%% dctn
+% N-dimensional Discrete Cosine Transform and its inverse
+
+%% Download
+% |<dctn.m dctn.m>|
+
+%% Syntax
+%     B = dctn(A)
+%     A = dctn(B,'inv')
+%     A = dctn(B,'-1') or A = dctn(B,-1)
+
+%% Description
+% |B = dctn(A)| returns the discrete cosine transform of |A|. The array |B|
+% is the same size as |A| and contains the discrete cosine transform
+% coefficients.
+%
+% |A = dctn(B,'inv')| returns the inverse discrete cosine transform of |B|.
+% |dctn(B,-1)| or |dctn(B,'-1')| also work.
+%
+% *Notes:* The returned array is of class double. For vectors and matrices,
+% |dctn(A)| is similar to |dct(A)| and |dct2(A)| within round-off errors.
+% |dct| and |dct2| are included in the Signal and Image Processing
+% Toolboxes. |dctn(B,'inv')| is likewise similar to |idct(B)| and
+% |idct2(B)|. No toolbox is required for |dctn|.
+
+%% Example
+% Perform the discrete cosine transform (DCT) of an image using |dctn| and
+% display the resulting coefficients.
+RGB = imread('autumn.tif');
+I = rgb2gray(RGB);
+imshow(I) % original gray-scaled image
+
+%%
+% <<dctn1.png>>
+
+%%
+J = dctn(I); % discrete cosine transform
+imshow(log(abs(J)),[])
+
+%%
+% <<dctn2.png>>
+
+%%
+% The commands below set values less than magnitude 10 in the DCT matrix
+% to zero, then recover the image using the inverse DCT. DCT can be
+% used as an image compressor.
+J(abs(J)<10) = 0; % lossy compression
+K = dctn(J,-1); % inverse DCT
+imshow(K,[0 255])
+
+%%
+% <<dctn3.png>>
+
+%% Reference & Information
+% Narasimha M. et al,
+% <http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=1094144 On the
+% computation of the discrete cosine transform>, IEEE Trans Comm, 26, 6,
+% 1978, pp 934-936.
+
+%%
+% <http://en.wikipedia.org/wiki/Discrete_cosine_transform Discrete Cosine
+% Transform> on Wikipedia.
+
+%% See also
+% <http://www.mathworks.com/access/helpdesk/help/toolbox/signal/dct.html
+% dct>, <http://www.mathworks.com/access/helpdesk/help/toolbox/signal/idct.html
+% idct>, <http://www.mathworks.com/access/helpdesk/help/toolbox/images/dct2.html
+% dct2>, <http://www.mathworks.com/access/helpdesk/help/toolbox/images/idct2.html
+% idct2>
+
+%% About the author
+%  Damien Garcia, Eng., Ph.D.
+%  Assistant professor, Department of radiology
+%  CRCHUM, University of Montreal Hospital
+%  Montreal, QC, Canada
+%  Garcia.Damien.REMOVE-THIS@gmail.com
+%%
+% http://garciadam.free.fr
+
+
+
+
+##### SOURCE END #####
+-->
+   </body>
+</html>
