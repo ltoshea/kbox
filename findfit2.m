@@ -4,7 +4,7 @@
 function [zmax,zmin,imax,imin] = findfit2(Z2)
 
 % Fit: 'untitled fit 1'.
-[xData, yData] = prepareCurveData( [], Z2 );
+[xData, yData] = prepareCurveData( [], Z2(1,:) ); %make it Z2(1,:) for nicer graph
 
 % Set up fittype and options.
 ft = fittype( 'smoothingspline' );
@@ -16,6 +16,7 @@ opts.SmoothingParam = 1.5029271581647606E-4;
 
 yfitted = feval(fitresult,xData);
 [zmax,imax,zmin,imin] = extrema(yfitted);
+figure;
 hold on;
 plot((imax),zmax,'r*',(imin),zmin,'g*')
 %plot(xData,yData,xData,yfitted)

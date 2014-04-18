@@ -35,7 +35,7 @@ function [finalM] =loadKinectData2()
 root_folder = 'C:\Users\liam\Desktop\KINECT\kbox\testdata\';
 d = dir([root_folder, 'kin*.txt']);
 m = dir([root_folder, 'meta*.txt']);
-M = zeros(length(d),1);
+M = [0,0,0];
 %for each kinect file
 for j = 1:length(d)
     
@@ -77,34 +77,51 @@ for j = 1:length(d)
         end
         
     end 
-    xs(1:1,:) = []
-    ys(1:1,:) = []
-    zs(1:1,:) = []
-    M = cat(1,xs,ys,zs) %concat into column
-    %M = cat(2,xs,ys,zs); %concat into rows
+    xs(1:1,:) = []; %Slice of the padding '0' at top of each
+    ys(1:1,:) = [];
+    zs(1:1,:) = [];
+    temp = cat(2,xs,ys,zs); %concat into column
+    M = vertcat(M,temp);%M = cat(2,xs,ys,zs); %concat into rows
     fclose(ifp1);
     fclose(ifp2); 
 end
 
-%
-nocols = size(xs);
+M(1,:)=[]; %Cut off padding 1. Now in form x,y,z\n
+nocols = size(M,1);%/20;
+M = M';
 finalM = zeros(60,1);
-for i=1:20:nocols(1,1)
-    %concats i-i+20 x's,y's,z's into a 60 element column
-    M2 = cat(1,xs(i:i+19),ys(i:i+19),zs(i:i+19));
-    %concatenate the 60 element columns so finalM has an extra column per
-    %run
-    finalM = cat(2,finalM,M2);
-end    
+
+for i=1:20:nocols
+    M2 = cat(2,M(1,i:i+19),M(2,i:i+19),M(3,i:i+19))';
+    finalM = horzcat(finalM,M2);
+end
+finalM(:,1)=[];
+ %pause;
+
+
+
+%nocols = size(xs);
+%nocols = size(M,1); %/60
+%finalM = zeros(60,1);
+
+% for i=1:20:nocols %nocols not right here
+% for i=1:20:length
+% for i=1:20:(length(M)/60)
+%     concats i-i+20 x's,y's,z's into a 60 element column
+%     M2 = cat(1,xs(i:i+19),ys(i:i+19),zs(i:i+19));
+%     concatenate the 60 element columns so finalM has an extra column per
+%     run
+%     finalM = cat(2,finalM,M2);
+% end    
+% 
+% 
+% finalM(:,1)=[];
+
 
 
 %Removes first column. P.S. I HATE Matlab syntax
 %M(:,[1,2])=[];
 %M(1,:)=[];
-finalM(:,1)=[];
-
-
-
 
 
 
