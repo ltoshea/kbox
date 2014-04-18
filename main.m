@@ -11,24 +11,17 @@ M2 = diff(M1,1,1); %Columnwise Differentiation
 Z1=reconstructPose(M1,Xm1,EV1);
 Z2=reconstructPose(M2,Xm2,EV2);
 
-%Smooth Both inputs
-% Ms1 =smooth(Z1);
-% Ms1 = reshape(Ms1,[],3)';
-% Ms2 =smooth(Z2);
-% Ms2 = reshape(Ms2,[],3)';
-% X = ceil(length(Z2)/30);
-
-
-%Smooth PC1,PC2,PC3 
+%Smooth PC1,PC2,PC3
 Z2 = kinsmooth(Z2);
-[zmax,zmin,imax,imin] = getminmax(Z2)
 % Min/Max of smoothed curve
+[zmax,zmin,imax,imin] = getminmax(Z2)
+
 
 % [zmax,zmin,imax,imin] = findfit2(Z2);
-maxima = horzcat(imax,zmax);
+maxima = vertcat(zmax,imax)';
 maxima = sortrows(maxima,1);
 
-%Need to normalise graph
+%Need to normalise graph # Might not need to do this anymore
 divframes = max(max(imin),max(imax))/size(M1,2);
 
 %Segement punches & resample
@@ -42,8 +35,11 @@ end
 points(:,[2:end]) = [];
 % Runs a Dimensional Reduction comparison 
 %DRcomp(M1);
+
+%Maybe don't need this now.*
 np = round(points/divframes);
 inds = 0;
+
 for i=1:(length(np)-1)
     %i
     inds = horzcat(inds,round(linspace(np(i,1),np(i+1,1),10)))
