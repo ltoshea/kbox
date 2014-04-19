@@ -37,6 +37,8 @@ d = dir([root_folder, 'kin*.txt']);
 m = dir([root_folder, 'meta*.txt']);
 M = [0,0,0];
 %for each kinect file
+
+
 for j = 1:length(d)
     
     ifp1 = fopen([root_folder,d(j).name],'r');

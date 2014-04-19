@@ -18,7 +18,7 @@ yfitted = feval(fitresult,xData);
 [zmax,imax,zmin,imin] = extrema(yfitted);
 figure;
 hold on;
-plot((imax),zmax,'r*',(imin),zmin,'g*')
+plot((imax),zmax,'r*',(imin),zmin,'g*');
 %plot(xData,yData,xData,yfitted)
 plot(xData,yfitted);
 

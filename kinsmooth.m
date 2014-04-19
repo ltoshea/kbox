@@ -11,8 +11,8 @@ smoothpc3 = smooth(Z2(3,:),10)';
 Zsmooth = vertcat(smoothpc1,smoothpc2,smoothpc3);
 
 %Draw graphs showing smoothed and unsmoothed
-figure
-hold on
+figure;
+hold on;
 plot(Z2(1,:),'-r');
 plot(smoothpc1,'b');
 

@@ -5,7 +5,7 @@ Z = zeros(size(U,2),size(A,2));
 for i = 1:size(A, 2)
     %testbeak = A(i,:)';
     testpose = A(:,i);
-    a = U'*(testpose-Xm) %% Get projection coefficients
+    a = U'*(testpose-Xm); %% Get projection coefficients
     Z(:,i) = a; % a' ?
     
     y = U*a+Xm;
