@@ -1,5 +1,6 @@
 
-M1 = loadKinectData2(); % Raw data
+J = loadKinectData2('C:\Users\liam\Desktop\KINECT\kbox\data\jab\'); % Raw data
+C = loadKinectData2('C:\Users\liam\Desktop\KINECT\kbox\data\cross\'); % Raw data
 M2 = diff(M1,1,1); %Columnwise Differentiation
 
 
@@ -26,26 +27,29 @@ maxima = sortrows(maxima,1);
 
 %Segement punches & resample
 i = 2;
-points = linspace(maxima(i,1),maxima(i+1,1),30);
+framenum = linspace(maxima(i,1),maxima(i+1,1),20);
 for i=3:1:length(maxima)-1
-    points = vertcat(points,linspace(maxima(i,1),maxima(i+1,1),30));
+    framenum = vertcat(framenum,linspace(maxima(i,1),maxima(i+1,1),20));
 end
-points = round(points); 
+%framenum = round(framenum(:)); 
+framenum = round(framenum); 
+framenum_sort = sort(framenum(:,1));
+
+%Need framenum in column vector 
+%framenum = framenum';
+
 %points = ordered set of maximum points on smoothed curve.
 %points(:,[2:end]) = []; THIS FUCKS IT UP
 
 % Runs a Dimensional Reduction comparison 
 %DRcomp(M1);
 
-framenums = 0;
 
-%framenums: List of all frames to pull data from, at linearly spaced
-%intervals between the maximum points
-for i=1:(length(points)-1)
-    framenums = horzcat(framenums,round(linspace(points(i,1),points(i+1,1),30)));
-end
-framenums(:,1) = []; %Get rid of leading zero
-jabfeat = Zsmooth(:,framenums); %get features
+jabfeat = Zsmooth(:,framenum); %get features
+rowno = ceil(((size(jabfeat,1)*size(jabfeat,2)))/60);
+test = reshape(jabfeat',60,rowno)';
+
+%jabfeat=reshape(jabfeat,[],60)
 %label = ones(length(jabfeat),1); %Add a column of 1's to jabfeatures
 %jabfeat = [label,jabfeat];
 
