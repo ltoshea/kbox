@@ -10,7 +10,7 @@ for i=1:6
 end
 
 %For every category of punch
-for i=1:length(C) 
+for i=length(C) 
 
     %Create Eignen Spaces for Both
     [Xm1,EV1,Ev1]=createES(C{i},3);
@@ -26,28 +26,31 @@ for i=1:length(C)
     [zmax,zmin,imax,imin] = getminmax(C{i});
 
     % [zmax,zmin,imax,imin] = findfit2(Z2);
-    maxima = vertcat(zmax,imax)';
+    maxima = vertcat(zmax,jimax)';
     maxima = sortrows(maxima,1);
 
     %Need to normalise graph # Might not need to do this anymore
     %divframes = max(max(imin),max(imax))/size(M1,2);
 
     %Segement punches & resample
-    k = 2;
-    framenum = linspace(maxima(k,1),maxima(k+1,1),20);
-    for k=3:1:length(maxima)-1
-        framenum = vertcat(framenum,linspace(maxima(k,1),maxima(k+1,1),20));
+    i = 2;
+    framenum = linspace(maxima(i,1),maxima(i+1,1),20);
+    for i=3:1:length(maxima)-1
+        framenum = vertcat(framenum,linspace(maxima(i,1),maxima(i+1,1),20));
     end
+    %framenum = round(framenum(:)); 
     framenum = round(framenum); 
     framenum_sort = sort(framenum(:,1));
+
+    %Need framenum in column vector 
+    %framenum = framenum';
 
     % Runs a Dimensional Reduction comparison 
     %DRcomp(M1);
 
-    %gets punch features & resizes for processing with neural networks.
-    punchfeat = C{i}(:,framenum); 
-    rowno = ceil(((size(punchfeat,1)*size(punchfeat,2)))/60);
-    C{i} = reshape(punchfeat',60,rowno)';
+    jabfeat = jsmooth(:,framenum); %get features
+    rowno = ceil(((size(jabfeat,1)*size(jabfeat,2)))/60);
+    C{i} = reshape(jabfeat',60,rowno)';
 end
 
 

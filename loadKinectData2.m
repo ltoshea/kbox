@@ -33,6 +33,7 @@ Joint needed = (i+1)*4 // For z value of left hand
 function [finalM] =loadKinectData2(root_folder)
 %root_folder = 'C:\Users\liam\Desktop\KINECT\kbox\data\';
 %root_folder = 'C:\Users\liam\Desktop\KINECT\kbox\testdata\';
+%root_folder = 'C:\Users\liam\Desktop\KINECT\kbox\data\1\';
 d = dir([root_folder, 'kin*.txt']);
 m = dir([root_folder, 'meta*.txt']);
 M = [0,0,0];
@@ -97,7 +98,7 @@ for i=1:20:nocols
     M2 = cat(2,M(1,i:i+19),M(2,i:i+19),M(3,i:i+19))';
     finalM = horzcat(finalM,M2);
 end
-finalM(:,[1:25])=[]; %Cut off first 20 frames as they are often bullshit
+%finalM(:,[1:25])=[]; %Cut off first 20 frames as they are often bullshit
  %pause;
 
 
