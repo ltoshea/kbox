@@ -7,7 +7,7 @@ C = cell(PNUM,1);
 for i=1:PNUM
     path = ['C:\Users\liam\Desktop\KINECT\kbox\data\' num2str(i) '\'];
     data = loadKinectData2(path);
-    data = diff(data,1,1); %Columnwise Differentiation - Remove effect of distance from Kinect
+    data = diff(data,1,2); %Columnwise Differentiation - Remove effect of distance from Kinect
     C{i} = data;
 end
 
@@ -34,7 +34,7 @@ for i=1:PNUM
 
     %Segement punches & resample
     k = 2;
-    SPP = 40;
+    SPP = 10;
     framenum = linspace(maxima(k,1),maxima(k+1,1),SPP);
     for k=3:1:length(maxima)-1
         framenum = vertcat(framenum,linspace(maxima(k,1),maxima(k+1,1),SPP));
@@ -50,8 +50,8 @@ for i=1:PNUM
     %Going to try with PC1 only
     %punchfeat([3],:) = [];
     
-    rowno = ceil(((size(punchfeat,1)*size(punchfeat,2)))/120);
-    C{i} = reshape(punchfeat',120,rowno)';
+    rowno = ceil(((size(punchfeat,1)*size(punchfeat,2)))/30);
+    C{i} = reshape(punchfeat',30,rowno)';
 end
 
 label = cell(PNUM,1);
