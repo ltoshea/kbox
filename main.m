@@ -7,9 +7,14 @@ C = cell(PNUM,1);
 for i=1:PNUM
     path = ['C:\Users\liam\Desktop\KINECT\kbox\data\' num2str(i) '\'];
     data = loadKinectData2(path);
-    data = diff(data,1,2); %Columnwise Differentiation - Remove effect of distance from Kinect
+    data = diff(data,1,2); %Row-wise Differentiation - Remove effect of distance from Kinect
     C{i} = data;
 end
+
+% for i=1:PNUM
+%     test = diffmap(C{i});
+% end
+
 
 %For every category of punch
 for i=1:PNUM
@@ -46,7 +51,7 @@ for i=1:PNUM
     %DRcomp(M1);
 
     %gets punch features & resizes for processing with neural networks.
-    punchfeat = C{i}(:,framenum);
+    punchfeat = C{i}(:,framenum); %Each column 3xpc for each frame
     %Going to try with PC1 only
     %punchfeat([3],:) = [];
     
@@ -69,6 +74,17 @@ end
 
 finalinput = input{1};
 finalbl = label{1};
+%plot(finalinput) %WHAT!?
+
+%Dynamic time warp. Need to transpose as expecting in column format, not
+%row.
+dtwval = dtw(finalinput(6,:)',finalinput(6,:)');
+for i=7:length(finalinput)-6
+    temp=dtw(finalinput(6,:)',finalinput(i,:)');
+    dtwval = horzcat(dtwval,temp);
+end
+dtwval = dtwval';
+
 %finalbl = num2str(finalbl);
 
 %Concats labels & data into one M

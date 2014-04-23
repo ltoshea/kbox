@@ -1,1 +1,0 @@
-subject,Sam Pro, action, LHook , variant, Orthodox

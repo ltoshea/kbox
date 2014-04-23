@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<!-- saved from url=(0097)http://www.mathworks.co.uk/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html -->
+<html itemscope="" itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage" class="wf-museoslab-n7-active wf-futurapt-n4-active wf-futurapt-i4-active wf-futurapt-n5-active wf-futurapt-i5-active wf-futurapt-n7-active wf-futurapt-i7-active wf-automate-n7-active wf-minionprosubhead-n4-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/auth016.js"></script><link rel="stylesheet" type="text/css" href="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/widget119.css" media="all">
+<meta charset="utf-8">
+<title>Choose a Multilayer Neural Network Training Function - MATLAB &amp; Simulink - MathWorks United Kingdom</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link href="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/reset.css" rel="stylesheet" type="text/css">
+<link href="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/960.css" rel="stylesheet" type="text/css">
+<link href="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/site5.css" rel="stylesheet" type="text/css">
+<!--[if IE 6]>
+<link href="/includes_content/nextgen/css/site5_ie6.css?20131015" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if IE 7]>
+<link href="/includes_content/nextgen/css/site5_ie7.css?20131015" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if IE 8]>
+<link href="/includes_content/nextgen/css/site5_ie8.css?20131015" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if IE 9]>
+<link href="/includes_content/nextgen/css/site5_ie9.css?20131015" rel="stylesheet" type="text/css">
+<![endif]-->
+<link rel="stylesheet" href="http://www.mathworks.co.uk/includes_content/nextgen/css/doc_center/doc_center.css">
+<!--[if IE 6]>
+<link href="/includes_content/nextgen/css/doc_center/doc_center_ie6.css" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if IE 7]>
+<link href="/includes_content/nextgen/css/doc_center/doc_center_ie7.css" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if IE 8]>
+<link href="/includes_content/nextgen/css/doc_center/doc_center_ie8.css" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if IE 9]>
+<link href="/includes_content/nextgen/css/doc_center/doc_center_ie9.css" rel="stylesheet" type="text/css">
+<![endif]-->
+<!-- Quantcast Tag -->
+<script type="text/javascript" async="" src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/ahy.js"></script><script src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/quant.js" async="" type="text/javascript"></script><script src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/quant.js" async="" type="text/javascript"></script><script type="text/javascript">
+var _qevents = _qevents || [];
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+function p2l(pathname,query,hash){
+pathname = pathname.replace(/\//gi,"__")
+if(pathname === "__") {
+pathname = "homepage";
+}
+pathname = pathname.replace(/\./gi,"_");
+query = query.replace(/\?/gi,'-');
+params = query.split('&');
+args = []
+for(arg = 0; arg < params.length; arg++){
+args.push(params[arg].split('=')[0]);
+}
+pathname += args.join('-');
+pathname += hash.replace(/#/gi,"-");
+return pathname;
+};
+_qevents.push({
+qacct:"p-a9EZK_dJwG9mH",
+labels: "_fp.event." + p2l(document.location.pathname,
+document.location.search, document.location.hash)
+});
+</script>
+<noscript>
+&lt;div style="display:none;"&gt;
+&lt;img src="//pixel.quantserve.com/pixel/p-a9EZK_dJwG9mH.gif" border="0" height="1" width="1" alt="Quantcast"/&gt;
+&lt;/div&gt;
+</noscript>
+<!-- End Quantcast tag -->
+<link href="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/print.css" rel="stylesheet" type="text/css" media="print">
+<link href="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/styles_en_UK.css" rel="stylesheet" type="text/css">
+<link href="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/doc_center_print.css" rel="stylesheet" type="text/css" media="print">
+<script type="text/javascript" src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/jquery-latest.js"></script><style type="text/css"></style>
+<script type="text/javascript" src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/jquery.hover-intent.js"></script>
+<script type="text/javascript" src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/localnav.js"></script>
+<script type="text/javascript" src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/global.js"></script>
+<script type="text/javascript" src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/global_search.js"></script>
+<script type="text/javascript" language="JavaScript1.3">var domain = "uk";</script>
+<script type="text/javascript" src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/xvy5baa.js"></script>
+<style type="text/css">.tk-museo-slab{font-family:"museo-slab",serif;}.tk-futura-pt{font-family:"futura-pt","Arial","Helvetica",sans-serif;}.tk-automate{font-family:"automate",sans-serif;}.tk-minion-pro-subhead{font-family:"minion-pro-subhead",serif;}</style><link rel="stylesheet" href="http://fonts.mathworks.com/k/xvy5baa-d.css?3bb2a6e53c9684ffdc9a99f11f5b2a6259e9e580e4938fcb487bcb48ad765cb4c66326ede94ac48d6ede67e4500a24e97a0591ac31cb9a79f653770995b73fcab179c8843e167d4d294efffce20684477e3030043617caba214c58b6f154839e39f8538e92cdd7798839d1a59e4d2b0791bbe6e783a84640f50c6e8f631ac5fd6e2928747046e8d3c8014f4e612066d47cd2f6460236d5af8067bf5be13b5d402fc9b57daa008f4648c576b0daffc4a09719f26748e4d12162f1841b44cd6114f823631817018292249f9424158262729aedfc9a7eaad686e19704ecf794505a5bf58346b86674958b71b58f71e596df71adc85eb06870a8aa3fa53e996a1fc9a87139ba5f47c506b20f3f5af733a35e32b903f3ea3ad28c5600e222fef219fa6d117c0d627897884abcb24d233482306c08ad5732c7ff2a2566cd5fa9554fc45a683e4492630af7837ac201efe374b4410a1ebb0f78147daed230fd70b646914a1bf60c1e5586d424a9779647a2ccd561f26b04a124f9"><script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<link rel="stylesheet" href="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/docstyle.css" type="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="toctype" itemprop="pagetype" content="ug">
+<meta name="infotype" itemprop="infotype" content="ex">
+<script type="text/javascript" src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/l10n.js"></script>
+<script type="text/javascript" src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/docscripts.js"></script>
+<script type="text/javascript" src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/mw.toc.js"></script>
+<script type="text/javascript" src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/mw.imagescaling.js"></script>
+<script type="text/javascript" src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/mw.imageanimation.js"></script>
+<script type="text/javascript" src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/mw.breadcrumb.js"></script>
+<script type="text/javascript" src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/jquery.highlight.js"></script>
+<script type="text/javascript" src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/nanoscroller.min.js"></script>
+<script type="text/javascript" src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/doc_omniture.js"></script>
+<script type="text/javascript" src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/respond.min.js"></script>
+<!-- Additions/overrides from the doc side -->
+<script type="text/javascript" src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/docsearch.js"></script>
+<script type="text/javascript" src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/jquery.toggleval.js"></script>
+<!-- CUSTOM CSS -->
+<style>
+.fat_footer { padding:0px; }
+.fat_footer a:link, .fat_footer a:visited { color:#005fce; }
+.fat_footer .callout_container { margin-left:5px; font-size:1.0em; border:none; }
+.fat_footer .callout_container.rounded { border-radius:0px; -moz-border-radius:0px; -webkit-border-radius:0px; }
+.fat_footer .callout_container.gradient { background:transparent none; }
+.fat_footer .callout_content { min-height:45px; padding-top:10px; }
+</style>
+<style>[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }</style><style id="clearly_highlighting_css" type="text/css">/* selection */ html.clearly_highlighting_enabled ::-moz-selection { background: rgba(246, 238, 150, 0.99); } html.clearly_highlighting_enabled ::selection { background: rgba(246, 238, 150, 0.99); } /* cursor */ html.clearly_highlighting_enabled {    /* cursor and hot-spot position -- requires a default cursor, after the URL one */    cursor: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--cursor.png") 14 16, text; } /* highlight tag */ em.clearly_highlight_element {    font-style: inherit !important; font-weight: inherit !important;    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow.png");    background-repeat: repeat-x; background-position: top left; background-size: 100% 100%; } /* the delete-buttons are positioned relative to this */ em.clearly_highlight_element.clearly_highlight_first { position: relative; } /* delete buttons */ em.clearly_highlight_element a.clearly_highlight_delete_element {    display: none; cursor: pointer;    padding: 0; margin: 0; line-height: 0;    position: absolute; width: 34px; height: 34px; left: -17px; top: -17px;    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite.png"); background-repeat: no-repeat; background-position: 0px 0px; } em.clearly_highlight_element a.clearly_highlight_delete_element:hover { background-position: -34px 0px; } /* retina */ @media (min--moz-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {    em.clearly_highlight_element { background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow@2x.png"); }    em.clearly_highlight_element a.clearly_highlight_delete_element { background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite@2x.png"); background-size: 68px 34px; } } </style></head>
+        <body id="nextgen_b-dc" class="adjusted_template">
+          <div class="container_192">
+            <div class="grid_192">
+              <div class="page_container">
+                <div class="grid_192"><div class="header_container">
+<div class="headernav">
+<ul>
+<li class="headernav_country rollover_delay inactive_state"><a href="http://www.mathworks.co.uk/company/worldwide/?s_tid=gn_loc">United Kingdom</a>
+<div class="countrynav_container gradient shadow">
+<ul>
+<!-- Code to Remove Tracking from Previous page and add new tracking -->
+<li><a href="http://www.mathworks.com/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html?action=changeCountry&s_tid=gn_loc_drop">United States</a></li>
+<!-- Code to Remove Tracking from Previous page and add new tracking -->
+<li><a href="http://www.mathworks.com/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html?action=changeCountry&s_tid=gn_loc_drop">Canada</a></li>
+<!-- Code to Remove Tracking from Previous page and add new tracking -->
+<li><a href="http://www.mathworks.com.au/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html?action=changeCountry&s_tid=gn_loc_drop">Australia</a></li>
+<!-- Code to Remove Tracking from Previous page and add new tracking -->
+<li><a href="http://www.mathworks.de/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html?action=changeCountry&s_tid=gn_loc_drop">Österreich</a></li>
+<!-- Code to Remove Tracking from Previous page and add new tracking -->
+<li><a href="http://www.mathworks.nl/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html?action=changeCountry&s_tid=gn_loc_drop">Belgium</a></li>
+<!-- Code to Remove Tracking from Previous page and add new tracking -->
+<li><a href="http://www.mathworks.cn/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html?action=changeCountry&s_tid=gn_loc_drop">中国</a></li>
+<!-- Code to Remove Tracking from Previous page and add new tracking -->
+<li><a href="http://www.mathworks.se/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html?action=changeCountry&s_tid=gn_loc_drop">Denmark</a></li>
+<!-- Code to Remove Tracking from Previous page and add new tracking -->
+<li><a href="http://www.mathworks.se/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html?action=changeCountry&s_tid=gn_loc_drop">Finland</a></li>
+<!-- Code to Remove Tracking from Previous page and add new tracking -->
+<li><a href="http://www.mathworks.fr/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html?action=changeCountry&s_tid=gn_loc_drop">France</a></li>
+<!-- Code to Remove Tracking from Previous page and add new tracking -->
+<li><a href="http://www.mathworks.de/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html?action=changeCountry&s_tid=gn_loc_drop">Deutschland</a></li>
+<!-- Code to Remove Tracking from Previous page and add new tracking -->
+<li><a href="http://www.mathworks.in/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html?action=changeCountry&s_tid=gn_loc_drop">India</a></li>
+<!-- Code to Remove Tracking from Previous page and add new tracking -->
+<li><a href="http://www.mathworks.co.uk/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html?action=changeCountry&s_tid=gn_loc_drop">Ireland</a></li>
+<!-- Code to Remove Tracking from Previous page and add new tracking -->
+<li><a href="http://www.mathworks.it/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html?action=changeCountry&s_tid=gn_loc_drop">Italia</a></li>
+<!-- Code to Remove Tracking from Previous page and add new tracking -->
+<li><a href="http://www.mathworks.co.jp/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html?action=changeCountry&s_tid=gn_loc_drop">日本</a></li>
+<!-- Code to Remove Tracking from Previous page and add new tracking -->
+<li><a href="http://www.mathworks.co.kr/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html?action=changeCountry&s_tid=gn_loc_drop">한국</a></li>
+<!-- Code to Remove Tracking from Previous page and add new tracking -->
+<li><a href="http://www.mathworks.nl/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html?action=changeCountry&s_tid=gn_loc_drop">Luxembourg</a></li>
+<!-- Code to Remove Tracking from Previous page and add new tracking -->
+<li><a href="http://www.mathworks.nl/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html?action=changeCountry&s_tid=gn_loc_drop">Netherlands</a></li>
+<!-- Code to Remove Tracking from Previous page and add new tracking -->
+<li><a href="http://www.mathworks.com.au/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html?action=changeCountry&s_tid=gn_loc_drop">New Zealand</a></li>
+<!-- Code to Remove Tracking from Previous page and add new tracking -->
+<li><a href="http://www.mathworks.se/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html?action=changeCountry&s_tid=gn_loc_drop">Norway</a></li>
+<!-- Code to Remove Tracking from Previous page and add new tracking -->
+<li><a href="http://www.mathworks.com/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html?action=changeCountry&s_tid=gn_loc_drop">Portugal</a></li>
+<!-- Code to Remove Tracking from Previous page and add new tracking -->
+<li><a href="http://www.mathworks.es/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html?action=changeCountry&s_tid=gn_loc_drop">España</a></li>
+<!-- Code to Remove Tracking from Previous page and add new tracking -->
+<li><a href="http://www.mathworks.se/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html?action=changeCountry&s_tid=gn_loc_drop">Sweden</a></li>
+<!-- Code to Remove Tracking from Previous page and add new tracking -->
+<li><a href="http://www.mathworks.ch/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html?action=changeCountry&s_tid=gn_loc_drop">Schweiz / Suisse</a></li>
+<!-- Code to Remove Tracking from Previous page and add new tracking -->
+<li><a href="http://www.mathworks.co.uk/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html?action=changeCountry&s_tid=gn_loc_drop">United Kingdom</a></li>
+<!-- Code to Remove Tracking from Previous page and add new tracking -->
+<li><a href="http://www.mathworks.co.uk/company/worldwide/?s_tid=gn_loc_drop?action=changeCountry&s_tid=gn_loc_drop">All Other Countries</a></li>
+</ul>
+</div>
+</li>
+<li class="headernav_contact"><a href="http://www.mathworks.co.uk/company/aboutus/contact_us/?s_tid=gn_cntus">Contact Us</a></li>
+<li class="headernav_store"><a href="http://www.mathworks.co.uk/store/?s_tid=gn_store">How To Buy</a></li>
+<li class="headernav_search"><form name="search" id="site_search" class="site_search" action="http://www.mathworks.co.uk/searchresults/" method="get">
+<input type="hidden" name="c[]" value="entiresite">
+<input type="text" name="q" id="query" class="textfield clear_global_search_text_onfocus" value="Search MathWorks" autocomplete="off" \="">
+<input type="submit" id="searchbutton" value="Search" class="submit_go clear_global_search_text_onsubmit">
+</form></li>
+</ul>
+</div>
+<div class="mwa-nav">
+<ul>
+<li class="mwa-nav_name"><a href="https://www.mathworks.co.uk/accesslogin/editProfile.do?s_tid=gn_ep">Montgomery Charles</a></li>
+<li class="mwa-nav_account"><a href="https://www.mathworks.co.uk/accesslogin/myAccount.do?s_tid=gn_myac">My Account</a></li>
+<li class="mwa-nav_logout"><a href="https://www.mathworks.co.uk/accesslogin/logout.do?uri=http://www.mathworks.co.uk/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html" id="mwa-log_out">Log Out</a></li>
+</ul>
+</div>
+<div class="logo_container">
+<a href="http://www.mathworks.co.uk/index.html?s_tid=gn_logo"><img src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/bg_header_mwlogo_notag.jpg" alt="MathWorks" class="mw_logo"></a>
+<p class="tagline">Accelerating the pace of engineering and science</p>
+</div>
+</div></div>
+                <div class="grid_192"> <div class="topnav_container">
+<div class="topnav_frame">
+<div class="topnav">
+<ul>
+<li class="topnav_products "><a href="http://www.mathworks.co.uk/products/?s_tid=gn_ps">Products &amp; Services</a></li>
+<li class="topnav_solutions "><a href="http://www.mathworks.co.uk/solutions/?s_tid=gn_sol">Solutions</a></li>
+<li class="topnav_academia "><a href="http://www.mathworks.co.uk/academia/?s_tid=gn_acad">Academia</a></li>
+<li class="topnav_support "><a href="http://www.mathworks.co.uk/support/?s_tid=gn_supp">Support</a></li>
+<li class="topnav_community "><a href="http://www.mathworks.co.uk/matlabcentral/?s_tid=gn_mlc">User Community</a></li>
+<li class="topnav_events "><a href="http://www.mathworks.co.uk/company/events/?s_tid=gn_ev">Events</a></li>
+<li class="topnav_company "><a href="http://www.mathworks.co.uk/company/?s_tid=gn_co">Company</a></li>
+</ul>
+</div>
+</div>
+</div> </div>
+                <div class="grid_192">        
+        <div class="section_image level_3" style="background-color:#04478b; background-image:url(/images/nextgen/global/bg_banner_wide.jpg);
+        ">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody><tr>
+          <td>                <h1>Documentation Center</h1>
+     
+                </td>
+                <td class="ctabox_container">
+                <ul class="ctabox">
+                              
+
+
+        <li><a href="http://www.mathworks.co.uk/programs/bounce/doc_tryit.html" class="trial" target="">Trial Software</a></li>
+                              
+
+
+
+        <li><a href="http://www.mathworks.co.uk/support/web_downloads_bounce.html?s_cid=1008_degr_docdn_270055" class="update" target="">Product Updates</a></li>
+                              
+
+
+
+  <li class="banner_share">
+    <div class="addthis_toolbox addthis_default_style"> <a href="http://www.addthis.com/bookmark.php?v=250&pubid=mathworks" class="addthis_button_compact at300m"><span class="at300bs at15nc at15t_compact"></span>Share</a>
+      <div class="atclear"></div>
+      
+    <div class="atclear"></div></div>
+    <script type="text/javascript">var addthis_config = {"data_track_clickback":true, "services_compact":"facebook,email,twitter,print,linkedin,favorites,google_plusone_share,more", "ui_open_windows":true, "ui_header_color":"#ffffff", "ui_header_background":"#3F74C1", "ui_cobrand":"MathWorks","data_track_clickback":true, ui_language: "en" };</script> 
+    <script type="text/javascript" src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/addthis_widget.js"></script><div id="_atssh" style="visibility: hidden; height: 1px; width: 1px; position: absolute; z-index: 100000;"><iframe id="_atssh309" title="AddThis utility frame" src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/sh156.htm" style="height: 1px; width: 1px; position: absolute; z-index: 100000; border: 0px; left: 0px; top: 0px;"></iframe></div><script type="text/javascript" src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/core129.js"></script> 
+  </li>
+                </ul>	
+ </td>
+        </tr>
+          </tbody></table>
+    </div>
+</div>
+                <div class="content_frame">
+                  <div class="grid_192">
+                    <div class="site_container site_toc_closed">
+                      <div class="toc_pane"><div xmlns:atict="http://www.arbortext.com/namespace/atict">
+<div class="toc_container_wrapper" tabindex="0" style="display: block; height: 510px; max-height: 510px; top: 10px; position: fixed;">
+<div class="toc_header" lang="en">
+<div class="toc_icon" id="toc.nnet">
+
+</div>
+<h3>Contents</h3>
+</div><!--close_toc_header-->
+<div class="toc_scroll_pane has-scrollbar" style="height: 478px; max-height: 478px;">
+<div class="toc_container" tabindex="0" style="height: 473px; max-height: 473px; right: -14px;">
+<!--BEGINNING OF TOC DATA-->
+<div class="toc_doc_center_home">
+<a href="http://www.mathworks.co.uk/help/index.html">Documentation Center</a>
+</div>
+<ul>
+<li id="nnet.index.html" class="toc_expanded"><div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/index.html" class="corrected_url">Neural Network Toolbox</a></div>
+</div>
+<ul>
+<li id="nnet.getting-started-with-neural-network-toolbox.html.0" class="toc_collapsed">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/getting-started-with-neural-network-toolbox.html" class="corrected_url">Getting Started with Neural Network Toolbox</a></div>
+</div>
+</li><li id="nnet.examples.index.html">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper">
+<a href="http://www.mathworks.co.uk/help/nnet/examples/index.html" class="corrected_url">Examples</a>
+</div>
+</div>
+</li>
+<li id="nnet.release-notes.html">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper">
+<a href="http://www.mathworks.co.uk/help/nnet/release-notes.html" class="corrected_url">Release Notes</a></div>
+</div>
+</li>
+<li id="nnet.functionlist.html">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper">
+<a href="http://www.mathworks.co.uk/help/nnet/functionlist.html" class="corrected_url">Functions</a>
+</div>
+</div>
+</li>
+<li id="nnet.function-approximation-and-nonlinear-regression.html.1" class="toc_expanded">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/function-approximation-and-nonlinear-regression.html" class="corrected_url">Function Approximation and Nonlinear Regression</a></div>
+</div>
+<ul>
+<li class="toc_collapsed"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper">Functions</div></div><ul>
+<li id="nnet.ref.nnstart.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ref/nnstart.html" class="corrected_url">nnstart</a></div></div></li>
+<li id="nnet.ref.nftool.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ref/nftool.html" class="corrected_url">nftool</a></div></div></li>
+<li id="nnet.ref.view.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ref/view.html" class="corrected_url">view</a></div></div></li>
+<li id="nnet.ref.fitnet.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ref/fitnet.html" class="corrected_url">fitnet</a></div></div></li>
+<li id="nnet.ref.feedforwardnet.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ref/feedforwardnet.html" class="corrected_url">feedforwardnet</a></div></div></li>
+<li id="nnet.ref.cascadeforwardnet.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ref/cascadeforwardnet.html" class="corrected_url">cascadeforwardnet</a></div></div></li>
+<li id="nnet.ref.train.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ref/train.html" class="corrected_url">train</a></div></div></li>
+<li id="nnet.ref.trainlm.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ref/trainlm.html" class="corrected_url">trainlm</a></div></div></li>
+<li id="nnet.ref.trainbr.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ref/trainbr.html" class="corrected_url">trainbr</a></div></div></li>
+<li id="nnet.ref.trainscg.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ref/trainscg.html" class="corrected_url">trainscg</a></div></div></li>
+<li id="nnet.ref.trainrp.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ref/trainrp.html" class="corrected_url">trainrp</a></div></div></li>
+<li id="nnet.ref.mse.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ref/mse.html" class="corrected_url">mse</a></div></div></li>
+<li id="nnet.ref.regression.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ref/regression.html" class="corrected_url">regression</a></div></div></li>
+<li id="nnet.ref.ploterrhist.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ref/ploterrhist.html" class="corrected_url">ploterrhist</a></div></div></li>
+<li id="nnet.ref.plotfit.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ref/plotfit.html" class="corrected_url">plotfit</a></div></div></li>
+<li id="nnet.ref.plotperform.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ref/plotperform.html" class="corrected_url">plotperform</a></div></div></li>
+<li id="nnet.ref.plotregression.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ref/plotregression.html" class="corrected_url">plotregression</a></div></div></li>
+<li id="nnet.ref.plottrainstate.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ref/plottrainstate.html" class="corrected_url">plottrainstate</a></div></div></li>
+<li id="nnet.ref.genfunction.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ref/genfunction.html" class="corrected_url">genFunction</a></div></div></li>
+</ul>
+</li>
+<li class="toc_expanded"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper">Examples and How To</div></div><ul>
+<li id="nnet.gs.fit-data-with-a-neural-network.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/gs/fit-data-with-a-neural-network.html" class="corrected_url">Fit Data with a Neural Network</a></div></div></li>
+<li id="nnet.ug.create-configure-and-initialize-multilayer-neural-networks.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ug/create-configure-and-initialize-multilayer-neural-networks.html" class="corrected_url">Create, Configure, and Initialize Multilayer Neural Networks</a></div></div></li>
+<li id="nnet.ug.train-and-apply-multilayer-neural-networks.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ug/train-and-apply-multilayer-neural-networks.html" class="corrected_url">Train and Apply Multilayer Neural Networks</a></div></div></li>
+<li id="nnet.ug.analyze-neural-network-performance-after-training.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ug/analyze-neural-network-performance-after-training.html" class="corrected_url">Analyze Neural Network Performance After Training</a></div></div></li>
+<li id="nnet.ug.deploy-neural-network-functions-and-objects.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ug/deploy-neural-network-functions-and-objects.html" class="corrected_url">Deploy Neural Network Functions</a></div></div></li>
+<li id="nnet.ug.neural-networks-with-parallel-and-gpu-computing.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ug/neural-networks-with-parallel-and-gpu-computing.html" class="corrected_url">Neural Networks with Parallel and GPU Computing</a></div></div></li>
+<li id="nnet.ug.checkpoint-saves-during-neural-network-training.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ug/checkpoint-saves-during-neural-network-training.html" class="corrected_url">Automatically Save Checkpoints During Neural Network Training</a></div></div></li>
+<li id="nnet.ug.optimize-neural-network-training-speed-and-memory.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ug/optimize-neural-network-training-speed-and-memory.html" class="corrected_url">Optimize Neural Network Training Speed and Memory</a></div></div></li>
+<li id="nnet.ug.choose-neural-network-input-output-processing-functions.html#bss33zw-8"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ug/choose-neural-network-input-output-processing-functions.html#bss33zw-8" class="corrected_url">Representing Unknown or Don't-Care Targets</a></div></div></li>
+<li id="nnet.ug.choose-neural-network-input-output-processing-functions.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ug/choose-neural-network-input-output-processing-functions.html" class="corrected_url">Choose Neural Network Input-Output Processing Functions</a></div></div></li>
+<li id="nnet.ug.configure-neural-network-inputs-and-outputs.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ug/configure-neural-network-inputs-and-outputs.html" class="corrected_url">Configure Neural Network Inputs and Outputs</a></div></div></li>
+<li id="nnet.ug.divide-data-for-optimal-neural-network-training.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ug/divide-data-for-optimal-neural-network-training.html" class="corrected_url">Divide Data for Optimal Neural Network Training</a></div></div></li>
+<li id="nnet.ug.choose-a-multilayer-neural-network-training-function.html" class="current_page"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom.htm" class="corrected_url">Choose a Multilayer Neural Network Training Function</a></div></div></li>
+<li id="nnet.ug.improve-neural-network-generalization-and-avoid-overfitting.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ug/improve-neural-network-generalization-and-avoid-overfitting.html" class="corrected_url">Improve Neural Network Generalization and Avoid Overfitting</a></div></div></li>
+<li id="nnet.ug.train-neural-networks-with-error-weights-1.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ug/train-neural-networks-with-error-weights-1.html" class="corrected_url">Train Neural Networks with Error Weights</a></div></div></li>
+<li id="nnet.ug.normalize-errors-of-multiple-outputs.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ug/normalize-errors-of-multiple-outputs.html" class="corrected_url">Normalize Errors of Multiple Outputs</a></div></div></li>
+</ul>
+</li>
+<li class="toc_collapsed"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper">Concepts</div></div><ul>
+<li id="nnet.ug.workflow-for-neural-network-design.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ug/workflow-for-neural-network-design.html" class="corrected_url">Workflow for Neural Network Design</a></div></div></li>
+<li id="nnet.ug.four-levels-of-neural-network-design.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ug/four-levels-of-neural-network-design.html" class="corrected_url">Four Levels of Neural Network Design</a></div></div></li>
+<li id="nnet.ug.multilayer-neural-networks-and-backpropagation-training.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ug/multilayer-neural-networks-and-backpropagation-training.html" class="corrected_url">Multilayer Neural Networks and Backpropagation Training</a></div></div></li>
+<li id="nnet.ug.multilayer-neural-network-architecture.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ug/multilayer-neural-network-architecture.html" class="corrected_url">Multilayer Neural Network Architecture</a></div></div></li>
+<li id="nnet.ug.understanding-neural-network-toolbox-data-structures.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ug/understanding-neural-network-toolbox-data-structures.html" class="corrected_url">Understanding Neural Network Toolbox Data Structures</a></div></div></li>
+<li id="nnet.ug.neural-network-object-properties.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ug/neural-network-object-properties.html" class="corrected_url">Neural Network Object Properties</a></div></div></li>
+<li id="nnet.ug.neural-network-subobject-properties.html"><div class="node_element"><div class="wrapper img_wrapper"></div><div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/ug/neural-network-subobject-properties.html" class="corrected_url">Neural Network Subobject Properties</a></div></div></li>
+</ul>
+</li>
+</ul>
+</li><li id="nnet.pattern-recognition-and-classification.html.2" class="toc_collapsed">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/pattern-recognition-and-classification.html" class="corrected_url">Pattern Recognition and Classification</a></div>
+</div>
+</li><li id="nnet.index.html.3" class="toc_collapsed">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/index.html#clustering" class="corrected_url">Clustering</a></div>
+</div>
+</li><li id="nnet.index.html.4" class="toc_collapsed">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/index.html#time-series-and-dynamic-systems" class="corrected_url">Time Series and Dynamic Systems</a></div>
+</div>
+</li><li id="nnet.neural-network-control-systems.html.5" class="toc_collapsed">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/neural-network-control-systems.html" class="corrected_url">Neural Network Control Systems</a></div>
+</div>
+</li><li id="nnet.define-neural-network-architectures.html.6" class="toc_collapsed">
+<div class="node_element">
+<div class="wrapper img_wrapper"></div>
+<div class="wrapper text_wrapper"><a href="http://www.mathworks.co.uk/help/nnet/define-neural-network-architectures.html" class="corrected_url">Define Neural Network Architectures</a></div>
+</div>
+</li></ul>
+</li>
+</ul>
+<!--END OF TOC DATA-->
+</div><!--close_toc_container-->
+<div class="pane" style="display: none;"><div class="slider" style="height: 16457px; top: -18213px;"></div></div></div><!--close_toc_scroll_pane-->
+</div><!--close_toc_container_wrapper-->
+</div>
+</div><!--close_toc_pane-->
+                      <div class="doc_content_container">
+                        <div class="content_container" id="content_container"> 
+
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+	
+    
+
+
+               
+ 
+
+        
+        
+            
+<div id="search_crumb_container" style="width: 755px;"><div class="docsearch_container">
+<form id="docsearch_form" name="docsearch_form" method="get" action="http://www.mathworks.co.uk/help/search/doccenter/en/R2014a">
+<label for="docsearch" class="hidden">Search MATLAB Documentation</label>
+<input type="text" name="qdoc" id="docsearch" class="textfield toggleval" autocomplete="off" value="Search R2014a Documentation">
+<input type="submit" name="submitsearch" id="submitsearch" value="Search" class="docsearch_submit" disabled="">
+<script type="text/javascript">
+         $("input[name='qdoc']").toggleVal({
+            focusClass: "hasFocus"
+         });
+       </script>
+</form>
+</div>
+<div class="breadcrumb_container">
+<div class="breadcrumbs">
+<div class="breadcrumbs_outer"><div class="breadcrumbs_inner"><ul><li itemscope="" itemtype="http://www.data-vocabulary.org/Breadcrumb" itemprop="breadcrumb" class="breadcrumb_first"><a href="http://www.mathworks.co.uk/help/index.html" itemprop="url"><span itemprop="title">R2014a</span></a></li><li itemscope="" itemtype="http://www.data-vocabulary.org/Breadcrumb" itemprop="breadcrumb" class="breadcrumb_product"><a href="http://www.mathworks.co.uk/help/nnet/index.html" itemprop="url"><span itemprop="title">Neural Network Toolbox</span></a></li><li itemscope="" itemtype="http://www.data-vocabulary.org/Breadcrumb" itemprop="breadcrumb" class="breadcrumb_last"><a href="http://www.mathworks.co.uk/help/nnet/function-approximation-and-nonlinear-regression.html" itemprop="url"><span itemprop="title">Function Approximation and Nonlinear Regression</span></a></li></ul></div></div></div>
+</div>
+
+</div><section id="doc_center_content">  
+
+
+<a name="bss4gz0-22"></a><h2 class="title r2014a" itemprop="title content" id="bss4gz0-22">Choose a Multilayer Neural Network Training Function</h2><table border="0" cellpadding="4" cellspacing="0" class="pagenavtable"><tbody><tr><th>On this page…</th></tr><tr><td><p><a class="intrnllnk" href="http://www.mathworks.co.uk/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html#bss4gz0-24">SIN Data Set</a></p><p><a class="intrnllnk" href="http://www.mathworks.co.uk/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html#bss4gz0-25">PARITY Data Set</a></p><p><a class="intrnllnk" href="http://www.mathworks.co.uk/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html#bss4gz0-26">ENGINE Data Set</a></p><p><a class="intrnllnk" href="http://www.mathworks.co.uk/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html#bss4gz0-27">CANCER Data Set</a></p><p><a class="intrnllnk" href="http://www.mathworks.co.uk/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html#bss4gz0-28">CHOLESTEROL Data Set</a></p><p><a class="intrnllnk" href="http://www.mathworks.co.uk/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html#bss4gz0-29">DIABETES Data Set</a></p><p><a class="intrnllnk" href="http://www.mathworks.co.uk/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html#bss4gz0-30">Summary</a></p></td></tr></tbody></table><div itemprop="content"><p>It is very difficult to know which training algorithm will be
+the fastest for a given problem. It depends on many factors, including
+the complexity of the problem, the number of data points in the training
+set, the number of weights and biases in the network, the error goal,
+and whether the network is being used for pattern recognition (discriminant
+analysis) or function approximation (regression). This section compares
+the various training algorithms. Feedforward networks are trained
+on six different problems. Three of the problems fall in the pattern
+recognition category and the three others fall in the function approximation
+category. Two of the problems are simple "toy" problems,
+while the other four are "real world" problems. Networks
+with a variety of different architectures and complexities are used,
+and the networks are trained to a variety of different accuracy levels.</p></div><div itemprop="content"><p>The following table lists the algorithms that are tested and
+the acronyms used to identify them. </p><table cellspacing="0" class="body" cellpadding="4" border="2"><colgroup><col width="23%"><col width="19%"><col width="58%"></colgroup><thead><tr valign="top"><th><p>Acronym</p></th><th><p>Algorithm</p></th><th><p>Description</p></th></tr>
+</thead><tbody><tr valign="top"><td><p>LM</p></td><td><a href="http://www.mathworks.co.uk/help/nnet/ref/trainlm.html"><tt>trainlm</tt></a></td><td><p>Levenberg-Marquardt</p></td></tr>
+<tr valign="top"><td><p>BFG</p></td><td><a href="http://www.mathworks.co.uk/help/nnet/ref/trainbfg.html"><tt>trainbfg</tt></a></td><td><p>BFGS Quasi-Newton</p></td></tr>
+<tr valign="top"><td><p>RP</p></td><td><a href="http://www.mathworks.co.uk/help/nnet/ref/trainrp.html"><tt>trainrp</tt></a></td><td><p>Resilient Backpropagation</p></td></tr>
+<tr valign="top"><td><p>SCG</p></td><td><a href="http://www.mathworks.co.uk/help/nnet/ref/trainscg.html"><tt>trainscg</tt></a></td><td><p>Scaled Conjugate Gradient</p></td></tr>
+<tr valign="top"><td><p>CGB</p></td><td><a href="http://www.mathworks.co.uk/help/nnet/ref/traincgb.html"><tt>traincgb</tt></a></td><td><p>Conjugate Gradient with Powell/Beale Restarts</p></td></tr>
+<tr valign="top"><td><p>CGF</p></td><td><a href="http://www.mathworks.co.uk/help/nnet/ref/traincgf.html"><tt>traincgf</tt></a></td><td><p>Fletcher-Powell Conjugate Gradient</p></td></tr>
+<tr valign="top"><td><p>CGP</p></td><td><a href="http://www.mathworks.co.uk/help/nnet/ref/traincgp.html"><tt>traincgp</tt></a></td><td><p>Polak-Ribiére Conjugate Gradient</p></td></tr>
+<tr valign="top"><td><p>OSS</p></td><td><a href="http://www.mathworks.co.uk/help/nnet/ref/trainoss.html"><tt>trainoss</tt></a></td><td><p>One Step Secant</p></td></tr>
+<tr valign="top"><td><p>GDX</p></td><td><a href="http://www.mathworks.co.uk/help/nnet/ref/traingdx.html"><tt>traingdx</tt></a></td><td><p>Variable Learning Rate Backpropagation</p></td></tr>
+</tbody></table><p></p><p>   </p></div><div itemprop="content"><p>The following table lists the six benchmark problems and some
+characteristics of the networks, training processes, and computers
+used. </p><table cellspacing="0" class="body" cellpadding="4" width="100%" border="2"><colgroup><col width="21%"><col width="22%"><col width="11%"><col width="13%" align="left"><col width="33%"></colgroup><thead><tr valign="top"><th><p>Problem Title</p></th><th><p>Problem
+Type</p></th><th><p>Network Structure</p></th><th align="left">Error Goal</th><th><p>Computer</p></th></tr>
+</thead><tbody><tr valign="top"><td><p>SIN</p></td><td><p>Function approximation</p></td><td align="right">1-5-1</td><td align="left">0.002</td><td><p>Sun Sparc 2</p></td></tr>
+<tr valign="top"><td><p>PARITY</p></td><td><p>Pattern recognition</p></td><td align="right">3-10-10-1</td><td align="left">0.001</td><td><p>Sun Sparc 2</p></td></tr>
+<tr valign="top"><td><p>ENGINE</p></td><td><p>Function approximation</p></td><td align="right">2-30-2</td><td align="left">0.005</td><td><p>Sun Enterprise 4000</p></td></tr>
+<tr valign="top"><td><p>CANCER</p></td><td><p>Pattern recognition</p></td><td align="right">9-5-5-2</td><td align="left">0.012</td><td><p>Sun Sparc 2</p></td></tr>
+<tr valign="top"><td><p>CHOLESTEROL</p></td><td><p>Function approximation</p></td><td align="right">21-15-3</td><td align="left">0.027</td><td><p>Sun Sparc 20</p></td></tr>
+<tr valign="top"><td><p>DIABETES</p></td><td><p>Pattern recognition</p></td><td align="right">8-15-15-2</td><td align="left">0.05</td><td><p>Sun Sparc 20</p></td></tr>
+</tbody></table><p></p><p>   </p></div><div itemprop="content"><a name="bss4gz0-24"></a><h3 class="title" id="bss4gz0-24">SIN Data Set</h3><p>The first benchmark data set is a simple function approximation
+problem. A 1-5-1 network, with <a href="http://www.mathworks.co.uk/help/nnet/ref/tansig.html"><tt>tansig</tt></a> transfer
+functions in the hidden layer and a linear transfer function in the
+output layer, is used to approximate a single period of a sine wave.
+The following table summarizes the results of training the network
+using nine different training algorithms. Each entry in the table
+represents 30 different trials, where different random initial weights
+are used in each trial. In each case, the network is trained until
+the squared error is less than 0.002. The fastest algorithm for this
+problem is the Levenberg-Marquardt algorithm. On the average, it is
+over four times faster than the next fastest algorithm. This is the
+type of problem for which the LM algorithm is best suited—a
+function approximation problem where the network has fewer than one
+hundred weights and the approximation must be very accurate. </p><table cellspacing="0" class="body" cellpadding="4" border="2"><colgroup><col width="16%"><col align="right" width="17%"><col align="right" width="17%"><col align="right" width="16%"><col align="right" width="17%"><col align="right" width="17%"></colgroup><thead><tr valign="top"><th><p>Algorithm</p></th><th align="left">Mean
+Time (s)</th><th align="left">Ratio</th><th align="left">Min.
+Time (s) </th><th align="left">Max. Time (s)</th><th align="left">Std. (s)</th></tr>
+</thead><tbody><tr valign="top"><td><p>LM</p></td><td align="right">     1.14</td><td align="right">      1.00</td><td align="right">      0.65</td><td align="right">      1.83</td><td align="right">0.38</td></tr>
+<tr valign="top"><td><p>BFG</p></td><td align="right">     5.22</td><td align="right">      4.58</td><td align="right">      3.17</td><td align="right">    14.38 </td><td align="right">2.08</td></tr>
+<tr valign="top"><td><p>RP</p></td><td align="right">     5.67</td><td align="right">      4.97</td><td align="right">      2.66</td><td align="right">    17.24</td><td align="right">3.72</td></tr>
+<tr valign="top"><td><p>SCG</p></td><td align="right">     6.09</td><td align="right">      5.34</td><td align="right">      3.18</td><td align="right">23.64</td><td align="right">3.81</td></tr>
+<tr valign="top"><td><p>CGB</p></td><td align="right">     6.61</td><td align="right">      5.80</td><td align="right">      2.99</td><td align="right">23.65</td><td align="right">3.67</td></tr>
+<tr valign="top"><td><p>CGF</p></td><td align="right">     7.86</td><td align="right">      6.89</td><td align="right">      3.57</td><td align="right">31.23</td><td align="right">4.76</td></tr>
+<tr valign="top"><td><p>CGP</p></td><td align="right">     8.24</td><td align="right">      7.23</td><td align="right">      4.07</td><td align="right">32.32</td><td align="right">5.03</td></tr>
+<tr valign="top"><td><p>OSS</p></td><td align="right">     9.64</td><td align="right">      8.46</td><td align="right">      3.97</td><td align="right">59.63</td><td align="right">9.79</td></tr>
+<tr valign="top"><td><p>GDX</p></td><td align="right">   27.69</td><td align="right">    24.29</td><td align="right">    17.21</td><td align="right">258.15</td><td align="right">43.65</td></tr>
+</tbody></table><p></p><p>   </p><p>The performance of the various algorithms can be affected by
+the accuracy required of the approximation. This is shown in the following
+figure, which plots the mean square error versus execution time (averaged
+over the 30 trials) for several representative algorithms. Here you
+can see that the error in the LM algorithm decreases much more rapidly
+with time than the other algorithms shown.</p><p>
+<img src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/backprop_sinf1.gif" height="265" width="324" alt=""></p><p>The relationship between the algorithms is further illustrated
+in the following figure, which plots the time required to converge
+versus the mean square error convergence goal. Here you can see that
+as the error goal is reduced, the improvement provided by the LM algorithm
+becomes more pronounced. Some algorithms perform better as the error
+goal is reduced (LM and BFG), and other algorithms degrade as the
+error goal is reduced (OSS and GDX).</p><p>
+<img src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/advanced_topics3.gif" height="258" width="326" alt=""></p></div><div itemprop="content"><a name="bss4gz0-25"></a><h3 class="title" id="bss4gz0-25">PARITY Data Set</h3><p>The second benchmark problem is a simple pattern recognition
+problem—detect the parity of a 3-bit number. If the number
+of ones in the input pattern is odd, then the network should output
+a 1; otherwise, it should output a -1. The network used for this problem
+is a 3-10-10-1 network with tansig neurons in each layer. The following
+table summarizes the results of training this network with the nine
+different algorithms. Each entry in the table represents 30 different
+trials, where different random initial weights are used in each trial.
+In each case, the network is trained until the squared error is less
+than 0.001. The fastest algorithm for this problem is the resilient
+backpropagation algorithm, although the conjugate gradient algorithms
+(in particular, the scaled conjugate gradient algorithm) are almost
+as fast. Notice that the LM algorithm does not perform well on this
+problem. In general, the LM algorithm does not perform as well on
+pattern recognition problems as it does on function approximation
+problems. The LM algorithm is designed for least squares problems
+that are approximately linear. Because the output neurons in pattern
+recognition problems are generally saturated, you will not be operating
+in the linear region. </p><table cellspacing="0" class="body" cellpadding="4" border="2"><colgroup><col width="16%"><col align="right" width="17%"><col align="right" width="17%"><col align="right" width="16%"><col align="right" width="17%"><col align="right" width="17%"></colgroup><thead><tr valign="top"><th><p>Algorithm</p></th><th align="left">Mean Time
+(s)</th><th align="left">Ratio</th><th align="left">Min.
+Time (s) </th><th align="left">Max. Time (s)</th><th align="left">Std. (s)</th></tr>
+</thead><tbody><tr valign="top"><td><p>RP</p></td><td align="right">3.73</td><td align="right">1.00</td><td align="right">   2.35</td><td align="right">6.89</td><td align="right">1.26</td></tr>
+<tr valign="top"><td><p>SCG</p></td><td align="right">4.09</td><td align="right">1.10</td><td align="right">   2.36</td><td align="right">7.48</td><td align="right">1.56</td></tr>
+<tr valign="top"><td><p>CGP</p></td><td align="right">5.13</td><td align="right">1.38</td><td align="right">   3.50</td><td align="right">8.73</td><td align="right">1.05</td></tr>
+<tr valign="top"><td><p>CGB</p></td><td align="right">5.30</td><td align="right">1.42</td><td align="right">3.91</td><td align="right">11.59</td><td align="right">1.35</td></tr>
+<tr valign="top"><td><p>CGF</p></td><td align="right">6.62</td><td align="right">1.77</td><td align="right">   3.96</td><td align="right">28.05</td><td align="right">4.32</td></tr>
+<tr valign="top"><td><p>OSS</p></td><td align="right">8.00</td><td align="right">2.14</td><td align="right">   5.06</td><td align="right">14.41</td><td align="right">1.92</td></tr>
+<tr valign="top"><td><p>LM</p></td><td align="right">13.07</td><td align="right">3.50</td><td align="right">   6.48</td><td align="right">23.78</td><td align="right">4.96</td></tr>
+<tr valign="top"><td><p>BFG</p></td><td align="right">19.68</td><td align="right">5.28</td><td align="right"> 14.19</td><td align="right">26.64</td><td align="right">2.85</td></tr>
+<tr valign="top"><td><p>GDX</p></td><td align="right">27.07</td><td align="right">7.26</td><td align="right"> 25.21</td><td align="right">28.52</td><td align="right">0.86</td></tr>
+</tbody></table><p></p><p>   </p><p>As with function approximation problems, the performance of
+the various algorithms can be affected by the accuracy required of
+the network. This is shown in the following figure, which plots the
+mean square error versus execution time for some typical algorithms.
+The LM algorithm converges rapidly after some point, but only after
+the other algorithms have already converged.</p><p>
+<img src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/advanced_topics4.gif" height="260" width="324" alt=""></p><p>The relationship between the algorithms is further illustrated
+in the following figure, which plots the time required to converge
+versus the mean square error convergence goal. Again you can see that
+some algorithms degrade as the error goal is reduced (OSS and BFG).</p><p>
+<img src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/advanced_topics5.gif" height="258" width="324" alt=""></p></div><div itemprop="content"><a name="bss4gz0-26"></a><h3 class="title" id="bss4gz0-26">ENGINE Data Set</h3><p>The third benchmark problem is a realistic function approximation
+(or nonlinear regression) problem. The data is obtained from the operation
+of an engine. The inputs to the network are engine speed and fueling
+levels and the network outputs are torque and emission levels. The
+network used for this problem is a 2-30-2 network with tansig neurons
+in the hidden layer and linear neurons in the output layer. The following
+table summarizes the results of training this network with the nine
+different algorithms. Each entry in the table represents 30 different
+trials (10 trials for RP and GDX because of time constraints), where
+different random initial weights are used in each trial. In each case,
+the network is trained until the squared error is less than 0.005.
+The fastest algorithm for this problem is the LM algorithm, although
+the BFGS quasi-Newton algorithm and the conjugate gradient algorithms
+(the scaled conjugate gradient algorithm in particular) are almost
+as fast. Although this is a function approximation problem, the LM
+algorithm is not as clearly superior as it was on the SIN data set.
+In this case, the number of weights and biases in the network is much
+larger than the one used on the SIN problem (152 versus 16), and the
+advantages of the LM algorithm decrease as the number of network parameters
+increases. </p><table cellspacing="0" class="body" cellpadding="4" border="2"><colgroup><col width="16%"><col align="right" width="17%"><col align="right" width="17%"><col align="right" width="16%"><col align="right" width="17%"><col align="right" width="17%"></colgroup><thead><tr valign="top"><th><p>Algorithm</p></th><th align="left">Mean
+Time (s)</th><th align="left">Ratio</th><th align="left">Min.
+Time (s) </th><th align="left">Max. Time (s)</th><th align="left">Std. (s)</th></tr>
+</thead><tbody><tr valign="top"><td><p>LM</p></td><td align="right">     18.45</td><td align="right">      1.00</td><td align="right">      12.01</td><td align="right">      30.03</td><td align="right">4.27</td></tr>
+<tr valign="top"><td><p>BFG</p></td><td align="right">     27.12</td><td align="right">      1.47</td><td align="right">      16.42</td><td align="right">      47.36</td><td align="right">5.95</td></tr>
+<tr valign="top"><td><p>SCG</p></td><td align="right">     36.02</td><td align="right">      1.95</td><td align="right">      19.39</td><td align="right">      52.45</td><td align="right">7.78</td></tr>
+<tr valign="top"><td><p>CGF</p></td><td align="right">     37.93</td><td align="right">      2.06</td><td align="right">      18.89</td><td align="right">      50.34</td><td align="right">6.12</td></tr>
+<tr valign="top"><td><p>CGB</p></td><td align="right">     39.93</td><td align="right">      2.16</td><td align="right">      23.33</td><td align="right">      55.42</td><td align="right">7.50</td></tr>
+<tr valign="top"><td><p>CGP</p></td><td align="right">     44.30</td><td align="right">      2.40</td><td align="right">      24.99</td><td align="right">      71.55</td><td align="right">9.89</td></tr>
+<tr valign="top"><td><p>OSS</p></td><td align="right">     48.71</td><td align="right">      2.64</td><td align="right">      23.51</td><td align="right">      80.90</td><td align="right">12.33 </td></tr>
+<tr valign="top"><td><p>RP</p></td><td align="right">     65.91</td><td align="right">      3.57</td><td align="right">      31.83</td><td align="right">    134.31</td><td align="right">34.24 </td></tr>
+<tr valign="top"><td><p>GDX</p></td><td align="right">   188.50</td><td align="right">    10.22 </td><td align="right">      81.59</td><td align="right">    279.90</td><td align="right">66.67</td></tr>
+</tbody></table><p></p><p>   </p><p>The following figure plots the mean square error versus execution
+time for some typical algorithms. The performance of the LM algorithm
+improves over time relative to the other algorithms.</p><p>
+<img src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/advanced_topics6.gif" height="265" width="324" alt=""></p><p>The relationship between the algorithms is further illustrated
+in the following figure, which plots the time required to converge
+versus the mean square error convergence goal. Again you can see that
+some algorithms degrade as the error goal is reduced (GDX and RP),
+while the LM algorithm improves.</p><p>
+<img src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/advanced_topics7.gif" height="259" width="324" alt=""></p></div><div itemprop="content"><a name="bss4gz0-27"></a><h3 class="title" id="bss4gz0-27">CANCER Data Set</h3><p>The fourth benchmark problem is a realistic pattern recognition
+(or nonlinear discriminant analysis) problem. The objective of the
+network is to classify a tumor as either benign or malignant based
+on cell descriptions gathered by microscopic examination. Input attributes
+include clump thickness, uniformity of cell size and cell shape, the
+amount of marginal adhesion, and the frequency of bare nuclei. The
+data was obtained from the University of Wisconsin Hospitals, Madison,
+from Dr. William H. Wolberg. The network used for this problem is
+a 9-5-5-2 network with tansig neurons in all layers. The following
+table summarizes the results of training this network with the nine
+different algorithms. Each entry in the table represents 30 different
+trials, where different random initial weights are used in each trial.
+In each case, the network is trained until the squared error is less
+than 0.012. A few runs failed to converge for some of the algorithms,
+so only the top 75% of the runs from each algorithm were used to obtain
+the statistics.</p><p>The conjugate gradient algorithms and resilient backpropagation
+all provide fast convergence, and the LM algorithm is also reasonably
+fast. As with the parity data set, the LM algorithm does not perform
+as well on pattern recognition problems as it does on function approximation
+problems. </p><table cellspacing="0" class="body" cellpadding="4" border="2"><colgroup><col width="16%"><col align="right" width="17%"><col align="right" width="17%"><col align="right" width="16%"><col align="right" width="17%"><col align="right" width="17%"></colgroup><thead><tr valign="top"><th><p>Algorithm</p></th><th align="left">Mean
+Time (s)</th><th align="left">Ratio</th><th align="left">Min.
+Time (s) </th><th align="left">Max. Time (s)</th><th align="left">Std. (s)</th></tr>
+</thead><tbody><tr valign="top"><td><p>CGB</p></td><td align="right">    80.27</td><td align="right">    1.00</td><td align="right">       55.07</td><td align="right">102.31</td><td align="right">     13.17</td></tr>
+<tr valign="top"><td><p>RP</p></td><td align="right">      83.41</td><td align="right">    1.04</td><td align="right">       59.51</td><td align="right">109.39</td><td align="right">     13.44</td></tr>
+<tr valign="top"><td><p>SCG</p></td><td align="right">      86.58</td><td align="right">    1.08</td><td align="right">       41.21</td><td align="right">112.19 </td><td align="right">     18.25</td></tr>
+<tr valign="top"><td><p>CGP</p></td><td align="right">      87.70</td><td align="right">    1.09</td><td align="right">       56.35</td><td align="right">116.37</td><td align="right">     18.03</td></tr>
+<tr valign="top"><td><p>CGF</p></td><td align="right">    110.05</td><td align="right">    1.37</td><td align="right">       63.33</td><td align="right">171.53</td><td align="right">     30.13</td></tr>
+<tr valign="top"><td><p>LM</p></td><td align="right">    110.33</td><td align="right">    1.37</td><td align="right">       58.94</td><td align="right">201.07</td><td align="right">     38.20</td></tr>
+<tr valign="top"><td><p>BFG</p></td><td align="right">    209.60</td><td align="right">    2.61</td><td align="right">     118.92</td><td align="right">318.18</td><td align="right">     58.44</td></tr>
+<tr valign="top"><td><p>GDX</p></td><td align="right">    313.22</td><td align="right">    3.90</td><td align="right">     166.48</td><td align="right">446.43</td><td align="right">     75.44</td></tr>
+<tr valign="top"><td><p>OSS</p></td><td align="right">    463.87</td><td align="right">    5.78</td><td align="right">     250.62</td><td align="right">599.99</td><td align="right">     97.35</td></tr>
+</tbody></table><p></p><p>   </p><p>The following figure plots the mean square error versus execution
+time for some typical algorithms. For this problem there is not as
+much variation in performance as in previous problems.</p><p>
+<img src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/advanced_topics8.gif" height="259" width="324" alt=""></p><p>The relationship between the algorithms is further illustrated
+in the following figure, which plots the time required to converge
+versus the mean square error convergence goal. Again you can see that
+some algorithms degrade as the error goal is reduced (OSS and BFG)
+while the LM algorithm improves. It is typical of the LM algorithm
+on any problem that its performance improves relative to other algorithms
+as the error goal is reduced.</p><p>
+<img src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/advanced_topics9.gif" height="258" width="324" alt=""></p></div><div itemprop="content"><a name="bss4gz0-28"></a><h3 class="title" id="bss4gz0-28">CHOLESTEROL Data Set</h3><p>The fifth benchmark problem is a realistic function approximation
+(or nonlinear regression) problem. The objective of the network is
+to predict cholesterol levels (ldl, hdl, and vldl) based on measurements
+of 21 spectral components. The data was obtained from Dr. Neil Purdie,
+Department of Chemistry, Oklahoma State University [<a href="http://www.mathworks.co.uk/help/nnet/ug/neural-network-toolbox-bibliography.html">PuLu92</a>]. The network
+used for this problem is a 21-15-3 network with tansig neurons in
+the hidden layers and linear neurons in the output layer. The following
+table summarizes the results of training this network with the nine
+different algorithms. Each entry in the table represents 20 different
+trials (10 trials for RP and GDX), where different random initial
+weights are used in each trial. In each case, the network is trained
+until the squared error is less than 0.027. </p><p>The scaled conjugate gradient algorithm has the best performance
+on this problem, although all the conjugate gradient algorithms perform
+well. The LM algorithm does not perform as well on this function approximation
+problem as it did on the other two. That is because the number of
+weights and biases in the network has increased again (378 versus
+152 versus 16). As the number of parameters increases, the computation
+required in the LM algorithm increases geometrically.</p><table cellspacing="0" class="body" cellpadding="4" border="2"><colgroup><col width="16%"><col align="right" width="17%"><col align="right" width="17%"><col align="right" width="16%"><col align="right" width="17%"><col align="right" width="17%"></colgroup><thead><tr valign="top"><th><p>Algorithm</p></th><th align="left">Mean
+Time (s)</th><th align="left">Ratio</th><th align="left">Min.
+Time (s) </th><th align="left">Max. Time (s)</th><th align="left">Std. (s)</th></tr>
+</thead><tbody><tr valign="top"><td><p>SCG</p></td><td align="right">      99.73</td><td align="right">1.00</td><td align="right">83.10</td><td align="right">113.40</td><td align="right">9.93</td></tr>
+<tr valign="top"><td><p>CGP</p></td><td align="right">121.54</td><td align="right">1.22</td><td align="right">101.76</td><td align="right">162.49</td><td align="right">16.34</td></tr>
+<tr valign="top"><td><p>CGB</p></td><td align="right">124.06</td><td align="right">1.2</td><td align="right">     107.64</td><td align="right">146.90</td><td align="right">14.62</td></tr>
+<tr valign="top"><td><p>CGF</p></td><td align="right">136.04</td><td align="right">1.36</td><td align="right">106.46</td><td align="right">167.28</td><td align="right">17.67</td></tr>
+<tr valign="top"><td><p>LM</p></td><td align="right">261.50</td><td align="right">2.62</td><td align="right">103.52</td><td align="right">398.45</td><td align="right">102.06</td></tr>
+<tr valign="top"><td><p>OSS</p></td><td align="right">268.55</td><td align="right">2.69</td><td align="right">197.84</td><td align="right">372.99</td><td align="right">56.79</td></tr>
+<tr valign="top"><td><p>BFG</p></td><td align="right">550.92</td><td align="right">5.52</td><td align="right">471.61</td><td align="right">676.39</td><td align="right">46.59</td></tr>
+<tr valign="top"><td><p>RP</p></td><td align="right">1519.00</td><td align="right">15.23</td><td align="right">581.17</td><td align="right">2256.10</td><td align="right">557.34</td></tr>
+<tr valign="top"><td><p>GDX</p></td><td align="right">3169.50</td><td align="right">31.78</td><td align="right">2514.90</td><td align="right">4168.20</td><td align="right">610.52</td></tr>
+</tbody></table><p></p><p>The following figure plots the mean square error versus execution
+time for some typical algorithms. For this problem, you can see that
+the LM algorithm is able to drive the mean square error to a lower
+level than the other algorithms. The SCG and RP algorithms provide
+the fastest initial convergence.</p><p>
+<img src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/advanced_topics10.gif" height="260" width="324" alt=""></p><p>The relationship between the algorithms is further illustrated
+in the following figure, which plots the time required to converge
+versus the mean square error convergence goal. You can see that the
+LM and BFG algorithms improve relative to the other algorithms as
+the error goal is reduced.</p><p>
+<img src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/advanced_topics11.gif" height="259" width="324" alt=""></p></div><div itemprop="content"><a name="bss4gz0-29"></a><h3 class="title" id="bss4gz0-29">DIABETES Data Set</h3><p>The sixth benchmark problem is a pattern recognition problem.
+The objective of the network is to decide whether an individual has
+diabetes, based on personal data (age, number of times pregnant) and
+the results of medical examinations (e.g., blood pressure, body mass
+index, result of glucose tolerance test, etc.). The data was obtained
+from the University of California, Irvine, machine learning data base.
+The network used for this problem is an 8-15-15-2 network with tansig
+neurons in all layers. The following table summarizes the results
+of training this network with the nine different algorithms. Each
+entry in the table represents 10 different trials, where different
+random initial weights are used in each trial. In each case, the network
+is trained until the squared error is less than 0.05. </p><p>The conjugate gradient algorithms and resilient backpropagation
+all provide fast convergence. The results on this problem are consistent
+with the other pattern recognition problems considered. The RP algorithm
+works well on all the pattern recognition problems. This is reasonable,
+because that algorithm was designed to overcome the difficulties caused
+by training with sigmoid functions, which have very small slopes when
+operating far from the center point. For pattern recognition problems,
+you use sigmoid transfer functions in the output layer, and you want
+the network to operate at the tails of the sigmoid function. </p><table cellspacing="0" class="body" cellpadding="4" border="2"><colgroup><col width="16%"><col align="right" width="17%"><col align="right" width="17%"><col align="right" width="16%"><col align="right" width="17%"><col align="right" width="17%"></colgroup><thead><tr valign="top"><th><p>Algorithm</p></th><th align="left">Mean
+Time (s)</th><th align="left">Ratio</th><th align="left">Min.
+Time (s) </th><th align="left">Max. Time (s)</th><th align="left">Std. (s)</th></tr>
+</thead><tbody><tr valign="top"><td><p>RP</p></td><td align="right">323.90</td><td align="right">1.00</td><td align="right">187.43</td><td align="right">576.90</td><td align="right">111.37</td></tr>
+<tr valign="top"><td><p>SCG</p></td><td align="right">390.53</td><td align="right">1.21</td><td align="right">267.99</td><td align="right">487.17</td><td align="right">75.07</td></tr>
+<tr valign="top"><td><p>CGB</p></td><td align="right">394.67</td><td align="right">1.22</td><td align="right">312.25</td><td align="right">558.21</td><td align="right">85.38</td></tr>
+<tr valign="top"><td><p>CGP</p></td><td align="right">415.90</td><td align="right">1.28</td><td align="right">320.62</td><td align="right">614.62</td><td align="right">94.77</td></tr>
+<tr valign="top"><td><p>OSS</p></td><td align="right">784.00</td><td align="right">2.42</td><td align="right">706.89</td><td align="right">936.52</td><td align="right">76.37</td></tr>
+<tr valign="top"><td><p>CGF</p></td><td align="right">784.50</td><td align="right">2.42</td><td align="right">629.42</td><td align="right">1082.20</td><td align="right">144.63</td></tr>
+<tr valign="top"><td><p>LM</p></td><td align="right">1028.10</td><td align="right">3.17</td><td align="right">802.01</td><td align="right">1269.50</td><td align="right">166.31</td></tr>
+<tr valign="top"><td><p>BFG</p></td><td align="right">1821.00</td><td align="right">5.62</td><td align="right">1415.80</td><td align="right">3254.50</td><td align="right">546.36 </td></tr>
+<tr valign="top"><td><p>GDX</p></td><td align="right">7687.00</td><td align="right">23.73</td><td align="right">5169.20</td><td align="right">10350.00</td><td align="right">2015.00</td></tr>
+</tbody></table><p></p><p>   </p><p>The following figure plots the mean square error versus execution
+time for some typical algorithms. As with other problems, you see
+that the SCG and RP have fast initial convergence, while the LM algorithm
+is able to provide smaller final error.</p><p>
+<img src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/advanced_topics12.gif" height="259" width="324" alt=""></p><p>The relationship between the algorithms is further illustrated
+in the following figure, which plots the time required to converge
+versus the mean square error convergence goal. In this case, you can
+see that the BFG algorithm degrades as the error goal is reduced,
+while the LM algorithm improves. The RP algorithm is best, except
+at the smallest error goal, where SCG is better.</p><p>
+<img src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/advanced_topics13.gif" height="258" width="323" alt=""></p></div><div itemprop="content"><a name="bss4gz0-30"></a><h3 class="title" id="bss4gz0-30">Summary</h3><p>There are several algorithm characteristics that can be deduced
+from the experiments described. In general, on function approximation
+problems, for networks that contain up to a few hundred weights, the
+Levenberg-Marquardt algorithm will have the fastest convergence. This
+advantage is especially noticeable if very accurate training is required.
+In many cases, <a href="http://www.mathworks.co.uk/help/nnet/ref/trainlm.html"><tt>trainlm</tt></a> is able
+to obtain lower mean square errors than any of the other algorithms
+tested. However, as the number of weights in the network increases,
+the advantage of <a href="http://www.mathworks.co.uk/help/nnet/ref/trainlm.html"><tt>trainlm</tt></a> decreases.
+In addition, <a href="http://www.mathworks.co.uk/help/nnet/ref/trainlm.html"><tt>trainlm</tt></a> performance
+is relatively poor on pattern recognition problems. The storage requirements
+of <a href="http://www.mathworks.co.uk/help/nnet/ref/trainlm.html"><tt>trainlm</tt></a> are larger than the
+other algorithms tested. By adjusting the <tt>mem_reduc</tt> parameter,
+discussed earlier, the storage requirements can be reduced, but at
+the cost of increased execution time.</p><p>The <a href="http://www.mathworks.co.uk/help/nnet/ref/trainrp.html"><tt>trainrp</tt></a> function is
+the fastest algorithm on pattern recognition problems. However, it
+does not perform well on function approximation problems. Its performance
+also degrades as the error goal is reduced. The memory requirements
+for this algorithm are relatively small in comparison to the other
+algorithms considered.</p><p>The conjugate gradient algorithms, in particular <a href="http://www.mathworks.co.uk/help/nnet/ref/trainscg.html"><tt>trainscg</tt></a>, seem to perform well over a wide
+variety of problems, particularly for networks with a large number
+of weights. The SCG algorithm is almost as fast as the LM algorithm
+on function approximation problems (faster for large networks) and
+is almost as fast as <a href="http://www.mathworks.co.uk/help/nnet/ref/trainrp.html"><tt>trainrp</tt></a> on
+pattern recognition problems. Its performance does not degrade as
+quickly as <a href="http://www.mathworks.co.uk/help/nnet/ref/trainrp.html"><tt>trainrp</tt></a> performance
+does when the error is reduced. The conjugate gradient algorithms
+have relatively modest memory requirements.</p><p>The performance of <a href="http://www.mathworks.co.uk/help/nnet/ref/trainbfg.html"><tt>trainbfg</tt></a> is
+similar to that of <a href="http://www.mathworks.co.uk/help/nnet/ref/trainlm.html"><tt>trainlm</tt></a>. It
+does not require as much storage as <a href="http://www.mathworks.co.uk/help/nnet/ref/trainlm.html"><tt>trainlm</tt></a>,
+but the computation required does increase geometrically with the
+size of the network, because the equivalent of a matrix inverse must
+be computed at each iteration.</p><p>The variable learning rate algorithm <a href="http://www.mathworks.co.uk/help/nnet/ref/traingdx.html"><tt>traingdx</tt></a> is
+usually much slower than the other methods, and has about the same
+storage requirements as <a href="http://www.mathworks.co.uk/help/nnet/ref/trainrp.html"><tt>trainrp</tt></a>,
+but it can still be useful for some problems. There are certain situations
+in which it is better to converge more slowly. For example, when using
+early stopping you can have inconsistent results if you use an algorithm
+that converges too quickly. You might overshoot the point at which
+the error on the validation set is minimized.</p></div>
+</section>
+<div class="feedbackblock">Was this topic helpful?
+<input type="button" value="Yes" onclick="openFeedbackWindow(&#39;http://www.mathworks.com/programs/bounce_hub_help.html?s_cid=Help_Topic_Survey&amp;surveyParams=&#39;+document.location.href+&#39;-YES-R2014a&#39;);">
+<input type="button" value="No" onclick="openFeedbackWindow(&#39;http://www.mathworks.com/programs/bounce_hub_help.html?s_cid=Help_Topic_Survey&amp;surveyParams=&#39;+document.location.href+&#39;-NO-R2014a&#39;);">
+</div>
+<!--Last updated: Sat Feb 15 10:51:29 EST 2014-->
+<div class="footer_container execmatlabproduct">
+<div class="footer">
+<ul class="footernav">
+              <li class="footernav_trademarks"><a href="matlab:web([docroot '/acknowledgments.html'])">Acknowledgments</a></li>
+              <li class="footernav_trademarks"><a href="matlab:web([matlabroot '/trademarks.txt'])">Trademarks</a></li>
+              <li class="footernav_patents"><a href="matlab:web([matlabroot '/patents.txt'])">Patents</a></li>
+              <li class="footernav_help"><a href="matlab:web([matlabroot '/license.txt'])">Terms of Use</a></li>
+           </ul>
+<div class="copyright">© 1994-2014 The MathWorks, Inc.</div>
+</div>
+</div>
+ </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="grid_192">
+<div class="fat_footer">
+<div class="callout_container rounded gradient margined_0 "> <div class="callout_content bg_left left_top" style="background-image:url(/images/nextgen/callouts/bg-trial-arrow_02.png);"> <h3>Try MATLAB, Simulink, and Other Products</h3>
+<a href="http://www.mathworks.co.uk/programs/trials/trial_request.html?prodcode=NN&eventid=566781256&s_iid=doc_trial_NN_footer" class="cta ">Get trial now</a>
+</div>
+</div>
+</div>
+</div>
+            <div class="grid_192"> <div class="footer_container">
+<div class="footer">
+<div class="social_media_icon_container">
+<div class="social_media_icons">
+<ul class="footernav">
+<li class="footernav_rss"><a href="http://www.mathworks.co.uk/company/rss/index.html"></a></li>
+<li class="footernav_linkedin"><a href="http://www.mathworks.co.uk/programs/bounce_hub_generic.html?s_tid=mlc_lkd&url=http://www.linkedin.com/company/the-mathworks_2" target="_blank"></a></li>
+<li class="footernav_google"><a href="http://www.mathworks.co.uk/programs/bounce_hub_generic.html?s_tid=mlc_glg&url=https://plus.google.com/117177960465154322866?prsrc=3" target="_blank"></a></li>
+<li class="footernav_facebook"><a href="http://www.mathworks.co.uk/programs/bounce_hub_generic.html?s_tid=mlc_fbk&url=http://www.facebook.com/MATLAB" target="_blank"></a></li>
+<li class="footernav_twitter"><a href="http://www.mathworks.co.uk/programs/bounce_hub_generic.html?s_tid=mlc_twt&url=http://www.twitter.com/MATLAB" target="_blank"></a></li>
+</ul>
+</div>
+<p><em>Join the conversation</em></p>
+</div>
+<ul class="footernav">
+<li class="footernav_piracy"><a href="http://www.mathworks.co.uk/company/aboutus/policies_statements/piracy.html">Preventing Piracy</a></li>
+<li class="footernav_privacy"><a href="http://www.mathworks.co.uk/company/aboutus/policies_statements/">Privacy Policy</a></li>
+<li class="footernav_trademarks"><a href="http://www.mathworks.co.uk/company/aboutus/policies_statements/trademarks.html">Trademarks</a></li>
+<li class="footernav_patents"><a href="http://www.mathworks.co.uk/company/aboutus/policies_statements/patents.html">Patents</a></li>
+<li class="footernav_help"><a href="http://www.mathworks.co.uk/help.html">Site Help</a></li>
+</ul>
+<div class="copyright">© 1994-2014 The MathWorks, Inc.</div>
+</div>
+</div>
+<!-- Quantcast Tag -->
+<script type="text/javascript">
+var _qevents = _qevents || [];
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+function p2l(pathname,query,hash){
+pathname = pathname.replace(/\//gi,"__")
+if(pathname === "__") {
+pathname = "homepage";
+}
+pathname = pathname.replace(/\./gi,"_");
+query = query.replace(/\?/gi,'-');
+params = query.split('&');
+args = []
+for(arg = 0; arg < params.length; arg++){
+args.push(params[arg].split('=')[0]);
+}
+pathname += args.join('-');
+pathname += hash.replace(/#/gi,"-");
+return pathname;
+};
+_qevents.push({
+qacct:"p-a9EZK_dJwG9mH",
+labels: "_fp.event." + p2l(document.location.pathname,
+document.location.search, document.location.hash)
+});
+</script>
+<noscript>
+&lt;div style="display:none;"&gt;
+&lt;img src="//pixel.quantserve.com/pixel/p-a9EZK_dJwG9mH.gif" border="0" height="1" width="1" alt="Quantcast"/&gt;
+&lt;/div&gt;
+</noscript>
+<!-- End Quantcast tag -->
+<!-- BEGIN Google Code for UK and .COM Domains-->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1023777138;
+var google_conversion_label = "SVIBCMq3xwIQ8rKW6AM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/conversion.js">
+</script><iframe name="google_conversion_frame" title="Google conversion frame" width="0" height="0" src="about:blank" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" style="display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 300px 13px;">&lt;img height="1" width="1" border="0" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/1023777138/?frame=0&amp;random=1398109198573&amp;cv=7&amp;fst=1398109198573&amp;num=1&amp;fmt=1&amp;label=SVIBCMq3xwIQ8rKW6AM&amp;guid=ON&amp;u_h=1050&amp;u_w=1680&amp;u_ah=1010&amp;u_aw=1680&amp;u_cd=24&amp;u_his=1&amp;u_tz=60&amp;u_java=true&amp;u_nplug=21&amp;u_nmime=110&amp;frm=0&amp;url=http%3A//www.mathworks.co.uk/help/nnet/ug/choose-a-multilayer-neural-network-training-function.html&amp;ref=http%3A//www.mathworks.co.uk/help/nnet/ug/train-and-apply-multilayer-neural-networks.html" /&gt;</iframe>
+<noscript>
+&lt;div style="display:inline;"&gt;
+&lt;img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1023777138/?value=0&amp;label=SVIBCMq3xwIQ8rKW6AM&amp;guid=ON&amp;script=0"/&gt;
+&lt;/div&gt;
+</noscript>
+<!-- END Google Code for UK and .COM Domains-->
+<!-- SiteCatalyst code version: H.24.4.
+Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script language="JavaScript" type="text/javascript" src="./Choose a Multilayer Neural Network Training Function - MATLAB & Simulink - MathWorks United Kingdom_files/s_code.js"></script>
+<script language="JavaScript" type="text/javascript">
+<!--
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script>
+<!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.24.4. -->
+<!-- BEGIN Qualaroo -->
+<script type="text/javascript">
+var _kiq = _kiq || [];
+(function(){
+setTimeout(function(){
+var d = document, f = d.getElementsByTagName('script')[0], s = d.createElement('script'); s.type = 'text/javascript';
+s.async = true; s.src = '//s3.amazonaws.com/ki.js/49559/ahy.js'; f.parentNode.insertBefore(s, f);
+}, 1);
+})();
+</script>
+<!-- END Qualaroo --> </div>
+          </div>
+        
+      
+
+<canvas style="display: none;"></canvas><script id="hiddenlpsubmitdiv" style="display: none;"></script><script>try{for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){ var lastpass_f = document.forms[lastpass_iter]; if(typeof(lastpass_f.lpsubmitorig2)=="undefined"){ lastpass_f.lpsubmitorig2 = lastpass_f.submit; lastpass_f.submit = function(){ var form=this; var customEvent = document.createEvent("Event"); customEvent.initEvent("lpCustomEvent", true, true); var d = document.getElementById("hiddenlpsubmitdiv"); if (d) {for(var i = 0; i < document.forms.length; i++){ if(document.forms[i]==form){ d.innerText=i; } } d.dispatchEvent(customEvent); }form.lpsubmitorig2(); } } }}catch(e){}</script></body></html>

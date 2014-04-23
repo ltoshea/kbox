@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Reset Styles */
+* { background:transparent !important; color:black !important; text-shadow:none !important; filter:none !important; -ms-filter:none !important; overflow:visible !important; float:none !important; }
+
+/* Remove Elements */
+.headernav, .mwa-nav, .tagline, .topnav_container, .horizontal_nav_container, .sticky_header_container, .section_image, .fat_footer, .social_media_icon_container, .footernav, .localnav_container, #spotlight, .rightcol, #datasheet, .content_frame .grid_35, .button, a.navigate_back { padding:0px; margin:0px; display:none; }
+
+/*
+Reminders:
+.content_frame .grid_35  = Left and right columns on page template
+.content_frame .grid_112 = Main grid within content frame
+*/
+
+/* Adjust widths and margins */
+html body { margin:0px; padding:0px; font-size:9pt; }
+.content_frame { margin:0px; padding:0px; border:none; width:7.3in; }
+.content_frame .grid_112 { margin:0px; width:auto; }
+.content_frame .content_container, .content_frame .callout_content { margin:0px; width:auto; }
+
+/* Adjust specific elements */
+.logo_container { position:relative; width:100%; }
+tt { font-size:12px; }
+.content_frame { border:none; }
+.content_frame .grid_112 .grid_* { margin:0px; width:auto; display:block; }
+.content_frame .callout_container { border-top:solid 1px #000; border-bottom:solid 1px #000; border-left:none; border-right:none; }
+.content_frame .callout_container div { margin:2px; width:auto; }
+.float_right { display:block; }
+.float_left { display:block; }
+
+/* Expand URL's */
+a, a:visited { font-weight:bold; }
+a[href^="javascript:"]:after, a[href^="#"]:after { content:"" !important; } /* Do not display links with javascript or anchor values */
+.image_container a:after, .logo_container a:after { content:normal !important; } /* Allows images surrounded by links to display in FF */
+a[href^="/"]:after { content: " (http://www.mathworks.com" attr( href ) ") "; } /* Prepend the domain for relative links (Cannot determine domain?) */
+a[href^="http"]:after { content: " (" attr( href ) ") "; } /* Prepend the domain for relative links (Cannot determine domain?) */
+
+/* Images */
+.image_element { display:block !important; width:100% !important; }
+img { max-width:100% !important; }
+
+/* Print margins */
+@page { size:8.5in 11in; margin: 0.4in; } 
+
+/* No orphans or windows (Not supported by all browsers) */
+h1, h2, h3, h4 { page-break-after:avoid; }
+ul, img { page-break-inside:avoid; }
+/* p, h2, h3 { orphans:3; widows:3; } */
