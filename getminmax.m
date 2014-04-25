@@ -6,7 +6,8 @@ function [zmax,imax,zmin,imin] = getminmax(Z2,pno)
 %    IMIN - indexes of the XMIN
 
 [zmax,imax,zmin,imin] = extrema(Z2(1,:));
-
+%imax = sort(imax);
+%imax = pythagoras(imax);
 %if length(imax) > 1
     %imax(:,end) = []; %Manually making sure we have same number of min and max points.
     %zmax(:,end) = [];

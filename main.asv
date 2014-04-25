@@ -1,5 +1,5 @@
 global PNUM;
-PNUM = 3;
+PNUM = 4;
 debug = 0;
 
 %Hip centre is first joint
@@ -47,11 +47,12 @@ for i=1:PNUM
     dataAll(i).jredSmooth = kinsmooth(dataAll(i).jred);
     [valmax,imax,valmin, imin] = getminmax(dataAll(i).jredSmooth(1,:));
     
-    %Right handed punches seem to have a different profile (higher amplitude) than left 
-    if mod(i,2) == 0 %Take this out to compare jabs
-        imax(valmax < 0.6) = [];
-    end
-   % distance = pythagoras(sort(imax)); Going to put in getminmax
+%     if i == 2 %Taking this out to compare jabs
+%      
+%        imax(valmax < 0.6) = []
+%       
+%     end
+    
     [dataAll(i).imax, a]= sort(imax);
     
     
@@ -96,10 +97,9 @@ testInds = 1:length(Y);
 testInds(trainInds) = [];
 
 %'autoscale' is true by default 'kernel_function' 'rbf'
-%svmStruct = svmtrain(X(trainInds,:),Y(trainInds),'kernel_function', 'rbf','autoscale','true');
- svmStruct = svmtrain(Y(trainInds),X(trainInds,:),['-b 1']);
- labels = zeros(182,1);
- [predicted_label, accuracy, probest] = svmpredict(Y(testInds),X(testInds,:),svmStruct,['-b 1']);
+ svmStruct = svmtrain(Y(trainInds),X(trainInds,:));
+ labels = rand(182,1);
+ [predicted_label, accuracy, probest] = svmpredict(labels,X(testInds,:),svmStruct['-b']);
 % C = svmclassify(svmStruct,X(testInds,:),'showplot',true);
 %[C, Y(testInds)]
 
@@ -122,5 +122,5 @@ testInds(trainInds) = [];
 % labels = zeros(lbl1,1);
 % labels(lbl1+1:totalsize,:) = ones((totalsize-lbl1),1);
 %test_labels = labels(1:40,:); %new addition for test data for SVM
-%close all
+close all
 
