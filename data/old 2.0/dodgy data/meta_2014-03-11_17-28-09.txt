@@ -1,1 +1,0 @@
-subject,Untrained-Zak, action, Jab, variant, Orthodox

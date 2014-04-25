@@ -18,7 +18,7 @@ Zsmooth = vertcat(smoothpc1,smoothpc2,smoothpc3);
 % hold on;
 % plot(Z2(1,:),'-r');
 % plot(smoothpc1,'b');
-
+% 
 % figure
 % hold on
 % plot(Z2(2,:),'-r');

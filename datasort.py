@@ -30,32 +30,32 @@ def dirbuild():
 		print ('Creating Data Directory')
 		os.makedirs(origpath)
 	
-	newpath=origpath+"/jab"
+	newpath=origpath+"/1"
 	if not os.path.exists(newpath): 
 		print ('Creating Jab Directory')
 		os.makedirs(newpath)
 	
-	newpath=origpath+"/cross"
+	newpath=origpath+"/2"
 	if not os.path.exists(newpath): 
 		print ('Creating Cross Directory')
 		os.makedirs(newpath)
 	
-	newpath=origpath+"/lhook"
+	newpath=origpath+"/3"
 	if not os.path.exists(newpath): 
 		print ('Creating Lhook Directory')
 		os.makedirs(newpath)
 	
-	newpath=origpath+"/rhook"
+	newpath=origpath+"/4"
 	if not os.path.exists(newpath): 
 		print ('Creating Rhook Directory')
 		os.makedirs(newpath)
 	
-	newpath=origpath+"/luppercut"
+	newpath=origpath+"/5"
 	if not os.path.exists(newpath): 
 		print ('Creating Luppercut Directory')
 		os.makedirs(newpath)
 	
-	newpath=origpath+"/ruppercut"
+	newpath=origpath+"/6t"
 	if not os.path.exists(newpath): 
 		print ('Creating Ruppercut Directory')
 		os.makedirs(newpath)
