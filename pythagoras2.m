@@ -4,7 +4,7 @@ function [ imax ] = pythagoras2( imax )
 %   if the distance is too low we know it's a straight line so can cut it
 %   out.
 %distance = 0;
-for i=1:length(imax)-1
+for i=1:length(imax)-10 %Need to figure out a better loop
     if norm(imax(i)-imax(i+1)) < 20
         imax(:,i+1) = [];
     end

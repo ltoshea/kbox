@@ -7,7 +7,7 @@ distance = 0;
 for i=1:length(imax)-1 %need to find a smart way to loop this
     distance = norm(imax(i)-imax(i+1));
     if distance < 20
-        imax(:,i+1) = [];
+        imax(:,i+1) = []; %Remove next point
     end
     %distance = vertcat(distance,norm(imax(i)-imax(i+1)));
 end

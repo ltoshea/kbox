@@ -1,5 +1,5 @@
 global PNUM;
-PNUM = 3;
+PNUM = 6;
 debug = 0;
 
 %Hip centre is first joint
@@ -11,7 +11,7 @@ for i=1:PNUM
     %path = ['C:\Users\liam\Desktop\KINECT\kbox\data\jabtest\' num2str(i) '\'];
     
     
-    data = loadKinectData(path,1);
+    data = loadKinectData(path,1); %flag=1 normalise for hip centroid
     %data = diff(data,1,2); %Columnwise Differentiation - Remove effect of distance from Kinect
     dataAll(i).data = data;
     %dataAll(i).labels to do  
@@ -45,12 +45,8 @@ end
 for i=1:PNUM
     dataAll(i).jred=reconstructPose(dataAll(i).data,Xm1,EV1);
     dataAll(i).jredSmooth = kinsmooth(dataAll(i).jred);
-    [valmax,imax,valmin, imin] = getminmax(dataAll(i).jredSmooth(1,:));
-    
-    %Right handed punches seem to have a different profile (higher amplitude) than left 
-    if mod(i,2) == 0 %Take this out to compare jabs
-        imax(valmax < 0.6) = [];
-    end
+    [valmax,imax,valmin, imin] = getminmax(dataAll(i).jredSmooth(1,:),i);
+   
    % distance = pythagoras(sort(imax)); Going to put in getminmax
     [dataAll(i).imax, a]= sort(imax);
     
@@ -60,7 +56,7 @@ end
 for i=1:PNUM
     figure
     hold on;
-    plot(dataAll(i).jred(1,:),'-r');
+    %plot(dataAll(i).jred(1,:),'-r');
     plot(dataAll(i).jredSmooth(1,:),'b');
     plot(dataAll(i).imax, dataAll(i).jredSmooth(1,dataAll(i).imax),'.g');
 end
@@ -69,6 +65,7 @@ nsamples = 10;
 
 X = [];
 Y = [];
+lbl = [];
 %close all
 for i=1:PNUM
     nelem = length(dataAll(i).imax);
@@ -86,6 +83,8 @@ for i=1:PNUM
     
    X = [X;dataAll(i).features];
    Y = [Y;dataAll(i).labels];
+   lbl = [lbl;ceil(0.2*(length(dataAll(i).labels)))]; %for labels
+   %lbl = ceil(lbl);
 end
 
 
@@ -98,8 +97,40 @@ testInds(trainInds) = [];
 %'autoscale' is true by default 'kernel_function' 'rbf'
 %svmStruct = svmtrain(X(trainInds,:),Y(trainInds),'kernel_function', 'rbf','autoscale','true');
  svmStruct = svmtrain(Y(trainInds),X(trainInds,:),['-b 1']);
- labels = zeros(182,1);
+ %labels = zeros(182,1);
  [predicted_label, accuracy, probest] = svmpredict(Y(testInds),X(testInds,:),svmStruct,['-b 1']);
+ close all
+ 
+%%
+%Random forest % label generation. 
+ testlabels = [];
+ for i=1:6 %should be 6
+     temp = repmat(dataAll(i).labels(i,1),lbl(i,1),1);
+     testlabels = vertcat(testlabels,temp);
+ end
+%NVarToSample, 'all' deciscion tree, otherwise random forest
+X = M';
+B = TreeBagger(75,X(trainInds,:),Y(trainInds),'OOBPred','On');
+C = B.predict(X(testInds,:));
+C = cellfun(@str2num,C);
+%testlabels(end,:) = [];
+chklbl = horzcat(testlabels,C);
+
+count=0;
+for i=1:length(C)
+    if chklbl(i,1) == chklbl(i,2)
+        count = count+1;
+    end
+end
+correct = (count/length(C))*100;
+sprintf('Random Forest Correct: %f%%', correct)
+%%
+
+%Diffusion maps
+
+
+%mappedA = compute_mapping(A, type, no_dims, parameters)
+ 
 % C = svmclassify(svmStruct,X(testInds,:),'showplot',true);
 %[C, Y(testInds)]
 
