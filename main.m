@@ -11,7 +11,7 @@ for i=1:PNUM
     %path = ['C:\Users\liam\Desktop\KINECT\kbox\data\jabtest\' num2str(i) '\'];
     
     
-    data = loadKinectData(path,1); %flag=1 normalise for hip centroid
+    data = loadKinectData(path,0); %flag=1 normalise for hip centroid
     %data = diff(data,1,2); %Columnwise Differentiation - Remove effect of distance from Kinect
     dataAll(i).data = data;
     %dataAll(i).labels to do  

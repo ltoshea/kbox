@@ -1,0 +1,19 @@
+The top-level auxiliary file: memoirthesis.aux
+The style file: siam.bst
+Database file #1: mendleybiblo/Thesis.bib
+Database file #2: thesisbiblio.bib
+I was expecting a `,' or a `}'---line 12 of file thesisbiblio.bib
+ : 
+ : year = {2012},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--string name "april" is undefined
+--line 20 of file thesisbiblio.bib
+Warning--string name "november" is undefined
+--line 28 of file thesisbiblio.bib
+Warning--I didn't find a database entry for "rigas01"
+Warning--I didn't find a database entry for "massuci01"
+Warning--I didn't find a database entry for "griersonRH"
+Warning--I didn't find a database entry for "mjones01"
+Warning--I didn't find a database entry for "payne01"
+(There was 1 error message)

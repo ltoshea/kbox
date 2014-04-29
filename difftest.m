@@ -1,4 +1,4 @@
-function [] = difftest(Data)
+%function [] = difftest(Data)
 % Example code for diffusion maps (diffuse.m) 
 % and diffusion coarse-graining (diffusion_kmeans.m)
 %
@@ -8,7 +8,7 @@ function [] = difftest(Data)
 % LOAD DATA
 %--------------------------------------------------------------------
 close('all');  % close all figures
-%load('annulus.mat'); 
+% load('annulus.mat'); 
 [n,p]=size(Data); % Data(n,p), where n=#observations, p=#variables
 plot(Data(:,1),Data(:,2),'.'); axis image
 title('Example data');
