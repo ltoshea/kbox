@@ -1,13 +1,52 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{Alexiadis2011}
+{\sc D.~S. Alexiadis, P.~Kelly, P.~Daras, N.~E. O'Connor, T.~Boubekeur, and
+  M.~B. Moussa}, {\em {Evaluating a dancer's performance using kinect-based
+  skeleton tracking}}, Proc. 19th ACM Int. Conf. Multimed. - MM '11,  (2011),
+  p.~659.
+
+\bibitem{aug2}
+{\sc D.~S. BBC}, {\em Usa boxing goes high tech in training in colorado
+  springs}.
+\newblock
+  \url{http://gazette.com/usa-boxing-goes-high-tech-in-training-in-colorado-springs/article/1500163},
+  May 2013.
+
+\bibitem{winSDK}
+{\sc D.~Catuhe}, {\em Programming with the kinect for windows software
+  development kit}.
+
+\bibitem{aug3}
+{\sc E.~. P. S.~R. Council}, {\em New technology will help improve athletes’
+  performance}.
+\newblock
+  \url{http://www.epsrc.ac.uk/newsevents/news/2009/Pages/improveathletesperf.aspx},
+  2009.
 
 \bibitem{gamerev2}
 {\sc J.~DeVries}, {\em Fighters uncaged review | ign}.
 \newblock \url{http://www.ign.com/articles/2010/11/09/fighters-uncaged-review},
   2010.
 
+\bibitem{aug7}
+{\sc E.~F. dynamics}.
+\newblock \url{http://elliottfightdynamics.com/}, 2014.
+
 \bibitem{gamerev1}
 {\sc Gamesrader}, {\em Fighters uncaged review | gamesradar}.
 \newblock \url{http://www.gamesradar.com/fighters-uncaged-review/}, 2011.
+
+\bibitem{aug1}
+{\sc Gazette}, {\em Usa boxing goes high tech in training in colorado springs}.
+\newblock \url{http://www.bbc.co.uk/news/technology-18735629}, May 2013.
+
+\bibitem{aug0}
+{\sc T.~Guardian}, {\em London 2012 olympics: How athletes use technology to
+  win medals}.
+\newblock
+  \url{http://www.theguardian.com/sport/2012/jul/04/london-2012-olympic-games-sport-technology},
+  2012.
 
 \bibitem{gamerev3}
 {\sc Metacritic}, {\em Fighters uncaged critic reviews for xbox 360}.
@@ -15,9 +54,36 @@
   \url{http://www.metacritic.com/game/xbox-360/fighters-uncaged/critic-reviews},
   Jan. 2011.
 
+\bibitem{irstream}
+{\sc Microsoft}, {\em Infrared stream - msdn}.
+\newblock \url{http://msdn.microsoft.com/en-us/library/jj663793.aspx}, 2012.
+
 \bibitem{Rector2013}
 {\sc K.~Rector, C.~L. Bennett, and J.~A. Kientz}, {\em {Eyes-Free Yoga : An
   Exergame Using Depth Cameras for Blind \& Low Vision Exercise}}, Int. ACM
   SIGACCESS Conf.,  (2013).
+
+\bibitem{aug4}
+{\sc R.~C. UK}, {\em Cutting edge 2012: The research behind sport}.
+\newblock \url{http://www.rcuk.ac.uk/media/CuttingEdge2012/#bike}, 2012.
+
+\bibitem{aug5}
+\leavevmode\vrule height 2pt depth -1.6pt width 23pt, {\em Memorandum from
+  research councils uk (rcuk) in response to the house of lords inquiry into
+  sports and exercise science and medicine.}
+\newblock
+  \url{http://www.rcuk.ac.uk/RCUK-prod/assets/documents/submissions/SportsExercise.pdf},
+  2012.
+
+\bibitem{olymp1}
+{\sc Wikipedia}, {\em Great britain at the 2012 summer olympics}.
+\newblock
+  \url{http://en.wikipedia.org/wiki/Great_Britain_at_the_2012_Summer_Olympics},
+  2014.
+
+\bibitem{Yamaoka2013}
+{\sc K.~Yamaoka, M.~Uehara, T.~Shima, and Y.~Tamura}, {\em {Feedback of Flying
+  Disc Throw with Kinect and its Evaluation}}, Procedia Comput. Sci., 22
+  (2013), pp.~912--920.
 
 \end{thebibliography}

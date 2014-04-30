@@ -1,6 +1,5 @@
-PWD C:/Users/liam/Desktop/KINECT/kbox/ThesisLatex/chapters/chapter02
+PWD C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02
 INPUT C:/Users/liam/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt
-INPUT C:/Users/liam/Desktop/KINECT/kbox/ThesisLatex/chapters/chapter02/background.tex
-OUTPUT C:/Users/liam/Desktop/KINECT/kbox/ThesisLatex/chapters/chapter02/background.log
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/background.tex
+OUTPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/background.log
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx10.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmti10.tfm

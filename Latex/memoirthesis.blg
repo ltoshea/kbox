@@ -2,6 +2,8 @@ The top-level auxiliary file: memoirthesis.aux
 The style file: siam.bst
 Database file #1: mendleybiblo/Thesis.bib
 Database file #2: thesisbiblio.bib
+Warning--string name "september" is undefined
+--line 11 of file thesisbiblio.bib
 I was expecting a `,' or a `}'---line 12 of file thesisbiblio.bib
  : 
  : year = {2012},
@@ -11,9 +13,16 @@ Warning--string name "april" is undefined
 --line 20 of file thesisbiblio.bib
 Warning--string name "november" is undefined
 --line 28 of file thesisbiblio.bib
-Warning--I didn't find a database entry for "rigas01"
-Warning--I didn't find a database entry for "massuci01"
-Warning--I didn't find a database entry for "griersonRH"
-Warning--I didn't find a database entry for "mjones01"
-Warning--I didn't find a database entry for "payne01"
+Warning--string name "april" is undefined
+--line 44 of file thesisbiblio.bib
+Warning--string name "july" is undefined
+--line 53 of file thesisbiblio.bib
+Warning--string name "october" is undefined
+--line 77 of file thesisbiblio.bib
+Warning--string name "april" is undefined
+--line 85 of file thesisbiblio.bib
+Warning--string name "april" is undefined
+--line 94 of file thesisbiblio.bib
+Warning--string name "april" is undefined
+--line 109 of file thesisbiblio.bib
 (There was 1 error message)

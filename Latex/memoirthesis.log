@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.11)  29 APR 2014 20:09
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.11)  30 APR 2014 19:45
 entering extended mode
-**C:/Users/liam/Desktop/KINECT/kbox/ThesisLatex/memoirthesis.tex
-(C:/Users/liam/Desktop/KINECT/kbox/ThesisLatex/memoirthesis.tex
+**C:/Users/liam/Desktop/KINECT/kbox/Latex/memoirthesis.tex
+(C:/Users/liam/Desktop/KINECT/kbox/Latex/memoirthesis.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -675,7 +675,9 @@ Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
-)) ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
+)) ("C:\Program Files\MiKTeX 2.9\tex\latex\was\gensymb.sty"
+Package: gensymb 2003/07/02 v1.0 (WaS)
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count168
 \calc@Bcount=\count169
@@ -705,7 +707,7 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 Writing index file memoirthesis.idx 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\import\import.sty"
 Package: import 2009/03/23  v 5.1
-) (C:\Users\liam\Desktop\KINECT\kbox\ThesisLatex\underscore.sty
+) (C:\Users\liam\Desktop\KINECT\kbox\Latex\underscore.sty
 Package: underscore 2006/09/13
 LaTeX Info: Redefining \_ on input line 42.
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty"
@@ -1545,51 +1547,9 @@ Loading lettrine.cfg
 \c@lema=\count334
 \c@cor=\count335
 \c@resu=\count336
-(C:\Users\liam\Desktop\KINECT\kbox\ThesisLatex\memoirthesis.aux
-
-LaTeX Warning: Label `chap:intro' multiply defined.
-
-
-LaTeX Warning: Label `sec:sec01' multiply defined.
-
+(C:\Users\liam\Desktop\KINECT\kbox\Latex\memoirthesis.aux
 
 LaTeX Warning: Label `subsec:subsec01' multiply defined.
-
-
-LaTeX Warning: Label `sf:multiRH02a' multiply defined.
-
-
-LaTeX Warning: Label `sub@sf:multiRH02a' multiply defined.
-
-
-LaTeX Warning: Label `sf:multiRH02b' multiply defined.
-
-
-LaTeX Warning: Label `sub@sf:multiRH02b' multiply defined.
-
-
-LaTeX Warning: Label `sf:multiRH02c' multiply defined.
-
-
-LaTeX Warning: Label `sub@sf:multiRH02c' multiply defined.
-
-
-LaTeX Warning: Label `sf:multiRH02d' multiply defined.
-
-
-LaTeX Warning: Label `sub@sf:multiRH02d' multiply defined.
-
-
-LaTeX Warning: Label `sf:multiRH02e' multiply defined.
-
-
-LaTeX Warning: Label `sub@sf:multiRH02e' multiply defined.
-
-
-LaTeX Warning: Label `fig:multiRH02' multiply defined.
-
-
-LaTeX Warning: Label `fig:RHP02' multiply defined.
 
 
 LaTeX Warning: Label `chap:intro' multiply defined.
@@ -1601,40 +1561,16 @@ LaTeX Warning: Label `sec:sec01' multiply defined.
 LaTeX Warning: Label `subsec:subsec01' multiply defined.
 
 
-LaTeX Warning: Label `sf:multiRH02a' multiply defined.
+LaTeX Warning: Label `fig:kinect' multiply defined.
 
 
-LaTeX Warning: Label `sub@sf:multiRH02a' multiply defined.
+LaTeX Warning: Label `fig:kinect' multiply defined.
 
 
-LaTeX Warning: Label `sf:multiRH02b' multiply defined.
+LaTeX Warning: Label `fig:kinect' multiply defined.
 
 
-LaTeX Warning: Label `sub@sf:multiRH02b' multiply defined.
-
-
-LaTeX Warning: Label `sf:multiRH02c' multiply defined.
-
-
-LaTeX Warning: Label `sub@sf:multiRH02c' multiply defined.
-
-
-LaTeX Warning: Label `sf:multiRH02d' multiply defined.
-
-
-LaTeX Warning: Label `sub@sf:multiRH02d' multiply defined.
-
-
-LaTeX Warning: Label `sf:multiRH02e' multiply defined.
-
-
-LaTeX Warning: Label `sub@sf:multiRH02e' multiply defined.
-
-
-LaTeX Warning: Label `fig:multiRH02' multiply defined.
-
-
-LaTeX Warning: Label `fig:RHP02' multiply defined.
+LaTeX Warning: Label `fig:kinect' multiply defined.
 
 
 LaTeX Warning: Label `chap:intro' multiply defined.
@@ -1646,42 +1582,6 @@ LaTeX Warning: Label `sec:sec01' multiply defined.
 LaTeX Warning: Label `subsec:subsec01' multiply defined.
 
 
-LaTeX Warning: Label `sf:multiRH02a' multiply defined.
-
-
-LaTeX Warning: Label `sub@sf:multiRH02a' multiply defined.
-
-
-LaTeX Warning: Label `sf:multiRH02b' multiply defined.
-
-
-LaTeX Warning: Label `sub@sf:multiRH02b' multiply defined.
-
-
-LaTeX Warning: Label `sf:multiRH02c' multiply defined.
-
-
-LaTeX Warning: Label `sub@sf:multiRH02c' multiply defined.
-
-
-LaTeX Warning: Label `sf:multiRH02d' multiply defined.
-
-
-LaTeX Warning: Label `sub@sf:multiRH02d' multiply defined.
-
-
-LaTeX Warning: Label `sf:multiRH02e' multiply defined.
-
-
-LaTeX Warning: Label `sub@sf:multiRH02e' multiply defined.
-
-
-LaTeX Warning: Label `fig:multiRH02' multiply defined.
-
-
-LaTeX Warning: Label `fig:RHP02' multiply defined.
-
-
 LaTeX Warning: Label `chap:intro' multiply defined.
 
 
@@ -1691,93 +1591,77 @@ LaTeX Warning: Label `sec:sec01' multiply defined.
 LaTeX Warning: Label `subsec:subsec01' multiply defined.
 
 
-LaTeX Warning: Label `sf:multiRH02a' multiply defined.
+LaTeX Warning: Label `chap:intro' multiply defined.
 
 
-LaTeX Warning: Label `sub@sf:multiRH02a' multiply defined.
+LaTeX Warning: Label `sec:sec01' multiply defined.
 
 
-LaTeX Warning: Label `sf:multiRH02b' multiply defined.
-
-
-LaTeX Warning: Label `sub@sf:multiRH02b' multiply defined.
-
-
-LaTeX Warning: Label `sf:multiRH02c' multiply defined.
-
-
-LaTeX Warning: Label `sub@sf:multiRH02c' multiply defined.
-
-
-LaTeX Warning: Label `sf:multiRH02d' multiply defined.
-
-
-LaTeX Warning: Label `sub@sf:multiRH02d' multiply defined.
-
-
-LaTeX Warning: Label `sf:multiRH02e' multiply defined.
-
-
-LaTeX Warning: Label `sub@sf:multiRH02e' multiply defined.
-
-
-LaTeX Warning: Label `fig:multiRH02' multiply defined.
-
-
-LaTeX Warning: Label `fig:RHP02' multiply defined.
+LaTeX Warning: Label `subsec:subsec01' multiply defined.
 
 )
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 328.
-LaTeX Font Info:    ... okay on input line 328.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 328.
-LaTeX Font Info:    ... okay on input line 328.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 328.
-LaTeX Font Info:    ... okay on input line 328.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 328.
-LaTeX Font Info:    ... okay on input line 328.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 328.
-LaTeX Font Info:    ... okay on input line 328.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 328.
-LaTeX Font Info:    ... okay on input line 328.
-LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 328.
-LaTeX Font Info:    Try loading font information for FML+fncmi on input line 32
-8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 330.
+LaTeX Font Info:    ... okay on input line 330.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 330.
+LaTeX Font Info:    ... okay on input line 330.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 330.
+LaTeX Font Info:    ... okay on input line 330.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 330.
+LaTeX Font Info:    ... okay on input line 330.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 330.
+LaTeX Font Info:    ... okay on input line 330.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 330.
+LaTeX Font Info:    ... okay on input line 330.
+LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 330.
+LaTeX Font Info:    Try loading font information for FML+fncmi on input line 33
+0.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\fouriernc\fmlfncmi.fd"
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
-LaTeX Font Info:    ... okay on input line 328.
-LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 328.
-LaTeX Font Info:    Try loading font information for FMS+fncm on input line 328
+LaTeX Font Info:    ... okay on input line 330.
+LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 330.
+LaTeX Font Info:    Try loading font information for FMS+fncm on input line 330
 .
 ("C:\Program Files\MiKTeX 2.9\tex\latex\fouriernc\fmsfncm.fd"
 File: fmsfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FMS/fncm.
 )
-LaTeX Font Info:    ... okay on input line 328.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 328.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 328
+LaTeX Font Info:    ... okay on input line 330.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 330.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 330
 .
 ("C:\Program Files\MiKTeX 2.9\tex\latex\fourier\fmxfutm.fd"
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 328.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 328.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 328.
+LaTeX Font Info:    ... okay on input line 330.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 330.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 330.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 328.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 328.
-LaTeX Font Info:    ... okay on input line 328.
-LaTeX Font Info:    Try loading font information for T1+fnc on input line 328.
+LaTeX Font Info:    ... okay on input line 330.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 330.
+LaTeX Font Info:    ... okay on input line 330.
+LaTeX Font Info:    Try loading font information for T1+fnc on input line 330.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\fouriernc\t1fnc.fd"
 File: t1fnc.fd 2005/12/13 scaled font definitions for T1/fnc.
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 10.18341pt on input line 328.
-Package nag Info: pgf.sty is broken: disabling dollar check on input line 328.
+(Font)              scaled to size 10.18341pt on input line 330.
+Package nag Info: pgf.sty is broken: disabling dollar check on input line 330.
+\symgns@font=\mathgroup13
+LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
+(Font)                  TS1/fnc/m/n --> TS1/fnc/bx/n on input line 330.
+Package gensymb Info: Math companion symbols declared on input line 330.
+LaTeX Info: Redefining \degree on input line 330.
+LaTeX Info: Redefining \celsius on input line 330.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
+erthousand on input line 330.
+LaTeX Info: Redefining \ohm on input line 330.
+Package gensymb Info: Using \textohm for \ohm on input line 330.
+Package gensymb Info: Using \textmu for \micro on input line 330.
 
-Package layouts Warning: Layout scale set to 0.5 on input line 328.
+Package layouts Warning: Layout scale set to 0.5 on input line 330.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1794,7 +1678,7 @@ Package layouts Warning: Layout scale set to 0.5 on input line 328.
 \everyMPtoPDFconversion=\toks61
 )
 \AtBeginShipoutBox=\box76
-Package hyperref Info: Link coloring ON on input line 328.
+Package hyperref Info: Link coloring ON on input line 330.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
@@ -1804,14 +1688,14 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 328.
-LaTeX Info: Redefining \ref on input line 328.
-LaTeX Info: Redefining \pageref on input line 328.
-LaTeX Info: Redefining \nameref on input line 328.
-(C:\Users\liam\Desktop\KINECT\kbox\ThesisLatex\memoirthesis.out) (C:\Users\liam
-\Desktop\KINECT\kbox\ThesisLatex\memoirthesis.out)
+LaTeX Info: Redefining \nameref on input line 330.
+LaTeX Info: Redefining \ref on input line 330.
+LaTeX Info: Redefining \pageref on input line 330.
+LaTeX Info: Redefining \nameref on input line 330.
+(C:\Users\liam\Desktop\KINECT\kbox\Latex\memoirthesis.out) (C:\Users\liam\Deskt
+op\KINECT\kbox\Latex\memoirthesis.out)
 \@outlinefile=\write6
-LaTeX Info: Redefining \microtypecontext on input line 328.
+LaTeX Info: Redefining \microtypecontext on input line 330.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1827,16 +1711,16 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
 ABD: EveryShipout initializing macros
 Package nag Info: Command \caption@xlabel not defined, skipping amendment on in
-put line 328.
+put line 330.
 Package nag Info: Command \captionabove not defined, skipping amendment on inpu
-t line 328.
+t line 330.
 Package nag Info: Command \captionbelow not defined, skipping amendment on inpu
-t line 328.
+t line 330.
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
-line 328.
+line 330.
 Package nag Info: Command \topcaption not defined, skipping amendment on input 
-line 328.
-(C:\Users\liam\Desktop\KINECT\kbox\ThesisLatex\frontmatter/title.tex
+line 330.
+(C:\Users\liam\Desktop\KINECT\kbox\Latex\frontmatter/title.tex
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 23.13821pt on input line 25.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
@@ -1848,15 +1732,15 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 11.15991pt on input line 32.
 
-<C:/Users/liam/Desktop/KINECT/kbox/ThesisLatex/frontmatter/logos/bristolcrestCo
-lour.pdf, id=118, 114.4275pt x 137.51375pt>
-File: C:/Users/liam/Desktop/KINECT/kbox/ThesisLatex/frontmatter/logos/bristolcr
-estColour.pdf Graphic file (type pdf)
+<C:/Users/liam/Desktop/KINECT/kbox/Latex/frontmatter/logos/bristolcrestColour.p
+df, id=122, 114.4275pt x 137.51375pt>
+File: C:/Users/liam/Desktop/KINECT/kbox/Latex/frontmatter/logos/bristolcrestCol
+our.pdf Graphic file (type pdf)
 
-<use C:/Users/liam/Desktop/KINECT/kbox/ThesisLatex/frontmatter/logos/bristolcre
-stColour.pdf>
-Package pdftex.def Info: C:/Users/liam/Desktop/KINECT/kbox/ThesisLatex/frontmat
-ter/logos/bristolcrestColour.pdf used on input line 34.
+<use C:/Users/liam/Desktop/KINECT/kbox/Latex/frontmatter/logos/bristolcrestColo
+ur.pdf>
+Package pdftex.def Info: C:/Users/liam/Desktop/KINECT/kbox/Latex/frontmatter/lo
+gos/bristolcrestColour.pdf used on input line 34.
 (pdftex.def)             Requested size: 68.65701pt x 82.50888pt.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 10.18341pt on input line 40.
@@ -1909,15 +1793,29 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-eur.cfg"
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 )
+LaTeX Font Info:    Try loading font information for TS1+fnc on input line 41.
+("C:\Program Files\MiKTeX 2.9\tex\latex\fouriernc\ts1fnc.fd"
+File: ts1fnc.fd 2005/12/13 font definitions for TS1/fnc.
+)
+LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
+(Font)              scaled to size 10.18341pt on input line 41.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `fnc' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
+(Font)              scaled to size 7.71893pt on input line 41.
+LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
+(Font)              scaled to size 5.57996pt on input line 41.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 9.29993pt on input line 47.
 [1
 
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/liam/Desktop/KIN
-ECT/kbox/ThesisLatex/frontmatter/logos/bristolcrestColour.pdf>] [2
+ECT/kbox/Latex/frontmatter/logos/bristolcrestColour.pdf>] [2
 
-]) (C:\Users\liam\Desktop\KINECT\kbox\ThesisLatex\frontmatter/abstract.tex
+]) (C:\Users\liam\Desktop\KINECT\kbox\Latex\frontmatter/abstract.tex
 LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/fnc/b/n' tried instead on input line 14.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
@@ -1944,16 +1842,16 @@ l.18 \clearpage
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.353 \clearemptydoublepage
+l.355 \clearemptydoublepage
                             [2
 
 
-] (C:\Users\liam\Desktop\KINECT\kbox\ThesisLatex\frontmatter/dedication.tex [3
+] (C:\Users\liam\Desktop\KINECT\kbox\Latex\frontmatter/dedication.tex [3
 
 ]) [4
 
 
-] (C:\Users\liam\Desktop\KINECT\kbox\ThesisLatex\frontmatter/declaration.tex
+] (C:\Users\liam\Desktop\KINECT\kbox\Latex\frontmatter/declaration.tex
 Overfull \hbox (1.05093pt too wide) in paragraph at lines 27--29
  \T1/fnc/m/sc/10.95 (-20) SIGNED: .............................................
 ....... DATE: .......................................... 
@@ -1964,7 +1862,7 @@ Overfull \hbox (1.05093pt too wide) in paragraph at lines 27--29
 ]) [6
 
 
-] (C:\Users\liam\Desktop\KINECT\kbox\ThesisLatex\memoirthesis.toc
+] (C:\Users\liam\Desktop\KINECT\kbox\Latex\memoirthesis.toc
 
 Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
 (nag)                Use \bfseries or \textbf instead on input line 2.
@@ -1975,8 +1873,8 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 10.18341pt on input line 2.
 [7])
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 9.29993pt on input line 365.
-[8] (C:\Users\liam\Desktop\KINECT\kbox\ThesisLatex\memoirthesis.lot
+(Font)              scaled to size 9.29993pt on input line 367.
+[8] (C:\Users\liam\Desktop\KINECT\kbox\Latex\memoirthesis.lot
 LaTeX Font Info:    Font shape `T1/fnc/bx/sc' in size <10.95> not available
 (Font)              Font shape `T1/fnc/b/sc' tried instead on input line 2.
 LaTeX Font Info:    Font shape `T1/fnc/b/sc' will be
@@ -1985,815 +1883,161 @@ LaTeX Font Info:    Font shape `T1/fnc/b/sc' will be
 
 ] [10
 
-] (C:\Users\liam\Desktop\KINECT\kbox\ThesisLatex\memoirthesis.lof) [11] [12
+] (C:\Users\liam\Desktop\KINECT\kbox\Latex\memoirthesis.lof) [11] [12
 
-] (C:\Users\liam\Desktop\KINECT\kbox\ThesisLatex\chapters/chapter01/intro.tex
+] (C:\Users\liam\Desktop\KINECT\kbox\Latex\chapters/chapter01/intro.tex
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 36.3328pt on input line 10.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 53.44917pt on input line 10.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 53.44917pt on input line 10.
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[1
+
+
+]
 LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <12> not available
-(Font)              Font shape `T1/fnc/b/n' tried instead on input line 18.
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 22.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 11.15991pt on input line 18.
-<chapters/chapter01/fig01/Nswellings.jpeg, id=233, 282.30469pt x 472.76625pt>
-File: chapters/chapter01/fig01/Nswellings.jpeg Graphic file (type jpg)
-<use chapters/chapter01/fig01/Nswellings.jpeg>
-Package pdftex.def Info: chapters/chapter01/fig01/Nswellings.jpeg used on input
- line 28.
-(pdftex.def)             Requested size: 106.4369pt x 178.2473pt.
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 28.
-
-Overfull \hbox (12.54272pt too wide) in paragraph at lines 28--29
- [][] 
- []
-
-<chapters/chapter01/fig01/Mswellings.jpeg, id=234, 117.43875pt x 154.32657pt>
-File: chapters/chapter01/fig01/Mswellings.jpeg Graphic file (type jpg)
-<use chapters/chapter01/fig01/Mswellings.jpeg>
-Package pdftex.def Info: chapters/chapter01/fig01/Mswellings.jpeg used on input
- line 33.
-(pdftex.def)             Requested size: 130.8101pt x 171.88478pt.
-
-Overfull \hbox (36.91592pt too wide) in paragraph at lines 33--34
- [][] 
- []
-
-<chapters/chapter01/fig01/rhd1.jpeg, id=235, 164.86594pt x 246.1697pt>
-File: chapters/chapter01/fig01/rhd1.jpeg Graphic file (type jpg)
-<use chapters/chapter01/fig01/rhd1.jpeg>
-Package pdftex.def Info: chapters/chapter01/fig01/rhd1.jpeg used on input line 
-38.
-(pdftex.def)             Requested size: 115.12108pt x 171.88478pt.
-
-Overfull \hbox (21.2269pt too wide) in paragraph at lines 38--39
- [][] 
- []
-
-<chapters/chapter01/fig01/mutantrhd6.jpeg, id=236, 894.34125pt x 240.9pt>
-File: chapters/chapter01/fig01/mutantrhd6.jpeg Graphic file (type jpg)
-<use chapters/chapter01/fig01/mutantrhd6.jpeg>
-Package pdftex.def Info: chapters/chapter01/fig01/mutantrhd6.jpeg used on input
- line 43.
-(pdftex.def)             Requested size: 342.69168pt x 92.30975pt.
-
-Overfull \hbox (58.16412pt too wide) in paragraph at lines 43--44
- [][] 
- []
-
-<chapters/chapter01/fig01/auxab.jpeg, id=237, 315.42844pt x 93.34875pt>
-File: chapters/chapter01/fig01/auxab.jpeg Graphic file (type jpg)
-<use chapters/chapter01/fig01/auxab.jpeg>
-Package pdftex.def Info: chapters/chapter01/fig01/auxab.jpeg used on input line
- 48.
-(pdftex.def)             Requested size: 344.20003pt x 101.85837pt.
-
-Overfull \hbox (59.67247pt too wide) in paragraph at lines 48--49
- [][] 
- []
-
-
-Package natbib Warning: Citation `rigas01' on page 1 undefined on input line 50
-.
-
-
-Package natbib Warning: Citation `massuci01' on page 1 undefined on input line 
-50.
-
-LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 10.18341pt on input line 50.
-
-Package natbib Warning: Citation `griersonRH' on page 1 undefined on input line
- 50.
-
-
-Package natbib Warning: Citation `mjones01' on page 1 undefined on input line 5
-0.
-
-
-Package natbib Warning: Citation `payne01' on page 1 undefined on input line 50
-.
-
-
-Package natbib Warning: Citation `rigas01' on page 1 undefined on input line 50
-.
-
-
-Package natbib Warning: Citation `massuci01' on page 1 undefined on input line 
-50.
-
-
-Package natbib Warning: Citation `griersonRH' on page 1 undefined on input line
- 50.
-
-
-Package natbib Warning: Citation `mjones01' on page 1 undefined on input line 5
-0.
-
-
-Package natbib Warning: Citation `payne01' on page 1 undefined on input line 50
-.
-
-<chapters/chapter01/fig01/devepzones.jpeg, id=238, 317.68687pt x 481.8pt>
-File: chapters/chapter01/fig01/devepzones.jpeg Graphic file (type jpg)
-<use chapters/chapter01/fig01/devepzones.jpeg>
-Package pdftex.def Info: chapters/chapter01/fig01/devepzones.jpeg used on input
- line 57.
-(pdftex.def)             Requested size: 146.91817pt x 222.81398pt.
-
-Package natbib Warning: Citation `griersonRH' on page 1 undefined on input line
- 58.
-
-
-Package natbib Warning: Citation `griersonRH' on page 1 undefined on input line
- 58.
-
-)
-(C:\Users\liam\Desktop\KINECT\kbox\ThesisLatex\chapters/chapter02/background.te
-x [1
-
+(Font)              scaled to size 11.15991pt on input line 22.
+) (C:\Users\liam\Desktop\KINECT\kbox\Latex\chapters/chapter02/background.tex [2
+] [3
 
 ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Text page 2 contains only floats.
+[4] [5] <chapters/chapter02/fig02/kinect.png, id=274, 432.86719pt x 222.07968pt
+>
+File: chapters/chapter02/fig02/kinect.png Graphic file (type png)
+<use chapters/chapter02/fig02/kinect.png>
+Package pdftex.def Info: chapters/chapter02/fig02/kinect.png used on input line
+ 80.
+(pdftex.def)             Requested size: 310.20442pt x 159.15007pt.
+<chapters/chapter02/fig02/xyz.png, id=275, 179.16937pt x 198.7425pt>
+File: chapters/chapter02/fig02/xyz.png Graphic file (type png)
+<use chapters/chapter02/fig02/xyz.png>
+Package pdftex.def Info: chapters/chapter02/fig02/xyz.png used on input line 87
+.
+(pdftex.def)             Requested size: 143.48058pt x 159.15007pt.
+<chapters/chapter02/fig02/kinspecs.jpg, id=276, 1082.54437pt x 376.40625pt>
+File: chapters/chapter02/fig02/kinspecs.jpg Graphic file (type jpg)
+<use chapters/chapter02/fig02/kinspecs.jpg>
+Package pdftex.def Info: chapters/chapter02/fig02/kinspecs.jpg used on input li
+ne 93.
+(pdftex.def)             Requested size: 457.72142pt x 159.15007pt.
+
+Overfull \hbox (9.72142pt too wide) in paragraph at lines 93--94
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<chapters/chapter02/fig02/kindepth.png, id=277, 452.4403pt x 496.85625pt>
+File: chapters/chapter02/fig02/kindepth.png Graphic file (type png)
+<use chapters/chapter02/fig02/kindepth.png>
+Package pdftex.def Info: chapters/chapter02/fig02/kindepth.png used on input li
+ne 99.
+(pdftex.def)             Requested size: 144.92192pt x 159.15007pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<chapters/chapter02/fig02/pipeline.png, id=278, 432.11438pt x 83.5622pt>
+File: chapters/chapter02/fig02/pipeline.png Graphic file (type png)
+<use chapters/chapter02/fig02/pipeline.png>
+Package pdftex.def Info: chapters/chapter02/fig02/pipeline.png used on input li
+ne 105.
+(pdftex.def)             Requested size: 823.13576pt x 159.15007pt.
+
+Overfull \hbox (375.13576pt too wide) in paragraph at lines 105--106
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<chapters/chapter02/fig02/kinDepth.png, id=281, 452.4403pt x 496.85625pt>
+File: chapters/chapter02/fig02/kinDepth.png Graphic file (type png)
+<use chapters/chapter02/fig02/kinDepth.png>
+Package pdftex.def Info: chapters/chapter02/fig02/kinDepth.png used on input li
+ne 115.
+(pdftex.def)             Requested size: 318.8393pt x 350.1321pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/kinect.png
+> <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/xyz.png>] <
+chapters/chapter02/fig02/kinSkel.png, id=289, 462.22687pt x 386.19281pt>
+File: chapters/chapter02/fig02/kinSkel.png Graphic file (type png)
+<use chapters/chapter02/fig02/kinSkel.png>
+Package pdftex.def Info: chapters/chapter02/fig02/kinSkel.png used on input lin
+e 127.
+(pdftex.def)             Requested size: 304.7674pt x 254.63622pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[2 <C:/Users/liam/Desktop/KINECT/kbox/ThesisLatex/chapters/chapter01/fig01/Nswe
-llings.jpeg> <C:/Users/liam/Desktop/KINECT/kbox/ThesisLatex/chapters/chapter01/
-fig01/Mswellings.jpeg> <C:/Users/liam/Desktop/KINECT/kbox/ThesisLatex/chapters/
-chapter01/fig01/rhd1.jpeg> <C:/Users/liam/Desktop/KINECT/kbox/ThesisLatex/chapt
-ers/chapter01/fig01/mutantrhd6.jpeg> <C:/Users/liam/Desktop/KINECT/kbox/ThesisL
-atex/chapters/chapter01/fig01/auxab.jpeg>] [3 <C:/Users/liam/Desktop/KINECT/kbo
-x/ThesisLatex/chapters/chapter01/fig01/devepzones.jpeg>] [4
+[7 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/kinspecs.j
+pg> <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/kindepth.
+png>]
+Underfull \hbox (badness 10000) in paragraph at lines 141--143
 
-]
-Underfull \vbox (badness 2922) has occurred while \output is active []
-
-[5] [6]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 56.
-
-LaTeX Font Info:    Try loading font information for TS1+fnc on input line 65.
-("C:\Program Files\MiKTeX 2.9\tex\latex\fouriernc\ts1fnc.fd"
-File: ts1fnc.fd 2005/12/13 font definitions for TS1/fnc.
-)
-LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
-(Font)              scaled to size 10.18341pt on input line 65.
-Package microtype Info: Loading generic settings for font family
-(microtype)             `fnc' (encoding: TS1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-[7]
-Overfull \hbox (3.37502pt too wide) in paragraph at lines 88--109
-\T1/fnc/m/n/10.95 (-20) RIGHT i=9: NUI_-SKELE-TON_-PO-SI-TION_-EL-BOW_-RIGHT i=
-10: NUI_-SKELE-TON_-PO-SI-TION_-
  []
 
-[8]pdfTeX warning (ext4): destination with the same identifier (name{subfigure.
-1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.136     \subtop
-                 []{\includegraphics[height=0.28\textheight]{fig01/Nswelling...
-<chapters/chapter02/fig01/Nswellings.jpeg, id=290, 282.30469pt x 472.76625pt>
-File: chapters/chapter02/fig01/Nswellings.jpeg Graphic file (type jpg)
-<use chapters/chapter02/fig01/Nswellings.jpeg>
-Package pdftex.def Info: chapters/chapter02/fig01/Nswellings.jpeg used on input
- line 136.
-(pdftex.def)             Requested size: 106.4369pt x 178.2473pt.
-
-Overfull \hbox (12.54272pt too wide) in paragraph at lines 136--137
- [][] 
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.141     \subtop
-                 []{\includegraphics[height=0.27\textheight]{fig01/Mswelling...
-<chapters/chapter02/fig01/Mswellings.jpeg, id=291, 117.43875pt x 154.32657pt>
-File: chapters/chapter02/fig01/Mswellings.jpeg Graphic file (type jpg)
-<use chapters/chapter02/fig01/Mswellings.jpeg>
-Package pdftex.def Info: chapters/chapter02/fig01/Mswellings.jpeg used on input
- line 141.
-(pdftex.def)             Requested size: 130.8101pt x 171.88478pt.
-
-Overfull \hbox (36.91592pt too wide) in paragraph at lines 141--142
- [][] 
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.3})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.146     \subtop
-                 []{\includegraphics[height=0.27\textheight]{fig01/rhd1}\lab...
-<chapters/chapter02/fig01/rhd1.jpeg, id=292, 164.86594pt x 246.1697pt>
-File: chapters/chapter02/fig01/rhd1.jpeg Graphic file (type jpg)
-<use chapters/chapter02/fig01/rhd1.jpeg>
-Package pdftex.def Info: chapters/chapter02/fig01/rhd1.jpeg used on input line 
-146.
-(pdftex.def)             Requested size: 115.12108pt x 171.88478pt.
-
-Overfull \hbox (21.2269pt too wide) in paragraph at lines 146--147
- [][] 
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.4})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.151     \subtop
-                 []{\includegraphics[height=0.145\textheight]{fig01/mutantrh...
-<chapters/chapter02/fig01/mutantrhd6.jpeg, id=293, 894.34125pt x 240.9pt>
-File: chapters/chapter02/fig01/mutantrhd6.jpeg Graphic file (type jpg)
-<use chapters/chapter02/fig01/mutantrhd6.jpeg>
-Package pdftex.def Info: chapters/chapter02/fig01/mutantrhd6.jpeg used on input
- line 151.
-(pdftex.def)             Requested size: 342.69168pt x 92.30975pt.
-
-Overfull \hbox (58.16412pt too wide) in paragraph at lines 151--152
- [][] 
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.5})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.156     \subtop
-                 []{\includegraphics[height=0.16\textheight]{fig01/auxab}\la...
-<chapters/chapter02/fig01/auxab.jpeg, id=294, 315.42844pt x 93.34875pt>
-File: chapters/chapter02/fig01/auxab.jpeg Graphic file (type jpg)
-<use chapters/chapter02/fig01/auxab.jpeg>
-Package pdftex.def Info: chapters/chapter02/fig01/auxab.jpeg used on input line
- 156.
-(pdftex.def)             Requested size: 344.20003pt x 101.85837pt.
-
-Overfull \hbox (59.67247pt too wide) in paragraph at lines 156--157
- [][] 
- []
-
-
-Package natbib Warning: Citation `rigas01' on page 9 undefined on input line 15
-8.
-
-
-Package natbib Warning: Citation `massuci01' on page 9 undefined on input line 
-158.
-
-
-Package natbib Warning: Citation `griersonRH' on page 9 undefined on input line
- 158.
-
-
-Package natbib Warning: Citation `mjones01' on page 9 undefined on input line 1
-58.
-
-
-Package natbib Warning: Citation `payne01' on page 9 undefined on input line 15
-8.
-
-
-Package natbib Warning: Citation `rigas01' on page 9 undefined on input line 15
-8.
-
-
-Package natbib Warning: Citation `massuci01' on page 9 undefined on input line 
-158.
-
-
-Package natbib Warning: Citation `griersonRH' on page 9 undefined on input line
- 158.
-
-
-Package natbib Warning: Citation `mjones01' on page 9 undefined on input line 1
-58.
-
-
-Package natbib Warning: Citation `payne01' on page 9 undefined on input line 15
-8.
-
-[9] <chapters/chapter02/fig01/devepzones.jpeg, id=304, 317.68687pt x 481.8pt>
-File: chapters/chapter02/fig01/devepzones.jpeg Graphic file (type jpg)
-<use chapters/chapter02/fig01/devepzones.jpeg>
-Package pdftex.def Info: chapters/chapter02/fig01/devepzones.jpeg used on input
- line 165.
-(pdftex.def)             Requested size: 146.91817pt x 222.81398pt.
-
-Package natbib Warning: Citation `griersonRH' on page 10 undefined on input lin
-e 166.
-
-
-Package natbib Warning: Citation `griersonRH' on page 10 undefined on input lin
-e 166.
-
-) (C:\Users\liam\Desktop\KINECT\kbox\ThesisLatex\chapters/chapter03/spec.tex [1
-0]
-
-LaTeX Warning: Text page 11 contains only floats.
-
-
+[8 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/pipeline.p
+ng>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[11 <C:/Users/liam/Desktop/KINECT/kbox/ThesisLatex/chapters/chapter02/fig01/Nsw
-ellings.jpeg> <C:/Users/liam/Desktop/KINECT/kbox/ThesisLatex/chapters/chapter02
-/fig01/Mswellings.jpeg> <C:/Users/liam/Desktop/KINECT/kbox/ThesisLatex/chapters
-/chapter02/fig01/rhd1.jpeg> <C:/Users/liam/Desktop/KINECT/kbox/ThesisLatex/chap
-ters/chapter02/fig01/mutantrhd6.jpeg> <C:/Users/liam/Desktop/KINECT/kbox/Thesis
-Latex/chapters/chapter02/fig01/auxab.jpeg>] [12 <C:/Users/liam/Desktop/KINECT/k
-box/ThesisLatex/chapters/chapter02/fig01/devepzones.jpeg>]pdfTeX warning (ext4)
-: destination with the same identifier (name{subfigure.1}) has been already use
-d, duplicate ignored
-<to be read again> 
-                   \relax 
-l.32     \subtop
-                []{\includegraphics[height=0.28\textheight]{fig01/Nswellings...
-<chapters/chapter03/fig01/Nswellings.jpeg, id=319, 282.30469pt x 472.76625pt>
-File: chapters/chapter03/fig01/Nswellings.jpeg Graphic file (type jpg)
-<use chapters/chapter03/fig01/Nswellings.jpeg>
-Package pdftex.def Info: chapters/chapter03/fig01/Nswellings.jpeg used on input
- line 32.
-(pdftex.def)             Requested size: 106.4369pt x 178.2473pt.
+[9 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/kinDepth.p
+ng>] [10 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/kinS
+kel.png>]) (C:\Users\liam\Desktop\KINECT\kbox\Latex\chapters/chapter03/design.t
+ex [11] [12
 
-Overfull \hbox (12.54272pt too wide) in paragraph at lines 32--33
- [][] 
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.37     \subtop
-                []{\includegraphics[height=0.27\textheight]{fig01/Mswellings...
-<chapters/chapter03/fig01/Mswellings.jpeg, id=320, 117.43875pt x 154.32657pt>
-File: chapters/chapter03/fig01/Mswellings.jpeg Graphic file (type jpg)
-<use chapters/chapter03/fig01/Mswellings.jpeg>
-Package pdftex.def Info: chapters/chapter03/fig01/Mswellings.jpeg used on input
- line 37.
-(pdftex.def)             Requested size: 130.8101pt x 171.88478pt.
-
-Overfull \hbox (36.91592pt too wide) in paragraph at lines 37--38
- [][] 
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.3})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.42     \subtop
-                []{\includegraphics[height=0.27\textheight]{fig01/rhd1}\labe...
-<chapters/chapter03/fig01/rhd1.jpeg, id=321, 164.86594pt x 246.1697pt>
-File: chapters/chapter03/fig01/rhd1.jpeg Graphic file (type jpg)
-<use chapters/chapter03/fig01/rhd1.jpeg>
-Package pdftex.def Info: chapters/chapter03/fig01/rhd1.jpeg used on input line 
-42.
-(pdftex.def)             Requested size: 115.12108pt x 171.88478pt.
-
-Overfull \hbox (21.2269pt too wide) in paragraph at lines 42--43
- [][] 
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.4})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.47     \subtop
-                []{\includegraphics[height=0.145\textheight]{fig01/mutantrhd...
-<chapters/chapter03/fig01/mutantrhd6.jpeg, id=322, 894.34125pt x 240.9pt>
-File: chapters/chapter03/fig01/mutantrhd6.jpeg Graphic file (type jpg)
-<use chapters/chapter03/fig01/mutantrhd6.jpeg>
-Package pdftex.def Info: chapters/chapter03/fig01/mutantrhd6.jpeg used on input
- line 47.
-(pdftex.def)             Requested size: 342.69168pt x 92.30975pt.
-
-Overfull \hbox (58.16412pt too wide) in paragraph at lines 47--48
- [][] 
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.5})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.52     \subtop
-                []{\includegraphics[height=0.16\textheight]{fig01/auxab}\lab...
-<chapters/chapter03/fig01/auxab.jpeg, id=323, 315.42844pt x 93.34875pt>
-File: chapters/chapter03/fig01/auxab.jpeg Graphic file (type jpg)
-<use chapters/chapter03/fig01/auxab.jpeg>
-Package pdftex.def Info: chapters/chapter03/fig01/auxab.jpeg used on input line
- 52.
-(pdftex.def)             Requested size: 344.20003pt x 101.85837pt.
-
-Overfull \hbox (59.67247pt too wide) in paragraph at lines 52--53
- [][] 
- []
-
-
-Package natbib Warning: Citation `rigas01' on page 13 undefined on input line 5
-4.
-
-
-Package natbib Warning: Citation `massuci01' on page 13 undefined on input line
- 54.
-
-
-Package natbib Warning: Citation `griersonRH' on page 13 undefined on input lin
-e 54.
-
-
-Package natbib Warning: Citation `mjones01' on page 13 undefined on input line 
-54.
-
-
-Package natbib Warning: Citation `payne01' on page 13 undefined on input line 5
-4.
-
-
-Package natbib Warning: Citation `rigas01' on page 13 undefined on input line 5
-4.
-
-
-Package natbib Warning: Citation `massuci01' on page 13 undefined on input line
- 54.
-
-
-Package natbib Warning: Citation `griersonRH' on page 13 undefined on input lin
-e 54.
-
-
-Package natbib Warning: Citation `mjones01' on page 13 undefined on input line 
-54.
-
-
-Package natbib Warning: Citation `payne01' on page 13 undefined on input line 5
-4.
-
-<chapters/chapter03/fig01/devepzones.jpeg, id=324, 317.68687pt x 481.8pt>
-File: chapters/chapter03/fig01/devepzones.jpeg Graphic file (type jpg)
-<use chapters/chapter03/fig01/devepzones.jpeg>
-Package pdftex.def Info: chapters/chapter03/fig01/devepzones.jpeg used on input
- line 61.
-(pdftex.def)             Requested size: 146.91817pt x 222.81398pt.
-
-Package natbib Warning: Citation `griersonRH' on page 13 undefined on input lin
-e 62.
-
-
-Package natbib Warning: Citation `griersonRH' on page 13 undefined on input lin
-e 62.
-
-)
-(C:\Users\liam\Desktop\KINECT\kbox\ThesisLatex\chapters/chapter04/implementatio
-n.tex [13
-
-]
-
-LaTeX Warning: Text page 14 contains only floats.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[14 <C:/Users/liam/Desktop/KINECT/kbox/ThesisLatex/chapters/chapter03/fig01/Nsw
-ellings.jpeg> <C:/Users/liam/Desktop/KINECT/kbox/ThesisLatex/chapters/chapter03
-/fig01/Mswellings.jpeg> <C:/Users/liam/Desktop/KINECT/kbox/ThesisLatex/chapters
-/chapter03/fig01/rhd1.jpeg> <C:/Users/liam/Desktop/KINECT/kbox/ThesisLatex/chap
-ters/chapter03/fig01/mutantrhd6.jpeg> <C:/Users/liam/Desktop/KINECT/kbox/Thesis
-Latex/chapters/chapter03/fig01/auxab.jpeg>] [15 <C:/Users/liam/Desktop/KINECT/k
-box/ThesisLatex/chapters/chapter03/fig01/devepzones.jpeg>] [16
+]) (C:\Users\liam\Desktop\KINECT\kbox\Latex\chapters/chapter04/implementation.t
+ex [13] [14
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 25--32
 
  []
 
-[17]pdfTeX warning (ext4): destination with the same identifier (name{subfigure
-.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.38     \subtop
-                []{\includegraphics[height=0.28\textheight]{fig01/Nswellings...
-<chapters/chapter04/fig01/Nswellings.jpeg, id=346, 282.30469pt x 472.76625pt>
-File: chapters/chapter04/fig01/Nswellings.jpeg Graphic file (type jpg)
-<use chapters/chapter04/fig01/Nswellings.jpeg>
-Package pdftex.def Info: chapters/chapter04/fig01/Nswellings.jpeg used on input
- line 38.
-(pdftex.def)             Requested size: 106.4369pt x 178.2473pt.
-
-Overfull \hbox (12.54272pt too wide) in paragraph at lines 38--39
- [][] 
+[15]
+Overfull \hbox (3.37502pt too wide) in paragraph at lines 44--65
+\T1/fnc/m/n/10.95 (-20) RIGHT i=9: NUI_-SKELE-TON_-PO-SI-TION_-EL-BOW_-RIGHT i=
+10: NUI_-SKELE-TON_-PO-SI-TION_-
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.43     \subtop
-                []{\includegraphics[height=0.27\textheight]{fig01/Mswellings...
-<chapters/chapter04/fig01/Mswellings.jpeg, id=347, 117.43875pt x 154.32657pt>
-File: chapters/chapter04/fig01/Mswellings.jpeg Graphic file (type jpg)
-<use chapters/chapter04/fig01/Mswellings.jpeg>
-Package pdftex.def Info: chapters/chapter04/fig01/Mswellings.jpeg used on input
- line 43.
-(pdftex.def)             Requested size: 130.8101pt x 171.88478pt.
+) (C:\Users\liam\Desktop\KINECT\kbox\Latex\chapters/chapter05/conclusion.tex [1
+6]) [17
 
-Overfull \hbox (36.91592pt too wide) in paragraph at lines 43--44
- [][] 
- []
+] [18
 
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.3})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.48     \subtop
-                []{\includegraphics[height=0.27\textheight]{fig01/rhd1}\labe...
-<chapters/chapter04/fig01/rhd1.jpeg, id=348, 164.86594pt x 246.1697pt>
-File: chapters/chapter04/fig01/rhd1.jpeg Graphic file (type jpg)
-<use chapters/chapter04/fig01/rhd1.jpeg>
-Package pdftex.def Info: chapters/chapter04/fig01/rhd1.jpeg used on input line 
-48.
-(pdftex.def)             Requested size: 115.12108pt x 171.88478pt.
+] (C:\Users\liam\Desktop\KINECT\kbox\Latex\chapters/appendices/app0A.tex) [19
 
-Overfull \hbox (21.2269pt too wide) in paragraph at lines 48--49
- [][] 
- []
+] [20
 
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.4})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.53     \subtop
-                []{\includegraphics[height=0.145\textheight]{fig01/mutantrhd...
-<chapters/chapter04/fig01/mutantrhd6.jpeg, id=349, 894.34125pt x 240.9pt>
-File: chapters/chapter04/fig01/mutantrhd6.jpeg Graphic file (type jpg)
-<use chapters/chapter04/fig01/mutantrhd6.jpeg>
-Package pdftex.def Info: chapters/chapter04/fig01/mutantrhd6.jpeg used on input
- line 53.
-(pdftex.def)             Requested size: 342.69168pt x 92.30975pt.
-
-Overfull \hbox (58.16412pt too wide) in paragraph at lines 53--54
- [][] 
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.5})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.58     \subtop
-                []{\includegraphics[height=0.16\textheight]{fig01/auxab}\lab...
-<chapters/chapter04/fig01/auxab.jpeg, id=350, 315.42844pt x 93.34875pt>
-File: chapters/chapter04/fig01/auxab.jpeg Graphic file (type jpg)
-<use chapters/chapter04/fig01/auxab.jpeg>
-Package pdftex.def Info: chapters/chapter04/fig01/auxab.jpeg used on input line
- 58.
-(pdftex.def)             Requested size: 344.20003pt x 101.85837pt.
-
-Overfull \hbox (59.67247pt too wide) in paragraph at lines 58--59
- [][] 
- []
-
-
-Package natbib Warning: Citation `rigas01' on page 18 undefined on input line 6
-0.
-
-
-Package natbib Warning: Citation `massuci01' on page 18 undefined on input line
- 60.
-
-
-Package natbib Warning: Citation `griersonRH' on page 18 undefined on input lin
-e 60.
-
-
-Package natbib Warning: Citation `mjones01' on page 18 undefined on input line 
-60.
-
-
-Package natbib Warning: Citation `payne01' on page 18 undefined on input line 6
-0.
-
-
-Package natbib Warning: Citation `rigas01' on page 18 undefined on input line 6
-0.
-
-
-Package natbib Warning: Citation `massuci01' on page 18 undefined on input line
- 60.
-
-
-Package natbib Warning: Citation `griersonRH' on page 18 undefined on input lin
-e 60.
-
-
-Package natbib Warning: Citation `mjones01' on page 18 undefined on input line 
-60.
-
-
-Package natbib Warning: Citation `payne01' on page 18 undefined on input line 6
-0.
-
-<chapters/chapter04/fig01/devepzones.jpeg, id=351, 317.68687pt x 481.8pt>
-File: chapters/chapter04/fig01/devepzones.jpeg Graphic file (type jpg)
-<use chapters/chapter04/fig01/devepzones.jpeg>
-Package pdftex.def Info: chapters/chapter04/fig01/devepzones.jpeg used on input
- line 67.
-(pdftex.def)             Requested size: 146.91817pt x 222.81398pt.
-
-Package natbib Warning: Citation `griersonRH' on page 18 undefined on input lin
-e 68.
-
-
-Package natbib Warning: Citation `griersonRH' on page 18 undefined on input lin
-e 68.
-
-)
-(C:\Users\liam\Desktop\KINECT\kbox\ThesisLatex\chapters/chapter05/conclusion.te
-x [18]
-
-LaTeX Warning: Text page 19 contains only floats.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[19 <C:/Users/liam/Desktop/KINECT/kbox/ThesisLatex/chapters/chapter04/fig01/Nsw
-ellings.jpeg> <C:/Users/liam/Desktop/KINECT/kbox/ThesisLatex/chapters/chapter04
-/fig01/Mswellings.jpeg> <C:/Users/liam/Desktop/KINECT/kbox/ThesisLatex/chapters
-/chapter04/fig01/rhd1.jpeg> <C:/Users/liam/Desktop/KINECT/kbox/ThesisLatex/chap
-ters/chapter04/fig01/mutantrhd6.jpeg> <C:/Users/liam/Desktop/KINECT/kbox/Thesis
-Latex/chapters/chapter04/fig01/auxab.jpeg>] [20 <C:/Users/liam/Desktop/KINECT/k
-box/ThesisLatex/chapters/chapter04/fig01/devepzones.jpeg>]pdfTeX warning (ext4)
-: destination with the same identifier (name{subfigure.1}) has been already use
-d, duplicate ignored
-<to be read again> 
-                   \relax 
-l.28     \subtop
-                []{\includegraphics[height=0.28\textheight]{fig01/Nswellings...
-<chapters/chapter05/fig01/Nswellings.jpeg, id=364, 282.30469pt x 472.76625pt>
-File: chapters/chapter05/fig01/Nswellings.jpeg Graphic file (type jpg)
-<use chapters/chapter05/fig01/Nswellings.jpeg>
-Package pdftex.def Info: chapters/chapter05/fig01/Nswellings.jpeg used on input
- line 28.
-(pdftex.def)             Requested size: 106.4369pt x 178.2473pt.
-
-Overfull \hbox (12.54272pt too wide) in paragraph at lines 28--29
- [][] 
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.33     \subtop
-                []{\includegraphics[height=0.27\textheight]{fig01/Mswellings...
-<chapters/chapter05/fig01/Mswellings.jpeg, id=365, 117.43875pt x 154.32657pt>
-File: chapters/chapter05/fig01/Mswellings.jpeg Graphic file (type jpg)
-<use chapters/chapter05/fig01/Mswellings.jpeg>
-Package pdftex.def Info: chapters/chapter05/fig01/Mswellings.jpeg used on input
- line 33.
-(pdftex.def)             Requested size: 130.8101pt x 171.88478pt.
-
-Overfull \hbox (36.91592pt too wide) in paragraph at lines 33--34
- [][] 
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.3})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.38     \subtop
-                []{\includegraphics[height=0.27\textheight]{fig01/rhd1}\labe...
-<chapters/chapter05/fig01/rhd1.jpeg, id=366, 164.86594pt x 246.1697pt>
-File: chapters/chapter05/fig01/rhd1.jpeg Graphic file (type jpg)
-<use chapters/chapter05/fig01/rhd1.jpeg>
-Package pdftex.def Info: chapters/chapter05/fig01/rhd1.jpeg used on input line 
-38.
-(pdftex.def)             Requested size: 115.12108pt x 171.88478pt.
-
-Overfull \hbox (21.2269pt too wide) in paragraph at lines 38--39
- [][] 
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.4})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.43     \subtop
-                []{\includegraphics[height=0.145\textheight]{fig01/mutantrhd...
-<chapters/chapter05/fig01/mutantrhd6.jpeg, id=367, 894.34125pt x 240.9pt>
-File: chapters/chapter05/fig01/mutantrhd6.jpeg Graphic file (type jpg)
-<use chapters/chapter05/fig01/mutantrhd6.jpeg>
-Package pdftex.def Info: chapters/chapter05/fig01/mutantrhd6.jpeg used on input
- line 43.
-(pdftex.def)             Requested size: 342.69168pt x 92.30975pt.
-
-Overfull \hbox (58.16412pt too wide) in paragraph at lines 43--44
- [][] 
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.5})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.48     \subtop
-                []{\includegraphics[height=0.16\textheight]{fig01/auxab}\lab...
-<chapters/chapter05/fig01/auxab.jpeg, id=368, 315.42844pt x 93.34875pt>
-File: chapters/chapter05/fig01/auxab.jpeg Graphic file (type jpg)
-<use chapters/chapter05/fig01/auxab.jpeg>
-Package pdftex.def Info: chapters/chapter05/fig01/auxab.jpeg used on input line
- 48.
-(pdftex.def)             Requested size: 344.20003pt x 101.85837pt.
-
-Overfull \hbox (59.67247pt too wide) in paragraph at lines 48--49
- [][] 
- []
-
-
-Package natbib Warning: Citation `rigas01' on page 21 undefined on input line 5
-0.
-
-
-Package natbib Warning: Citation `massuci01' on page 21 undefined on input line
- 50.
-
-
-Package natbib Warning: Citation `griersonRH' on page 21 undefined on input lin
-e 50.
-
-
-Package natbib Warning: Citation `mjones01' on page 21 undefined on input line 
-50.
-
-
-Package natbib Warning: Citation `payne01' on page 21 undefined on input line 5
-0.
-
-
-Package natbib Warning: Citation `rigas01' on page 21 undefined on input line 5
-0.
-
-
-Package natbib Warning: Citation `massuci01' on page 21 undefined on input line
- 50.
-
-
-Package natbib Warning: Citation `griersonRH' on page 21 undefined on input lin
-e 50.
-
-
-Package natbib Warning: Citation `mjones01' on page 21 undefined on input line 
-50.
-
-
-Package natbib Warning: Citation `payne01' on page 21 undefined on input line 5
-0.
-
-<chapters/chapter05/fig01/devepzones.jpeg, id=369, 317.68687pt x 481.8pt>
-File: chapters/chapter05/fig01/devepzones.jpeg Graphic file (type jpg)
-<use chapters/chapter05/fig01/devepzones.jpeg>
-Package pdftex.def Info: chapters/chapter05/fig01/devepzones.jpeg used on input
- line 57.
-(pdftex.def)             Requested size: 146.91817pt x 222.81398pt.
-
-Package natbib Warning: Citation `griersonRH' on page 21 undefined on input lin
-e 58.
-
-
-Package natbib Warning: Citation `griersonRH' on page 21 undefined on input lin
-e 58.
-
-) [21
-
-]
-
-LaTeX Warning: Text page 22 contains only floats.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[22 <C:/Users/liam/Desktop/KINECT/kbox/ThesisLatex/chapters/chapter05/fig01/Nsw
-ellings.jpeg> <C:/Users/liam/Desktop/KINECT/kbox/ThesisLatex/chapters/chapter05
-/fig01/Mswellings.jpeg> <C:/Users/liam/Desktop/KINECT/kbox/ThesisLatex/chapters
-/chapter05/fig01/rhd1.jpeg> <C:/Users/liam/Desktop/KINECT/kbox/ThesisLatex/chap
-ters/chapter05/fig01/mutantrhd6.jpeg> <C:/Users/liam/Desktop/KINECT/kbox/Thesis
-Latex/chapters/chapter05/fig01/auxab.jpeg>] [23 <C:/Users/liam/Desktop/KINECT/k
-box/ThesisLatex/chapters/chapter05/fig01/devepzones.jpeg>] [24
-
-] (C:\Users\liam\Desktop\KINECT\kbox\ThesisLatex\chapters/appendices/app0A.tex)
-[25
-
-] [26
-
-] (C:\Users\liam\Desktop\KINECT\kbox\ThesisLatex\memoirthesis.bbl
+] (C:\Users\liam\Desktop\KINECT\kbox\Latex\memoirthesis.bbl
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 4.
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 5.
+LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
+(Font)              scaled to size 10.18341pt on input line 5.
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 10.
+
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 13.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
@@ -2802,73 +2046,142 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 9.
+Overfull \hbox (14.6438pt too wide) in paragraph at lines 13--15
+[][][]$\T1/cmtt/m/n/10.95 http : / / gazette . com / usa-[]boxing-[]goes-[]high
+-[]tech-[]in-[]training-[]in-[]colorado-[]springs /$
+ []
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 13.
+(nag)                Use \scshape or \textsc instead on input line 17.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 19.
-
-) [27
+(nag)                Use \scshape or \textsc instead on input line 21.
 
 
-] [28
+Underfull \hbox (badness 10000) in paragraph at lines 24--26
+[][][]$\T1/cmtt/m/n/10.95 http : / / www . epsrc . ac . uk / newsevents / news 
+/ 2009 / Pages / improveathletesperf . aspx$[][]\T1/fnc/m/n/10.95 (+20) ,
+ []
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 28.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 33.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 37.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 41.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 45.
+
+
+Overfull \hbox (71.71796pt too wide) in paragraph at lines 48--50
+[][][]$\T1/cmtt/m/n/10.95 http : / / www . theguardian . com / sport / 2012 / j
+ul / 04 / london-[]2012-[]olympic-[]games-[]sport-[]technology$[][]\T1/fnc/m/n/
+10.95 (-20) ,
+ []
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 52.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--56
+[][][]$\T1/cmtt/m/n/10.95 http : / / www . metacritic . com / game / xbox-[]360
+ / fighters-[]uncaged / critic-[]reviews$[][]\T1/fnc/m/n/10.95 (+20) ,
+ []
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 58.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 62.
+
+[21
+
 
 ]
 
-Package natbib Warning: There were undefined citations.
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 67.
 
 
-Package nag Warning: 6 complaints in total.
+Underfull \hbox (badness 10000) in paragraph at lines 75--77
+[][][]$\T1/cmtt/m/n/10.95 http : / / www . rcuk . ac . uk / RCUK-[]prod / asset
+s / documents / submissions /$
+ []
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 79.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--83
+[][][]$\T1/cmtt/m/n/10.95 http : / / en . wikipedia . org / wiki / Great _ Brit
+ain _ at _ the _ 2012 _ Summer _ Olympics$[][]\T1/fnc/m/n/10.95 (+20) ,
+ []
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 85.
+
+) [22]
+
+Package nag Warning: 16 complaints in total.
 
 \tf@toc=\write7
 \tf@lot=\write8
 \tf@lof=\write9
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 406.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 406.
-(C:\Users\liam\Desktop\KINECT\kbox\ThesisLatex\memoirthesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 406.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 406.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 408.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 408.
+(C:\Users\liam\Desktop\KINECT\kbox\Latex\memoirthesis.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 408.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 408.
 Package rerunfilecheck Info: File `memoirthesis.out' has not changed.
-(rerunfilecheck)             Checksum: 1DB871B5712A5F87A9A1CFE4C97F9D9A;1738.
+(rerunfilecheck)             Checksum: B1E89A50A85A0642FE7BB00516A6412C;1815.
 
 LaTeX Warning: There were multiply-defined labels.
 
  )
-(\end occurred when \ifx on line 58 was incomplete)
-(\end occurred when \ifx on line 50 was incomplete)
-(\end occurred when \ifx on line 68 was incomplete)
-(\end occurred when \ifx on line 60 was incomplete)
-(\end occurred when \ifx on line 62 was incomplete)
-(\end occurred when \ifx on line 54 was incomplete)
-(\end occurred when \ifx on line 166 was incomplete)
-(\end occurred when \ifx on line 158 was incomplete)
-(\end occurred when \ifx on line 58 was incomplete)
-(\end occurred when \ifx on line 50 was incomplete) 
+(\end occurred when \ifx on line 128 was incomplete)
+(\end occurred when \ifx on line 116 was incomplete)
+(\end occurred when \ifx on line 106 was incomplete)
+(\end occurred when \ifx on line 100 was incomplete)
+(\end occurred when \ifx on line 94 was incomplete)
+(\end occurred when \ifx on line 88 was incomplete)
+(\end occurred when \ifx on line 81 was incomplete) 
 Here is how much of TeX's memory you used:
- 26857 strings out of 493921
- 480222 string characters out of 3147285
- 758369 words of memory out of 3000000
- 29170 multiletter control sequences out of 15000+200000
- 85465 words of font info for 227 fonts, out of 3000000 for 9000
+ 26817 strings out of 493921
+ 476510 string characters out of 3147285
+ 744276 words of memory out of 3000000
+ 29145 multiletter control sequences out of 15000+200000
+ 83427 words of font info for 222 fonts, out of 3000000 for 9000
  846 hyphenation exceptions out of 8191
- 53i,12n,69p,1028b,453s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 53i,12n,69p,955b,534s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9
 /fonts/enc/dvips/cm-super/cm-super-t1.enc}{C:/Program Files/MiKTeX 2.9/fonts/en
 c/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/fourier
-/fourier-mlit.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fourier/fouri
-er-ms.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1095.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncb8a.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncr8a.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on C:/Users/liam/Desktop/KINECT/kbox/ThesisLatex/memoirthesis.pd
-f (42 pages, 3521167 bytes).
+/fourier-ms.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt10
+95.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncb8a.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncr8a.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
+Output written on C:/Users/liam/Desktop/KINECT/kbox/Latex/memoirthesis.pdf (36 
+pages, 701277 bytes).
 PDF statistics:
- 456 PDF objects out of 1000 (max. 8388607)
- 102 named destinations out of 1000 (max. 500000)
- 42376 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 431 PDF objects out of 1000 (max. 8388607)
+ 101 named destinations out of 1000 (max. 500000)
+ 39197 words of extra memory for PDF output out of 42996 (max. 10000000)
 
