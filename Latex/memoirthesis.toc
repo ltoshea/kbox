@@ -26,15 +26,30 @@
 \contentsline {paragraph}{Fighers Uncaged}{10}{section*.13}
 \contentsline {chapter}{\chapternumberline {3}Specification \& Design}{13}{chapter.3}
 \contentsline {section}{\numberline {3.1}Scope of Project}{13}{section.3.1}
-\contentsline {section}{\numberline {3.2}Punch Segementation Algorithm}{13}{section.3.2}
+\contentsline {section}{\numberline {3.2}Punch Segmentation Algorithm}{13}{section.3.2}
 \contentsline {section}{\numberline {3.3}Punch Quality Algorithm}{13}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Dimensionality Reduction}{13}{subsection.3.3.1}
-\contentsline {chapter}{\chapternumberline {4}Implementation}{15}{chapter.4}
-\contentsline {section}{\numberline {4.1}Comparison Methods}{15}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}PCA}{15}{subsection.4.1.1}
-\contentsline {paragraph}{Data Format}{16}{section*.14}
-\contentsline {chapter}{\chapternumberline {5}Results, Conclusions, and future work}{17}{chapter.5}
-\contentsline {section}{\numberline {5.1}Section}{17}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Subsection}{17}{subsection.5.1.1}
-\contentsline {appendix}{\chapternumberline {A}Appendix A}{19}{appendix.A}
-\contentsline {chapter}{Bibliography}{21}{section*.16}
+\contentsline {section}{\numberline {3.4}Segmentation methods? Feature Extraction?}{13}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Dynamic Time Warping (DTW)}{13}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Neural Networks}{14}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Decision Trees}{14}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Support Vector Machines}{15}{subsection.3.4.4}
+\contentsline {subsection}{\numberline {3.4.5}Fourier Transformation}{15}{subsection.3.4.5}
+\contentsline {section}{\numberline {3.5}Dimensionality}{15}{section.3.5}
+\contentsline {paragraph}{Curse of Dimensionality}{15}{section*.14}
+\contentsline {subsection}{\numberline {3.5.1}Dimensionality Reduction}{16}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Principal Component Analysis (PCA)}{16}{subsection.3.5.2}
+\contentsline {section}{\numberline {3.6}Manifold Learning}{16}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Markov Chains}{17}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Diffusion Maps}{17}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Locally Linear Embedding (LLE)}{17}{subsection.3.6.3}
+\contentsline {subsection}{\numberline {3.6.4}Laplacian Eigenmaps}{18}{subsection.3.6.4}
+\contentsline {subsection}{\numberline {3.6.5}Local Tangent Space Alignment (LTSA)}{19}{subsection.3.6.5}
+\contentsline {subsection}{\numberline {3.6.6}Curvilinear Component Analysis (CCA)}{19}{subsection.3.6.6}
+\contentsline {chapter}{\chapternumberline {4}Implementation}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}Comparison Methods}{21}{section.4.1}
+\contentsline {paragraph}{Data Format}{22}{section*.15}
+\contentsline {chapter}{\chapternumberline {5}Results, Conclusions, and future work}{23}{chapter.5}
+\contentsline {section}{\numberline {5.1}Section}{23}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Subsection}{23}{subsection.5.1.1}
+\contentsline {appendix}{\chapternumberline {A}Appendix A}{25}{appendix.A}
+\contentsline {chapter}{Bibliography}{27}{section*.17}

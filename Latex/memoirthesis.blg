@@ -24,5 +24,9 @@ Warning--string name "april" is undefined
 Warning--string name "april" is undefined
 --line 94 of file thesisbiblio.bib
 Warning--string name "april" is undefined
---line 109 of file thesisbiblio.bib
-(There was 1 error message)
+--line 110 of file thesisbiblio.bib
+I was expecting a `,' or a `}'---line 118 of file thesisbiblio.bib
+ : isbn = 978
+ :           -0-691-07951-6
+I'm skipping whatever remains of this entry
+(There were 2 error messages)

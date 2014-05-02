@@ -16,14 +16,28 @@
 \BOOKMARK [1][-]{section.2.5}{Existing Products}{chapter.2}% 16
 \BOOKMARK [0][-]{chapter.3}{Specification \046 Design}{}% 17
 \BOOKMARK [1][-]{section.3.1}{Scope of Project}{chapter.3}% 18
-\BOOKMARK [1][-]{section.3.2}{Punch Segementation Algorithm}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.2}{Punch Segmentation Algorithm}{chapter.3}% 19
 \BOOKMARK [1][-]{section.3.3}{Punch Quality Algorithm}{chapter.3}% 20
-\BOOKMARK [2][-]{subsection.3.3.1}{Dimensionality Reduction}{section.3.3}% 21
-\BOOKMARK [0][-]{chapter.4}{Implementation}{}% 22
-\BOOKMARK [1][-]{section.4.1}{Comparison Methods}{chapter.4}% 23
-\BOOKMARK [2][-]{subsection.4.1.1}{PCA}{section.4.1}% 24
-\BOOKMARK [0][-]{chapter.5}{Results, Conclusions, and future work}{}% 25
-\BOOKMARK [1][-]{section.5.1}{Section}{chapter.5}% 26
-\BOOKMARK [2][-]{subsection.5.1.1}{Subsection}{section.5.1}% 27
-\BOOKMARK [0][-]{appendix.A}{Appendix A}{}% 28
-\BOOKMARK [0][-]{section*.16}{Bibliography}{}% 29
+\BOOKMARK [1][-]{section.3.4}{Segmentation methods? Feature Extraction?}{chapter.3}% 21
+\BOOKMARK [2][-]{subsection.3.4.1}{Dynamic Time Warping \(DTW\)}{section.3.4}% 22
+\BOOKMARK [2][-]{subsection.3.4.2}{Neural Networks}{section.3.4}% 23
+\BOOKMARK [2][-]{subsection.3.4.3}{Decision Trees}{section.3.4}% 24
+\BOOKMARK [2][-]{subsection.3.4.4}{Support Vector Machines}{section.3.4}% 25
+\BOOKMARK [2][-]{subsection.3.4.5}{Fourier Transformation}{section.3.4}% 26
+\BOOKMARK [1][-]{section.3.5}{Dimensionality}{chapter.3}% 27
+\BOOKMARK [2][-]{subsection.3.5.1}{Dimensionality Reduction}{section.3.5}% 28
+\BOOKMARK [2][-]{subsection.3.5.2}{Principal Component Analysis \(PCA\)}{section.3.5}% 29
+\BOOKMARK [1][-]{section.3.6}{Manifold Learning}{chapter.3}% 30
+\BOOKMARK [2][-]{subsection.3.6.1}{Markov Chains}{section.3.6}% 31
+\BOOKMARK [2][-]{subsection.3.6.2}{Diffusion Maps}{section.3.6}% 32
+\BOOKMARK [2][-]{subsection.3.6.3}{Locally Linear Embedding \(LLE\)}{section.3.6}% 33
+\BOOKMARK [2][-]{subsection.3.6.4}{Laplacian Eigenmaps}{section.3.6}% 34
+\BOOKMARK [2][-]{subsection.3.6.5}{Local Tangent Space Alignment \(LTSA\)}{section.3.6}% 35
+\BOOKMARK [2][-]{subsection.3.6.6}{Curvilinear Component Analysis \(CCA\)}{section.3.6}% 36
+\BOOKMARK [0][-]{chapter.4}{Implementation}{}% 37
+\BOOKMARK [1][-]{section.4.1}{Comparison Methods}{chapter.4}% 38
+\BOOKMARK [0][-]{chapter.5}{Results, Conclusions, and future work}{}% 39
+\BOOKMARK [1][-]{section.5.1}{Section}{chapter.5}% 40
+\BOOKMARK [2][-]{subsection.5.1.1}{Subsection}{section.5.1}% 41
+\BOOKMARK [0][-]{appendix.A}{Appendix A}{}% 42
+\BOOKMARK [0][-]{section*.17}{Bibliography}{}% 43

@@ -17,6 +17,10 @@
 {\sc D.~Catuhe}, {\em Programming with the kinect for windows software
   development kit}.
 
+\bibitem{Coifman2006}
+{\sc R.~R. Coifman and S.~Lafon}, {\em {Diffusion maps}}, Appl. Comput. Harmon.
+  Anal., 21 (2006), pp.~5--30.
+
 \bibitem{aug3}
 {\sc E.~. P. S.~R. Council}, {\em New technology will help improve athletes’
   performance}.
@@ -30,7 +34,7 @@
   2010.
 
 \bibitem{aug7}
-{\sc E.~F. dynamics}.
+{\sc E.~F. dynamics}, {\em "elliott fight dynamic gloves"}.
 \newblock \url{http://elliottfightdynamics.com/}, 2014.
 
 \bibitem{gamerev1}
@@ -57,6 +61,9 @@
 \bibitem{irstream}
 {\sc Microsoft}, {\em Infrared stream - msdn}.
 \newblock \url{http://msdn.microsoft.com/en-us/library/jj663793.aspx}, 2012.
+
+\bibitem{dynprog}
+{\sc R.~E. B. P.~U. Press}, {\em "dynamic programming"}.
 
 \bibitem{Rector2013}
 {\sc K.~Rector, C.~L. Bennett, and J.~A. Kientz}, {\em {Eyes-Free Yoga : An

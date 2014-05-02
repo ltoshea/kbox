@@ -126,8 +126,16 @@ INPUT C:/Program Files/MiKTeX 2.9/tex/latex/rotating/rotating.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/rotating/rotating.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/inputenc.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/inputenc.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/applemac.def
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/applemac.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/utf8.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/utf8.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/t1enc.dfu
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/t1enc.dfu
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/ot1enc.dfu
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/ot1enc.dfu
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/omsenc.dfu
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/omsenc.dfu
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/ts1enc.dfu
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/ts1enc.dfu
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/colortbl/colortbl.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/colortbl/colortbl.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/color.sty
@@ -482,9 +490,9 @@ INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/xyz.png
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/kinspecs.jpg
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/kinspecs.jpg
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/kinspecs.jpg
-INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/kindepth.png
-INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/kindepth.png
-INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/kindepth.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/depthspecs.jpg
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/depthspecs.jpg
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/depthspecs.jpg
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/pipeline.png
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/pipeline.png
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/pipeline.png
@@ -496,6 +504,15 @@ INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/kinSkel.p
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/kinSkel.png
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/design.tex
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/design.tex
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/dtree.jpg
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/dtree.jpg
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/dtree.jpg
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/svm.jpg
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/svm.jpg
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/svm.jpg
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/markov.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/markov.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/markov.png
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/implementation.tex
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/implementation.tex
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter05/conclusion.tex
