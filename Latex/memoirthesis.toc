@@ -43,13 +43,13 @@
 \contentsline {subsection}{\numberline {3.6.2}Diffusion Maps}{17}{subsection.3.6.2}
 \contentsline {subsection}{\numberline {3.6.3}Locally Linear Embedding (LLE)}{17}{subsection.3.6.3}
 \contentsline {subsection}{\numberline {3.6.4}Laplacian Eigenmaps}{18}{subsection.3.6.4}
-\contentsline {subsection}{\numberline {3.6.5}Local Tangent Space Alignment (LTSA)}{19}{subsection.3.6.5}
-\contentsline {subsection}{\numberline {3.6.6}Curvilinear Component Analysis (CCA)}{19}{subsection.3.6.6}
+\contentsline {subsection}{\numberline {3.6.5}Local Tangent Space Alignment (LTSA)}{18}{subsection.3.6.5}
+\contentsline {subsection}{\numberline {3.6.6}Curvilinear Component Analysis (CCA)}{18}{subsection.3.6.6}
 \contentsline {chapter}{\chapternumberline {4}Implementation}{21}{chapter.4}
 \contentsline {section}{\numberline {4.1}Comparison Methods}{21}{section.4.1}
 \contentsline {paragraph}{Data Format}{22}{section*.15}
-\contentsline {chapter}{\chapternumberline {5}Results, Conclusions, and future work}{23}{chapter.5}
-\contentsline {section}{\numberline {5.1}Section}{23}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Subsection}{23}{subsection.5.1.1}
-\contentsline {appendix}{\chapternumberline {A}Appendix A}{25}{appendix.A}
-\contentsline {chapter}{Bibliography}{27}{section*.17}
+\contentsline {chapter}{\chapternumberline {5}Results, Conclusions, and future work}{25}{chapter.5}
+\contentsline {section}{\numberline {5.1}Section}{25}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Subsection}{25}{subsection.5.1.1}
+\contentsline {appendix}{\chapternumberline {A}Appendix A}{27}{appendix.A}
+\contentsline {chapter}{Bibliography}{29}{section*.17}

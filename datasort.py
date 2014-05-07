@@ -55,7 +55,7 @@ def dirbuild():
 		print ('Creating Luppercut Directory')
 		os.makedirs(newpath)
 	
-	newpath=origpath+"/6t"
+	newpath=origpath+"/6"
 	if not os.path.exists(newpath): 
 		print ('Creating Ruppercut Directory')
 		os.makedirs(newpath)

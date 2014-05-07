@@ -15,17 +15,17 @@ Y6 = compute_mapping(M1','PCA',d)';
 
 figure('name','Dimensional Reduction(DC) Comparison: 1st PC');
 suptitle('Dimensional Reduction Comparison: 1st PC');
-subplot(3, 2, 1), plot(Y1(1,:));
+subplot(3, 2, 1), plot(Y1(3,:));
 title('LLE')
-subplot(3, 2, 2), plot(Y2(1,:));
+subplot(3, 2, 2), plot(Y2(3,:));
 title('LLE, with d')
-subplot(3, 2, 3), plot(Y3(1,:));
+subplot(3, 2, 3), plot(Y3(3,:));
 title('Laplacian')
-subplot(3, 2, 4), plot(Y4(1,:));
+subplot(3, 2, 4), plot(Y4(3,:));
 title('LTSA')
-subplot(3, 2, 5), plot(Y5(1,:));
+subplot(3, 2, 5), plot(Y5(3,:));
 title('CCA')
-subplot(3, 2, 6), plot(Y6(1,:));
+subplot(3, 2, 6), plot(Y6(3,:));
 title('PCA')
 %Set all the axis for each plot
 c=get(gcf,'children'); %get the axes

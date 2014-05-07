@@ -1,5 +1,5 @@
 global PNUM;
-PNUM = 6;
+PNUM = 1;
 debug = 0;
 
 %Hip centre is first joint
@@ -37,7 +37,7 @@ end
 % Big data matrix
 M=[];
 for i = 1:length(dataAll(i))
-    M = [M, dataAll(i).data];, 
+    M = [M, dataAll(i).data]; 
 end
 
 [Xm1,EV1,Ev1]=createES(M,3);
@@ -52,6 +52,7 @@ for i=1:PNUM
     
     
 end
+DRcomp(dataAll(1).jredSmooth());
 
 for i=1:PNUM
     figure

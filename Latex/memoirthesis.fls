@@ -66,10 +66,6 @@ INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/ts1enc.def
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/ts1enc.def
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/fourier/fourier-orns.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/fourier/fourier-orns.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/fontenc.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/fontenc.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/t1enc.def
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/t1enc.def
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/was/gensymb.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/was/gensymb.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/tools/calc.sty
@@ -515,6 +511,30 @@ INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/markov.pn
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/markov.png
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/implementation.tex
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/implementation.tex
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig06.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig06.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig06.png
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig07.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig07.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig07.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig01.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig01.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig01.png
+INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/ncntrsbk/pncr8t.vf
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig02.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig02.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig02.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig04.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig04.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig04.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig05.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig05.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig05.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig03.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig03.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig03.png
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter05/conclusion.tex
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter05/conclusion.tex
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/appendices/app0A.tex

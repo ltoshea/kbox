@@ -13,6 +13,10 @@
   \url{http://gazette.com/usa-boxing-goes-high-tech-in-training-in-colorado-springs/article/1500163},
   May 2013.
 
+\bibitem{Belkin2003}
+{\sc M.~Belkin and P.~Niyogi}, {\em {Laplacian eigenmaps for dimensionality
+  reduction and data representation}}, Neural Comput.,  (2003).
+
 \bibitem{winSDK}
 {\sc D.~Catuhe}, {\em Programming with the kinect for windows software
   development kit}.

@@ -7,17 +7,93 @@
 \chapter{Implementation}
 \label{chap:intro}
 
-\initial{B}egins a chapter. Example: When the beloved cellist (Christopher Walken - outstanding) of a world-renowned string quartet receives a life-changing diagnosis, the group's future suddenly hangs in the balance: suppressed emotions, competing egos and uncontrollable passions threaten to derail years of friendship and collaboration. Featuring a brilliant ensemble cast (including Philip Seymour Hoffman, Catherine Keener and Mark Ivanir as the three other quartet members), it is a fascinating look into the world of working musicians, and an elegant homage to chamber music and the cultural world of New York. The music, of course, is ravishing (the score is the work of regular David Lynch collaborator Angelo Badalamenti): A Late Quartet hits all the right notes.
+\initial{B}egging implementation chapter. How the hell do I start this. What even goes here.
 
 %=======
 \section{Comparison Methods}
 \label{sec:sec01}
 
-Hidden Markov models?
+
+I began by plotting the initial Kinect Data over time in an attempt to understand \& visualise the nature of the data. I decided to use differentiation as a method of smoothing and to get the velocity data from distance.
+
+
+\begin{figure}[t!]
+\centering
+\begin{minipage}{6.0cm}
+    \centering
+    \subtop[]{\includegraphics[height=0.25\textheight]{fig04/fig06}}
+    \label{fig:1}
+\end{minipage}
+\begin{minipage}{6.0cm}
+    \centering
+    \subtop[]{\includegraphics[height=0.25\textheight]{fig04/fig07}}
+    \label{fig:2}
+\end{minipage}
+\mycaption[ALLData] {(a) Kinect Skeleton vs Time. 
+(b) Hip Joint vs Time, Blue = Raw data, Green = Differentiated data.}
+\end{figure}
+
+After recording a punch sequence my first inclination was to look at the left hand (jab) over time. I plotted the z co-ordinate of the left wrist joint over each frame which produced a periodic pattern for which looked promising.
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[height=0.25\textheight]{fig04/fig01}
+    \mycaption[Kinect Device]{Depth of left wrist joint over time}
+    \label{fig:kinect}
+\end{figure}
 
 
 
 
+
+
+
+My next step was punch segmentation. Due the clear cyclical nature of the punch movement I needed to develop a method for segmenting the punches. I decided the best way to do this was to smooth the signal and use local maxima/minima as a means of successfully segmenting the beginning and end of each punch. As you can see from Figure 4.2 some smoothing was required due to local maxima/minima which did not signify the beginning or end of a punch.
+
+
+
+\begin{figure}[t!]
+\centering
+\begin{minipage}{6.0cm}
+    \centering
+    \subtop[]{\includegraphics[height=0.25\textheight]{fig04/fig02}}
+    \label{fig:kinect}
+\end{minipage}
+
+\hspace{0.5cm}
+\begin{minipage}{6.0cm}
+    \centering
+    \subtop[]{\includegraphics[height=0.25\textheight]{fig04/fig04}}
+    \label{fig:kinect2}
+\end{minipage}
+\begin{minipage}{3.5cm}
+    \centering
+    \includegraphics[height=0.15\textheight]{fig04/fig05}
+    \label{fig:kinect3}
+\end{minipage}
+\mycaption[WAT]{(a) Periodic punch signal over time (frame number).(b) Periodic signal with local maxima/minima labelled. (c) Close up of local maxima/minima.}
+\end{figure}
+
+
+Smoothing.
+I looked at using differentiation as a means of getting velocity and using that as a sensible measure to mark my punches. This did a good job of smoothing out the curve which would allow me to successfully segment my punches. 
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[height=0.25\textheight]{fig04/fig03}
+    \mycaption[Kinect Device]{Depth of left wrist joint over time}
+    \label{fig:kinect}
+\end{figure}
+
+
+Tested different dimensionality reduction techniques
+
+
+
+
+{\bf Hidden Markov models?}
 Svm?\newline
 Chapter 3: Specification \& Design\newline
 Scope Algorithms\newline

@@ -114,32 +114,21 @@ Diffusion maps are a non-linear and relatively new technique developed in 2006 b
 
 
 \subsection{Locally Linear Embedding (LLE)}
-In LLE a data manifold is constructed by finding a set of the nearest neighbors for each point. Together are used to compute a set of weights that describes each point as a linear combination of its neighbors.
-Finally, it uses an eigenvector-based optimization technique to find the low-dimensional embedding of points, such that each point is still described with the same linear combination of its neighbors. 
-Furthermore, the preservation of local properties allows for successful embedding of nonconvex manifolds.
-
-LLE tends to handle non-uniform sample densities poorly because there is no fixed unit to prevent the weights from drifting as various regions differ in sample densities. LLE has no internal model.
+In LLE a data manifold is constructed by finding a set of the nearest neighbours for each point. Together they are used to compute a set of weights that describes each point as a linear combination of its neighbours.
+Finally, it uses an eigenvector-based technique to find the low-dimensional embedding of points, such that each point is still described with the same linear combination of its neighbours. Furthermore, the preservation of local properties allows for successful embedding of non convex manifolds.
+{\bf LLE tends to handle non-uniform sample densities poorly because there is no fixed unit to prevent the weights from drifting as various regions differ in sample densities.}
 
 
 
 
-\subsection{Laplacian Eigenmaps}
-Similar to LLE, Laplacian Eigenmaps find a low-dimensional data representation by preserving local properties of the
-manifold [8]. In Laplacian Eigenmaps, the local properties are based on the pairwise distances between near neighbors.
-Laplacian Eigenmaps compute a low-dimensional representation of the data in which the distances between a datapoint
-and its k nearest neighbors are minimized. This is done in a weighted manner, i.e., the distance in the low-dimensional
-data representation between a datapoint and its first nearest neighbor contributes more to the cost function than the
-distance between the datapoint and its second nearest neighbor. Using spectral graph theory, the minimization of the
-cost function is defied as an eigenproblem.
-
-aplacian Eigenmaps[18] uses spectral techniques to perform dimensionality reduction. This technique relies on the basic assumption that the data lies in a low-dimensional manifold in a high-dimensional space.[19] This algorithm cannot embed out of sample points, but techniques based on Reproducing kernel Hilbert space regularization exist for adding this capability.[20] Such techniques can be applied to other nonlinear dimensionality reduction algorithms as well.
-Traditional techniques like principal component analysis do not consider the intrinsic geometry of the data. Laplacian eigenmaps builds a graph from neighborhood information of the data set. Each data point serves as a node on the graph and connectivity between nodes is governed by the proximity of neighboring points (using e.g. the k-nearest neighbor algorithm). The graph thus generated can be considered as a discrete approximation of the low-dimensional manifold in the high-dimensional space. Minimization of a cost function based on the graph ensures that points close to each other on the manifold are mapped close to each other in the low-dimensional space, preserving local distances. The eigenfunctions of the Laplace–Beltrami operator on the manifold serve as the embedding dimensions, since under mild conditions this operator has a countable spectrum that is a basis for square integrable functions on the manifold (compare to Fourier series on the unit circle manifold). Attempts to place Laplacian eigenmaps on solid theoretical ground have met with some success, as under certain nonrestrictive assumptions, the graph Laplacian matrix has been shown to converge to the Laplace–Beltrami operator as the number of points goes to infinity.[21] Matlab code for Laplacian Eigenmaps can be found in algorithms[22] and the PhD thesis of Belkin can be found at the Ohio State University.[23]
-
+\subsection{Laplacian Eigenmaps}\cite{Belkin2003}
+Laplacian Eigenmaps find a low-dimensional data representation by preserving local properties of the
+manifold. Similar to LLE, a graph is built from neighbourhood information, with the distance between a point and it's K nearest neighbour is minimised. A weighting system is used such that in the low-dimensionality space the distance from a point to it's nearest neighbour is more significant to the cost function than other nearby points. {\bf put simply the closer a neighbour is to the selected data point the heavier its weighting.} The goal overall is to minimise the cost function based on the graph information to ensure that points close together in the high dimensionality data remain so after the reduction, preserving local distances. 
 
 
 
 \subsection{Local Tangent Space Alignment (LTSA)}
-LTSA[30] is based on the intuition that when a manifold is correctly unfolded, all of the tangent hyperplanes to the manifold will become aligned. It begins by computing the k-nearest neighbors of every point. It computes the tangent space at every point by computing the d-first principal components in each local neighborhood. It then optimizes to find an embedding that aligns the tangent spaces.
+LTSA[30] is based on the intuition that when a manifold is correctly unfolded, all of the tangent hyperplanes to the manifold will become aligned. It begins by computing the k-nearest neighbours of every point. It computes the tangent space at every point by computing the d-first principal components in each local neighbourhood. It then optimizes to find an embedding that aligns the tangent spaces.
 
 Similar to Hessian LLE, Local Tangent Space Analysis (LTSA) is a technique that describes local properties of the
 high-dimensional data using the local tangent space of each datapoint [93]. LTSA is based on the observation that, if
