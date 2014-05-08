@@ -1,7 +1,7 @@
 global PNUM;
-PNUM = 1;
+PNUM = 6;
 debug = 0;
-
+NORM = 1; %flag=1 normalise for hip centroid
 %Hip centre is first joint
 
 
@@ -11,7 +11,7 @@ for i=1:PNUM
     %path = ['C:\Users\liam\Desktop\KINECT\kbox\data\jabtest\' num2str(i) '\'];
     
     
-    data = loadKinectData(path,0); %flag=1 normalise for hip centroid
+    data = loadKinectData(path,NORM); %flag=1 normalise for hip centroid
     %data = diff(data,1,2); %Columnwise Differentiation - Remove effect of distance from Kinect
     dataAll(i).data = data;
     %dataAll(i).labels to do  
@@ -40,24 +40,24 @@ for i = 1:length(dataAll(i))
     M = [M, dataAll(i).data]; 
 end
 
-[Xm1,EV1,Ev1]=createES(M,3);
+[Xm1,EV1,Ev1]=createES(M,3); %Create Eigenspace., New data !contribute to eigenspace
 %close all
 for i=1:PNUM
     dataAll(i).jred=reconstructPose(dataAll(i).data,Xm1,EV1);
     dataAll(i).jredSmooth = kinsmooth(dataAll(i).jred);
-    [valmax,imax,valmin, imin] = getminmax(dataAll(i).jredSmooth(1,:),i);
+    [valmax,imax,valmin, imin] = getminmax(dataAll(i).jredSmooth(1,:),i,NORM);
    
    % distance = pythagoras(sort(imax)); Going to put in getminmax
     [dataAll(i).imax, a]= sort(imax);
     
     
 end
-DRcomp(dataAll(1).jredSmooth());
+%DRcomp(dataAll(1).jredSmooth());
 
 for i=1:PNUM
     figure
     hold on;
-    %plot(dataAll(i).jred(1,:),'-r');
+%     plot(dataAll(i).jred(1,:),'-r');
     plot(dataAll(i).jredSmooth(1,:),'b');
     plot(dataAll(i).imax, dataAll(i).jredSmooth(1,dataAll(i).imax),'.g');
 end
@@ -96,25 +96,30 @@ testInds = 1:length(Y);
 testInds(trainInds) = [];
 
 %'autoscale' is true by default 'kernel_function' 'rbf'
-%svmStruct = svmtrain(X(trainInds,:),Y(trainInds),'kernel_function', 'rbf','autoscale','true');
+% svmStruct = svmtrain(X(trainInds,:),Y(trainInds),'kernel_function', 'rbf','autoscale','true');
  svmStruct = svmtrain(Y(trainInds),X(trainInds,:),['-b 1']);
  %labels = zeros(182,1);
  [predicted_label, accuracy, probest] = svmpredict(Y(testInds),X(testInds,:),svmStruct,['-b 1']);
- close all
+ %close all
  
 %%
-%Random forest % label generation. 
+%Random forest  label generation. 
  testlabels = [];
  for i=1:6 %should be 6
      temp = repmat(dataAll(i).labels(i,1),lbl(i,1),1);
      testlabels = vertcat(testlabels,temp);
  end
 %NVarToSample, 'all' deciscion tree, otherwise random forest
-X = M';
+%X = M'; %Changed this, this is full pose pose.
 B = TreeBagger(75,X(trainInds,:),Y(trainInds),'OOBPred','On');
 C = B.predict(X(testInds,:));
 C = cellfun(@str2num,C);
-%testlabels(end,:) = [];
+
+testlabels(end,:) = [];
+diff = size(testlabels,1) - size(C,1);
+if diff ~= 0
+    testlabels(end-(diff-1):end,:) = [];
+end
 chklbl = horzcat(testlabels,C);
 
 count=0;
@@ -125,8 +130,9 @@ for i=1:length(C)
 end
 correct = (count/length(C))*100;
 sprintf('Random Forest Correct: %f%%', correct)
-%%
-
+%
+%close all
+%main2
 %Diffusion maps
 
 

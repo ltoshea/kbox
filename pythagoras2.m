@@ -1,15 +1,26 @@
-function [ imax ] = pythagoras2( imax )
+function [ imax ] = pythagoras2( imax, NORM )
 %cleandata Gets rid of errenous data
 %   Uses Pythagoras to find out distance between minima and next maxima. 
 %   if the distance is too low we know it's a straight line so can cut it
 %   out.
-%distance = 0;
-for i=1:length(imax)-10 %Need to figure out a better loop
-    if norm(imax(i)-imax(i+1)) < 20
-        imax(:,i+1) = [];
+remove=0;
+if (NORM == 0)
+    for i=1:length(imax)-1
+        if norm(imax(:,i)-imax(:,i+1)) < 5
+            remove = vertcat(remove,i);
+        end
     end
-    %distance = vertcat(distance,norm(imax(i)-imax(i+1)));
 end
-%dist_imax=horzcat(imax',distance);
 
-%m3(:,[1:2]) = [];
+if (NORM == 1)
+    for i=1:length(imax)-1
+        if norm(imax(:,i)-imax(:,i+1)) < 15
+            remove = vertcat(remove,i);
+        end
+    end
+end
+remove(1,:) = [];
+imax(:,remove) = [];
+
+end
+

@@ -14,7 +14,7 @@
 \label{sec:sec01}
 
 
-I began by plotting the initial Kinect Data over time in an attempt to understand \& visualise the nature of the data. I decided to use differentiation as a method of smoothing and to get the velocity data from distance.
+I began by plotting the initial Kinect Data over time in an attempt to understand \& visualise the nature of the data. I differentiated the data as a method of smoothing and to get the velocity data from distance.
 
 
 \begin{figure}[t!]
@@ -45,15 +45,11 @@ After recording a punch sequence my first inclination was to look at the left ha
 
 
 
+My next step was to look at  punch segmentation. Due the cyclical nature of the punch movement I needed to develop a method for segmenting the punches. I decided the best way to do this was to smooth the signal and use local maxima/minima as a means of successfully segmenting the beginning and end of each punch. As you can see from Figure 4.2 some smoothing was required due to local maxima/minima which did not signify the beginning or end of a punch.
 
 
 
-
-My next step was punch segmentation. Due the clear cyclical nature of the punch movement I needed to develop a method for segmenting the punches. I decided the best way to do this was to smooth the signal and use local maxima/minima as a means of successfully segmenting the beginning and end of each punch. As you can see from Figure 4.2 some smoothing was required due to local maxima/minima which did not signify the beginning or end of a punch.
-
-
-
-\begin{figure}[t!]
+\begin{figure}[h]
 \centering
 \begin{minipage}{6.0cm}
     \centering
@@ -77,7 +73,7 @@ My next step was punch segmentation. Due the clear cyclical nature of the punch 
 
 
 Smoothing.
-I looked at using differentiation as a means of getting velocity and using that as a sensible measure to mark my punches. This did a good job of smoothing out the curve which would allow me to successfully segment my punches. 
+I looked at using differentiation as a means of obtaining the velocity and using that as a sensible measure to mark my punches. This did a good job of smoothing out the curve which would allow me to successfully segment my punches. 
 
 
 \begin{figure}[h]
@@ -88,8 +84,56 @@ I looked at using differentiation as a means of getting velocity and using that 
 \end{figure}
 
 
-Tested different dimensionality reduction techniques
+\paragraph {Dimensionality Reduction Comparison}
+It was important to find a way to successfully reduce my data into a cyclical signal that I could automatically segment. I tested a variety of both linear and non-linear techniques (see design section) and analysed the principal components produced. Despite PCA being an older, simple technique than more modern techniques such as diffusion maps it actually produced the most uniform, cyclical signal for the first component making it an obvious choice.
 
+{\bf Maybe talk about using LTSA here in some way as a second component}
+
+
+
+
+\begin{figure}[h]
+\centering
+\begin{minipage}{6.0cm}
+    \centering
+    \subtop[]{\includegraphics[height=0.25\textheight]{fig04/fig08}}
+    \label{fig:kinect}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}{6.0cm}
+    \centering
+    \subtop[]{\includegraphics[height=0.25\textheight]{fig04/fig09}}
+    \label{fig:kinect2}
+\end{minipage}
+\begin{minipage}{6.0cm}
+    \centering
+    \subtop[]{\includegraphics[height=0.25\textheight]{fig04/fig10}}
+    \label{fig:kinect2}
+\end{minipage}
+\mycaption[WAT]{(a) Comparison of Dimensionality Reduction Techniques. PLotting first and second principal components.}
+\end{figure}
+
+
+
+Now lets see the first Principal Component (from PCA) for each punch.
+TALK about normalisation of data.
+Talk about getting better data.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[height=0.25\textheight]{fig04/fig10}
+    \mycaption[Kinect Device]{Depth of left wrist joint over time}
+    \label{fig:kinect}
+\end{figure}
+
+
+\paragraph{Automated Punch Segmentation}
+After obtaining a smooth cyclical representation of the Jab
+
+
+
+
+\paragraph{Heuristic Rules}
 
 
 
@@ -113,26 +157,32 @@ If the joint is not tracked the position is set to (-10000, -10000, -10000) and 
 The position of the camera is (0,0,0).
 
 
-The joints are:
-i=0: NUI_SKELETON_POSITION_HIP_CENTER
-i=1: NUI_SKELETON_POSITION_SPINE
-i=2: NUI_SKELETON_POSITION_SHOULDER_CENTER
-i=3: NUI_SKELETON_POSITION_HEAD
-i=4: NUI_SKELETON_POSITION_SHOULDER_LEFT
-i=5: NUI_SKELETON_POSITION_ELBOW_LEFT
-i=6: NUI_SKELETON_POSITION_WRIST_LEFT
-i=7: NUI_SKELETON_POSITION_HAND_LEFT
-i=8: NUI_SKELETON_POSITION_SHOULDER_RIGHT
-i=9: NUI_SKELETON_POSITION_ELBOW_RIGHT
-i=10: NUI_SKELETON_POSITION_WRIST_RIGHT
-i=11: NUI_SKELETON_POSITION_HAND_RIGHT
-i=12: NUI_SKELETON_POSITION_HIP_LEFT
-i=13: NUI_SKELETON_POSITION_KNEE_LEFT
-i=14: NUI_SKELETON_POSITION_ANKLE_LEFT
-i=15: NUI_SKELETON_POSITION_FOOT_LEFT
-i=16: NUI_SKELETON_POSITION_HIP_RIGHT
-i=17: NUI_SKELETON_POSITION_KNEE_RIGHT
-i=18: NUI_SKELETON_POSITION_ANKLE_RIGHT
-i=19: NUI_SKELETON_POSITION_FOOT_RIGHT
 
+\begin{center}
+    \begin{tabular}{| l | l |}
+    \hline
+    Joint Number & Joint Name \\ \hline
+    0 & NUI_SKELETON_POSITION_HIP_CENTER \\ \hline
+    1 & NUI_SKELETON_POSITION_SPINE\\ \hline
+    2 & NUI_SKELETON_POSITION_SHOULDER_CENTER\\ \hline
+    3 & NUI_SKELETON_POSITION_HEAD\\ \hline
+    4 & NUI_SKELETON_POSITION_SHOULDER_LEFT\\ \hline
+    5 & NUI_SKELETON_POSITION_ELBOW_LEFT\\ \hline
+    6 & NUI_SKELETON_POSITION_WRIST_LEFT\\ \hline
+    7 & NUI_SKELETON_POSITION_HAND_LEFT\\ \hline
+    8 & NUI_SKELETON_POSITION_SHOULDER_RIGHT\\ \hline
+    9 & NUI_SKELETON_POSITION_ELBOW_RIGHT\\ \hline
+    10 & NUI_SKELETON_POSITION_WRIST_RIGHT\\ \hline
+    11 & NUI_SKELETON_POSITION_HAND_RIGHT\\ \hline
+    12 & NUI_SKELETON_POSITION_HIP_LEFT\\ \hline
+    13 & NUI_SKELETON_POSITION_KNEE_LEFT\\ \hline
+    14 & NUI_SKELETON_POSITION_ANKLE_LEFT\\ \hline
+    15 & NUI_SKELETON_POSITION_FOOT_LEFT\\ \hline
+    16 & NUI_SKELETON_POSITION_HIP_RIGHT\\ \hline
+    17 & NUI_SKELETON_POSITION_KNEE_RIGHT\\ \hline
+    18 & NUI_SKELETON_POSITION_ANKLE_RIGHT\\ \hline
+    19 & NUI_SKELETON_POSITION_FOOT_RIGHT\\ \hline
+    \hline
+    \end{tabular}
+\end{center}
 %=========================================================

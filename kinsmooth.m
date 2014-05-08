@@ -14,10 +14,10 @@ Zsmooth = vertcat(smoothpc1,smoothpc2,smoothpc3);
 %Zsmooth = smooth(Z2);
 
 % % Draw graphs showing smoothed and unsmoothed
-figure
-hold on;
-plot(Z2(1,:),'-r');
-plot(smoothpc1,'b');
+% figure
+% hold on;
+% plot(Z2(1,:),'-r');
+% plot(smoothpc1,'b');
 % 
 % figure
 % hold on
