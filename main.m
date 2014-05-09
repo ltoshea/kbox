@@ -130,10 +130,15 @@ for i=1:length(C)
 end
 correct = (count/length(C))*100;
 sprintf('Random Forest Correct: %f%%', correct)
-%
-%close all
-%main2
-%Diffusion maps
+
+X = X';
+for i=1:length(X)
+    drel(i)  = dtw(X(:,1),X(:,i));
+end
+close all
+%Diffusion Maps
+%dtw
+
 
 
 %mappedA = compute_mapping(A, type, no_dims, parameters)
@@ -152,13 +157,4 @@ sprintf('Random Forest Correct: %f%%', correct)
 % sprintf('Correct: %f%%', correct)
         
 
-%Neural networks
-% lbl1 = size(dataAll(1).features,1); %How many punches do we have?
-% lbl2 = size(dataAll(2).features,1);
-% %lbl2=0;
-% totalsize = lbl1+lbl2;
-% labels = zeros(lbl1,1);
-% labels(lbl1+1:totalsize,:) = ones((totalsize-lbl1),1);
-%test_labels = labels(1:40,:); %new addition for test data for SVM
-%close all
 

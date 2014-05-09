@@ -46,7 +46,7 @@ end
 for i=1:PNUM
     dataAll(i).jred=reconstructPose(dataAll(i).data,Xm1,EV1);
     dataAll(i).jredSmooth = kinsmooth(dataAll(i).jred);
-    [valmax,imax,valmin, imin] = getminmax(dataAll(i).jredSmooth(1,:),6,NORM); %ERROR, BUG, CHANGE THIIS
+    [valmax,imax,valmin, imin] = getminmax(dataAll(i).jredSmooth(1,:),0,NORM); %ERROR, BUG, CHANGE THIIS
    
    % distance = pythagoras(sort(imax)); Going to put in getminmax
     [dataAll(i).imax, a]= sort(imax);
@@ -83,15 +83,55 @@ for i=1:PNUM
         end
     end
     
-   X = [X;dataAll(i).features];
+   X = [X;dataAll(i).features]; 
    Y = [Y;dataAll(i).labels];
    lbl = [lbl;ceil(0.2*(length(dataAll(i).labels)))]; %for labels
    %lbl = ceil(lbl);
 end
 
-close all
-results = net(X');
+labels = zeros(60,6);
+for i=1:6
+    switch i
+        case 1 
+            lbl = [1,0,0,0,0,0];
+            testlbl = repmat(lbl,10,1);
+            labels(1:10,:) = testlbl;
+        case 2
+            lbl = [0,1,0,0,0,0];
+            testlbl = repmat(lbl,10,1);
+            labels(11:20,:) = testlbl;
+        case 3
+            lbl = [0,0,1,0,0,0];
+            testlbl = repmat(lbl,10,1);
+            labels(21:30,:) = testlbl;
+        case 4
+            lbl = [0,0,0,1,0,0];     
+            testlbl = repmat(lbl,10,1);
+            labels(31:40,:) = testlbl;
+        case 5
+            lbl = [0,0,0,0,1,0];
+            testlbl = repmat(lbl,10,1);
+            labels(41:50,:) = testlbl;
+        case 6
+            lbl = [0,0,0,0,0,1];
+            testlbl = repmat(lbl,10,1);
+            labels(51:60,:) = testlbl;
+    end
+end
+
+% close all
+ results = net(X');
+% figure, plotconfusion(labels,results)
+% %results = sim(net,X');
+% 
+% 
+% 
+% 
+% net2 = configure(net,X');
+% view(net2);
+%plot(results2);
 %view(results)
+
             
             
             

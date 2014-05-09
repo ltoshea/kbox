@@ -43,7 +43,7 @@ end
 for i=1:PNUM
     dataAll(i).jred=reconstructPose(dataAll(i).data,Xm1,EV1);
     dataAll(i).jredSmooth = kinsmooth(dataAll(i).jred);
-    [valmax,imax,valmin, imin] = getminmax(dataAll(i).jredSmooth(1,:),6,NORM); %ERROR, BUG, CHANGE THIIS
+    [valmax,imax,valmin, imin] = getminmax(dataAll(i).jredSmooth(1,:),0,NORM); %ERROR, BUG, CHANGE THIIS
    
    % distance = pythagoras(sort(imax)); Going to put in getminmax
     [dataAll(i).imax, a]= sort(imax);
