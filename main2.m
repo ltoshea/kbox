@@ -55,7 +55,7 @@ end
 for i=1:PNUM
     figure
     hold on;
-    plot(dataAll(i).jred(1,:),'-r');
+    %plot(dataAll(i).jred(1,:),'-r');
     plot(dataAll(i).jredSmooth(1,:),'b');
     plot(dataAll(i).imax, dataAll(i).jredSmooth(1,dataAll(i).imax),'.g');
 end

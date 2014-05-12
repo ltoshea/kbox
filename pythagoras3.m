@@ -8,7 +8,7 @@ function [ imax ] = pythagoras3( imax,NORM )
 remove=0;
 if (NORM == 0)
     for i=1:length(imax)-1
-        if norm(imax(:,i)-imax(:,i+1)) < 15
+        if norm(imax(:,i)-imax(:,i+1)) < 10
             remove = vertcat(remove,i);
         end
     end

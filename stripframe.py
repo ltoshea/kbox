@@ -26,14 +26,14 @@ def getfilelist(f=None):
 
 
 def framecut(f):
-	FCUT = 270;
+	FCUT = 150;
 	"""cut out beginning and end frames"""
 	kindata = open(f[0],'r')
 	lines = kindata.readlines()
 	kindata.close()
 	flength = len(lines)
 	print flength
-	lines = lines[FCUT:(flength-FCUT)]
+	lines = lines[::(flength-FCUT)]
 	# lines = lines[FCUT::]
 	flength = len(lines)
 	print flength

@@ -51,8 +51,8 @@ if (NORM == 0)
         sortp = [imax;zmax];
         [d1,d2] = sort(sortp(1,:));
         sortp2 = sortp(:,d2); %imax,zmax are now sorted, Need to fix pythag now.
-        sortp2 = sortp2(:,(sortp2(2,:) > -0.3)); % Get rid of all points < 0.15
-        tvar=pythagoras(sortp2,NORM);
+        sortp3 = sortp2(:,(sortp2(2,:) > -0.3)); % Get rid of all points < 0.15
+        tvar=pythagoras(sortp3,NORM);
         imax = tvar(1,:);
         zmax = tvar(2,:);
 
@@ -61,13 +61,21 @@ if (NORM == 0)
 end
 
 if (NORM == 1)
+     START1=1;
+     END1=19;
      
     if (pno == 0)
         sortp = [imax;zmax];
         [d1,d2] = sort(sortp(1,:));
+        d1(:,1) = [];
+        d2(:,1) = [];
         sortp2 = sortp(:,d2); %imax,zmax are now sorted, Need to fix pythag now.
-        sortp2 = sortp2(:,(sortp2(2,:) > 0.35)); % Get rid of all points < 0.4
-        tvar=pythagoras3(sortp2,NORM);
+        sortp3 = sortp2(:,(sortp2(2,1:19) > 0.05)); % Get rid of all points < 0.4
+        %range = length(sortp2);
+        sortp4 = sortp2(:,(sortp2(2,:) > 0.35)); % Get rid of all points < 0.4
+        %sortp4(:,[1:19]) = [];
+        sortp5 = horzcat(sortp3,sortp4);
+        tvar=pythagoras3(sortp5,NORM);
         imax = tvar(1,:);
         zmax = tvar(2,:);
     end
