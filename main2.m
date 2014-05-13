@@ -46,10 +46,11 @@ for i=1:PNUM
     [valmax,imax,valmin, imin] = getminmax(dataAll(i).jredSmooth(1,:),0,NORM); %ERROR, BUG, CHANGE THIIS
    
    % distance = pythagoras(sort(imax)); Going to put in getminmax
-    [dataAll(i).imax, a]= sort(imax);
-    
-    
+   temp = sort(imax); 
+   [dataAll(i).imax]= unique(temp);
+     
 end
+
 %DRcomp(dataAll(1).jredSmooth());
 
 for i=1:PNUM
@@ -60,7 +61,8 @@ for i=1:PNUM
     plot(dataAll(i).imax, dataAll(i).jredSmooth(1,dataAll(i).imax),'.g');
 end
 
-nsamples = 10;
+
+nsamples = 15;
 
 X = [];
 Y = [];
@@ -86,13 +88,47 @@ for i=1:PNUM
    %lbl = ceil(lbl);
 end
 
+labels = zeros(60,1);
+for i=1:6
+    switch i
+        case 1 
+            lbl = [1];
+            testlbl = repmat(lbl,10,1);
+            labels(1:10,:) = testlbl;
+        case 2
+            lbl = [2];
+            testlbl = repmat(lbl,10,1);
+            labels(11:20,:) = testlbl;
+        case 3
+            lbl = [3];
+            testlbl = repmat(lbl,10,1);
+            labels(21:30,:) = testlbl;
+        case 4
+            lbl = [4];     
+            testlbl = repmat(lbl,10,1);
+            labels(31:40,:) = testlbl;
+        case 5
+            lbl = [5];
+            testlbl = repmat(lbl,10,1);
+            labels(41:50,:) = testlbl;
+        case 6
+            lbl = [6];
+            testlbl = repmat(lbl,10,1);
+            labels(51:60,:) = testlbl;
+    end
+end
+
+
 
 %'autoscale' is true by default 'kernel_function' 'rbf'
 %svmStruct = svmtrain(X(trainInds,:),Y(trainInds),'kernel_function', 'rbf','autoscale','true');
 %  svmStruct = svmtrain(Y(trainInds),X(trainInds,:),['-b 1']);
 %  labels = zeros(182,1);
  Y = zeros(size(X,1),1);
- [predicted_label, accuracy, probest] = svmpredict(Y,X,svmStruct,['-b 1']);
+ lblcut = abs(length(X) - length(labels));
+ labels([end-(lblcut-1):end],:) = [];
+ 
+ [predicted_label, accuracy, probest] = svmpredict(labels,X,svmStruct,['-b 1']);
  %close all
  
 %%
@@ -101,6 +137,16 @@ end
 % B = TreeBagger(75,X(trainInds,:),Y(trainInds),'OOBPred','On');
 C = B.predict(X);
 C = cellfun(@str2num,C);
+
+count = 0;
+for i=1:length(C)
+    if C(i) == labels(i)
+        count = count+1;
+    end
+end
+correct = (count/length(C))*100;
+sprintf('Random Forest Correct: %f%%', correct)
+        
 %testlabels(end,:) = [];
 % diff = size(testlabels,1) - size(C,1);
 % if diff ~= 0

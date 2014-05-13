@@ -1,0 +1,1087 @@
+%-- 09/04/2014 15:15 --%
+%-- 09/04/2014 17:01 --%
+loadKinectData
+loadKinectData()
+%-- 09/04/2014 17:32 --%
+loadKinectData
+A = loadKinectData
+which loadKinectData
+A = loadKinectData
+loadKinectData
+skeldata
+skeldata.m
+skeldata()
+A = skeldata
+loadKinectData
+run(loadKinectData)
+root_folder = 'C:\Users\liam\Desktop\KINECT\SionTest';
+d= dir([root_folder, 'kin*.txt']);
+for j = 1:length(d)
+ifp = fopen([root_folder,d(j).name],'r');
+close all;
+while 1
+s= fgets(ifp);
+if s == -1
+break;
+end
+a = sscanf(s(find(s == ' ') + 1:end),'%f');
+cla;
+for i=1:4:length(a)
+x = a(i + 1);
+y = a(i + 2);
+z = a(i + 3);
+plot3(x,z,y,'o');
+hold all
+end
+set(gca,'XLim',[-1 0]);
+set(gca,'YLim',[-1.1 2]);
+set(gca,'ZLim',[-1.1 2]);
+pause
+end
+fclose(ifp);
+end
+root_folder = 'C:\Users\liam\Desktop\KINECT\SionTest';
+d= dir([root_folder, 'kin*.txt']);
+for j = 1:length(d)
+ifp = fopen([root_folder,d(j).name],'r');
+close all;
+while 1
+s= fgets(ifp);
+if s == -1
+break;
+end
+a = sscanf(s(find(s == ' ') + 1:end),'%f');
+cla;
+for i=1:4:length(a)
+x = a(i + 1);
+y = a(i + 2);
+z = a(i + 3);
+plot3(x,z,y,'o');
+hold all
+end
+set(gca,'XLim',[-1 0]);
+set(gca,'YLim',[-1.1 2]);
+set(gca,'ZLim',[-1.1 2]);
+pause
+end
+fclose(ifp);
+end
+get(gcf)
+loadKinectData
+get(0, 'DefaultFigureVisible')
+loadKinectData
+clear
+cls
+clear
+loadKinectData
+clear
+clsroot_folder = 'C:\Users\liam\Desktop\KINECT\SionTest';
+d= dir([root_folder, 'kin*.txt']);
+root_folder = 'C:\Users\liam\Desktop\KINECT\SionTest';
+d= dir([root_folder, 'kin*.txt']);
+d= dir((root_folder, 'kin*.txt'));
+d= dir(root_folder, 'kin*.txt');
+loadKinectData
+d=dir(fullfile(root_folder, 'kin*.txt'));
+d.1.name
+print hello
+print 'hello'
+a = d.1.name
+a = d.1,1.name
+a = d(1).name
+ifp = fopen([root_folder,d(j).name],'r');
+ifp = fopen([root_folder,d(1).name],'r');
+ifp = fopen((root_folder,d(1).name),'r');
+ifp = fopen(root_folder,d(1).name,'r');
+ifp = fopen('C:\Users\liam\Desktop\KINECT\SionTest\kin_2014-03-11_14-34-42.txt','r');
+ifp = fopen(root_folder,d(1).name,'r');
+ifp = fopen(root_folder,A.name,'r');
+ifp = fopen(root_folder,a.name,'r');
+ifp = fopen(root_folder,a,'r');
+loadKinectData
+%-- 09/04/2014 18:44 --%
+loadKinectData
+%-- 09/04/2014 19:54 --%
+loadKinectData
+run('C:\Users\liam\Desktop\KINECT\loadKinectData.m')
+lassssssssssssssssss
+laaaaaaaaaaaaaaaaaaaaaaaaaaa
+a
+sdssssssssssssssssssssssss
+loadKinectData
+clear
+loadKinectData
+clear
+loadKinectData
+clear
+loadKinectData
+sdssssssssssssssssssssssss
+clear
+sdssssssssssssssssssssssss
+clear
+loadKinectData
+clear
+loadKinectData
+clear
+loadKinectData
+clear
+loadKinectData
+clear
+]
+loadKinectData
+clear
+%root_folder = 'C:\Users\liam\Desktop\KINECT\SionTest\';
+root_folder = 'C:\Users\liam\Desktop\KINECT\';
+d= dir([root_folder, 'kin*.txt']);
+%d=dir(fullfile(root_folder, 'kin*.txt'));
+for j = 1:length(d)
+%str = strcat(
+ifp = fopen([root_folder,d(j).name],'r');
+%close all;
+while 1
+s= fgets(ifp);
+if s == -1
+break;
+end
+a = sscanf(s(find(s == ' ') + 1:end),'%f');
+cla;
+for i=1:4:length(a)
+x = a(i + 1);
+y = a(i + 2);
+z = a(i + 3);
+%title(d(j).name);
+plot3(x,z,y,'o');
+%hold on
+%title('damn matlab');
+end
+set(gca,'XLim',[-1 0]);
+set(gca,'YLim',[-1.1 2]);
+set(gca,'ZLim',[-1.1 2]);
+pause
+end
+fclose(ifp);
+end
+clear
+loadKinectData
+%-- 09/04/2014 20:24 --%
+loadKinectData
+clear
+loadKinectData
+clear
+loadKinectData
+clear
+root_folder = 'C:\Users\liam\Desktop\KINECT\';
+d= dir([root_folder, 'kin*.txt']);
+clear
+root_folder = 'C:\Users\liam\Desktop\KINECT\';
+d = dir([root_folder, 'kin*.txt']);
+m = dir([root_folder, 'meta*.txt']);
+%-- 09/04/2014 20:45 --%
+root_folder = 'C:\Users\liam\Desktop\KINECT\';
+d = dir([root_folder, 'kin*.txt']);
+m = dir([root_folder, 'meta*.txt']);
+clear
+loadKinectData
+cd(C:\Users\liam\Desktop\KINECT\SionTest)
+cd('C:\Users\liam\Desktop\KINECT\SionTest')
+loadKinectData
+clear
+loadKinectData
+clear
+loadKinectData
+clear
+loadKinectData
+clear
+loadKinectData
+clear
+loadKinectData
+type gname
+type grapht
+clear
+loadKinectData
+clear
+loadKinectData
+clear
+loadKinectData
+%-- 10/04/2014 12:50 --%
+loadKinectData
+clear
+loadKinectData
+clear
+loadKinectData
+clear
+loadKinectData
+clear
+loadKinectData
+clear
+loadKinectData
+ayout>doLayout (line 441)
+doInOutLa
+clear
+loadKinectData
+v
+clear
+loadKinectData
+]
+clear
+loadKinectData
+legend
+legned[1]
+legend[1]
+legend[]
+legend
+legend[0]
+clear
+loadKinectData
+legend
+legend[0]
+legend[1]
+legend(1)
+legend(2)
+legend(3)
+clear
+loadKinectData
+clear
+loadKinectData
+legend
+legend(1)
+legend(2)
+loadKinectData
+clear
+loadKinectData
+clear
+loadKinectData
+clear
+loadKinectData
+clear
+loadKinectData
+notation(1)
+notation(2)
+loadKinectData
+clear
+loadKinectData
+clear
+loadKinectData
+clear
+loadKinectData
+help tostring
+clear
+help tostring
+loadKinectData
+notation = ['x';'o';'t';'v'];
+j = 0;
+pltleg = notation(j);
+j = 1;
+pltleg = notation(j);
+pltleg
+plot3(x,z,y,pltleg);
+notation = ['x';'o';'t';'v'];
+j = 0;
+j = j+1;
+pltleg = notation(j);
+plot3(x,z,y,pltleg);
+hold on
+loadKinectData
+clear
+loadKinectData
+clear
+loadKinectData
+pltleg
+whos pltleg
+a = 'a'
+whos a
+loadKinectData
+mod(j,length(notation))
+loadKinectData
+help
+help plot
+clear
+loadKinectData
+clear
+loadKinectData
+here
+clear
+loadKinectData
+claer
+clear
+loadKinectData
+clear
+loadKinectData
+pltleg
+loadKinectData
+pltleg
+loadKinectData
+notation = {'YX'},{'rO'},{'b+'},{'k>'};
+notation[1]
+notation(1)
+notation(2)
+notation = ['ab';'cd';'ef'];
+notation(1)
+notation(2)
+notation(0)
+notation(1)
+notation(2)
+notation(1,1)
+notation(1,2)
+notation(2,1)
+notation(2,2)
+notation(2,3)
+notation(3,1)
+clear
+notation = {'ab'},{'cd}
+notation = {'ab'},{'cd'}
+notation = [{'ab'},{'cd'}]
+clear
+notation = {'YX'},{'rO'},{'b+'},{'k>'};
+notation = [{'YX'},{'rO'},{'b+'},{'k>'}];
+clear
+notation = [{'YX'},{'rO'},{'b+'},{'k>'}]; %colour followed by marker
+pltleg = notation(1,1+mod(j,length(notation)));
+pltleg = notation(1,1+mod(1,length(notation)));
+plot3(x,z,y,pltleg);
+loadKinectData
+whois pltleg
+whos plotleg
+whos pltleg
+loadKinectData
+clear
+loadKinectData
+whos plotleg
+whos pltleg
+loadKinectData
+help tostring
+clear
+loadKinectData
+clear
+loadKinectData
+clear
+loadKinectData
+clear
+loadKinectData
+clear
+loadKinectData
+whos pltleg
+clear
+loadKinectData
+a
+loadKinectData
+clear
+loadKinectData
+whos z
+whos zs
+imViewer
+clear
+loadKinectData
+clear
+loadKinectData
+clear
+loadKinectData
+clear
+loadKinectData
+clear
+loadKinectData
+clear
+loadKinectData
+za
+zs
+zs(1)
+zs(2)
+zs(3)
+whos zs
+length(zs)
+loadKinectData
+clear
+loadKinectData
+for i=1:1:length(zs)
+plot(i,zs(i));
+hold on;
+end
+for i=1:1:length(zs)
+plot(i,zs(i));
+hold on;
+end
+for i=1:1:length(zs)
+plot(i,zs(i),'--');
+hold on;
+end
+for i=1:1:length(zs)
+plot(i,zs(i),'X');
+hold on;
+end
+imViewer
+loadKinectData
+CLEAR
+clear
+loadKinectData
+CLEAR
+clear
+%-- 10/04/2014 19:51 --%
+pwd
+userpath
+userpath(clear)
+userpath('clear')
+userpath()
+userpath('C:\Users\liam\Desktop\KINECT\kbox')
+%-- 10/04/2014 20:03 --%
+loadKinectData
+clear
+loadKinectData
+z = cat(2,xs,ys)
+z = cat(2,z,zs)
+z
+fullm = cat(2,xs,ys,zs)
+fullm
+clear
+ckear
+clear
+loadKinectData
+clear
+loadKinectData
+clear
+loadKinectData
+fullmat = cat(2,xs,ys,zs)
+[pc,score,latent,tsquare] = princomp(fullmat)
+clear
+d = dir([root_folder, 'kin*.txt']);
+bigmat = matrix(length(d),199)
+bigmat := matrix(length(d),199)
+bigmat = matrix(length(d),199)
+fullm
+fullm = cat(2,fullm,xs,ys,zs)
+fullm = 0
+fullm = cat(2,fullm,xs,ys,zs)
+fullm[1,199]
+fullm(1,199)
+fullm([1,199])
+fullm = matrix(1,199)
+fullm = zeros(1,199)
+fullm = zeros(199,1)
+fullm = cat(2,fullm,xs,ys,zs)
+M
+fullm
+fullm = fullm[2:]
+fullm = fullm(2:)
+fullm = fullm(2:END)
+fullm = fullm(2::)
+fullm = fullm(2:)
+fullm = fullm(2,:)
+fullm = cat(2,fullm,xs,ys,zs)
+fullm = zeros(199,1)
+fullm = cat(2,fullm,xs,ys,zs)
+fullm
+fullm(:,1)=[];
+fullm
+clear
+loadKinectData
+M = zeros(199,1)
+loadKinectData
+length(d)
+fread
+d(j)
+fread
+jabread
+d(1).name
+clear
+root_folder = 'C:\Users\liam\Desktop\KINECT\kbox\testdata\';
+d = dir([root_folder, 'kin*.txt']);
+for j = 1:length(d)
+M=csvread(d(j).name);
+ifp2 = fopen([root_folder,m(j).name],'r');
+pause;
+end
+root_folder = 'C:\Users\liam\Desktop\KINECT\kbox\testdata\';
+d = dir([root_folder, 'kin*.txt']);
+for j = 1:length(d)
+file = strcat(root_folder,d(j).name);
+M=csvread(file);
+ifp2 = fopen([root_folder,m(j).name],'r');
+pause;
+end
+root_folder = 'C:\Users\liam\Desktop\KINECT\kbox\testdata\';
+d = dir([root_folder, 'kin*.txt']);
+for j = 1:length(d)
+file = strcat(root_folder,d(j).name);
+M=csvread(file);
+end
+clear
+jabread
+%-- 11/04/2014 10:31 --%
+%-- 11/04/2014 10:33 --%
+loadKinectData
+M = cat(2,xs,ys,zs)
+[pc,score,latent,tsquare] = princomp(zs)
+[pc,score,latent,tsquare] = princomp(M)
+imViewer
+loadKinectData
+imViewer
+clear
+imViewer
+loadKinectData
+imViewer
+xy
+imViewer
+loadKinectData
+clear
+loadKinectData
+%{for i=1:1:length(zs)
+%    plot(i,zs(i),'X');
+%   hold on;
+for i=1:1:length(zs)
+plot(i,zs(i),'X');
+hold on;
+end
+loadKinectData
+for i=1:1:length(zs)
+plot(i,zs(i),'X');
+hold on;
+end
+end
+clear
+%-- 11/04/2014 13:14 --%
+loadKinectData
+for i=1:1:length(zs)
+plot(i,zs(i),'X');
+hold on;
+end
+clear
+loadKinectData
+clear
+loadKinectData
+clear
+loadKinectData
+clear
+loadKinectData
+createES(M,3)
+xm,EV,ev = createES(M,3)
+createES(M,3)
+clear
+loadKinectData
+createES(M,3)
+reconstructBeaks(3,ans,3)
+clear
+loadKinectData
+createES(M,1)
+A = createES(M,1)
+sizeof(A)
+size(A)
+A,B,C = createES(M,1)
+B = createES(M,1)
+A,B = createES(M,1)
+[Xm,EV,ev] = createES(M,1)
+reconstructBeaks(A,Xm,1)
+M
+loadKinectData
+M
+clear
+loadKinectData
+clear
+loadKinectData
+clear
+loadKinectData
+clear
+loadKinectData
+sizeof(M)
+size(M)
+clear
+loadKinectData
+[xm,EV,ev] = createES(M,3)
+whos M
+jabread
+clear
+jabread
+length(d)
+jabread
+root_folder = 'C:\Users\liam\Desktop\KINECT\kbox\testdata\';
+d = dir([root_folder, 'kin*.txt']);
+file = strcat(root_folder,d(j).name);
+M = csvread(file);
+CLEAR
+clear
+root_folder = 'C:\Users\liam\Desktop\KINECT\kbox\testdata\';
+d = dir([root_folder, 'kin*.txt']);
+file = strcat(root_folder,d(j).name);
+root_folder = 'C:\Users\liam\Desktop\KINECT\kbox\testdata\';
+d = dir([root_folder, 'kin*.txt']);
+for j = 1:length(d)
+file = strcat(root_folder,d(j).name);
+M1=csvread(file);
+end
+clear
+jabread
+M1(:,1)=[];
+clear
+jabread
+M1(:,2)=[];
+M1(:,1)=[];
+clear
+jabread
+M1(:,2)=[];
+clear
+jabread
+clear
+jabread
+clear
+jabread
+loadKinectData2
+clear
+loadKinectData2
+clear
+loadKinectData2
+clear
+M = loadKinectData2
+main
+clear
+main
+clear
+main
+clear
+main
+clear
+main
+clear
+main
+clear
+main
+clear
+main
+clear
+main
+clear
+main
+clear
+main
+clear
+main
+clear
+main
+clear
+main
+clear
+main
+style longE
+format Style longE
+format longE
+format lon
+clear
+main
+clear
+main
+clear
+M = loadKinectData2();
+M(1:1,:) = [];
+main
+clear
+loadKinectData2
+clear
+loadKinectData2
+clear
+loadKinectData2
+clear
+loadKinectData2
+clear
+loadKinectData2
+clear
+M
+clear
+main
+clear
+main
+clear
+main
+clear
+main
+clear
+main
+clear
+main
+clear
+main
+M = loadKinectData2();
+[Xm,EV,Ev]=createES(M,1);
+reconstructBeaks(M,Xm,EV);
+clear
+main
+for i = 1:size(A, 1)
+testbeak = A(i,:)';
+a = U'*(testbeak-Xm); %% Get projection coefficients
+y = U*a+Xm;
+close all
+hold on
+plot(testbeak(1:25),testbeak(26:end),'-gx')
+plot(y(1:25),y(26:end),'-r');
+%set(gca,'XLim',[0 1000], 'YLim',[200 200]);
+axis equal;
+r = norm(y-testbeak);
+disp(sprintf('MSRE batch: %.4f', r));
+pause
+end
+clear
+main
+clear
+main
+size(M)
+clear
+main
+X = M
+k = 3
+[M N]=size(X);
+Xm=mean(X,2);
+Xd=X-repmat(Xm,1,N);
+if (N < M) %less images than image length
+Q=Xd'*Xd;
+[V L Vt]=svd(Q);
+EV=Xd*V;
+EV=EV./repmat(sqrt(diag(L)'),M,1);
+else %more images than image length
+Q=Xd*Xd';
+[EV L Vt]=svd(Q);
+end;
+Ev=diag(L)'/N;
+EV=EV(:,1:K);
+K = 3
+EV=EV(:,1:K);
+Ev=Ev(1:K);
+help SVD
+clear
+main
+A = M(1:20)
+whos
+clear
+loadKinectData
+clear
+loadKinectData2
+clear
+loadKinectData2
+clear
+loadKinectData2
+clear
+loadKinectData2
+clear
+loadKinectData2
+xs
+clear
+loadKinectData2
+clear
+loadKinectData2
+i=1
+test = xs(1:1+19)
+clear
+Kinec
+loadKinectData2
+clear
+loadKinectData2
+find
+find(xs)
+find(-0.110,xs)
+find(-0.110,xs(1,1))
+clear
+loadKinectData2
+clear
+loadKinectData2
+clear
+loadKinectData2
+clear
+loadKinectData2
+clear
+loadKinectData2
+clear
+loadKinectData2
+clear
+loadKinectData2
+clear
+loadKinectData2
+clear
+loadKinectData2
+clear
+loadKinectData2
+clear
+main
+function [Xm,EV,Ev]=createES(M,3)
+[Xm,EV,Ev]=createES(M,3)
+X = loadKinectData2
+[Xm,EV,Ev]=createES(X,3)
+createES(X,3)
+help repmat
+clear
+X = loadKinectData2
+[Xm,EV,Ev]=createES(X,3)
+whos
+help diff
+reconstructBeaks(X,Xm,EV)
+reconstructBeaks(X,Xm,Ev)
+reconstructBeaks(X,Xm,EV)
+transpose
+xmt = transpose(Xm)
+reconstructBeaks(X,xmt,EV)
+reconstructBeaks(X,xmt,Ev)
+reconstructBeaks(X,Xm,Ev)
+clear
+main
+[Xm,EV,Ev]=createES(M,3)
+reconstructBeaks(M,Xm,EV)
+reconstructBeaks()
+reconstructBeaks
+reconstructBeaks(M,Xm,EV)
+reconstructBeaks
+reconstructBeaks(M, Xm, EV)
+A = M
+U = EV
+for i = 1:size(A, 1)
+testbeak = A(i,:)';
+a = U'*(testbeak-Xm); %% Get projection coefficients
+y = U*a+Xm;
+close all
+hold on
+plot(testbeak(1:25),testbeak(26:end),'-gx')
+plot(y(1:25),y(26:end),'-r');
+%set(gca,'XLim',[0 1000], 'YLim',[200 200]);
+axis equal;
+r = norm(y-testbeak);
+disp(sprintf('MSRE batch: %.4f', r));
+pause
+end
+for i = 1:size(A, 1)
+testbeak = A(i,:)';
+testbeak = A(:,i)';
+testbeak = A(i,:)';
+testbeak = A(i,:);
+testbeak = A(i,:)';
+testbeak = A(2,:)';
+testbeak = A(20,:)';
+testbeak = A(50,:)';
+testbeak = A(i,:)';
+testbeak = A(5,:)';
+testbeak = A(1,:)';
+testbeak = A(2,:)';
+testbeak = A(1,:)';
+testbeak = A(2,:)';
+testbeak = A(3,:)';
+testbeak = A(1,:)';
+testbeak = A(:,1)';
+reconstructBeaks(A,Xm,EV)
+for i = 1:size(A, 1)
+testbeak = A(:,i)';
+a = U'*(testbeak-Xm); %% Get projection coefficients
+y = U*a+Xm;
+close all
+hold on
+plot(testbeak(1:25),testbeak(26:end),'-gx')
+plot(y(1:25),y(26:end),'-r');
+%set(gca,'XLim',[0 1000], 'YLim',[200 200]);
+axis equal;
+r = norm(y-testbeak);
+disp(sprintf('MSRE batch: %.4f', r));
+pause
+end
+testbeak = A(:,i)'
+testbeak = A(1:,i)'
+testbeak = A(:,i)'
+testbeak = A(i,:)'
+testbeak = A(:,i)
+testbeak = A(1:,i)
+testbeak = A(0:,i)
+testbeak = A(:1,i)
+testbeak = A(:,i)
+testbeak = A(2:,i)
+testbeak = A(2,i)
+testbeak = A(2:i)
+testbeak = A(2,:i)
+testbeak = A(2:,i)
+clear
+main
+reconstructBeaks(M,Xm,EV)
+v = 1
+Xm
+Xm - v
+clear
+maion
+main
+reconstructBeaks(M,Xm,EV)
+clear
+main
+clear
+main
+A - 1
+clear
+main
+clear
+main
+clear
+main
+clear
+main
+A - 1
+A = A - 1
+clear
+main
+reconstructBeaks
+reconstructBeaks(A,Xm,EV)
+clear
+main
+reconstructBeaks(A,Xm,U)
+i = 1
+testbeak = A(:,i)';
+Z = testbeak - Xm
+clear
+main
+testbeak = A(i,:)';
+reconstructBeaks(M, Xm, EV)
+clear
+main
+testbeak = A(:,i)';
+testbeak = A(:,i);
+a = U'*(testbeak-Xm); %% Get projection coefficients
+y = U*a+Xm;
+close all
+hold on
+plot(testbeak(1:25),testbeak(26:end),'-gx')
+plot(y(1:25),y(26:end),'-r');
+%set(gca,'XLim',[0 1000], 'YLim',[200 200]);
+axis equal;
+r = norm(y-testbeak);
+disp(sprintf('MSRE batch: %.4f', r));
+pause
+00 200]);
+axis equal;
+clear
+main
+testbeak = A(:,i);
+a = U'*(testbeak-Xm); %% Get projection coefficients
+y = U*a+Xm;
+close all
+hold on
+plot(testbeak(1:30),testbeak(31:end),'-gx')
+reconstructBeaks(A,Xm,U)
+clear
+main
+reconstructBeaks
+reconstructBeaks(A,Xm,U)
+clear
+main
+reconstructBeaks(A,Xm,U)
+clear
+main
+reconstructBeaks(A,Xm,U)
+clear
+main
+reconstructBeaks(A,Xm,U)
+clear
+main
+diffA = diff(A,1,1)
+%-- 11/04/2014 20:48 --%
+reconstructPose
+main
+reconstructPose
+clear
+main
+reconstructPose
+clear
+main
+dd
+clear
+main
+clear
+main
+clear
+main
+length(diffM)
+diff(1:)
+diffM#(1:)
+diffM(1:)
+diffM(1:,)
+diffM(1,1)
+diffM(1,:)
+difftest = diffM(1,:)
+difftest = diffM(:,1)
+clear
+main
+clear
+main
+%-- 14/04/2014 11:11 --%
+loadKinectData2
+lclear
+clear
+main
+%-- 14/04/2014 12:15 --%
+main
+clear
+main
+#
+[coeff,score,latent,tsquare] = princomp(diffM)
+[coeff,score] = princomp(diffM)
+[coeff,score] = princomp(M)
+[coeff,score] = princomp(diffM)
+clear
+[coeff,score,latent,tsquare] = princomp(diffM);
+main
+clear
+main
+[coeff,score,latent,tsquare] = princomp(diffM);
+clear
+main
+whos
+clear
+main
+whos z
+whos Z
+plot(Z(1,:))
+close all
+plot(Z(1,:))
+main
+Z
+max(Z)
+max(Z(:))
+clear
+main
+close all
+plot(Z(1,:))
+main
+close all
+plot(Z(1,:))
+plot(Z(2,:))
+plot(Z(3,:))
+cd drtoolbox
+cd C:\Users\liam\Downloads\drtoolbox.tar\drtoolbox
+mexall
+mexsetup
+mex setup
+%-- 14/04/2014 16:32 --%
+mex all
+mexall
+help mex
+mex -setup
+mex all
+lks
+ls
+edit readme.txt
+mex all
+%-- 14/04/2014 17:26 --%
+%-- 14/04/2014 17:27 --%
+%-- 14/04/2014 17:37 --%
+clear
+mex all
+mex setyp
+mex setup
+mexall
+%-- 14/04/2014 20:54 --%
+mex setup
+mexsetup
+mexall
+mex
+matlab neural network
+matlab setup
+cd C:\Users\liam\Desktop\KINECT\kbox
+cd drtoolbox\
+max setup
+mex setup
+mexsetup
+mexall
+mex setup
+ver
+clear
+nnstart
+main
+clear
+main
+whos z
+whos Z

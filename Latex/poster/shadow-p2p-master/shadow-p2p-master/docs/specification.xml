@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+Normally we'd collect information about your projects using an online form,
+but the CS web-site is being retired and SAFE isn't up to the task yet.  As 
+an interim solution the idea is that
+
+- you complete this XML file, replacing the template content but retaining
+  the structure, and submit it via SAFE,
+  then
+- later, and hopefully (semi-)automatically, we'll import it into SAFE for 
+  you in order to drive the assessment process.
+
+If in doubt about the content of the longer sections, make sure you read the
+unit handbook at
+
+https://www.cs.bris.ac.uk/Teaching/Resources/COMSM0111/handbook.pdf
+
+especially Section 2.1.2.  Remember that the specification is not assessed,
+and there are no rules wrt. length of text for example: the point of the
+exercise is simply to make sure you have a clear understanding of what you
+will do, so you can start doing it.
+-->
+
+<project>
+
+<!-- 
+In this section, we want
+
+1. your CS user name (e.g., jl8971),
+2. your preliminary project title (even if you change this later),
+   and
+3. the full name of your project supervisor within CS (e.g., Dan Page).
+-->
+
+<details>
+    <username> lm9131 </username>
+    <title> Shadow P2P Networks </title>
+    <supervisor> Simon Hollis </supervisor>
+</details>
+
+<!-- 
+In this section we want some text outlining the motivation (or context) for
+your project.  Example content might include a description what the central 
+problem is, and what previous work has been done to solve it.
+-->
+
+<motivation>
+    Traditional Peer-to-Peer Netoworks involve a number of equipotent participants who form connections with one another to create a connected set of nodes. The issue with this is that every peer is given the 'identity' of other participants, usually in the form of an IP address which may pinpoint the individual that is taking part in the network. This presents a problem in the case where a user wishes to take part anonymously.
+    The potential market for such a solution would be anyone who wishes to act anonymously and there's already a large market for anonymity. There are many reason's why a person may wish to remain anonymous on the internet; for the most part, it is the ability to speak freely without fear of reprecussion. Some use anonymity to speak in chatrooms about socially and politically sensitive topics, others use anonymity to leak information on their employers to journalists. Apostasy (the act of giving up or renouncing one's religious views) is illegal in at least 14 countries and it is punishable by death in 11 of those; therefore, anonymity would obviously be desirable when discussing the topic online.
+    Usually anonymity can be gained through the use of proxies or VPNs (e.g. Tor), however, the use of these systems in traditional P2P networks still shows some involvement in the network. Furthermore, these it is possible to trace the original user through monetary transaction records. True anonymity is very difficult for skilled users to achieve and is out of the reach of most internet users who might desire anonymity. Thus the solution may serve to prevent any effort to track down the users in the network and thus protect their identity (and in some cases, save their lives)
+    Software and Hardware solutions that grant some level of anonymity are already available. For example, the Tor Project (a software solution) and proxy servers (a hardware solution). However, these solutions are known to not perfectly protect anonymity (By the Tor Project's own admission "Tor can't solve all anonymity problems").
+    I aim to create a Peer-to-Peer network where peers have no knowledge (or very litle) of the location of other peers. This will be created as a platform on top of which many P2P applications may be constructed. The bulk of the project will be creating the low-level P2P platform and then I will create some sample applicatons to make use of the platform effectively.
+</motivation>
+
+<!-- 
+In this section we want some text outlining what you will to do within the
+project; the best way to structure this is as a concise, focused set of 
+bullet points outlining a) the high-level objective(s), and b) concrete, 
+step-by-step aims that will move you towards this.
+-->
+
+<objectives>
+    High level    
+    * Create a theoretical system for connecting peers with the greatest possible level of anonymity.
+    * Implement this system over a LAN.
+    * Attempt implementation over the internet (or other WAN)
+    * Analyse effectiveness of solution (e.g. level of anonymity practically achieved).
+        
+    Low level
+    * Investigate current methods of anonymity in use on the internet.
+        * For each such method:
+            * What level of anonymity can it provide?
+                - This is primarily to establish the minimum level of anonymity that this project should aim for as I am attempting to surpass any previous level of anonymity granted. This also serves to inform me about the methods that exist to protect / obscure one's identity online; it may be possible to draw from these and integrate them into the final product.
+            * What is the cost (financial or otherwise) of using it.
+                - The rental of a proxy service usually entails some cost. Costly methods are unattractive to most internet users and they are unlikely to be used where free alternatives exist. I aim to create a piece of software (not hardware) that is available for free, therefore anything that entails a cost is not an option (parts of the solution may still be of use).
+    * Investigate existing P2P networks
+        * Specifically bittorrent
+            - Bittorrent is the prime example of a P2P network. Given its huge success, it is worth looking at how it performs communication between peers.
+        * Other networks with specific anonymity features
+            - Tor uses a network of peers to provide anonymity. There may exist others that take advantage of P2P networks' advantages to provide anonymity.
+    * Investigate the low level networking protocols used by internet
+        * Protocols
+            - The network I plan to create involves messing aroung with the very fabric of the internet, and these protocols are it. I believe I can exploit these protocols to grant greater anonymity.
+        * Routing
+            - The internet backbone structures itself as a distributed network therefore it is worth learning how it performs its routing which may be of some use.
+    * Design network theoretically
+        * Under ideal conditions
+            - The theoretical design of the network should assume ideal conditions under which to implement the network. The design itself will serve to instruct the creation of the software that will be created.
+    * Implement the design on a LAN
+        * Implement in software
+            - The design will be implemented first in reference to a LAN. This allows testing of the software in a controlled environment. This also prevents the author getting into trouble with his internet service provider after he inadvertently breaks the internet.
+        * Note differences between theoretical an practical designs
+            - The design and implementation may differ due to practical restrictions / nuances. It is important to note the differences, their impact and, if necessary, how the design needs to be changed to compensate.
+        * Implement basic chat application using network
+            - This is a very simple application that will be created to show that the network works.
+    * Implement design over Internet / WAN
+        * Investigate required resources (e.g. VPS)
+            - IP spoofing is planned to be an integral part of the design. Many ISPs forbid this activity in their terms of service and it is hard to implement with a home router. It is therefore in everyone's best interest if I find "a corner of the internet" where I can experiment with IP spoofing, legally and "in peace and quiet".
+        * Further develop software for Internet / WAN
+            - There may be differences between the way the network works on LAN and on the internet / WAN. This is simply adjusting the implementation to fit.
+        * Implement file transfer / sharing application
+            - This is the second application to use the network. This is to see if the network can be of any practical use. This application will be somewhat similar to bittorrent (send file parts from multiple users) but will probably be completely different (it probably won't use the bittorrent protocol) given the way the network works.
+    * Compare network to others with the same functionality
+        * Anonymity provided
+            - Have I achieved the goal of greatest yet level of anonymity?
+        * File transfer speed
+            - Is it practically useful compared to other methods?
+        * Cost involved
+            - Have I achieved not having any cost at all?
+</objectives>
+
+<!-- 
+In this section we want a plan for execution of your aims and objectives:
+this can include time scales, but also aspects of resource and contingency
+planning.
+-->
+
+<plan>
+    1. Create a small program that engages in IP-spoofing and IP-broadcasting to evaluate how easy these things are.
+    2. Conduct research on the existing solutions including Tor, VPNs and proxies. Analysis to cover what anonymity is provided and how it is provided. Look at costs involved, this will usually be recurring monetary payments; note if these costs can be paid anonymously. Comment on ease of use of each method, hard to use methods will not become widespread and are inappropriate for creating large networks (similarly for those methods incurring some cost).
+    3. Conduct research into P2P networks and their mechanisms for routing data through the network. Some networks may overlap with step 2.
+    4. Learn about the protocols used in LAN and on the internet (IP, UDP, TCP, HTTP).
+    5. Invent and document methods of exploiting the protocols for purposes of anonymity including how to redirect packets through IP spoofing and transmitting arbitrary data through "packet bouncing"
+    6. Invent and document methods of communication between peers where peers have no / little knowledge of the other peers' IP addresses using the methods in step 5.
+    7. Invent and document methods of routing through the network given the method of communication invented in step 6.
+    8. Implement steps 5 through 7 noting any changes to the theoretical methods that have to be made in order for it to work in practice. Deal with any major problems that arise as a result. 
+    9. Implement a basic chat program that uses the network created in 8.
+    10. Investigate and acquire any resources that are required for implementation over the internet / WAN.
+    11. Extend the network software for implementation over the internet / WAN.
+    12. Create basic file sharing application over the network.
+    13. Determine the achievements of the network through comparison with others. This will look at the metrics used in steps 2 and 3 as well as the more generic metrics used for measuring connection quality (e.g. bandwidth, latency)
+    
+    Time scale: Broadly, by the start of term 2, I should have completed step 8 or 9.
+    More specificly (total 15 weeks):
+        Step(s) | Weeks
+        ________|___________________________________________
+        1       | 1 
+        2, 3, 4 | 2 (the research will most likely overlap)
+        5, 6, 7 | 1 - 2
+        8       | 2 - 3
+        9       | 1
+        10      | 0
+        11      | 1
+        12      | 2
+        13      | 3
+            
+    In terms of resources, the only thing that may need to be acquired is a proxy server. These are widely available for hire and relatively cheap. Hiring one for the purposes of this research will not be a hurdle.
+    
+    In terms of contingencies, the entirety of the project is entirely feasible using widely known techniques so there should be no reason to abandon any given task. What is perhaps the only forseeable problem is not having the time to complete the tasks. In this case, the project can be shortened to forgo the use of WAN / internet systems in favour of demonstrating practical uses (e.g. file sharing). 
+    
+</plan>
+
+</project>

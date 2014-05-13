@@ -7,7 +7,7 @@ NORM = 1; %flag=1 normalise for hip centroid
 
 for i=1:PNUM
     path = ['C:\Users\liam\Desktop\KINECT\kbox\data\' num2str(i) '\'];
-    %path = ['C:\Users\liam\Desktop\KINECT\kbox\data\testhook\' num2str(i) '\'];
+    %path = ['C:\Users\liam\Desktop\KINECT\kbox\data\1\'];
     %path = ['C:\Users\liam\Desktop\KINECT\kbox\data\jabtest\' num2str(i) '\'];
     
     
@@ -54,15 +54,37 @@ for i=1:PNUM
 end
 %DRcomp(dataAll(1).jredSmooth());
 
+
+
 for i=1:PNUM
     figure
     hold on;
-%     plot(dataAll(i).jred(1,:),'-r');
-    plot(dataAll(i).jredSmooth(1,:),'b');
-    plot(dataAll(i).imax, dataAll(i).jredSmooth(1,dataAll(i).imax),'.g');
+    plot(dataAll(i).jred(1,:),'-r');
+    %plot(M(1,:),'y');
+    %plot(dataAll(i).jred(1,:),'b');
+    %plot(dataAll(i).imax, dataAll(i).jred(1,dataAll(i).imax),'.g');
 end
 
-nsamples = 10;
+for i=1:PNUM
+    figure
+    hold on;
+    % plot(dataAll(i).jred(1,:),'-r');
+     plot(dataAll(i).jredSmooth(1,:),'b');
+     plot(dataAll(i).imax, dataAll(i).jredSmooth(1,dataAll(i).imax),'.g');
+end
+figure
+hold on
+plot(dataAll(4).jred(1,:),'-r');
+plot(dataAll(4).jredSmooth(1,:),'b');
+plot(dataAll(4).imax, dataAll(4).jredSmooth(1,dataAll(4).imax),'.g');
+
+
+
+tilefigs();
+pause;
+close all;
+
+nsamples = 15;
 
 X = [];
 Y = [];
@@ -135,7 +157,7 @@ X = X';
 for i=1:length(X)
     drel(i)  = dtw(X(:,1),X(:,i));
 end
-close all
+% close all
 %Diffusion Maps
 %dtw
 

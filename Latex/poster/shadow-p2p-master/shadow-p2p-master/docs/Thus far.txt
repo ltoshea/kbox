@@ -1,0 +1,402 @@
+### 1 ###
+30/10/12
+
+It turns out that scapy requires a change to it's socketry in order to talk to local applications due to the loopback link lay being entirely virtual i.e. packets are held in memory and passed to application that way.
+This results in scapy requiring a different L3 socket to pass IP packets to the right place. Namely:
+
+    conf.L3socket = L3RawSocket
+    
+and then IP packets get routed correctly. Isn't that nice?
+
+It also appears that python lacks the capability to derive source IP from UDP packets received, at least at that layer; lower level sockets may be able to read the UDP headers.
+
+### 2 ###
+04/11/12
+
+and this one for in scripts
+
+scapy.config.conf.L3socket = scapy.supersocket.L3RawSocket
+
+### 3 ###
+11/11/12
+
+It is a better idea to find some neutral mediator rather than attempting shotgun packet transmission.
+This approach is more efficient bandwidth wise and probably saves time sending packets too.
+Perhaps using the Google Drive API we can use google as a mediator to transmit data.
+A mediator is usable if it doesn't reveal any info on the users' identity.
+
+### 4 ###
+16/11/12
+
+Decided neutral mediators makes things too easy and uninteresting.
+
+Tor:
+Provides anonymity by having clients connect to the wider internet through a relay chain of their peers.
+There are different encryption keys for each hop so no node knows where the message came from.
+The end point of the client's communication on the open internet will appear to have come from a different IP.
+The client can change routes through Tor and usually does so every few minutes.
+This prevents future activities being linked to past ones.
+
+### 5 ###
+18/11/12
+
+I2P:
+Uses inbound tunnels and outbound tunnels.
+Connects the endpoints of tunnels together in order to connect to another node.
+Introduces the concept of "cover traffic" which is basically other traffic passing through that node that will help mask the traffic of a given user.
+
+Freenet:
+Peers connect to other nodes that they trust.
+Nodes they connect to are more able to attack them.
+Users can create and publish "freesites" which are webpages only availbale through Freenet
+
+OFF System:
+Unique concept involving the use of XORed data blocks to anonymise data.
+Blocks are provably random and reusable, they are used to represent multiple data sources.
+Turns copyright claims into logical contradictions.
+Interesting but nothing towards peer anonymity
+
+GNUnet:
+Mainly for file sharing.
+Features link encryption, deniability, anonymous / non-anonymous modes, economic resource distribution.
+
+VPNs:
+Generally, a VPN offers to hide your identity behind their company's IPs.
+Clients connect to the VPN and from there connect to the wider internet.
+Customers are offered various desirable features like anonymity and network speed.
+These are paid for services and are paid via the usual means (credit card / paypal) but some can be paid for through Bitcoin.
+A number of services claim that tracing a connecton back to the user who made it is usually impossible / infeasible on their systems due to a lack of logs.
+There are loads of VPNs (so one may assume that business is booming).
+
+If I have gotten this right, proxy servers are the single-hop bread and butter of anonymity whilst VPNs and P2P networks build on this single-hop anonymity principle.
+VPNs use a commercial agglomeration of servers to form a network through which traffic can be forwarded.
+P2P networks create anonymity through the use of participating machines as hops.
+Anonymity is all about trust in these systems.
+    - With proxy servers and VPNs you trust the entity that sets up the service.
+    - With P2P networks trust is mutual but have the added advantage that there is no central part that can be targetted by governments or other malicious entities.
+
+### 6 ###
+27/11/12
+
+Routing:
+It is clear that a distance vector routing protocol will have to be used.
+Routing algorithms are generally suited towards finding the shortest or most direct route between nodes.
+However, low latency is not the goal with Shadow P2P, anonymity is.
+
+http://nrlweb.cs.ucla.edu/publication/download/589/83-A_distributed_routing_algorithm_for_unidirectional_networks.pdf
+The paper describes a form of routing where links are unidirectional (instead of bi-directional).
+Nodes receive a tree representing their upstream nodes that allows the node to find route to every node on the network.
+
+N-dimensional routing:
+Form an n-dimensional hypercube of nodes. Link it up into a hypertoroid with uni-directional links.
+Route packets using headers containing the distance from the current node to the destination in each dimension.
+Fault tolerance by introducing wormholes.
+Constant adaption through shrinking and expanding; achieved by adding and removing hyperplanes of wormholes.
+Maintain a number of virtual points, V, where V > N such that V < 2N.
+
+http://pdf.aminer.org/000/360/047/fault_tolerant_wormhole_routing_in_tori.pdf
+The paper describes routing in toroids where links can fail.
+Involves routing around the fault analogous to water flowing through a river (non-faulty links) around an island (faulty links)
+Inappropriate as it assumes two way links.
+
+### 7 ###
+29/11/12
+
+SVN checkout:
+"svn checkout svn://svn.code.sf.net/p/lansim/code/trunk lansim-code"
+
+Compile using:
+"javac -d bin -cp .:lib/liquidlnf.jar src/buffer/*.java src/framework/*.java src/module/Pc/*.java src/module/*.java src/module/Router/*.java src/module/Node/*.java src/module/Hub/*.java src/module/SnWwA/*.java src/fio/*.java src/ui/*.java src/ui/main/*.java src/util/*.java"
+
+Run using:
+"java -cp .:../lib/liquidlnf.jar ui.main.ApplicationManager"
+in the bin folder
+
+### 8 ###
+06/12/12
+
+Make lists of theoretical and practical componenets required for the network.
+https://wikis.bris.ac.uk/display/~cssjh/Luke+Murray
+
+### 9 ###
+10/12/12
+
+Direction Order Routing investigated. Basically, packets go down one dimension of the toroid until in the correct postion in that dimension and then proceed down the other dimensions in a similar fashion. Assumes bi-directional communication. Toroidal broadcasting looked at briefly. Diagonal zig zagging used to broadcast out from centre of the grid. Not really cohesive to n-dimensional uni-directional hypertoroids. It would appear that even if these algorithms were applicable, they have no real application toward anonymity.
+
+### 10 ###
+11/12/12
+
+It occurs to me that it becomes much harder to work out which node is shouting (i.e. is the source of some message / packet) when the node separated by being in another jurisdiction / on another ISP. In addition, it is hard to work out which of the shout's addresses is the true address when the destinations are similarly separated. Internet monitoring within a jurisdiction / an ISP will only be able to garner which node is participating if monitoring occurs down at the node level. This is prohibitively costly and thus spoofing may only be detected at a managed node (at, say, city level) and then there are a large number of possibilities for the source.
+
+SHARC is apparently a faster alternative to dikjstras.
+
+### 11 ###
+14/12/12
+
+An n-dimensional toroidal network can dynamically resize itself by doubling the network size in every dimension, resulting in N nodes becoming N * 2^n nodes. This leaves the network largely untouched by resizes; perhaps nodes could detect that it has happened upon seeing an address outside the current network size. We require that new nodes swap out with nodes publishing shouts, the node doing the publishing will need to hold at least 2 virtual locations on the toroid. Downstream neighbors need not be informed of the swap out but the new node will require shouts for these nodes. The old node should tell its old upstream neighbors of their new downstream neighbor because we want to verify that the old neighbor is leaving this position. If another node were to tell the upstream neighbors to stop sending to their downstream neighbor, malicious nodes could break apart the network quite easily. We can use the same swap-out procedure for nodes leaving the network; the leaving node replaces itself in all of its virtual locations by other volunteer nodes.
+
+For fountain code transmission, have it such that the source will send the data as long as it receives a repeating signal from the destination. Nodes that drop mid transmission can then be detected.
+
+### 12 ###
+02/01/13
+
+If we split shouts by direction then there is one needle in the hay stack. If we binary search the haystack, the haystack disappears leaving the needle. If put the shouts together we now have multiple needles in the combined haystack. Any attempt at a binary search can be detected after the search has started and before the search ends. Detection could be by having downstream nodes coordinate and measure relative packets received, a cooperative node should send equal amounts of traffic to both (there is a probablistic factor due to packet drop).
+
+It turns out GridHelper gets Ipv4AddressHelper to use a new network for each node in both dimensions. Hilarious.
+
+### 13 ###
+13/01/13
+
+Redesign shouts to only be valid for a few uses thus preventing searches. Reroute around burnt bridges.
+
+### 14 ###
+18/01/13
+
+Shouts need not be discarded after a number of uses if it can be shown that a hostile node is not searching the shout. By placing multiple valid IPs of the network in the shout it can be ascertained if the shout is being searched. If some valid IPs in the shout are not sent to whilst others are then it can be assumed that the node is trying to search the shout for valid IPs. We obviously need to ensure that the unreliablity introduced by UDP is accounted for, some valid IP may not receive the message and may wrongly reject the communication.
+
+This can be implemented as follows. First, have shouts consist of a unique identifier (e.g. UUID) and a list of IPs (very few of which are valid). Groups of nodes first collaborate to create such a shout without revealing their identities to the others in the group. Once the shout is created it can be used to contact any member of the group as each has donated its real identity. Nodes inside and outside the group can then use the shout to communicate and can verify that the shout is not being searched as follows. When a node uses the shout, each member of the shout group should receive a message if the node doing the sending is not being hostile. Each member of the group should use the same shout to send some confirmation message saying that they too have received the shout. If the sending node is in the group then they will also send a confirmation message, it then cannot be told whether the sender of the shout is in the group of not (which helps anonymity slightly). Only if all the nodes in the shout group receive the message do we consider responding. Shouts are supposed to be sent repeatedly (with some delay between the repeats) so evetually a fully confirmed shout will get through. There is no need for any acknowledgement of the confirmation shouts.
+
+Consider the hostile node. The node desires to learn the identity of one or more peers in the network so needs to find an IP address it knows to be hosting a peer. The network may be host to a number of functions and many of those will involve nodes in the network responding to some request made by other nodes. The hostile node, then, could send requests to different sets of IP addresses in the shout and group those requests that yielded a response (group A) and group those that didn't (group B). If IP addresses appear more in group A than group B then it that address is more likely to be the identity of a participating peer. These groups can be assembled by performing some form of search on the list of IPs, e.g a binary search or linear search. Binary search: use half the IPs in the list when shouting and see if it yields a response, if it does, halve the list of IP addresses again and repeat, otherwise use the other half and repeat; when a single IP is left and it yields a response when a message is sent to it then it is certain to be a peer in the network and its anonymity is compromised. Linear search: remove one IP address at a time from the list until the shout doesn't yield a response, it may be assumed that the last IP address removed is a participating peer.
+
+Each non-hostile node will want to prevent hostile nodes from obtaining their identity. If one of the nodes in the shout group sees that they are the only node that has not received the message the  current shout then it may be the case that their IP address id the first to be removed in a linear search. If they do not confirm the message (this is the correct inaction) then the attacker will flag their IP address as a participating node and their anonymity is broken. If they do confirm the message (i.e. they lie about having received it) then the attacker won't flag their IP address and their anonymity remains intact. Therefore a non-hostile node's best course of action is to lie. In our shout group model, if a single node's IP address is excluded from the shout, the first the node will hear of the message is the confirmations from all the other nodes. Once it receives the last confirmation and some further time has passed it may assume that it has been excluded from the shout and might then decide to lie. We can prevent nodes from being able to lie by requiring that confirmations contain a cryptohash of the confirming node's unique ID concatenated to some nonce from the message being confirmed. Without the original message, the node is unable to produce a valid confirmation and therefore is unable to lie. However, this doesn't solve the problem of the node being identified, it only gives the responding node a clear picture of the situation.
+
+### 15 ###
+19/01/13
+
+There are 4 possibilities: 
+1. The destination node receives the message and all other nodes in the shout group confirm.
+2. The destination node receives the message but not all other nodes in the shout group confirm.
+3. The destination node does not receive the message but all other nodes in the shout group confirm.
+4. The destination node does not receive the message and not all other nodes in the shout group confirm.
+In case 1, we can safely respond. In case 2, if there is a single non-receiving node, not responding will risk identifying the node. In case 3, the destination node risks identifying itself if it doesn't respond and in fact cannot respond as it doesn't have the request. In case 4 we can safely not respond.
+
+The hostile node can either gradually increase or decrease the set of IP addresses in the shout it uses; the set used comes from the original shout it is provided. When the first method is used the nodes in the shout group will see the number of nodes receiving the messages increase. When the second method is used the nodes see the number of receivers decrease. If the nodes act such that the destination node will respond if all other nodes confirm then when the first method is used, the IP addresses included in the shout will increase until they hit all nodes. When the nodes respond, they risk identifying the last node added to the shout (as there is no way to know if the hostile node has added more IP addresses to their shout since adding this one). Similarly, if the nodes act such that they will respond if one or more nodes receive the shout then this risks identifying the first node. Similar cases occur when the hostile node decreases.
+
+So we see that if hostile nodes can readily manipulate their shouts, they have a good chance of identifying nodes in the network. Can shouts be locked down in such a way that a hostile node cannot search through the list of IP addresses in the shout. Note that the search mechanism relies upon trying different sets of IP addresses when shouting and comparing the sets where responses were obtained to sets where responses were not obtained.
+
+Dynamic send / don't send sets
+    as the shout is used, addresses move between sets
+    receivers know in advance what sets the sender should be using
+    attacker can still change set membership of addresses and determine peerhood when it changes set membership of a valid IP
+    
+    
+Once joined, receive constant traffic
+    all items might be received with small probability
+        requesting things merely increases probability of receiving it
+        no way to tell if modification to shout IP address list caused response or not
+    
+### 16 ###
+25/01/13
+
+Following meeting with Simon:
+    Theoretical approach entirely valid.
+    Design components and prove they work individually.
+        Show that if they work as parts, they work as a whole.
+        Make really simple small emulations.
+    Create diagram of areas where time needs to be spent.
+    Idea is to convince reader of the design's functionality.
+    Show that there isn't any similar research out there.
+    Write about interesting ideas I have.
+        Proof of work (POW) tokens to make joining difficult thus making attacks difficult.
+            Ban hostile nodes by blacklisting their tokens.
+            Must do another proof of work to rejoin.
+    
+    Parts:
+        The shout.
+        The network design.
+            Utilise existing designs.
+            Modify for shout based nature of network.
+        How applications can be mounted on top of the network.
+            New applications or modified existing ones?
+            
+### 17 ###
+27/01/13
+
+With shout groups, increasing send set attacks easily detectable and safe to ban hostile peer (as no message will be sent unless all nodes in shout group receive the message). Decreasing send set attacks can also be detected but it is harder to ban hostile node safely. Banning the hostile node immediately after one node stops receiving the shouts reveals that node as a participant. Banning the hostile node after a random number of shouts after detection doesn't help alleviate this situation as the hositle node can wait as long as they like before decreasing the send set further. Such a patient hostile node can simply wait until they are certain they haven't been caught before decreasing the send set by one again. The advantage we have over the hostile node is that, if we don't alter our behaviour once we detect their hostility, the hostile node doesn't know when, or if, it has been detected. We know that we must ban the hostile node before its shouts do not reach any node within the shout group; once this happens, the recipient in the shout group is unable to respond and therefore is forced into modifying its behaviour (i.e. it won't respond to a request it hasn't received because it cannot respond to the request). Whilst there is a possibility of banning hostile nodes when the shout group members believe the search will identify a random non-participating IP as the recipient, this solution is undesirable because there is no way to know for sure if the ban would identify a peer.
+
+Instead we can have shout groups that exist only temporarily. Once a certain number of shouts have been sent, the shout group ceases responding to requests to the shout group. The sender must use a different shout to reach the network. If we have the shout group mutually pre-determine a number of times the shout can be used and then proceed to offer a new shout (for a different shout group) after the shout expires then if the shouting node is hostile, it will have its search interrupted before it can be completed. We will ensure that the hostile node will not complete its search with high probability by showing the probability that the first x IP addresses in a randomly ordered list of n containing all s of the shout group's IP addresses is very low. The shout need only reach a single node for us to be able to send the request on and generate a response so we only need the shout to expire before all the valid IPs are placed in the no-send set. This covers the case where one IP address is removed at a time. What about when more are removed at once? When a large number of IP addresses are removed from the send set (which corresponds to several of the valid IP addresses being removed from the send-set) like we might see in a binary search, we can safely ban the sender as they still have a large list of IP addresses to search. However, if the shout has c uses then if the sender removes n/c IP addresses everytime the hostile node can complete the search and will have a block of n/c addresses containing one or more valid IP addresses which narrows its search considerably (unless 1/(n/c) <= 1/(n/v) --> c <= v where v is the number of valid IP addresses).
+
+exponentially increasing search certainty periods
+    responder waits for number of shouts before responding
+        increasing numbers of responses to same bad shout
+        normal behaviour causes similar behaviour
+        uses up shout lifetime
+    responder waits a time delay before responding
+        increasing as shout group members fail to receive the shout
+        normal behaviour generates delay as well
+proof of work per request
+    only really delays the inevitable
+sender must send request with sequence number
+    receivers also keep track
+    somehow use out-of-stepness to ban safely
+    can detect when the sender has been sending to only invalid IPs between sending to valid IPs
+
+
+Banning
+    Make sure people not banned by hostile nodes
+    Banning prevents someome being responded to by the shout group that banned them
+        Doesn't affect other shout groups
+
+### 18 ###
+28/01/13
+
+Randomly ban hostile peer in the the middle of their search; this will leave them with two lists of size n/2 with each containing roughly v/2 valid IP addresses. This gives the same valid address density as with the complete list. Therefore it is no different than if the attacker had cut the list in to 2 parts without interacting with the network at all and thus the attacker gains no information. 
+
+Consider if there were multiple collaborating hostile nodes. Each has its own POW token. Suppose they split their search between them in some fashion, i.e. the shouts required to perform the search are distributed between the hostile nodes. We have the policy that a node is immediately banned if it stops sending to more than one valid IP at once. Therefore a node that has a clean history cannot pick up the search in the middle when the search has stopped sending to multiple valid IP addresses. In the case that a single valid address has been eliminated, we proceed as if that node had just been detected as starting a hostile search. In the case the search jumps before any valid IP is placed in the no-send set, we treat them as if no search has begun. Before the search switch, the first hostile node does not know if there are any valid IP addresses in its no-send set or not so when the switch occurs, the hostile party knows that either there is one valid IP in their no-send set or there are none. 
+
+We can change the threshhold to be such that the ban occurs, at random, after nearly half of the valid IPs have changed sets. Combining this with multiple hostile nodes, we wouldn't ban the new node after the switch unless it had roughly half of the valid IPs in the no-send set. This is set up such that, if the first node suffers a ban caused by the random number of shouts after the hostile node stops sending to nearly half of the valid IP addresses, then continuing the search with the same send / no-send sets on the second node will be met with that second node being instantly banned. 
+
+Consider hostile nodes within the shout group. The hostile party will now have information regarding how many nodes receive the shout. The node within the shout can use a different anonymous ID to perform the attack to prevent revealing that they are within the shout group. This information would make it incredibly easy to see when the search changes the set membership of one of the valid IP addresses. To counteract this, we note that a shout group contains the valid IP address of the destination node and that the purpose of the shout group is so that the destination node knows the sender is shouting loudly enough. I.e. the only node that is doing any responding is the destination node, other nodes within the shout group will need other shouts in order to receive messages. Taking this into account, we use the following procedure. The sender shouts the same request multiple times which should ensure reception at any valid IP it is shouting to. Once the number of received requests passes a threshhold for any node in the shout group, that node shouts to the shout group a message encrypted under the destination node's public key. When another node in the group received this token, that node shouts a message under the destination node's public key saying whether or not it has received a request from the anonymous ID given in the token. All nodes in the shout group will then have shouted to every other node a message saying that a message has come from the sender and an encrypted value stating if the node has received the shout or not.
+
+This is flawed as the hostile node within the group can simply send a request to one IP address at a time; when the request hits a valid node, the hostile node will hear about it and can record the IP address of the node it sent the message to. We can instead send encrypted shouts under the public key of the destination node regarding every message received within a fixed time period. If these are sent continually, with the same size and with some IND-CPA encryption scheme then the non-destination receivers are unable to discern whether their request is being received or not beyond what they learn from receiving responses to their requests. This model does place the destination node in a powerful position within the shout group.
+
+What if the destination node is hostile? This requires a method of ensuring that the destination node will only be given a message that the shout has been received by other nodes if all the nodes have received it. 
+
+### 19 ###
+29/01/13
+
+We want to create a system whereby a number of parties reveal some information only if a certain number of other parties do the same. The only method of checking whether the other parties submit the information is through a public channel all the involved parties have access to. Can this be done through secret sharing?
+
+If we have secrets shared such that the receipt is only confirmed if some threshold of parties confirm it then we should be able to recreate all our previously mentioned behaviours (e.g. link up the threshhold of this to the threshhold used for bans).
+
+Within the shout group:
+    Some number of nodes have received the message
+        We assume hostile nodes have the message also
+    Each node generates an encrypted message regardless of whether they received the message and shouts it
+    Encrypted messages indicate whether or not a node has received the message
+    Only if a number of nodes above a threshold have received the message can the messages be decrypted
+    Nodes that have received the message cannot simply generate more secrets using the information they have or lie in order to decrypt the other people's messages.
+    
+### 20 ###
+30/01/13
+
+Commitment scheme
+
+Sender sends encrypted secret shares under secret sharing scheme. Each party decrypts its share and shouts it. Only once t shares are shouted does the message become acknowledged. Would be great if it weren't for the fact this doesn't cover the hostile sender (which can recognise shares that it dealt).
+
+Go around in a circle. Order the members somehow and pass around a message with some homomorphicly additive component. The message starts off with a hash of the message or other unique ID and the homomorphicly encrypted number set to 1 (because the starting node will have received the message). The message is then encrypted under the public key of the next person in the chain. They add 1 to the homorphic number if they have received the message and then proceed to pass the message on under the next person in chain's key. When the message reaches the party that started the message passing, they decrypt the homomorphic number and shout that the message has been received with that number of receipts.
+
+Use symmetric encryption on a randomised acknowledgement of receipt. The key is derived from the message deterministically. Encrypt a number of times >= v. Keep record of all intermediate results. Send this round in the circle. Each party who has received the message can derive the key. They should then apply the key to the message if they have received it. When the message comes back to the first node, they can compare the message to their list of intermediate encryption results and determine the number of receipts for the given message. They can then shout the information and proof of results for verification. If the process is repeated by all nodes then the results can be verified (the received message should be receipted the same number of times by each party so each party should broadcast the same number of receipts). If the receipting process fails to return receipts above the threshold then it can be discarded without further thought.
+
+Problem is that a hostile node in the shout group can decrypt the message multiple times to simulate more receipts. Instead we can adopt a multipart receipt approach where each party applies an encryption/decryption to just their part of a random bitstring, if they have received the message. Tampering like before is now no longer possible as tampering is easily detected by the first party. The first party knows what the parts of the bitstring should be in each of the nodes' cases. If the part of the bitstring is in neither it's original state or it's operation-applied state then it has been tampered with. In the event of tampering, the first party can simply leave the group. The operation applied can be a signature with the node's private key. When the first node in the chain receives the message back, they can check the parts of the message that are in their original state. For every other part, a verification with the respective public key is tried; if the verification matches the original message then that is counted as a reciept. Any other value that that part takes indicates tampering. However, this allows the first party to know the exact number of parties that receipted the message and can reveal identities if just one node receipts the message.
+
+How do we know which message we are receipting? If the bitstring somehow indicates the message it is receipting for, or if it can be verified that it is a receipt for a certain message, then a hostile node knows that at least one node has received the message which can reveal a node's IP address. Instead, signature onto the bitstring also takes into account the message that is being signed; i.e. the signer adds the information on what message it is receipting.
+
+### 21 ###
+31/01/13
+
+System needs to be such that it will only reveal the number of receipts if a threshold has been passed. Each node can only receipt once (i.e. cannot forge more receipts) so cannot pass threshold artificially. Perhaps some system whereby a receipt lowers the computational requirement of decrypting the number of receipts; once the number of receipts passes a threshold, the decryption becomes computationally feasible.
+
+### 22 ###
+01/02/13
+
+Secret sharing where shares cannot be determined to be parts of the secret, even with knowledge of the secret.
+
+http://cs5824.userapi.com/u11728334/docs/e516fb1fedc1/Moti_Yung_Advances_in_Cryptology_CRYPTO_2002_22.pdf#page=496
+
+### 23 ###
+05/02/13
+
+Secret sharing where adversary has knowledge of system is impossible as they may generate more arbitrary shares in the system.
+
+Perhaps some form of commitment scheme where each node receipting the message first sends some commitment message before then revealing the contents. Probably not helpful as nodes still don't have a way to commit to receipting by parts.
+           
+### 24 ###
+06/02/13
+
+A formal description of our desired system:
+We have a set of nodes, N, each with a public-private key pair, K_i. Every node in N knows the public components of all the keys held by the nodes in N. The nodes in N receive messages, them messages may reach any subset of the nodes in N (some will receive it, others won't). Those that have received it must acknowledge that they have received it to the other nodes in N if and only if t-1 other nodes in N also acknowledge that they have received the same message. In other words, if t or greater nodes have received the message and follow the protocol for receipting properly then the message will be receipted. With t-1 or fewer acknowledgements, the message is not receipted and no node in N knows how many nodes received the message; it is equally probable that a nodes have received the message for any a where 0 <= a < t.
+
+Thoughts into some sort of homomorphic system:
+Use textbook RSA and have nodes multiply by encrypted values of primes. Perhaps have 2 primes for each node; when they come to receipt a message, using one prime means "yes" and the other means "no". An idea: For a given recipient, make a linear sequence of all other nodes and place the recipient at the end of the sequence.
+
+Screw it. Recipt packets only for recipients you trust, encrypt under recipient's public key.
+
+Back to routing. N-dimensional uni-directional hypertoroids are appropriate because of their anonymity factor. A packet is equally likely to have come from any one of the toroid nodes. A toroid node now consists of a shout group. If we don't disguise the traffic differently on each one of the links, we would have to receipt the shouting on every hop to ensure that a party is not searching the shout list of the shout group by observing which IP address is passing the traffic through. If we establish per-hop symmetric encryption keys then it is harder to tell if the message that went into the group  is the message coming out (here, cover traffic is applicable). If an adversary is part of the network and controls the nodes on either side of the node through which a message is being hopped then the adversary knows the necessary hop keys and can discern which messages are being successfullly passed through which would then allow them to search the shout group IP address list.
+
+To solve this, have a packet structure along the lines of (PK, hybrid headers, data). PK is the public key of the recipient node and data is the data being transmitted. The hybrid headers field is used to contain multiple asymmetric encryptions of symmetric keys. When the packet hops through a node on its way to its destination, the node encrypts the data again under a new symmetric key that it randomly generates. The symmetric key must then be encrypted under the public key, PK, of the recipient and added to the hybrid headers field. To protect against persons knowing where the packet came from, we initialise the hybrid headers field to be random data of a size that would allow the packet to traverse the maximum distance in the network and have all the nodes in the path add a new hybrid encryption to the hybrid header. To add the the hybrid header the node simply right shifts the bits the length of the encryption and puts the encryption on the front of the headers. The recipient node then simply has to take each hybrid encryption in turn, recover the key and apply the decryption to the data. Once all the hybrid parts have been processed, the data has been decrypted. The hybrid parts should all be the same length to allow the recipient to split the parts up. A party seeing the result of the pass through will note that the packet has the same PK and (mostly) the same hybrid headers. To combat this we can have the node encrypt the hybrid headers under the same key after right shifting them. The result will only be the same in terms of the PK which is ultimately linked to its destination so it is of no use to remove this.
+
+If a packet with a given PK goes into the shout group and another packet then promptly exits on the other side, the packets are likely to be the same packet (i.e. they are transmitting the same data). Preventing this from being recognised is very hard. One solution would be to have the group send a message to every other node on rotation and when it comes to passing on a message to the desired public key, the processed message you have received is sent instead of some random filler traffic. Sending such traffic is going to reduce all meaningful data flow to a standstill so is a really bad method of covering up the actions of the node.
+
+### 25 ###
+07/02/13
+
+Met with Simon. Packet structure and associated crypto is apparently "neat".
+
+[A] -> [B] -> [C]
+
+Adversaries are nodes A and C, they work together (and network structure may dictate that they are in fact the same shout group). When A passes a packet to B, B must alter the packet in such a way that it cannot be recognised as being the same packet sent by A by C. Try altering the public key somehow on each pass through? It would have to be altered in a irreversible fashion and with some random nonce such that C cannot easily compute the inverse and cannot easily guess the random nonce and compute the forward function of the key before the transformation which matches the output of the key output by B.
+
+### 26 ###
+08/02/13
+
+Randomisation of public key can be achieved with elgamal. First, have the group parameters G, q and p shared throughout the network. For a message origin node that knows the public key, h, of the destination, produce the packet PK, H_0 || z, E(k_0, message). PK is c_1||h_1, H_0 is c_2 which is the encryption ElGamal(G, g, q, h, k_0||0^{|c_1|}), z is a number of random bits that is at least equivalent to network width + network height, k_0 is a randomly generated key and E(k_0, message) is the encryption of the message under k_0 using some symmetric encryption scheme. When a node receives this message to be passed on, the node generates a new random key, k_1 and encrypts the encrypted data field under this key. The node then right-shifts the hybrid-headers field by the length of a single hybrid_header encryption (such that the field is now smaller by the length of one encryption) and encrypts the field under the key k_1. The node then makes an elgamal encryption of k_1 and c_1 using c_1 in place of the generator, g, and h_1 in place of the public key, h. (c'_1, c'_2) = ElGamal(G, c_1, q, h_1, k_1||c_1). The node then prepends c'_2 onto the hybrid headers field (so that it is the same length as before) and puts c'_1 as the PK field. These steps ensure that packet the node produces is completely unrecognisable from the one the node received.
+
+However, h_1 is equivalent to the secret used to encrypt the message in the first case; having the second node know this is very bad as they can decrypt the ciphertexts and eventually the messsage itself! Therefore we apply a second random exponentiaion to c_1 and h_1 (aka. s) to obtain c*_1 and h*_1. The PK field is now (c*_1, h*_1) and the the hybrid header we add is (c_1, c_2) as in standard ElGamal. This keeps s secret as desired. These do give away additional information about the first secret random number, y, that was used; therefore, instead of exponentiating c_1 and h_1 to obtain c*_1 and h*_1, we use g and h instead which gives no extra information about y or s. When the packet reaches the receiver, the node uses their private x to recover the contents of each hybrid header in turn and decrypts the contents of the message by applying the decrypted keys in reverse order.
+
+Routing the packet without revealing anything is also a problem. A packet with the same destination address going into and out of a node may reveal that it is the same packet even though we've scrambled its contents. Ideally we want it such that packet travels the minimal distance in all directions to reach its destination. If all else fails, it is simple to define a single route that covers all nodes in the network and then all packets traverse this route until the destination recognises the packet. We would ideally like to have some mechanism by which the node receiving it can determine if the packet has reached the end of traversal in one dimension, then it can be passed in the other dimensions until it reaches its destination. An adversary shouldn't be able to determine if two packets have the same destination.
+
+### 27 ###
+11/02/13
+
+Theorem: any node on a 2D uni-directional torus can be reached through a constant number of paired turns, t, and a constant number of straight line movements, s, when these are arranged randomly.
+
+a---#
+    |
+    #---#
+        |
+        #---#---#---#---b
+        
+A 'paired turn' is two orthogonal turns, one immediately following the other. On second thought, this is basically x and y differences.
+
+If every i of every dimension, d, has a different asymmetric key pair, then we can add one extra field to the packet per dimension with an encryption under the key pairs which will indicate to the nodes on that line / plane / hyperplane that the packet has reached its destination in an orthogonal direction and as such requires no further movement in one dimension. We can produce unrecognisable tags on packets as before with elgamal generator and public key pairs (but there may be other methods to do this that are based on an encryption of a message that can be rescrambled at will, homomorphic encryption perhaps). An adversary can only be certain that a message has the same destination as one it sent into the node if it has collaborators on the correct i of every d that the destination node is on. If the toroidal network is full at a certain level and the adversary joins the network afterwards then the adversary will not be able to create nodes in positions where it can gain private keys of the 'i's corresponding to nodes already in the network.
+
+Perhaps an encryption scheme can be assembled such that when a packet meets a node on one of the correct 'i's for the destination, the packet will indicate that it doesn't need to be sent any further in that direction. The packet field that does this will include information merged from the split dimension fields we had before such that in order to determine if the destination is the same of a processed packet and the packet pre-image then the adversary must first correctly guess the destination node.
+
+Perhaps have the sender pre-encode the route in some fashion and then each intermediate node can compute the direction they should send the packet. The method should allow for routes to be arbitrairily scrambled such that a route has multiple ciphertexts. This prevents adversaries from pegging the routes as the same. Consider the following: each node has a private key for each dimension. Each node then publishes the corresponding public key under some common ElGamal parameters. The source node generates a random path through the network to the destination and generates some random, r in {1 ... q} for each node in the path. The node then computes a list of pairs (g' = g^r, h' = h^r) for each node where h is the public key for desired direction to be taken at that node. Once the source sends it to the first node in the path, the node computes g'^x and compares it to h'; if the two match then the message is to be passed in that direction, otherwise another of the node's direction private keys should be tried. If no direction private key matches then the node should check if the encryption key is its own (i.e. the packet has reach its destination), otherwise the packet should be dropped. The pairs are to be added to the packet such that the first node in the route finds the pair it has a key to at the first position in the packet routing header, the second node's pair in the second position and so on. The length of the packet header should be equivalent to the size of one pair times the maximum routing distance in the network. The pairs that are unused in the header should be set to random values. When a node receives a packet to be passed on, in addition to the transformations it makes for encrypting the data and scrambling the PK, it removes the first direction header (the one corresponding to its own private key), scrambles the other pairs in the field, left shifts them by the length of one pair and appends some random bits to the right side of the field. The routing field has now been completely scrambled and the new first pair can be decrypted by the next node in the sequence.
+
+I think that pretty much wraps that up...
+
+### 28 ###
+13/02/13
+
+With searching the shouts for valid IP addresses, the hostile node can only search the addresses of the node next to it. It can do this by sending requests to anywhere in the network and receiving repsonses. If the response is received then the send set includes a valid IP. If the nodes aren't bothering to reciept the messages they pass on then they can have their identies discovered. If the peers in a shout group all had to forward packets to a subset of the IP addresses in the downstream node such that the union of the subsets was the entire shout for the downstream node then the ratio of valid IP addresses to invlaid ones is transmitted downstream to the recipient who then receipts. The recipt process has some probability of detecting the search. This isn't very good.
+
+Alternatively, have all the nodes wait until every node in the shout group has received the packet before sending it on. Wait, this requires receipting -> square 1.
+
+### 29 ###
+15/02/13
+
+Only the first intermediate node in the sequence needs to receipt the message as it is the only node at risk of being discovered by the adversary. The other nodes are unable to detect a response to the message and so they cannot pose a risk to the next node in the sequence. The next question is how we check that the message has been receipted by the second person and how we know the second party is not under the control of the adversary. Logic dictates that we cannot know if the second is under the adversary's control, therefore we should ensure that it is hard for the adversarial node to gain 2 sequential positions in the network. Having the first and second nodes sign the messages detracts from anonymity only insofar as that the intermediate nodes know where the message has come from. Having more nodes in a sequence sign a message improves security as an adversary will find it very hard to get nodes arranged as such. They may learn that they have one or more coordinates that is the same as the destination's as they may see that they are not instructed to send packets from the source in certain directions. If we do use signed messages then the packets will be recognisable so that's out.
+
+If we were to get every node to receipt the messages, we lock the adversary out as all nodes are now protected. We don't need to sign messages either. Ideally, to cut down on bandwidth, we can let the receipt arbitrator be determined by some function of the message and then all the other peers in the shout group send a receipt to that peer before the peer sends it on. Thus each peer sends exactly one shout per message and is a constant number of times greater than the traffic we would send otherwise.
+
+The source routing approach we are taking assumes complete knowledge of the network as the source node needs to know keys associated with all nodes between it and the destination. I claim that this is not particularly difficult in a network arranged in a regular fashion. We know where the nodes should be, we need only receive information about the network passively until we have enough to form a complete path through the network to the destination. Ideally, when we join the network, the network should tell us where things are. If the joining node disseminates its public key and location, nodes receiving the info can respond with network info. Whilst we could do it like this, that's silly because the node putting us into the network was up until that point in the position that the joining node now inhabits. Therefore, in addition to who is immeadiately downstream of them, the helper node can give network information to the node as well. When the new node is joined to the network, the helper node announces the new node's presence. The other nodes can then spread the announcement floodwise and update their own records.
+
+### 30 ###
+19/02/13
+
+Spoke to Bogdan about ElGamal key scrambling method. Pointed out that certificate for public key probably won't cover scrambled keys. I don't think this matters the way I'm using the keys. An adversary can exponentiate the pairs by random values or replace them by other values that they calculated in the first place. The adversary cannot decrypt the data, they may only encrypt it legitimately or illegitimately. In the latter case it cannot be decrypted. If the confidentiality public key is changed illegally to some other valid pair (might be some other node's key) then if the holder of the private key for the new pair decrypts the message after it passes through some number of nodes, they only learn that the packet has been scrambled correctly between there and the point at which it was illegally altered. They learn nothing about the data. The adversary could have generated such an event without a valid packet from somewhere else.
+
+An adversary may also modify the route a packet takes by changing the key pairs in the routing section of the message. They cannot learn where the packet is going as they need the secret keys to do that. Again, they could send a message to a node without needing a valid packet from somewhere else.
+
+The receiving node knows that a packet has been transmitted correctly if all the decryptions on the data produce a valid plaintext (probably with some verification?) and the next routing header cannot be decrypted under its routing private keys (indicating that the packet has reached its destination). It is up to the sender to give information on where they are, should they desire to do so.
+
+### 31 ###
+26/02/13
+
+Anonymous tunnels can be established in a similar way to Tor. If a location publishes that it has some content, one of the IP addresses in its shout is now known to host the content. If a single intermediate node is added then the intermediate node knows the true position but not the IP address of the host (because it doesn't know the shout). Obviously, the node picked to be the intermediate should not be on that holds the shout for the host.
+
+### 32 ###
+28/02/13
+
+Paths can be sent to other nodes anonymously. A destination can send a path to a node and they won't know where the path goes, they only know to redirect traffic with a certain tag in that direction.
+
+### 33 ###
+03/02/13
+
+Asmuth-Bloom's secret sharing scheme may be the solution to the secret sharing problem for recipting the messages received by shout groups. The scheme adds randomisation to the secret before sharing it out. If we determine a seed for a CSPRNG and share it secretly amongst all but one of the nodes in the shout group then when these nodes receive a message they can prove to the member they left out that t of them have received the message whilst ensuring that at least t of them have received the message before giving any knowledge to the last node. 
+
+When the nodes that know the seed receive the message, they compute the next random number in the sequence of the CSPRNG and use that as alpha in the secret hiding phase of the secret sharing. Then, using the scheme they generate a share in one of the pre-agreed moduli. This share is then signed and sent privately to the left out node. The left out node cannot generate more shares without knowledge of alpha. They gain knowledge of alpha when they get t or more shares (at which point generating more shares is pointless). The other nodes do not know who received the message as they all encrypted their shares under the public key (possibly hybrid) to the left-out node so they cannot generate more shares to see who received the message. However, nodes can forge more shares with the  scheme as it is because they know the moduli that the other nodes will use. Each node making the shares needs to know the secret, the random alpha and a modulus; therefore, the moduli can be kept secret and only be shared with the verifying node. Nodes cannot then generate more shares and it is secure as long as the other nodes don't reveal the seed to the CSPRNG.
+
+If there are two adversaries among the shout group then this system falls apart as one node can provide the CSPRNG seed to the other. The seed should be agreed upon by some multi party key agreement protocol.

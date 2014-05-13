@@ -33,11 +33,11 @@ def framecut(f):
 	lines = kindata.readlines()
 	kindata.close()
 	flength = len(lines)
-	print flength
+	print "Original Frame Count: ",flength
 	lines = lines[SCUT:(flength-FCUT)]
 	# lines = lines[FCUT::]
 	flength = len(lines)
-	print flength
+	print "Cleaned Frame Count: ",flength
 	kindata = open(f[0],'w')
 	for line in lines:
 		kindata.write(line);

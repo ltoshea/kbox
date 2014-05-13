@@ -62,7 +62,7 @@ end
 %     plot(dataAll(i).imax, dataAll(i).jredSmooth(1,dataAll(i).imax),'.g');
 % end
 
-nsamples = 30;
+nsamples = 10;
 
 X = [];
 Y = [];
@@ -136,8 +136,8 @@ for i=1:PNUM
     end
 end
 net = driveneural(X,labels);
-mainNeural2
-            
+% mainNeural2
+%             
             
 %create labels
 %labels = zeros(110,1)

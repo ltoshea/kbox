@@ -49,10 +49,11 @@ for i=1:PNUM
     [valmax,imax,valmin, imin] = getminmax(dataAll(i).jredSmooth(1,:),0,NORM); %ERROR, BUG, CHANGE THIIS
    
    % distance = pythagoras(sort(imax)); Going to put in getminmax
-    [dataAll(i).imax, a]= sort(imax);
-    
-    
+   temp = sort(imax);
+   [dataAll(i).imax]= unique(temp);
 end
+
+
 %DRcomp(dataAll(1).jredSmooth());
 
 for i=1:PNUM
@@ -63,7 +64,7 @@ for i=1:PNUM
     plot(dataAll(i).imax, dataAll(i).jredSmooth(1,dataAll(i).imax),'.g');
 end
 
-nsamples = 30;
+nsamples = 10;
 
 X = [];
 Y = [];
@@ -120,8 +121,20 @@ for i=1:6
 end
 
 % close all
- results = net(X');
-% figure, plotconfusion(labels,results)
+maxval=[];
+maxind=[];
+results = net(X');
+[maxval maxind] = max(results);
+results = zeros(size(results));
+for i=1:length(results)
+    results(maxind(i),i) = 1;
+end
+
+lblcut = abs(length(results) - length(labels));
+labels([end-(lblcut-1):end],:) = [];
+
+%m3(:,[1:2]) = [];
+figure, plotconfusion(labels',results)
 % %results = sim(net,X');
 % 
 % 
