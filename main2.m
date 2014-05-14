@@ -5,6 +5,7 @@ NORM = 1; %flag=1 normalise for hip centroid
 clearvars dataAll
 clearvars X
 clearvars Y
+clearvars labels
 
 %Hip centre is first joint
 
@@ -38,11 +39,14 @@ for i = 1:length(dataAll(i))
     M = [M, dataAll(i).data]; 
 end
 
+load M_ORIG
+M = [M,M_ORIG]; 
+
 % [Xm1,EV1,Ev1]=createES(M,3); %Create Eigenspace., New data !contribute to eigenspace
 %close all
 for i=1:PNUM
     dataAll(i).jred=reconstructPose(dataAll(i).data,Xm1,EV1);
-    dataAll(i).jredSmooth = kinsmooth(dataAll(i).jred);
+    dataAll(i).jredSmooth = kinsmooth2(dataAll(i).jred);
     [valmax,imax,valmin, imin] = getminmax(dataAll(i).jredSmooth(1,:),0,NORM); %ERROR, BUG, CHANGE THIIS
    
    % distance = pythagoras(sort(imax)); Going to put in getminmax
@@ -88,48 +92,25 @@ for i=1:PNUM
    %lbl = ceil(lbl);
 end
 
-labels = zeros(60,1);
-for i=1:6
-    switch i
-        case 1 
-            lbl = [1];
-            testlbl = repmat(lbl,10,1);
-            labels(1:10,:) = testlbl;
-        case 2
-            lbl = [2];
-            testlbl = repmat(lbl,10,1);
-            labels(11:20,:) = testlbl;
-        case 3
-            lbl = [3];
-            testlbl = repmat(lbl,10,1);
-            labels(21:30,:) = testlbl;
-        case 4
-            lbl = [4];     
-            testlbl = repmat(lbl,10,1);
-            labels(31:40,:) = testlbl;
-        case 5
-            lbl = [5];
-            testlbl = repmat(lbl,10,1);
-            labels(41:50,:) = testlbl;
-        case 6
-            lbl = [6];
-            testlbl = repmat(lbl,10,1);
-            labels(51:60,:) = testlbl;
+labels
+
+
+% [predicted_label, accuracy, probest] = svmpredict(Y,X),svmStruct,['-b 1']);
+
+diff = size(labels,1) - size(X,1);
+if diff < 0
+    for i=1:abs(diff)
+        labels = vertcat(labels,6);
     end
 end
+if diff > 0
+   labels(end-(abs(diff)-1):end,:) = [];
+end
 
-
-
-%'autoscale' is true by default 'kernel_function' 'rbf'
-%svmStruct = svmtrain(X(trainInds,:),Y(trainInds),'kernel_function', 'rbf','autoscale','true');
-%  svmStruct = svmtrain(Y(trainInds),X(trainInds,:),['-b 1']);
-%  labels = zeros(182,1);
- Y = zeros(size(X,1),1);
- lblcut = abs(length(X) - length(labels));
- labels([end-(lblcut-1):end],:) = [];
  
- [predicted_label, accuracy, probest] = svmpredict(labels,X,svmStruct,['-b 1']);
- %close all
+ 
+ 
+  %close all
  
 %%
 %NVarToSample, 'all' deciscion tree, otherwise random forest
@@ -147,49 +128,4 @@ end
 correct = (count/length(C))*100;
 sprintf('Random Forest Correct: %f%%', correct)
         
-%testlabels(end,:) = [];
-% diff = size(testlabels,1) - size(C,1);
-% if diff ~= 0
-%     testlabels(end-(diff-1):end,:) = [];
-% end
-% chklbl = horzcat(testlabels,C);
-% 
-% count=0;
-% for i=1:length(C)
-%     if chklbl(i,1) == chklbl(i,2)
-%         count = count+1;
-%     end
-% end
-% correct = (count/length(C))*100;
-% sprintf('Random Forest Correct: %f%%', correct)
-%%
-
-%Diffusion maps
-
-
-%mappedA = compute_mapping(A, type, no_dims, parameters)
- 
-% C = svmclassify(svmStruct,X(testInds,:),'showplot',true);
-%[C, Y(testInds)]
-
-% ty = Y(testInds);
-% count = 0;
-% for i=1:length(C)
-%     if C(i) == ty(i)
-%         count = count+1;
-%     end
-% end
-% correct = (count/length(C))*100
-% sprintf('Correct: %f%%', correct)
-        
-
-%Neural networks
-% lbl1 = size(dataAll(1).features,1); %How many punches do we have?
-% lbl2 = size(dataAll(2).features,1);
-% %lbl2=0;
-% totalsize = lbl1+lbl2;
-% labels = zeros(lbl1,1);
-% labels(lbl1+1:totalsize,:) = ones((totalsize-lbl1),1);
-%test_labels = labels(1:40,:); %new addition for test data for SVM
-%close all
 

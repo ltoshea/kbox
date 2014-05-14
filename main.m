@@ -6,7 +6,7 @@ NORM = 1; %flag=1 normalise for hip centroid
 
 
 for i=1:PNUM
-    path = ['C:\Users\liam\Desktop\KINECT\kbox\data\' num2str(i) '\'];
+    path = ['C:\Users\liam\Desktop\KINECT\kbox\data\freshdata\' num2str(i) '\'];
     %path = ['C:\Users\liam\Desktop\KINECT\kbox\data\1\'];
     %path = ['C:\Users\liam\Desktop\KINECT\kbox\data\jabtest\' num2str(i) '\'];
     
@@ -44,7 +44,7 @@ end
 %close all
 for i=1:PNUM
     dataAll(i).jred=reconstructPose(dataAll(i).data,Xm1,EV1);
-    dataAll(i).jredSmooth = kinsmooth(dataAll(i).jred);
+    dataAll(i).jredSmooth = kinsmooth2(dataAll(i).jred);
     [valmax,imax,valmin, imin] = getminmax(dataAll(i).jredSmooth(1,:),i,NORM);
    
    % distance = pythagoras(sort(imax)); Going to put in getminmax
@@ -131,6 +131,8 @@ testInds(trainInds) = [];
      temp = repmat(dataAll(i).labels(i,1),lbl(i,1),1);
      testlabels = vertcat(testlabels,temp);
  end
+ 
+ 
 %NVarToSample, 'all' deciscion tree, otherwise random forest
 %X = M'; %Changed this, this is full pose pose.
 B = TreeBagger(75,X(trainInds,:),Y(trainInds),'OOBPred','On');
@@ -139,9 +141,15 @@ C = cellfun(@str2num,C);
 
 testlabels(end,:) = [];
 diff = size(testlabels,1) - size(C,1);
-if diff ~= 0
-    testlabels(end-(diff-1):end,:) = [];
+
+if diff < 0
+    for i=1:abs(diff)
+    testlabels = vertcat(testlabels,6);
+    end
 end
+    if diff > 0
+       testlabels(end-(diff-1):end,:) = [];
+    end
 chklbl = horzcat(testlabels,C);
 
 count=0;

@@ -6,7 +6,11 @@ NORM = 1; %flag=1 normalise for hip centroid
 
 
 for i=1:PNUM
-    path = ['C:\Users\liam\Desktop\KINECT\kbox\data\' num2str(i) '\'];
+     %path = ['C:\Users\liam\Desktop\KINECT\kbox\data\' num2str(i) '\'];
+     path = ['C:\Users\liam\Desktop\KINECT\kbox\data\freshdata\' num2str(i) '\'];
+     
+     
+%     path = ['C:\Users\liam\Desktop\KINECT\kbox\newdata\' num2str(i) '\'];
     %path = ['C:\Users\liam\Desktop\KINECT\kbox\data\testhook\' num2str(i) '\'];
     %path = ['C:\Users\liam\Desktop\KINECT\kbox\data\jabtest\' num2str(i) '\'];
     
@@ -44,7 +48,7 @@ end
 %close all
 for i=1:PNUM
     dataAll(i).jred=reconstructPose(dataAll(i).data,Xm1,EV1);
-    dataAll(i).jredSmooth = kinsmooth(dataAll(i).jred);
+    dataAll(i).jredSmooth = kinsmooth2(dataAll(i).jred);
     [valmax,imax,valmin, imin] = getminmax(dataAll(i).jredSmooth(1,:),i,NORM);
    
    % distance = pythagoras(sort(imax)); Going to put in getminmax
@@ -54,15 +58,16 @@ for i=1:PNUM
 end
 %DRcomp(dataAll(1).jredSmooth());
 %no plotting for now
-% for i=1:PNUM
-%     figure
-%     hold on;
+for i=1:PNUM
+    figure
+    hold on;
 %     %plot(dataAll(i).jred(1,:),'-r');
-%     plot(dataAll(i).jredSmooth(1,:),'b');
-%     plot(dataAll(i).imax, dataAll(i).jredSmooth(1,dataAll(i).imax),'.g');
-% end
+    plot(dataAll(i).jredSmooth(1,:),'b');
+    plot(dataAll(i).imax, dataAll(i).jredSmooth(1,dataAll(i).imax),'.g');
+end
 
-nsamples = 10;
+nsamples = 12;
+ncomponents = 3; %%HERE
 
 X = [];
 Y = [];
@@ -71,10 +76,13 @@ lbl = [];
 for i=1:PNUM
     nelem = length(dataAll(i).imax);
     dataAll(i).labels = ones(nelem,1) * i;
-    dataAll(i).features = zeros(nelem,nsamples);
+    dataAll(i).features =  zeros(nelem,nsamples * ncomponents);%HERE
     for j = 1:nelem - 1
         inds = round(linspace(dataAll(i).imax(j), dataAll(i).imax(j+1), nsamples));
-        dataAll(i).features(j,:) = dataAll(i).jred(1,inds);
+        %dataAll(i).features(j,:) = dataAll(i).jred(1,inds);
+        
+        foo = dataAll(i).jred(1:ncomponents,inds);%HERE
+        dataAll(i).features(j,:) = foo(:);%HERE
         
         if debug
             plot(dataAll(i).features(j,:))
@@ -89,11 +97,7 @@ for i=1:PNUM
 end
 
 
-trainPercent = 0.8;
-trainInds = randperm(length(Y));
-trainInds(round(length(Y)*0.8):end) = [];
-testInds = 1:length(Y);
-testInds(trainInds) = [];
+
 %close all;
 
 labels = zeros(length(Y),6);
@@ -135,7 +139,11 @@ for i=1:PNUM
             labels(startpos:flen,:) = testlbl;
     end
 end
-net = driveneural(X,labels);
+dataAll(7).baselabel = labels;
+%net = driveneural(X,labels);  %87.3 and 43.3 with current \data\
+%net = driveneural_big(X,labels);  %88.6 and 46.7 with current \data\
+ %net = driveneural(X,labels);  %81.3 and 51.7 with current \freshdata
+net = driveneural_big(X,labels);  %81.6 and 56.7 with current \freshdata
 % mainNeural2
 %             
             

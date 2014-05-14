@@ -28,6 +28,7 @@ def getfilelist(f=None):
 def framecut(f):
 	SCUT = 50;
 	FCUT = 150;
+	#FCUT = 150;
 	"""cut out beginning and end frames"""
 	kindata = open(f[0],'r')
 	lines = kindata.readlines()

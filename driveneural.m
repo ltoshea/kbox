@@ -60,9 +60,9 @@ performance = perform(net,t,y)
 trainTargets = t .* tr.trainMask{1};
 valTargets = t  .* tr.valMask{1};
 testTargets = t  .* tr.testMask{1};
-trainPerformance = perform(net,trainTargets,y)
-valPerformance = perform(net,valTargets,y)
-testPerformance = perform(net,testTargets,y)
+trainPerformance = perform(net,trainTargets,y);
+valPerformance = perform(net,valTargets,y);
+testPerformance = perform(net,testTargets,y);
 
 % View the Network
 view(net)
