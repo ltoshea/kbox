@@ -25,11 +25,18 @@ def getfilelist(f=None):
 	return (kin,meta,accel)
 
 
-def framecut(f):
-	SCUT = 50;
-	FCUT = 150;
+def framecut(f,easy=None):
+	if (easy==1):
+		SCUT =0;
+		FCUT =30;
+		print "Running In easy mode, cleaning up 40 frames..."
+	else:
+		SCUT = 50;
+		FCUT = 50;
+		print "Running In hard mode, cleaning up 200 frames..."
 	#FCUT = 150;
 	"""cut out beginning and end frames"""
+
 	kindata = open(f[0],'r')
 	lines = kindata.readlines()
 	kindata.close()
@@ -48,4 +55,4 @@ def framecut(f):
 if __name__ == '__main__':
 	print  "Cleaning Kinect Frame Data...."
 	kin,meta,accel = getfilelist()
-	framecut(kin)
+	framecut(kin,0)

@@ -129,23 +129,24 @@ labels = [labels1; labels2];
 
 
 net = driveNeural_twoclass(X,labels);
+tilefigs;
 
 % close all
-maxval=[];
-maxind=[];
-results = net(X');
-[maxval maxind] = max(results);
-results = zeros(size(results));
-for i=1:length(results)
-    results(maxind(i),i) = 1;
-end
-
-lblcut = abs(length(results) - length(labels));
-labels([end-(lblcut-1):end],:) = [];
-
-%m3(:,[1:2]) = [];
-figure, plotconfusion(labels',results)
-% %results = sim(net,X');
+% maxval=[];
+% maxind=[];
+% results = net(X');
+% [maxval maxind] = max(results);
+% results = zeros(size(results));
+% for i=1:length(results)
+%     results(maxind(i),i) = 1;
+% end
+% 
+% lblcut = abs(length(results) - length(labels));
+% labels([end-(lblcut-1):end],:) = [];
+% 
+% %m3(:,[1:2]) = [];
+% figure, plotconfusion(labels',results)
+% % %results = sim(net,X');
 % 
 % 
 % 

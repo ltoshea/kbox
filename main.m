@@ -85,6 +85,7 @@ pause;
 close all;
 
 nsamples = 15;
+ncomponents = 3;
 
 X = [];
 Y = [];
@@ -93,10 +94,12 @@ lbl = [];
 for i=1:PNUM
     nelem = length(dataAll(i).imax);
     dataAll(i).labels = ones(nelem,1) * i;
-    dataAll(i).features = zeros(nelem,nsamples);
+    dataAll(i).features =  zeros(nelem,nsamples * ncomponents);%HERE
     for j = 1:nelem - 1
         inds = round(linspace(dataAll(i).imax(j), dataAll(i).imax(j+1), nsamples));
-        dataAll(i).features(j,:) = dataAll(i).jred(1,inds);
+        %dataAll(i).features(j,:) = dataAll(i).jred(1,inds);
+        foo = dataAll(i).jred(1:ncomponents,inds);%HERE
+        dataAll(i).features(j,:) = foo(:);%HERE
         
         if debug
             plot(dataAll(i).features(j,:))

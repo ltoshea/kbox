@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.11)  8 MAY 2014 11:49
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.11)  18 MAY 2014 15:12
 entering extended mode
 **C:/Users/liam/Desktop/KINECT/kbox/Latex/memoirthesis.tex
 (C:/Users/liam/Desktop/KINECT/kbox/Latex/memoirthesis.tex
@@ -1910,68 +1910,68 @@ LaTeX Warning: Label `sec:sec01' multiply defined.
 LaTeX Warning: Label `subsec:subsec01' multiply defined.
 
 )
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 329.
-LaTeX Font Info:    ... okay on input line 329.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 329.
-LaTeX Font Info:    ... okay on input line 329.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 329.
-LaTeX Font Info:    ... okay on input line 329.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 329.
-LaTeX Font Info:    ... okay on input line 329.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 329.
-LaTeX Font Info:    ... okay on input line 329.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 329.
-LaTeX Font Info:    ... okay on input line 329.
-LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 329.
-LaTeX Font Info:    Try loading font information for FML+fncmi on input line 32
-9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 330.
+LaTeX Font Info:    ... okay on input line 330.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 330.
+LaTeX Font Info:    ... okay on input line 330.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 330.
+LaTeX Font Info:    ... okay on input line 330.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 330.
+LaTeX Font Info:    ... okay on input line 330.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 330.
+LaTeX Font Info:    ... okay on input line 330.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 330.
+LaTeX Font Info:    ... okay on input line 330.
+LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 330.
+LaTeX Font Info:    Try loading font information for FML+fncmi on input line 33
+0.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\fouriernc\fmlfncmi.fd"
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
-LaTeX Font Info:    ... okay on input line 329.
-LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 329.
-LaTeX Font Info:    Try loading font information for FMS+fncm on input line 329
+LaTeX Font Info:    ... okay on input line 330.
+LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 330.
+LaTeX Font Info:    Try loading font information for FMS+fncm on input line 330
 .
 ("C:\Program Files\MiKTeX 2.9\tex\latex\fouriernc\fmsfncm.fd"
 File: fmsfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FMS/fncm.
 )
-LaTeX Font Info:    ... okay on input line 329.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 329.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 329
+LaTeX Font Info:    ... okay on input line 330.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 330.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 330
 .
 ("C:\Program Files\MiKTeX 2.9\tex\latex\fourier\fmxfutm.fd"
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 329.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 329.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 329.
+LaTeX Font Info:    ... okay on input line 330.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 330.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 330.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 329.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 329.
-LaTeX Font Info:    ... okay on input line 329.
-LaTeX Font Info:    Try loading font information for T1+fnc on input line 329.
+LaTeX Font Info:    ... okay on input line 330.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 330.
+LaTeX Font Info:    ... okay on input line 330.
+LaTeX Font Info:    Try loading font information for T1+fnc on input line 330.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\fouriernc\t1fnc.fd"
 File: t1fnc.fd 2005/12/13 scaled font definitions for T1/fnc.
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 10.18341pt on input line 329.
-Package nag Info: pgf.sty is broken: disabling dollar check on input line 329.
+(Font)              scaled to size 10.18341pt on input line 330.
+Package nag Info: pgf.sty is broken: disabling dollar check on input line 330.
 \symgns@font=\mathgroup13
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/fnc/m/n --> TS1/fnc/bx/n on input line 329.
-Package gensymb Info: Math companion symbols declared on input line 329.
-LaTeX Info: Redefining \degree on input line 329.
-LaTeX Info: Redefining \celsius on input line 329.
+(Font)                  TS1/fnc/m/n --> TS1/fnc/bx/n on input line 330.
+Package gensymb Info: Math companion symbols declared on input line 330.
+LaTeX Info: Redefining \degree on input line 330.
+LaTeX Info: Redefining \celsius on input line 330.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 329.
-LaTeX Info: Redefining \ohm on input line 329.
-Package gensymb Info: Using \textohm for \ohm on input line 329.
-Package gensymb Info: Using \textmu for \micro on input line 329.
+erthousand on input line 330.
+LaTeX Info: Redefining \ohm on input line 330.
+Package gensymb Info: Using \textohm for \ohm on input line 330.
+Package gensymb Info: Using \textmu for \micro on input line 330.
 
-Package layouts Warning: Layout scale set to 0.5 on input line 329.
+Package layouts Warning: Layout scale set to 0.5 on input line 330.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1988,7 +1988,7 @@ Package layouts Warning: Layout scale set to 0.5 on input line 329.
 \everyMPtoPDFconversion=\toks61
 )
 \AtBeginShipoutBox=\box76
-Package hyperref Info: Link coloring ON on input line 329.
+Package hyperref Info: Link coloring ON on input line 330.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
@@ -1998,14 +1998,14 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 329.
-LaTeX Info: Redefining \ref on input line 329.
-LaTeX Info: Redefining \pageref on input line 329.
-LaTeX Info: Redefining \nameref on input line 329.
+LaTeX Info: Redefining \nameref on input line 330.
+LaTeX Info: Redefining \ref on input line 330.
+LaTeX Info: Redefining \pageref on input line 330.
+LaTeX Info: Redefining \nameref on input line 330.
 (C:\Users\liam\Desktop\KINECT\kbox\Latex\memoirthesis.out) (C:\Users\liam\Deskt
 op\KINECT\kbox\Latex\memoirthesis.out)
 \@outlinefile=\write6
-LaTeX Info: Redefining \microtypecontext on input line 329.
+LaTeX Info: Redefining \microtypecontext on input line 330.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2021,15 +2021,15 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
 ABD: EveryShipout initializing macros
 Package nag Info: Command \caption@xlabel not defined, skipping amendment on in
-put line 329.
+put line 330.
 Package nag Info: Command \captionabove not defined, skipping amendment on inpu
-t line 329.
+t line 330.
 Package nag Info: Command \captionbelow not defined, skipping amendment on inpu
-t line 329.
+t line 330.
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
-line 329.
+line 330.
 Package nag Info: Command \topcaption not defined, skipping amendment on input 
-line 329.
+line 330.
 (C:\Users\liam\Desktop\KINECT\kbox\Latex\frontmatter/title.tex
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 23.13821pt on input line 25.
@@ -2152,7 +2152,7 @@ l.18 \clearpage
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.354 \clearemptydoublepage
+l.355 \clearemptydoublepage
                             [2
 
 
@@ -2183,7 +2183,7 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 10.18341pt on input line 2.
 [7])
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 9.29993pt on input line 366.
+(Font)              scaled to size 9.29993pt on input line 367.
 [8] (C:\Users\liam\Desktop\KINECT\kbox\Latex\memoirthesis.lot
 LaTeX Font Info:    Font shape `T1/fnc/bx/sc' in size <10.95> not available
 (Font)              Font shape `T1/fnc/b/sc' tried instead on input line 2.
@@ -2724,11 +2724,11 @@ Package nag Warning: 38 complaints in total.
 \tf@toc=\write7
 \tf@lot=\write8
 \tf@lof=\write9
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 407.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 407.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 408.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 408.
 (C:\Users\liam\Desktop\KINECT\kbox\Latex\memoirthesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 407.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 407.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 408.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 408.
 Package rerunfilecheck Info: File `memoirthesis.out' has not changed.
 (rerunfilecheck)             Checksum: DC7939383B54917CFA2550B184E2ABC8;2924.
 
@@ -2767,7 +2767,7 @@ c/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/fourier
 gram Files/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncr8a.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
 Output written on C:/Users/liam/Desktop/KINECT/kbox/Latex/memoirthesis.pdf (46 
-pages, 1008988 bytes).
+pages, 1004535 bytes).
 PDF statistics:
  606 PDF objects out of 1000 (max. 8388607)
  144 named destinations out of 1000 (max. 500000)

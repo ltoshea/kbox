@@ -63,7 +63,7 @@ valPerformance = perform(net,valTargets,y);
 testPerformance = perform(net,testTargets,y);
 
 % View the Network
-view(net)
+%view(net);
 
 % Plots
 % Uncomment these lines to enable various plots.

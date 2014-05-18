@@ -67,6 +67,7 @@ end
 
 
 nsamples = 15;
+ncomponents = 3;
 
 X = [];
 Y = [];
@@ -75,10 +76,12 @@ lbl = [];
 for i=1:PNUM
     nelem = length(dataAll(i).imax);
     dataAll(i).labels = ones(nelem,1) * i;
-    dataAll(i).features = zeros(nelem,nsamples);
+    dataAll(i).features =  zeros(nelem,nsamples * ncomponents);%HERE
     for j = 1:nelem - 1
         inds = round(linspace(dataAll(i).imax(j), dataAll(i).imax(j+1), nsamples));
-        dataAll(i).features(j,:) = dataAll(i).jred(1,inds);
+        %dataAll(i).features(j,:) = dataAll(i).jred(1,inds);
+        foo = dataAll(i).jred(1:ncomponents,inds);%HERE
+        dataAll(i).features(j,:) = foo(:);%HERE
         
         if debug
             plot(dataAll(i).features(j,:))
@@ -88,24 +91,24 @@ for i=1:PNUM
     
    X = [X;dataAll(i).features];
    Y = [Y;dataAll(i).labels];
+   Y = gensvclabels(Y);
    lbl = [lbl;ceil(0.2*(length(dataAll(i).labels)))]; %for labels
    %lbl = ceil(lbl);
 end
 
-labels
 
 
-% [predicted_label, accuracy, probest] = svmpredict(Y,X),svmStruct,['-b 1']);
+ [predicted_label, accuracy, probest] = svmpredict(Y,X,svmStruct,['-b 1']);
 
-diff = size(labels,1) - size(X,1);
-if diff < 0
-    for i=1:abs(diff)
-        labels = vertcat(labels,6);
-    end
-end
-if diff > 0
-   labels(end-(abs(diff)-1):end,:) = [];
-end
+% diff = size(labels,1) - size(X,1);
+% if diff < 0
+%     for i=1:abs(diff)
+%         labels = vertcat(labels,6);
+%     end
+% end
+% if diff > 0
+%    labels(end-(abs(diff)-1):end,:) = [];
+% end
 
  
  
@@ -116,12 +119,12 @@ end
 %NVarToSample, 'all' deciscion tree, otherwise random forest
 %X = M';
 % B = TreeBagger(75,X(trainInds,:),Y(trainInds),'OOBPred','On');
-C = B.predict(X);
-C = cellfun(@str2num,C);
-
-count = 0;
-for i=1:length(C)
-    if C(i) == labels(i)
+ C = B.predict(X);
+ C = cellfun(@str2num,C);
+% 
+ count = 0;
+ for i=1:length(C)
+     if C(i) == Y(i)
         count = count+1;
     end
 end
