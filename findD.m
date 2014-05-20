@@ -9,11 +9,11 @@ d3 = intrinsic_dim(Mt, 'NearNbDim');
 disp(['NN dim. estimation: ' num2str(d3)]);
 d4 = intrinsic_dim(Mt, 'EigValue');
 disp(['Eigenvalue estimation: ' num2str(d4)]);
-d5 = intrinsic_dim(Mt, 'PackingNumbers');
-disp(['Packing numbers estimation: ' num2str(d5)]);
+% d5 = intrinsic_dim(Mt, 'PackingNumbers');
+% disp(['Packing numbers estimation: ' num2str(d5)]);
 d6 = intrinsic_dim(Mt, 'GMST');
 disp(['GMST estimation: ' num2str(d6)]);
-mu = mean([d1 d2 d3 d4 d5 d6]);
+mu = mean([d1 d2 d3 d4 d6]);
 disp(['Mean estimation: ' num2str(mu)]);
 d=round(mu);
 

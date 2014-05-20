@@ -15,7 +15,7 @@
   % defaults
       author = {},
   supervisor = {},
-      degree = {MEng},
+      degree = {BSc},
        title = {},
     subtitle = {},
         year = {\the\year}

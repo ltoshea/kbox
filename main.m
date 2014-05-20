@@ -1,5 +1,5 @@
 global PNUM;
-PNUM = 6;
+PNUM = 1;
 debug = 0;
 NORM = 1; %flag=1 normalise for hip centroid
 %Hip centre is first joint
@@ -52,31 +52,31 @@ for i=1:PNUM
     
     
 end
-%DRcomp(dataAll(1).jredSmooth());
+DRcomp(M(:,1:10));
 
 
 
-for i=1:PNUM
-    figure
-    hold on;
-    plot(dataAll(i).jred(1,:),'-r');
-    %plot(M(1,:),'y');
-    %plot(dataAll(i).jred(1,:),'b');
-    %plot(dataAll(i).imax, dataAll(i).jred(1,dataAll(i).imax),'.g');
-end
-
-for i=1:PNUM
-    figure
-    hold on;
-    % plot(dataAll(i).jred(1,:),'-r');
-     plot(dataAll(i).jredSmooth(1,:),'b');
-     plot(dataAll(i).imax, dataAll(i).jredSmooth(1,dataAll(i).imax),'.g');
-end
-figure
-hold on
-plot(dataAll(4).jred(1,:),'-r');
-plot(dataAll(4).jredSmooth(1,:),'b');
-plot(dataAll(4).imax, dataAll(4).jredSmooth(1,dataAll(4).imax),'.g');
+% for i=1:PNUM
+%     figure
+%     hold on;
+%     plot(dataAll(i).jred(1,:),'-r');
+%     %plot(M(1,:),'y');
+%     %plot(dataAll(i).jred(1,:),'b');
+%     %plot(dataAll(i).imax, dataAll(i).jred(1,dataAll(i).imax),'.g');
+% end
+% 
+% for i=1:PNUM
+%     figure
+%     hold on;
+%     % plot(dataAll(i).jred(1,:),'-r');
+%      plot(dataAll(i).jredSmooth(1,:),'b');
+%      plot(dataAll(i).imax, dataAll(i).jredSmooth(1,dataAll(i).imax),'.g');
+% end
+% figure
+% hold on
+% plot(dataAll(4).jred(1,:),'-r');
+% plot(dataAll(4).jredSmooth(1,:),'b');
+% plot(dataAll(4).imax, dataAll(4).jredSmooth(1,dataAll(4).imax),'.g');
 
 
 
@@ -171,7 +171,8 @@ end
 % close all
 %Diffusion Maps
 %dtw
-
+close all
+mappedX = diffusion_maps(X,3,1,1);
 
 
 %mappedA = compute_mapping(A, type, no_dims, parameters)

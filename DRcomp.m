@@ -5,17 +5,18 @@ function [] = DRcomp( M1 )
 
 
 %[M1, labels] = generate_data('swiss', 2000, 0.05);
-d = findD(M1);
+% d = findD(M1);
+d=3;
 Y1 = compute_mapping(M1', 'LLE')';
 Y2 = compute_mapping(M1', 'LLE', d, 7)';
 Y3 = compute_mapping(M1', 'Laplacian', d, 7, 'JDQR')';
-Y4 = compute_mapping(M1', 'LTSA', d, 7)';
+% Y4 = compute_mapping(M1', 'LTSA', d, 7)';
 Y5 = compute_mapping(M1', 'CCA' , d, 'Matlab')';
 Y6 = compute_mapping(M1','PCA',d)';
 
 figure('name','Dimensional Reduction(DC) Comparison: 1st PC');
 suptitle('Dimensional Reduction Comparison: 1st PC');
-subplot(3, 2, 1), plot(Y1(3,:));
+subplot(3, 2, 1), plot(Y1(2,:));
 title('LLE')
 subplot(3, 2, 2), plot(Y2(3,:));
 title('LLE, with d')

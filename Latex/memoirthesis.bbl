@@ -32,6 +32,11 @@
   \url{http://www.epsrc.ac.uk/newsevents/news/2009/Pages/improveathletesperf.aspx},
   2009.
 
+\bibitem{Demartines1997}
+{\sc P.~Demartines and J.~Herault}, {\em {Curvilinear component analysis: a
+  self-organizing neural network for nonlinear mapping of data sets.}}, IEEE
+  Trans. Neural Netw., 8 (1997), pp.~148--54.
+
 \bibitem{gamerev2}
 {\sc J.~DeVries}, {\em Fighters uncaged review | ign}.
 \newblock \url{http://www.ign.com/articles/2010/11/09/fighters-uncaged-review},
@@ -74,6 +79,10 @@
   Exergame Using Depth Cameras for Blind \& Low Vision Exercise}}, Int. ACM
   SIGACCESS Conf.,  (2013).
 
+\bibitem{Roweis2000}
+{\sc S.~T. Roweis and L.~K. Saul}, {\em {Nonlinear dimensionality reduction by
+  locally linear embedding.}}, Science, 290 (2000), pp.~2323--6.
+
 \bibitem{aug4}
 {\sc R.~C. UK}, {\em Cutting edge 2012: The research behind sport}.
 \newblock \url{http://www.rcuk.ac.uk/media/CuttingEdge2012/#bike}, 2012.
@@ -96,5 +105,9 @@
 {\sc K.~Yamaoka, M.~Uehara, T.~Shima, and Y.~Tamura}, {\em {Feedback of Flying
   Disc Throw with Kinect and its Evaluation}}, Procedia Comput. Sci., 22
   (2013), pp.~912--920.
+
+\bibitem{Zhang2003}
+{\sc Z.~Zhang and H.~Zha}, {\em {Nonlinear Dimension Reduction via Local}}, in
+  Intell. Data Eng. Autom. Learn., 2003, pp.~477--481.
 
 \end{thebibliography}

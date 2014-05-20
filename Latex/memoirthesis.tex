@@ -36,8 +36,11 @@
 \pdfinfo{
    /Author (Liam O'Shea)
    /Title (Bsc Thesis)
-   /Keywords (One; Two;Three)
+   /Supervisor ('Dr. Majid Mirmenhdi')
+   % /Subtitle ('A Punch Recognition \& Quality Assessment System.')
+   /Keywords (One; Two;Three;four)
    /CreationDate (D:\pdfdate)
+
 }
 \fi
 % When draft option is on. 
@@ -52,6 +55,7 @@
 \newsubfloat{table}
 % Better page layout for A4 paper, see memoir manual.
 \settrimmedsize{297mm}{210mm}{*}
+%
 \setlength{\trimtop}{0pt} 
 \setlength{\trimedge}{\stockwidth} 
 \addtolength{\trimedge}{-\paperwidth} 
@@ -67,6 +71,7 @@
 % Font with math support: New Century Schoolbook
 \usepackage{fouriernc}
 \usepackage{gensymb}
+
 %
 % UoB guidelines:
 %
@@ -327,6 +332,7 @@
 \hyphenation{sol-va-bi-li-ty}
 %
 %
+\usepackage{enumitem}
 \begin{document}
 % UoB guidlines:
 %
@@ -349,16 +355,16 @@
 \pagenumbering{roman}
 %
 \input{frontmatter/title}
-\clearemptydoublepage
+% \clearemptydoublepage
 %
 \input{frontmatter/abstract}
-\clearemptydoublepage
+% \clearemptydoublepage
 %
 \input{frontmatter/dedication}
-\clearemptydoublepage
+% \clearemptydoublepage
 %
 \input{frontmatter/declaration}
-\clearemptydoublepage
+% \clearemptydoublepage
 %
 \renewcommand{\contentsname}{Table of Contents}
 \maxtocdepth{subsection}

@@ -1,4 +1,4 @@
-function dm = diffmap()
+function dm = diffmap(data)
 
 %% create swiss roll data
 N = 2^11; % number of points considered

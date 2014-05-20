@@ -5,7 +5,7 @@
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Goals}{2}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Limitations \& Scope}{2}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}Other applications?}{2}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.2}Other applications/usefulness?}{2}{subsection.1.1.2}
 \contentsline {chapter}{\chapternumberline {2}Background \& Research}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Boxing Background}{3}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Motivation}{4}{subsection.2.1.1}
@@ -20,37 +20,39 @@
 \contentsline {paragraph}{Depth \& Infrared Stream}{6}{section*.10}
 \contentsline {subsection}{\numberline {2.3.1}Skeleton \& Joint Tracking}{7}{subsection.2.3.1}
 \contentsline {section}{\numberline {2.4}Literature Review}{8}{section.2.4}
-\contentsline {section}{\numberline {2.5}Existing Products}{10}{section.2.5}
-\contentsline {paragraph}{UFC Personal Trainer}{10}{section*.11}
-\contentsline {paragraph}{Kinect sports boxing game}{10}{section*.12}
-\contentsline {paragraph}{Fighers Uncaged}{10}{section*.13}
-\contentsline {chapter}{\chapternumberline {3}Specification \& Design}{13}{chapter.3}
-\contentsline {section}{\numberline {3.1}Scope of Project}{13}{section.3.1}
-\contentsline {section}{\numberline {3.2}Punch Segmentation Algorithm}{13}{section.3.2}
-\contentsline {section}{\numberline {3.3}Punch Quality Algorithm}{13}{section.3.3}
-\contentsline {section}{\numberline {3.4}Segmentation methods? Feature Extraction?}{13}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Dynamic Time Warping (DTW)}{13}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Neural Networks}{14}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Decision Trees}{14}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Support Vector Machines}{15}{subsection.3.4.4}
-\contentsline {subsection}{\numberline {3.4.5}Fourier Transformation}{15}{subsection.3.4.5}
-\contentsline {section}{\numberline {3.5}Dimensionality}{15}{section.3.5}
-\contentsline {paragraph}{Curse of Dimensionality}{15}{section*.14}
-\contentsline {subsection}{\numberline {3.5.1}Dimensionality Reduction}{16}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Principal Component Analysis (PCA)}{16}{subsection.3.5.2}
-\contentsline {section}{\numberline {3.6}Manifold Learning}{16}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Markov Chains}{17}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}Diffusion Maps}{17}{subsection.3.6.2}
-\contentsline {subsection}{\numberline {3.6.3}Locally Linear Embedding (LLE)}{17}{subsection.3.6.3}
-\contentsline {subsection}{\numberline {3.6.4}Laplacian Eigenmaps}{18}{subsection.3.6.4}
-\contentsline {subsection}{\numberline {3.6.5}Local Tangent Space Alignment (LTSA)}{18}{subsection.3.6.5}
-\contentsline {subsection}{\numberline {3.6.6}Curvilinear Component Analysis (CCA)}{18}{subsection.3.6.6}
+\contentsline {section}{\numberline {2.5}Existing Products}{9}{section.2.5}
+\contentsline {paragraph}{Kinect sports boxing game}{9}{section*.11}
+\contentsline {paragraph}{Fighers Uncaged}{9}{section*.12}
+\contentsline {paragraph}{Conclusion}{10}{section*.13}
+\contentsline {chapter}{\chapternumberline {3}Specification and Design}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}Scope of Project}{11}{section.3.1}
+\contentsline {section}{\numberline {3.2}Dimensionality}{11}{section.3.2}
+\contentsline {paragraph}{Curse of Dimensionality}{11}{section*.14}
+\contentsline {subsection}{\numberline {3.2.1}Dimensionality Reduction}{12}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Principal Component Analysis (PCA)}{12}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Manifold Learning}{13}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Markov Chains}{13}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Diffusion Maps}{13}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Locally Linear Embedding (LLE)}{14}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Laplacian Eigenmaps}{14}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Local Tangent Space Alignment (LTSA)}{15}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}Curvilinear Component Analysis (CCA)}{15}{subsection.3.3.6}
+\contentsline {subsection}{\numberline {3.3.7}Comparison Methods}{15}{subsection.3.3.7}
+\contentsline {section}{\numberline {3.4}Segmentation Methods}{16}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Dynamic Time Warping (DTW)}{16}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Fourier Transformation}{16}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Punch Segmentation Algorithm}{17}{subsection.3.4.3}
+\contentsline {section}{\numberline {3.5}Classification Methods}{18}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Support Vector Machines}{18}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Neural Networks}{18}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Decision Trees \& Random Forest}{19}{subsection.3.5.3}
+\contentsline {section}{\numberline {3.6}Punch Quality Algorithm}{20}{section.3.6}
 \contentsline {chapter}{\chapternumberline {4}Implementation}{21}{chapter.4}
 \contentsline {section}{\numberline {4.1}Comparison Methods}{21}{section.4.1}
 \contentsline {paragraph}{Dimensionality Reduction Comparison}{22}{section*.15}
 \contentsline {paragraph}{Automated Punch Segmentation}{22}{section*.16}
 \contentsline {paragraph}{Heuristic Rules}{23}{section*.17}
-\contentsline {paragraph}{Data Format}{24}{section*.18}
+\contentsline {paragraph}{Data Format}{23}{section*.18}
 \contentsline {chapter}{\chapternumberline {5}Results, Conclusions, and future work}{27}{chapter.5}
 \contentsline {section}{\numberline {5.1}Section}{27}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Subsection}{27}{subsection.5.1.1}
