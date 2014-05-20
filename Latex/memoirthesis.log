@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.11)  20 MAY 2014 16:57
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.11)  20 MAY 2014 22:45
 entering extended mode
 **C:/Users/liam/Desktop/KINECT/kbox/Latex/memoirthesis.tex
 (C:/Users/liam/Desktop/KINECT/kbox/Latex/memoirthesis.tex
@@ -408,12 +408,19 @@ put line 292.
 LaTeX Info: Redefining \today on input line 724.
 \dt@a=\toks24
 \dt@b=\toks25
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\wrapfig\wrapfig.sty"
+\wrapoverhang=\dimen148
+\WF@size=\dimen149
+\c@WF@wrappedlines=\count166
+\WF@box=\box29
+\WF@everypar=\toks26
+Package: wrapfig 2003/01/31  v 3.6
 )
-\c@subfigure=\count166
+\c@subfigure=\count167
 \cftbeforesubfigureskip=\skip185
 \cftsubfigureindent=\skip186
 \cftsubfigurenumwidth=\skip187
-\c@subtable=\count167
+\c@subtable=\count168
 \cftbeforesubtableskip=\skip188
 \cftsubtableindent=\skip189
 \cftsubtablenumwidth=\skip190
@@ -674,30 +681,30 @@ LaTeX Font Info:    Overwriting math alphabet `\mathcal' in version `bold'
 Package: gensymb 2003/07/02 v1.0 (WaS)
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count168
-\calc@Bcount=\count169
-\calc@Adimen=\dimen148
-\calc@Bdimen=\dimen149
+\calc@Acount=\count169
+\calc@Bcount=\count170
+\calc@Adimen=\dimen150
+\calc@Bdimen=\dimen151
 \calc@Askip=\skip191
 \calc@Bskip=\skip192
 LaTeX Info: Redefining \setlength on input line 76.
 LaTeX Info: Redefining \addtolength on input line 77.
-\calc@Ccount=\count170
+\calc@Ccount=\count171
 \calc@Cskip=\skip193
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\soul\soul.sty"
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
-\SOUL@word=\toks26
-\SOUL@lasttoken=\toks27
-\SOUL@cmds=\toks28
-\SOUL@buffer=\toks29
-\SOUL@token=\toks30
+\SOUL@word=\toks27
+\SOUL@lasttoken=\toks28
+\SOUL@cmds=\toks29
+\SOUL@buffer=\toks30
+\SOUL@token=\toks31
 \SOUL@spaceskip=\skip194
-\SOUL@ttwidth=\dimen150
-\SOUL@uldp=\dimen151
-\SOUL@ulht=\dimen152
+\SOUL@ttwidth=\dimen152
+\SOUL@uldp=\dimen153
+\SOUL@ulht=\dimen154
 )
 \dlf@normtxtw=\skip195
-\feline@chapter=\box29
+\feline@chapter=\box30
 \memoirthesis@idxfile=\write4
 Writing index file memoirthesis.idx 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\import\import.sty"
@@ -707,7 +714,7 @@ Package: underscore 2006/09/13
 LaTeX Info: Redefining \_ on input line 42.
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty"
 Package: lipsum 2011/04/14 v1.2 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count171
+\c@lips@count=\count172
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup6
@@ -723,45 +730,45 @@ For additional information on amsmath, use the `?' option.
 Package: amstext 2000/06/29 v2.01
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen153
+\pmbraise@=\dimen155
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count172
+\inf@bad=\count173
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count173
-\leftroot@=\count174
+\uproot@=\count174
+\leftroot@=\count175
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count175
-\DOTSCASE@=\count176
+\classnum@=\count176
+\DOTSCASE@=\count177
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
-\Mathstrutbox@=\box30
-\strutbox@=\box31
-\big@size=\dimen154
+\Mathstrutbox@=\box31
+\strutbox@=\box32
+\big@size=\dimen156
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count177
-\c@MaxMatrixCols=\count178
+\macc@depth=\count178
+\c@MaxMatrixCols=\count179
 \dotsspace@=\muskip10
-\c@parentequation=\count179
-\dspbrk@lvl=\count180
-\tag@help=\toks31
-\row@=\count181
-\column@=\count182
-\maxfields@=\count183
-\andhelp@=\toks32
-\eqnshift@=\dimen155
-\alignsep@=\dimen156
-\tagshift@=\dimen157
-\tagwidth@=\dimen158
-\totwidth@=\dimen159
-\lineht@=\dimen160
-\@envbody=\toks33
+\c@parentequation=\count180
+\dspbrk@lvl=\count181
+\tag@help=\toks32
+\row@=\count182
+\column@=\count183
+\maxfields@=\count184
+\andhelp@=\toks33
+\eqnshift@=\dimen157
+\alignsep@=\dimen158
+\tagshift@=\dimen159
+\tagwidth@=\dimen160
+\totwidth@=\dimen161
+\lineht@=\dimen162
+\@envbody=\toks34
 \multlinegap=\skip197
 \multlinetaggap=\skip198
-\mathdisplay@stack=\toks34
+\mathdisplay@stack=\toks35
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\stmaryrd\stmaryrd.sty"
@@ -800,15 +807,15 @@ LaTeX Font Info:    Redeclaring math symbol \varkappa on input line 260.
 LaTeX Font Info:    Redeclaring math symbol \hslash on input line 262.
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
 Package: amsthm 2004/08/06 v2.20
-\thm@style=\toks35
-\thm@bodyfont=\toks36
-\thm@headfont=\toks37
-\thm@notefont=\toks38
-\thm@headpunct=\toks39
+\thm@style=\toks36
+\thm@bodyfont=\toks37
+\thm@headfont=\toks38
+\thm@notefont=\toks39
+\thm@headpunct=\toks40
 \thm@preskip=\skip199
 \thm@postskip=\skip200
 \thm@headsep=\skip201
-\dth@everypar=\toks40
+\dth@everypar=\toks41
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\newlfont.sty"
 Package: newlfont 1998/08/17 v2.2m Standard LaTeX package
 LaTeX Info: Redefining \em on input line 67.
@@ -820,7 +827,7 @@ LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 )) ("C:\Program Files\MiKTeX 2.9\tex\latex\layouts\layouts.sty"
 Package: layouts 2009/09/02 v2.6d graphical depiction of document elements
 \l@ylen=\skip202
-\layoutsbox=\box32
+\layoutsbox=\box33
 \l@youtunitlength=\skip203
 \l@youtlinethick=\skip204
 \l@youtlinethickii=\skip205
@@ -839,58 +846,58 @@ Package: layouts 2009/09/02 v2.6d graphical depiction of document elements
 \l@yptsep=\skip218
 \l@ypsep=\skip219
 \l@yitmsep=\skip220
-\l@ytok=\toks41
-\l@youtpw=\count184
-\l@youtph=\count185
-\l@youthpi=\count186
-\l@youthpii=\count187
-\l@youthpiii=\count188
-\l@youthpiv=\count189
-\l@youthpv=\count190
-\l@youthpvi=\count191
-\l@youthpvii=\count192
-\l@youtparskip=\count193
-\l@youtvpi=\count194
-\l@youtvpii=\count195
-\l@youtvpiii=\count196
-\l@youtvpiv=\count197
-\l@youtvpv=\count198
-\l@youtvpvi=\count199
-\l@youtvpvii=\count200
-\l@youthdo=\count201
-\l@youthdi=\count202
-\l@youthdii=\count203
-\l@youthdiii=\count204
-\l@youthdiv=\count205
-\l@youthdv=\count206
-\l@youthdvi=\count207
-\l@youthdvii=\count208
-\l@youtvdo=\count209
-\l@youtvdi=\count210
-\l@youtvdii=\count211
-\l@youtvdiii=\count212
-\l@youtvdiv=\count213
-\l@youtvdv=\count214
-\l@youtvdvi=\count215
-\l@youtvdvii=\count216
-\l@youtvdviii=\count217
-\l@youtxci=\count218
-\l@youtxcii=\count219
-\l@youtxciii=\count220
-\l@youtxciv=\count221
-\l@youtxcv=\count222
-\l@youtxcvi=\count223
-\l@youtyci=\count224
-\l@youtycii=\count225
-\l@youtyciii=\count226
-\l@youtyciv=\count227
-\l@youtycv=\count228
+\l@ytok=\toks42
+\l@youtpw=\count185
+\l@youtph=\count186
+\l@youthpi=\count187
+\l@youthpii=\count188
+\l@youthpiii=\count189
+\l@youthpiv=\count190
+\l@youthpv=\count191
+\l@youthpvi=\count192
+\l@youthpvii=\count193
+\l@youtparskip=\count194
+\l@youtvpi=\count195
+\l@youtvpii=\count196
+\l@youtvpiii=\count197
+\l@youtvpiv=\count198
+\l@youtvpv=\count199
+\l@youtvpvi=\count200
+\l@youtvpvii=\count201
+\l@youthdo=\count202
+\l@youthdi=\count203
+\l@youthdii=\count204
+\l@youthdiii=\count205
+\l@youthdiv=\count206
+\l@youthdv=\count207
+\l@youthdvi=\count208
+\l@youthdvii=\count209
+\l@youtvdo=\count210
+\l@youtvdi=\count211
+\l@youtvdii=\count212
+\l@youtvdiii=\count213
+\l@youtvdiv=\count214
+\l@youtvdv=\count215
+\l@youtvdvi=\count216
+\l@youtvdvii=\count217
+\l@youtvdviii=\count218
+\l@youtxci=\count219
+\l@youtxcii=\count220
+\l@youtxciii=\count221
+\l@youtxciv=\count222
+\l@youtxcv=\count223
+\l@youtxcvi=\count224
+\l@youtyci=\count225
+\l@youtycii=\count226
+\l@youtyciii=\count227
+\l@youtyciv=\count228
 Normal \count register pool exhausted, switching to extended pool.
-\l@youtycvi=\count277
-\l@youtycvii=\count278
-\l@youtycviii=\count279
-\l@youtxco=\count280
-\l@youtyco=\count281
+\l@youtycv=\count277
+\l@youtycvi=\count278
+\l@youtycvii=\count279
+\l@youtycviii=\count280
+\l@youtxco=\count281
+\l@youtyco=\count282
 \l@ytempdima=\skip221
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
@@ -909,38 +916,38 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count282
+\Gread@gobject=\count283
 ))
-\Gin@req@height=\dimen161
-\Gin@req@width=\dimen162
+\Gin@req@height=\dimen163
+\Gin@req@width=\dimen164
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\longtable.sty"
 Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \LTleft=\skip222
 \LTright=\skip223
 \LTpre=\skip224
 \LTpost=\skip225
-\LTchunksize=\count283
-\LTcapwidth=\dimen163
-\LT@head=\box33
-\LT@firsthead=\box34
-\LT@foot=\box35
-\LT@lastfoot=\box36
-\LT@cols=\count284
-\LT@rows=\count285
-\c@LT@tables=\count286
-\c@LT@chunks=\count287
-\LT@p@ftn=\toks42
+\LTchunksize=\count284
+\LTcapwidth=\dimen165
+\LT@head=\box34
+\LT@firsthead=\box35
+\LT@foot=\box36
+\LT@lastfoot=\box37
+\LT@cols=\count285
+\LT@rows=\count286
+\c@LT@tables=\count287
+\c@LT@chunks=\count288
+\LT@p@ftn=\toks43
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\rotating\rotating.sty"
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
-\c@r@tfl@t=\count288
+\c@r@tfl@t=\count289
 \rotFPtop=\skip226
 \rotFPbot=\skip227
-\rot@float@box=\box37
-\rot@mess@toks=\toks43
+\rot@float@box=\box38
+\rot@mess@toks=\toks44
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2008/03/30 v1.1d Input encoding file
-\inpenc@prehook=\toks44
-\inpenc@posthook=\toks45
+\inpenc@prehook=\toks45
+\inpenc@posthook=\toks46
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
@@ -1238,7 +1245,7 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
-\everycr=\toks46
+\everycr=\toks47
 \minrowclearance=\skip228
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\wasysym\wasysym.sty"
 Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
@@ -1250,11 +1257,11 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup11
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count289
-\float@exts=\toks47
-\float@box=\box38
-\@float@everytoks=\toks48
-\@floatcapt=\box39
+\c@float@type=\count290
+\float@exts=\toks48
+\float@box=\box39
+\@float@everytoks=\toks49
+\@floatcapt=\box40
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\was\upgreek.sty"
 Package: upgreek 2003/02/12 v2.0 (WaS)
 Package upgreek Info: Using Euler Roman for upright Greek on input line 31.
@@ -1267,7 +1274,7 @@ Normal \skip register pool exhausted, switching to extended pool.
 \bibhang=\skip256
 \bibsep=\skip257
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count290
+\c@NAT@ctr=\count291
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
@@ -1288,12 +1295,12 @@ File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
 Language: spanish.ldf 2009/01/02 v5.0h Spanish support from the babel system
 ("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2008/07/08 v3.8m Babel common definitions
-\babel@savecnt=\count291
-\U@D=\dimen164
+\babel@savecnt=\count292
+\U@D=\dimen166
 )
-\es@datefmt=\count292
-\es@quottoks=\toks49
-\es@quotdepth=\count293
+\es@datefmt=\count293
+\es@quottoks=\toks50
+\es@quotdepth=\count294
 Package babel Info: Making " an active character on input line 492.
 Package babel Info: Making . an active character on input line 585.
 Package babel Info: Making < an active character on input line 630.
@@ -1350,15 +1357,15 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen165
-\Hy@linkcounter=\count294
-\Hy@pagecounter=\count295
+\@linkdim=\dimen167
+\Hy@linkcounter=\count295
+\Hy@pagecounter=\count296
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count296
+\Hy@SavedSpaceFactor=\count297
 ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
@@ -1370,12 +1377,12 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count297
+\c@Hy@tempcnt=\count298
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen166
-\Fld@menulength=\count298
-\Field@Width=\dimen167
-\Fld@charsize=\dimen168
+\XeTeXLinkMargin=\dimen168
+\Fld@menulength=\count299
+\Field@Width=\dimen169
+\Fld@charsize=\dimen170
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -1385,22 +1392,22 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count299
-\c@Item=\count300
-\c@Hfootnote=\count301
+\Hy@abspage=\count300
+\c@Item=\count301
+\c@Hfootnote=\count302
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\memoir\memhfixc.sty"
 Package: memhfixc 2013/05/16 v1.16 nameref/hyperref package fixes for memoir cl
 ass
-\c@memhycontfloat=\count302
-\c@Hpagenote=\count303
+\c@memhycontfloat=\count303
+\c@Hpagenote=\count304
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count304
-\c@bookmark@seq@number=\count305
+\Fld@listcount=\count305
+\c@bookmark@seq@number=\count306
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
@@ -1409,16 +1416,16 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip258
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\mdwtools\footnote.sty"
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
-\fn@notes=\box40
-\fn@width=\dimen169
+\fn@notes=\box41
+\fn@width=\dimen171
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\microtype.sty"
 Package: microtype 2013/03/13 v2.5 Micro-typographical refinements (RS)
-\MT@toks=\toks50
-\MT@count=\count306
+\MT@toks=\toks51
+\MT@count=\count307
 LaTeX Info: Redefining \textls on input line 771.
-\MT@outer@kern=\dimen170
+\MT@outer@kern=\dimen172
 LaTeX Info: Redefining \textmicrotypecontext on input line 1290.
-\MT@listname@count=\count307
+\MT@listname@count=\count308
 ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\microtype-pdftex.def"
 File: microtype-pdftex.def 2013/03/13 v2.5 Definitions specific to pdftex (RS)
 LaTeX Info: Redefining \lsstyle on input line 889.
@@ -1436,9 +1443,9 @@ Package: alltt 1997/06/16 v2.0g defines alltt environment
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.sty" ("C:\Program 
 Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty" ("C:\Program Files\MiKTeX 
 2.9\tex\generic\pgf\utilities\pgfutil-common.tex"
-\pgfutil@everybye=\toks51
+\pgfutil@everybye=\toks52
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-latex.def"
-\pgfutil@abb=\box41
+\pgfutil@abb=\box42
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 )) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfrcs.code.tex"
@@ -1450,27 +1457,27 @@ m Files\MiKTeX 2.9\tex\latex\pgf\systemlayer\pgfsys.sty" ("C:\Program Files\MiK
 TeX 2.9\tex\generic\pgf\systemlayer\pgfsys.code.tex"
 Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"
-\pgfkeys@pathtoks=\toks52
-\pgfkeys@temptoks=\toks53
+\pgfkeys@pathtoks=\toks53
+\pgfkeys@temptoks=\toks54
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeysfiltered.code.te
 x"
-\pgfkeys@tmptoks=\toks54
+\pgfkeys@tmptoks=\toks55
 ))
-\pgf@x=\dimen171
-\pgf@y=\dimen172
-\pgf@xa=\dimen173
-\pgf@ya=\dimen174
-\pgf@xb=\dimen175
-\pgf@yb=\dimen176
-\pgf@xc=\dimen177
-\pgf@yc=\dimen178
+\pgf@x=\dimen173
+\pgf@y=\dimen174
+\pgf@xa=\dimen175
+\pgf@ya=\dimen176
+\pgf@xb=\dimen177
+\pgf@yb=\dimen178
+\pgf@xc=\dimen179
+\pgf@yc=\dimen180
 \w@pgf@writea=\write5
 \r@pgf@reada=\read2
-\c@pgf@counta=\count308
-\c@pgf@countb=\count309
-\c@pgf@countc=\count310
-\c@pgf@countd=\count311
+\c@pgf@counta=\count309
+\c@pgf@countb=\count310
+\c@pgf@countc=\count311
+\c@pgf@countd=\count312
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgf.cfg"
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
@@ -1484,8 +1491,8 @@ File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.t
 ex"
 File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
-\pgfsyssoftpath@smallbuffer@items=\count312
-\pgfsyssoftpath@bigbuffer@items=\count313
+\pgfsyssoftpath@smallbuffer@items=\count313
+\pgfsyssoftpath@bigbuffer@items=\count314
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.code.t
 ex"
@@ -1512,12 +1519,12 @@ Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
 am Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathcalc.code.tex" ("C:\Program Fil
 es\MiKTeX 2.9\tex\generic\pgf\math\pgfmathutil.code.tex") ("C:\Program Files\Mi
 KTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.tex"
-\pgfmath@dimen=\dimen179
-\pgfmath@count=\count314
-\pgfmath@box=\box42
-\pgfmath@toks=\toks55
-\pgfmath@stack@operand=\toks56
-\pgfmath@stack@operation=\toks57
+\pgfmath@dimen=\dimen181
+\pgfmath@count=\count315
+\pgfmath@box=\box43
+\pgfmath@toks=\toks56
+\pgfmath@stack@operand=\toks57
+\pgfmath@stack@operation=\toks58
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.code.tex"
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.basic.code.
@@ -1535,55 +1542,55 @@ tex")
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.misc.code.t
 ex"))) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex
 "
-\c@pgfmathroundto@lastzeros=\count315
+\c@pgfmathroundto@lastzeros=\count316
 )) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepoints.code.
 tex"
 File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
-\pgf@picminx=\dimen180
-\pgf@picmaxx=\dimen181
-\pgf@picminy=\dimen182
-\pgf@picmaxy=\dimen183
-\pgf@pathminx=\dimen184
-\pgf@pathmaxx=\dimen185
-\pgf@pathminy=\dimen186
-\pgf@pathmaxy=\dimen187
-\pgf@xx=\dimen188
-\pgf@xy=\dimen189
-\pgf@yx=\dimen190
-\pgf@yy=\dimen191
-\pgf@zx=\dimen192
-\pgf@zy=\dimen193
+\pgf@picminx=\dimen182
+\pgf@picmaxx=\dimen183
+\pgf@picminy=\dimen184
+\pgf@picmaxy=\dimen185
+\pgf@pathminx=\dimen186
+\pgf@pathmaxx=\dimen187
+\pgf@pathminy=\dimen188
+\pgf@pathmaxy=\dimen189
+\pgf@xx=\dimen190
+\pgf@xy=\dimen191
+\pgf@yx=\dimen192
+\pgf@yy=\dimen193
+\pgf@zx=\dimen194
+\pgf@zy=\dimen195
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathconstruct.c
 ode.tex"
 File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
-\pgf@path@lastx=\dimen194
-\pgf@path@lasty=\dimen195
+\pgf@path@lastx=\dimen196
+\pgf@path@lasty=\dimen197
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathusage.code.
 tex"
 File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
-\pgf@shorten@end@additional=\dimen196
-\pgf@shorten@start@additional=\dimen197
+\pgf@shorten@end@additional=\dimen198
+\pgf@shorten@start@additional=\dimen199
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorescopes.code.t
 ex"
 File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
-\pgfpic=\box43
-\pgf@hbox=\box44
-\pgf@layerbox@main=\box45
-\pgf@picture@serial@count=\count316
+\pgfpic=\box44
+\pgf@hbox=\box45
+\pgf@layerbox@main=\box46
+\pgf@picture@serial@count=\count317
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicstate.co
 de.tex"
 File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
-\pgflinewidth=\dimen198
+\pgflinewidth=\dimen200
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransformations
 .code.tex"
 File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
-\pgf@pt@x=\dimen199
-\pgf@pt@y=\dimen200
-\pgf@pt@temp=\dimen201
+\pgf@pt@x=\dimen201
+\pgf@pt@y=\dimen202
+\pgf@pt@temp=\dimen203
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorequick.code.te
 x"
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
@@ -1601,8 +1608,8 @@ File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreshade.code.te
 x"
 File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
-\pgf@max=\dimen202
-\pgf@sys@shading@range@num=\count317
+\pgf@max=\dimen204
+\pgf@sys@shading@range@num=\count318
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreimage.code.te
 x"
 File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
@@ -1610,7 +1617,7 @@ File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreexternal.code.t
 ex"
 File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
-\pgfexternal@startupbox=\box46
+\pgfexternal@startupbox=\box47
 )) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorelayers.code.
 tex"
 File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
@@ -1625,7 +1632,7 @@ File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
 ))) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleshapes.code.
 tex"
 File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
-\pgfnodeparttextbox=\box47
+\pgfnodeparttextbox=\box48
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleplot.code.tex"
 File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
 )
@@ -1638,10 +1645,10 @@ KTeX 2.9\tex\latex\pgf\utilities\pgfkeys.sty" ("C:\Program Files\MiKTeX 2.9\tex
 \generic\pgf\utilities\pgfkeys.code.tex")) ("C:\Program Files\MiKTeX 2.9\tex\ge
 neric\pgf\utilities\pgffor.code.tex"
 Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
-\pgffor@iter=\dimen203
-\pgffor@skip=\dimen204
-\pgffor@stack=\toks58
-\pgffor@toks=\toks59
+\pgffor@iter=\dimen205
+\pgffor@skip=\dimen206
+\pgffor@stack=\toks59
+\pgffor@toks=\toks60
 )) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\tikz.code.t
 ex"
 Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
@@ -1649,28 +1656,28 @@ Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplothandlers.
 code.tex"
 File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
-\pgf@plot@mark@count=\count318
-\pgfplotmarksize=\dimen205
+\pgf@plot@mark@count=\count319
+\pgfplotmarksize=\dimen207
 )
-\tikz@lastx=\dimen206
-\tikz@lasty=\dimen207
-\tikz@lastxsaved=\dimen208
-\tikz@lastysaved=\dimen209
-\tikzleveldistance=\dimen210
-\tikzsiblingdistance=\dimen211
-\tikz@figbox=\box48
-\tikz@tempbox=\box49
-\tikztreelevel=\count319
-\tikznumberofchildren=\count320
-\tikznumberofcurrentchild=\count321
-\tikz@fig@count=\count322
+\tikz@lastx=\dimen208
+\tikz@lasty=\dimen209
+\tikz@lastxsaved=\dimen210
+\tikz@lastysaved=\dimen211
+\tikzleveldistance=\dimen212
+\tikzsiblingdistance=\dimen213
+\tikz@figbox=\box49
+\tikz@tempbox=\box50
+\tikztreelevel=\count320
+\tikznumberofchildren=\count321
+\tikznumberofcurrentchild=\count322
+\tikz@fig@count=\count323
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmodulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
-\pgfmatrixcurrentrow=\count323
-\pgfmatrixcurrentcolumn=\count324
-\pgf@matrix@numberofcolumns=\count325
+\pgfmatrixcurrentrow=\count324
+\pgfmatrixcurrentcolumn=\count325
+\pgf@matrix@numberofcolumns=\count326
 )
-\tikz@expandcount=\count326
+\tikz@expandcount=\count327
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
 librarytopaths.code.tex"
@@ -1683,7 +1690,7 @@ File: tikzlibraryarrows.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryarrows.code.t
 ex"
 File: pgflibraryarrows.code.tex 2008/10/27 v2.10 (rcs-revision 1.9)
-\arrowsize=\dimen212
+\arrowsize=\dimen214
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
 libraryshapes.code.tex"
@@ -1732,26 +1739,26 @@ File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibraryshapes
 .multipart.code.tex"
 File: pgflibraryshapes.multipart.code.tex 2010/01/07 v2.10 (rcs-revision 1.2)
-\pgfnodepartlowerbox=\box50
-\pgfnodeparttwobox=\box51
-\pgfnodepartthreebox=\box52
-\pgfnodepartfourbox=\box53
-\pgfnodeparttwentybox=\box54
-\pgfnodepartnineteenbox=\box55
-\pgfnodeparteighteenbox=\box56
-\pgfnodepartseventeenbox=\box57
-\pgfnodepartsixteenbox=\box58
-\pgfnodepartfifteenbox=\box59
-\pgfnodepartfourteenbox=\box60
-\pgfnodepartthirteenbox=\box61
-\pgfnodeparttwelvebox=\box62
-\pgfnodepartelevenbox=\box63
-\pgfnodeparttenbox=\box64
-\pgfnodepartninebox=\box65
-\pgfnodeparteightbox=\box66
-\pgfnodepartsevenbox=\box67
-\pgfnodepartsixbox=\box68
-\pgfnodepartfivebox=\box69
+\pgfnodepartlowerbox=\box51
+\pgfnodeparttwobox=\box52
+\pgfnodepartthreebox=\box53
+\pgfnodepartfourbox=\box54
+\pgfnodeparttwentybox=\box55
+\pgfnodepartnineteenbox=\box56
+\pgfnodeparteighteenbox=\box57
+\pgfnodepartseventeenbox=\box58
+\pgfnodepartsixteenbox=\box59
+\pgfnodepartfifteenbox=\box60
+\pgfnodepartfourteenbox=\box61
+\pgfnodepartthirteenbox=\box62
+\pgfnodeparttwelvebox=\box63
+\pgfnodepartelevenbox=\box64
+\pgfnodeparttenbox=\box65
+\pgfnodepartninebox=\box66
+\pgfnodeparteightbox=\box67
+\pgfnodepartsevenbox=\box68
+\pgfnodepartsixbox=\box69
+\pgfnodepartfivebox=\box70
 )))
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
 librarysnakes.code.tex"
@@ -1767,16 +1774,16 @@ librarydecorations.pathmorphing.code.tex"
 librarydecorations.code.tex"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduledecorations.code
 .tex"
-\pgfdecoratedcompleteddistance=\dimen213
-\pgfdecoratedremainingdistance=\dimen214
-\pgfdecoratedinputsegmentcompleteddistance=\dimen215
-\pgfdecoratedinputsegmentremainingdistance=\dimen216
-\pgf@decorate@distancetomove=\dimen217
-\pgf@decorate@repeatstate=\count327
-\pgfdecorationsegmentamplitude=\dimen218
-\pgfdecorationsegmentlength=\dimen219
+\pgfdecoratedcompleteddistance=\dimen215
+\pgfdecoratedremainingdistance=\dimen216
+\pgfdecoratedinputsegmentcompleteddistance=\dimen217
+\pgfdecoratedinputsegmentremainingdistance=\dimen218
+\pgf@decorate@distancetomove=\dimen219
+\pgf@decorate@repeatstate=\count328
+\pgfdecorationsegmentamplitude=\dimen220
+\pgfdecorationsegmentlength=\dimen221
 )
-\tikz@lib@dec@box=\box70
+\tikz@lib@dec@box=\box71
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\decorations\pgflibraryd
 ecorations.pathmorphing.code.tex"))
@@ -1795,48 +1802,48 @@ File: tikzlibraryautomata.code.tex 2008/07/14 v2.10 (rcs-revision 1.3)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
 librarybackgrounds.code.tex"
 File: tikzlibrarybackgrounds.code.tex 2010/02/08 v2.10 (rcs-revision 1.2)
-\pgf@layerbox@background=\box71
-\pgf@layerboxsaved@background=\box72
+\pgf@layerbox@background=\box72
+\pgf@layerboxsaved@background=\box73
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
 librarypetri.code.tex"
 File: tikzlibrarypetri.code.tex 2008/06/18 v2.10 (rcs-revision 1.2)
 )
-\c@proofcount=\count328
+\c@proofcount=\count329
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lettrine\lettrine.sty"
 File: lettrine.sty 2013/03/14 v1.64 (Daniel Flipo)
-\c@DefaultLines=\count329
-\DefaultFindent=\dimen220
-\DefaultNindent=\dimen221
-\DefaultSlope=\dimen222
-\L@lbox=\box73
-\L@tbox=\box74
-\c@L@lines=\count330
-\L@Pindent=\dimen223
-\L@Findent=\dimen224
-\L@Nindent=\dimen225
-\L@lraise=\dimen226
-\L@first=\dimen227
-\L@next=\dimen228
+\c@DefaultLines=\count330
+\DefaultFindent=\dimen222
+\DefaultNindent=\dimen223
+\DefaultSlope=\dimen224
+\L@lbox=\box74
+\L@tbox=\box75
+\c@L@lines=\count331
+\L@Pindent=\dimen225
+\L@Findent=\dimen226
+\L@Nindent=\dimen227
+\L@lraise=\dimen228
 Normal \dimen register pool exhausted, switching to extended pool.
-\L@slope=\dimen256
-\L@height=\dimen257
-\LettrineWidth=\dimen258
+\L@first=\dimen256
+\L@next=\dimen257
+\L@slope=\dimen258
+\L@height=\dimen259
+\LettrineWidth=\dimen260
 Loading lettrine.cfg
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lettrine\lettrine.cfg"))
-\c@theo=\count331
-\c@prop=\count332
-\c@dfn=\count333
-\c@lema=\count334
-\c@cor=\count335
-\c@resu=\count336
+\c@theo=\count332
+\c@prop=\count333
+\c@dfn=\count334
+\c@lema=\count335
+\c@cor=\count336
+\c@resu=\count337
 ("C:\Program Files\MiKTeX 2.9\tex\latex\enumitem\enumitem.sty"
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip260
-\enit@outerparindent=\dimen259
-\enit@toks=\toks60
-\enit@inbox=\box75
-\enitdp@description=\count337
+\enit@outerparindent=\dimen261
+\enit@toks=\toks61
+\enit@inbox=\box76
+\enitdp@description=\count338
 ) (C:\Users\liam\Desktop\KINECT\kbox\Latex\memoirthesis.aux
 
 LaTeX Warning: Label `subsec:subsec01' multiply defined.
@@ -1926,102 +1933,102 @@ LaTeX Warning: Label `sec:sec01' multiply defined.
 LaTeX Warning: Label `subsec:subsec01' multiply defined.
 
 )
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 336.
-LaTeX Font Info:    ... okay on input line 336.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 336.
-LaTeX Font Info:    ... okay on input line 336.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 336.
-LaTeX Font Info:    ... okay on input line 336.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 336.
-LaTeX Font Info:    ... okay on input line 336.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 336.
-LaTeX Font Info:    ... okay on input line 336.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 336.
-LaTeX Font Info:    ... okay on input line 336.
-LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 336.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 339.
+LaTeX Font Info:    ... okay on input line 339.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 339.
+LaTeX Font Info:    ... okay on input line 339.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 339.
+LaTeX Font Info:    ... okay on input line 339.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 339.
+LaTeX Font Info:    ... okay on input line 339.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 339.
+LaTeX Font Info:    ... okay on input line 339.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 339.
+LaTeX Font Info:    ... okay on input line 339.
+LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 339.
 LaTeX Font Info:    Try loading font information for FML+fncmi on input line 33
-6.
+9.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\fouriernc\fmlfncmi.fd"
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
-LaTeX Font Info:    ... okay on input line 336.
-LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 336.
-LaTeX Font Info:    Try loading font information for FMS+fncm on input line 336
+LaTeX Font Info:    ... okay on input line 339.
+LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 339.
+LaTeX Font Info:    Try loading font information for FMS+fncm on input line 339
 .
 ("C:\Program Files\MiKTeX 2.9\tex\latex\fouriernc\fmsfncm.fd"
 File: fmsfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FMS/fncm.
 )
-LaTeX Font Info:    ... okay on input line 336.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 336.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 336
+LaTeX Font Info:    ... okay on input line 339.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 339.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 339
 .
 ("C:\Program Files\MiKTeX 2.9\tex\latex\fourier\fmxfutm.fd"
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 336.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 336.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 336.
+LaTeX Font Info:    ... okay on input line 339.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 339.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 339.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 336.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 336.
-LaTeX Font Info:    ... okay on input line 336.
-LaTeX Font Info:    Try loading font information for T1+fnc on input line 336.
+LaTeX Font Info:    ... okay on input line 339.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 339.
+LaTeX Font Info:    ... okay on input line 339.
+LaTeX Font Info:    Try loading font information for T1+fnc on input line 339.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\fouriernc\t1fnc.fd"
 File: t1fnc.fd 2005/12/13 scaled font definitions for T1/fnc.
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 10.18341pt on input line 336.
-Package nag Info: pgf.sty is broken: disabling dollar check on input line 336.
+(Font)              scaled to size 10.18341pt on input line 339.
+Package nag Info: pgf.sty is broken: disabling dollar check on input line 339.
 \symgns@font=\mathgroup13
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/fnc/m/n --> TS1/fnc/bx/n on input line 336.
-Package gensymb Info: Math companion symbols declared on input line 336.
-LaTeX Info: Redefining \degree on input line 336.
-LaTeX Info: Redefining \celsius on input line 336.
+(Font)                  TS1/fnc/m/n --> TS1/fnc/bx/n on input line 339.
+Package gensymb Info: Math companion symbols declared on input line 339.
+LaTeX Info: Redefining \degree on input line 339.
+LaTeX Info: Redefining \celsius on input line 339.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 336.
-LaTeX Info: Redefining \ohm on input line 336.
-Package gensymb Info: Using \textohm for \ohm on input line 336.
-Package gensymb Info: Using \textmu for \micro on input line 336.
+erthousand on input line 339.
+LaTeX Info: Redefining \ohm on input line 339.
+Package gensymb Info: Using \textohm for \ohm on input line 339.
+Package gensymb Info: Using \textmu for \micro on input line 339.
 
-Package layouts Warning: Layout scale set to 0.5 on input line 336.
+Package layouts Warning: Layout scale set to 0.5 on input line 339.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count338
-\scratchdimen=\dimen260
-\scratchbox=\box76
-\nofMPsegments=\count339
-\nofMParguments=\count340
-\everyMPshowfont=\toks61
-\MPscratchCnt=\count341
-\MPscratchDim=\dimen261
-\MPnumerator=\count342
-\makeMPintoPDFobject=\count343
-\everyMPtoPDFconversion=\toks62
+\scratchcounter=\count339
+\scratchdimen=\dimen262
+\scratchbox=\box77
+\nofMPsegments=\count340
+\nofMParguments=\count341
+\everyMPshowfont=\toks62
+\MPscratchCnt=\count342
+\MPscratchDim=\dimen263
+\MPnumerator=\count343
+\makeMPintoPDFobject=\count344
+\everyMPtoPDFconversion=\toks63
 )
-\AtBeginShipoutBox=\box77
-Package hyperref Info: Link coloring ON on input line 336.
+\AtBeginShipoutBox=\box78
+Package hyperref Info: Link coloring ON on input line 339.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count344
+\c@section@level=\count345
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 336.
-LaTeX Info: Redefining \ref on input line 336.
-LaTeX Info: Redefining \pageref on input line 336.
-LaTeX Info: Redefining \nameref on input line 336.
+LaTeX Info: Redefining \nameref on input line 339.
+LaTeX Info: Redefining \ref on input line 339.
+LaTeX Info: Redefining \pageref on input line 339.
+LaTeX Info: Redefining \nameref on input line 339.
 (C:\Users\liam\Desktop\KINECT\kbox\Latex\memoirthesis.out) (C:\Users\liam\Deskt
 op\KINECT\kbox\Latex\memoirthesis.out)
 \@outlinefile=\write6
-LaTeX Info: Redefining \microtypecontext on input line 336.
+LaTeX Info: Redefining \microtypecontext on input line 339.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2037,15 +2044,15 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
 ABD: EveryShipout initializing macros
 Package nag Info: Command \caption@xlabel not defined, skipping amendment on in
-put line 336.
+put line 339.
 Package nag Info: Command \captionabove not defined, skipping amendment on inpu
-t line 336.
+t line 339.
 Package nag Info: Command \captionbelow not defined, skipping amendment on inpu
-t line 336.
+t line 339.
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
-line 336.
+line 339.
 Package nag Info: Command \topcaption not defined, skipping amendment on input 
-line 336.
+line 339.
 (C:\Users\liam\Desktop\KINECT\kbox\Latex\frontmatter/title.tex
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 23.13821pt on input line 25.
@@ -2194,7 +2201,7 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 
 ])
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 9.29993pt on input line 373.
+(Font)              scaled to size 9.29993pt on input line 376.
 [7] [8
 
 ] (C:\Users\liam\Desktop\KINECT\kbox\Latex\memoirthesis.lot
@@ -2301,66 +2308,78 @@ e 116.
 (pdftex.def)             Requested size: 304.7674pt x 254.63622pt.
 [8 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/kinSkel.pn
 g>]
-Underfull \hbox (badness 10000) in paragraph at lines 130--132
+Underfull \hbox (badness 10000) in paragraph at lines 164--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--143
-
- []
+Underfull \vbox (badness 3954) has occurred while \output is active []
 
 [9]) (C:\Users\liam\Desktop\KINECT\kbox\Latex\chapters/chapter03/design.tex
-Underfull \hbox (badness 10000) in paragraph at lines 145--7
+Underfull \hbox (badness 10000) in paragraph at lines 168--6
 
  []
 
 [10]
-Overfull \hbox (26.91003pt too wide) in paragraph at lines 22--23
+Overfull \hbox (26.91003pt too wide) in paragraph at lines 24--25
 \T1/fnc/m/n/10.95 (-20) The curse of di-men-sion-al-ity, first dis-cussed by Ri
 chard E Bell-man in his book Dy-namic Programming[[]]
  []
 
 
 Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 24.
+(nag)                Use \bfseries or \textbf instead on input line 26.
 
 
 Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 24.
+(nag)                Use \bfseries or \textbf instead on input line 26.
 
 [11
 
-] <chapters/chapter03/fig03/PCA.pdf, id=436, 866.43701pt x 321.2pt>
+]
+
+Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
+(nag)                Use \bfseries or \textbf instead on input line 48.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--49
+
+ []
+
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 7.71893pt on input line 50.
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 5.57996pt on input line 50.
+[12] <chapters/chapter03/fig03/PCA.pdf, id=445, 866.43701pt x 321.2pt>
 File: chapters/chapter03/fig03/PCA.pdf Graphic file (type pdf)
 <use chapters/chapter03/fig03/PCA.pdf>
-Package pdftex.def Info: chapters/chapter03/fig03/PCA.pdf used on input line 37
+Package pdftex.def Info: chapters/chapter03/fig03/PCA.pdf used on input line 61
 .
 (pdftex.def)             Requested size: 429.31732pt x 159.15007pt.
-[12 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/PCA.pdf>]
-<chapters/chapter03/fig03/markov.png, id=445, 501.875pt x 501.875pt>
+<chapters/chapter03/fig03/markov.png, id=446, 501.875pt x 501.875pt>
 File: chapters/chapter03/fig03/markov.png Graphic file (type png)
 <use chapters/chapter03/fig03/markov.png>
 Package pdftex.def Info: chapters/chapter03/fig03/markov.png used on input line
- 50.
+ 76.
 (pdftex.def)             Requested size: 159.14825pt x 159.15007pt.
+[13 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/PCA.pdf>]
 pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.62     \subtop
+l.88     \subtop
                 []{\includegraphics[height=0.25\textheight]{fig03/diffmap1.p...
-<chapters/chapter03/fig03/diffmap1.pdf, id=448, 423.5825pt x 317.185pt>
+<chapters/chapter03/fig03/diffmap1.pdf, id=458, 423.5825pt x 317.185pt>
 File: chapters/chapter03/fig03/diffmap1.pdf Graphic file (type pdf)
 <use chapters/chapter03/fig03/diffmap1.pdf>
 Package pdftex.def Info: chapters/chapter03/fig03/diffmap1.pdf used on input li
-ne 62.
+ne 88.
 (pdftex.def)             Requested size: 212.54047pt x 159.15007pt.
 
-Package nag Warning: \label in float, but not after \caption on input line 63.
+Package nag Warning: \label in float, but not after \caption on input line 89.
 
 
-Overfull \hbox (13.37119pt too wide) in paragraph at lines 62--64
+Overfull \hbox (13.37119pt too wide) in paragraph at lines 88--90
  [][] 
  []
 
@@ -2368,19 +2387,19 @@ pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.68     \subtop
+l.94     \subtop
                 []{\includegraphics[height=0.25\textheight]{fig03/balls.pdf}} <
-chapters/chapter03/fig03/balls.pdf, id=449, 423.5825pt x 317.185pt>
+chapters/chapter03/fig03/balls.pdf, id=459, 423.5825pt x 317.185pt>
 File: chapters/chapter03/fig03/balls.pdf Graphic file (type pdf)
 <use chapters/chapter03/fig03/balls.pdf>
 Package pdftex.def Info: chapters/chapter03/fig03/balls.pdf used on input line 
-68.
+94.
 (pdftex.def)             Requested size: 212.54047pt x 159.15007pt.
 
-Package nag Warning: \label in float, but not after \caption on input line 69.
+Package nag Warning: \label in float, but not after \caption on input line 95.
 
 
-Overfull \hbox (13.37119pt too wide) in paragraph at lines 68--70
+Overfull \hbox (13.37119pt too wide) in paragraph at lines 94--96
  [][] 
  []
 
@@ -2389,79 +2408,83 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 78.
+(nag)                Use \bfseries or \textbf instead on input line 104.
 
-
-Underfull \vbox (badness 3623) has occurred while \output is active []
-
-[13 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/markov.pn
-g>]
 
 Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 81.
+(nag)                Use \bfseries or \textbf instead on input line 107.
 
+[14 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/markov.pn
+g>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Underfull \vbox (badness 2726) has occurred while \output is active []
-
-[14 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/diffmap1.
+[15 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/diffmap1.
 pdf> <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/balls.pd
-f>] <chapters/chapter03/fig03/drcomp.pdf, id=478, 1345.025pt x 734.745pt>
+f>] <chapters/chapter03/fig03/drcomp.pdf, id=489, 1345.025pt x 734.745pt>
 File: chapters/chapter03/fig03/drcomp.pdf Graphic file (type pdf)
 <use chapters/chapter03/fig03/drcomp.pdf>
 Package pdftex.def Info: chapters/chapter03/fig03/drcomp.pdf used on input line
- 98.
+ 124.
 (pdftex.def)             Requested size: 291.3297pt x 159.15007pt.
-<chapters/chapter03/fig03/drcomp2.pdf, id=479, 1335.38902pt x 729.92702pt>
+<chapters/chapter03/fig03/drcomp2.pdf, id=490, 1335.38902pt x 729.92702pt>
 File: chapters/chapter03/fig03/drcomp2.pdf Graphic file (type pdf)
 <use chapters/chapter03/fig03/drcomp2.pdf>
 Package pdftex.def Info: chapters/chapter03/fig03/drcomp2.pdf used on input lin
-e 104.
+e 130.
 (pdftex.def)             Requested size: 291.15794pt x 159.15007pt.
-[15 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/drcomp.pd
-f>] <chapters/chapter03/fig03/dtw.png, id=490, 600.2425pt x 489.83pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[16 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/drcomp.pd
+f>] <chapters/chapter03/fig03/dtw.png, id=500, 600.2425pt x 489.83pt>
 File: chapters/chapter03/fig03/dtw.png Graphic file (type png)
 <use chapters/chapter03/fig03/dtw.png>
-Package pdftex.def Info: chapters/chapter03/fig03/dtw.png used on input line 12
-2.
+Package pdftex.def Info: chapters/chapter03/fig03/dtw.png used on input line 14
+8.
 (pdftex.def)             Requested size: 195.02155pt x 159.15007pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[16 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/drcomp2.p
+[17 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/drcomp2.p
 df>]
 
 Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 145.
+(nag)                Use \bfseries or \textbf instead on input line 171.
 
-[17 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/dtw.png>]
-<chapters/chapter03/fig03/svm.jpg, id=512, 722.7pt x 542.025pt>
+[18 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/dtw.png>]
+<chapters/chapter03/fig03/svm.jpg, id=522, 722.7pt x 542.025pt>
 File: chapters/chapter03/fig03/svm.jpg Graphic file (type jpg)
 <use chapters/chapter03/fig03/svm.jpg>
-Package pdftex.def Info: chapters/chapter03/fig03/svm.jpg used on input line 16
-1.
+Package pdftex.def Info: chapters/chapter03/fig03/svm.jpg used on input line 18
+7.
 (pdftex.def)             Requested size: 212.20216pt x 159.15007pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[18]
-Underfull \vbox (badness 1789) has occurred while \output is active []
+Underfull \vbox (badness 6792) has occurred while \output is active []
 
 [19 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/svm.jpg>]
-<chapters/chapter03/fig03/dtree.jpg, id=521, 339.2675pt x 149.55875pt>
+<chapters/chapter03/fig03/dtree.jpg, id=527, 339.2675pt x 149.55875pt>
 File: chapters/chapter03/fig03/dtree.jpg Graphic file (type jpg)
 <use chapters/chapter03/fig03/dtree.jpg>
 Package pdftex.def Info: chapters/chapter03/fig03/dtree.jpg used on input line 
-191.
+217.
 (pdftex.def)             Requested size: 361.05063pt x 159.15007pt.
-) (C:\Users\liam\Desktop\KINECT\kbox\Latex\chapters/chapter04/implementation.te
-x [20 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/dtree.j
-pg>]pdfTeX warning (ext4): destination with the same identifier (name{subfigure
-.1}) has been already used, duplicate ignored
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[20]) (C:\Users\liam\Desktop\KINECT\kbox\Latex\chapters/chapter04/implementatio
+n.tex [21 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/dtr
+ee.jpg>] [22
+
+]pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1}
+) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.24     \subtop
                 []{\includegraphics[height=0.25\textheight]{fig04/fig06}} <chap
-ters/chapter04/fig04/fig06.png, id=526, 435.12563pt x 292.09125pt>
+ters/chapter04/fig04/fig06.png, id=540, 435.12563pt x 292.09125pt>
 File: chapters/chapter04/fig04/fig06.png Graphic file (type png)
 <use chapters/chapter04/fig04/fig06.png>
 Package pdftex.def Info: chapters/chapter04/fig04/fig06.png used on input line 
@@ -2481,7 +2504,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
                    \relax 
 l.29     \subtop
                 []{\includegraphics[height=0.25\textheight]{fig04/fig07}} <chap
-ters/chapter04/fig04/fig07.png, id=527, 392.96812pt x 304.88907pt>
+ters/chapter04/fig04/fig07.png, id=541, 392.96812pt x 304.88907pt>
 File: chapters/chapter04/fig04/fig07.png Graphic file (type png)
 <use chapters/chapter04/fig04/fig07.png>
 Package pdftex.def Info: chapters/chapter04/fig04/fig07.png used on input line 
@@ -2495,23 +2518,21 @@ Overfull \hbox (34.41357pt too wide) in paragraph at lines 29--31
  [][] 
  []
 
-<chapters/chapter04/fig04/fig01.png, id=528, 374.14781pt x 289.83281pt>
+<chapters/chapter04/fig04/fig01.png, id=542, 374.14781pt x 289.83281pt>
 File: chapters/chapter04/fig04/fig01.png Graphic file (type png)
 <use chapters/chapter04/fig04/fig01.png>
 Package pdftex.def Info: chapters/chapter04/fig04/fig01.png used on input line 
 41.
 (pdftex.def)             Requested size: 205.45079pt x 159.15007pt.
-[21
-
- <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig06.png> <
-C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig07.png>]pdf
-TeX warning (ext4): destination with the same identifier (name{subfigure.1}) ha
-s been already used, duplicate ignored
+[23 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig06.png
+> <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig07.png>]
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1})
+ has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.56     \subtop
                 []{\includegraphics[height=0.25\textheight]{fig04/fig02}} <chap
-ters/chapter04/fig04/fig02.png, id=535, 385.44pt x 310.15875pt>
+ters/chapter04/fig04/fig02.png, id=550, 385.44pt x 310.15875pt>
 File: chapters/chapter04/fig04/fig02.png Graphic file (type png)
 <use chapters/chapter04/fig04/fig02.png>
 Package pdftex.def Info: chapters/chapter04/fig04/fig02.png used on input line 
@@ -2531,7 +2552,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
                    \relax 
 l.63     \subtop
                 []{\includegraphics[height=0.25\textheight]{fig04/fig04}} <chap
-ters/chapter04/fig04/fig04.png, id=536, 367.3725pt x 298.11375pt>
+ters/chapter04/fig04/fig04.png, id=551, 367.3725pt x 298.11375pt>
 File: chapters/chapter04/fig04/fig04.png Graphic file (type png)
 <use chapters/chapter04/fig04/fig04.png>
 Package pdftex.def Info: chapters/chapter04/fig04/fig04.png used on input line 
@@ -2545,7 +2566,7 @@ Overfull \hbox (25.40819pt too wide) in paragraph at lines 63--65
  [][] 
  []
 
-<chapters/chapter04/fig04/fig05.png, id=537, 198.7425pt x 161.10187pt>
+<chapters/chapter04/fig04/fig05.png, id=552, 198.7425pt x 161.10187pt>
 File: chapters/chapter04/fig04/fig05.png Graphic file (type png)
 <use chapters/chapter04/fig04/fig05.png>
 Package pdftex.def Info: chapters/chapter04/fig04/fig05.png used on input line 
@@ -2562,7 +2583,7 @@ Overfull \hbox (18.21524pt too wide) in paragraph at lines 68--70
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<chapters/chapter04/fig04/fig03.png, id=538, 384.6872pt x 316.18124pt>
+<chapters/chapter04/fig04/fig03.png, id=553, 384.6872pt x 316.18124pt>
 File: chapters/chapter04/fig04/fig03.png Graphic file (type png)
 <use chapters/chapter04/fig04/fig03.png>
 Package pdftex.def Info: chapters/chapter04/fig04/fig03.png used on input line 
@@ -2581,7 +2602,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1})
                    \relax 
 l.99     \subtop
                 []{\includegraphics[height=0.25\textheight]{fig04/fig08}} <chap
-ters/chapter04/fig04/fig08.png, id=539, 1445.4pt x 781.41937pt>
+ters/chapter04/fig04/fig08.png, id=554, 1445.4pt x 781.41937pt>
 File: chapters/chapter04/fig04/fig08.png Graphic file (type png)
 <use chapters/chapter04/fig04/fig08.png>
 Package pdftex.def Info: chapters/chapter04/fig04/fig08.png used on input line 
@@ -2602,7 +2623,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
                    \relax 
 l.105     \subtop
                  []{\includegraphics[height=0.25\textheight]{fig04/fig09}} <cha
-pters/chapter04/fig04/fig09.png, id=540, 1445.4pt x 784.43062pt>
+pters/chapter04/fig04/fig09.png, id=555, 1445.4pt x 784.43062pt>
 File: chapters/chapter04/fig04/fig09.png Graphic file (type png)
 <use chapters/chapter04/fig04/fig09.png>
 Package pdftex.def Info: chapters/chapter04/fig04/fig09.png used on input line 
@@ -2617,7 +2638,7 @@ Overfull \hbox (122.52675pt too wide) in paragraph at lines 105--107
  [][] 
  []
 
-<chapters/chapter04/fig04/fig10.png, id=541, 1260.20813pt x 761.84625pt>
+<chapters/chapter04/fig04/fig10.png, id=556, 1260.20813pt x 761.84625pt>
 File: chapters/chapter04/fig04/fig10.png Graphic file (type png)
 <use chapters/chapter04/fig04/fig10.png>
 Package pdftex.def Info: chapters/chapter04/fig04/fig10.png used on input line 
@@ -2655,22 +2676,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--144
 
 Underfull \vbox (badness 1629) has occurred while \output is active []
 
-[22 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig01.png
->] [23 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig02.
+[24 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig01.png
+>] [25 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig02.
 png> <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig04.pn
 g> <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig05.png>
 ]) (C:\Users\liam\Desktop\KINECT\kbox\Latex\chapters/chapter05/conclusion.tex [
-24 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig03.png>
-] [25 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig08.p
+26 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig03.png>
+] [27 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig08.p
 ng> <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig09.png
 > <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig10.png>]
-[26
+[28
 
-]) [27] [28
+]) [29] [30
 
-] (C:\Users\liam\Desktop\KINECT\kbox\Latex\chapters/appendices/app0A.tex) [29
+] (C:\Users\liam\Desktop\KINECT\kbox\Latex\chapters/appendices/app0A.tex) [31
 
-] [30
+] [32
 
 ] (C:\Users\liam\Desktop\KINECT\kbox\Latex\memoirthesis.bbl
 
@@ -2750,7 +2771,7 @@ ul / 04 / london-[]2012-[]olympic-[]games-[]sport-[]technology$[][]\T1/fnc/m/n/
 10.95 (-20) ,
  []
 
-[31
+[33
 
 
 ]
@@ -2785,19 +2806,13 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 (nag)                Use \scshape or \textsc instead on input line 87.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--97
-[][][]$\T1/cmtt/m/n/10.95 http : / / www . rcuk . ac . uk / RCUK-[]prod / asset
-s / documents / submissions /$
- []
-
-
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 99.
+(nag)                Use \scshape or \textsc instead on input line 93.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 101--103
-[][][]$\T1/cmtt/m/n/10.95 http : / / en . wikipedia . org / wiki / Great _ Brit
-ain _ at _ the _ 2012 _ Summer _ Olympics$[][]\T1/fnc/m/n/10.95 (+20) ,
+[][][]$\T1/cmtt/m/n/10.95 http : / / www . rcuk . ac . uk / RCUK-[]prod / asset
+s / documents / submissions /$
  []
 
 
@@ -2805,21 +2820,31 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 (nag)                Use \scshape or \textsc instead on input line 105.
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 107--109
+[][][]$\T1/cmtt/m/n/10.95 http : / / en . wikipedia . org / wiki / Great _ Brit
+ain _ at _ the _ 2012 _ Summer _ Olympics$[][]\T1/fnc/m/n/10.95 (+20) ,
+ []
+
+
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 110.
+(nag)                Use \scshape or \textsc instead on input line 111.
 
-) [32]
 
-Package nag Warning: 41 complaints in total.
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 116.
+
+) [34]
+
+Package nag Warning: 43 complaints in total.
 
 \tf@toc=\write7
 \tf@lot=\write8
 \tf@lof=\write9
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 414.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 414.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 417.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 417.
 (C:\Users\liam\Desktop\KINECT\kbox\Latex\memoirthesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 414.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 414.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 417.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 417.
 Package rerunfilecheck Info: File `memoirthesis.out' has not changed.
 (rerunfilecheck)             Checksum: 98E2A5CCBE179827950056141CEA7314;3082.
 
@@ -2832,38 +2857,40 @@ LaTeX Warning: There were multiply-defined labels.
 (\end occurred when \ifx on line 71 was incomplete)
 (\end occurred when \ifx on line 42 was incomplete)
 (\end occurred when \ifx on line 33 was incomplete)
-(\end occurred when \ifx on line 192 was incomplete)
-(\end occurred when \ifx on line 162 was incomplete)
-(\end occurred when \ifx on line 123 was incomplete)
-(\end occurred when \ifx on line 105 was incomplete)
-(\end occurred when \ifx on line 99 was incomplete)
-(\end occurred when \ifx on line 72 was incomplete)
-(\end occurred when \ifx on line 51 was incomplete)
-(\end occurred when \ifx on line 38 was incomplete)
+(\end occurred when \ifx on line 218 was incomplete)
+(\end occurred when \ifx on line 188 was incomplete)
+(\end occurred when \ifx on line 149 was incomplete)
+(\end occurred when \ifx on line 131 was incomplete)
+(\end occurred when \ifx on line 125 was incomplete)
+(\end occurred when \ifx on line 98 was incomplete)
+(\end occurred when \ifx on line 77 was incomplete)
+(\end occurred when \ifx on line 62 was incomplete)
 (\end occurred when \ifx on line 117 was incomplete)
 (\end occurred when \ifx on line 105 was incomplete)
 (\end occurred when \ifx on line 95 was incomplete)
 (\end occurred when \ifx on line 89 was incomplete)
 (\end occurred when \ifx on line 82 was incomplete) 
 Here is how much of TeX's memory you used:
- 27567 strings out of 493921
- 487560 string characters out of 3147285
- 753663 words of memory out of 3000000
- 29770 multiletter control sequences out of 15000+200000
- 86931 words of font info for 242 fonts, out of 3000000 for 9000
+ 27658 strings out of 493921
+ 488712 string characters out of 3147285
+ 754910 words of memory out of 3000000
+ 29839 multiletter control sequences out of 15000+200000
+ 94957 words of font info for 256 fonts, out of 3000000 for 9000
  846 hyphenation exceptions out of 8191
- 53i,13n,69p,1244b,534s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 53i,12n,69p,1244b,534s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9
 /fonts/enc/dvips/cm-super/cm-super-t1.enc}{C:/Program Files/MiKTeX 2.9/fonts/en
 c/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/fourier
-/fourier-ms.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt10
-95.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncb8a.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncr8a.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on C:/Users/liam/Desktop/KINECT/kbox/Latex/memoirthesis.pdf (46 
-pages, 1189933 bytes).
+/fourier-mex.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fourier/fourie
+r-mlit.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ms.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1095.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncb8a.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/urw/ncntrsbk/uncr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/urw/ncntrsbk/uncri8a.pfb>
+Output written on C:/Users/liam/Desktop/KINECT/kbox/Latex/memoirthesis.pdf (48 
+pages, 1198753 bytes).
 PDF statistics:
- 671 PDF objects out of 1000 (max. 8388607)
- 161 named destinations out of 1000 (max. 500000)
- 43511 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 693 PDF objects out of 1000 (max. 8388607)
+ 166 named destinations out of 1000 (max. 500000)
+ 44535 words of extra memory for PDF output out of 51595 (max. 10000000)
 

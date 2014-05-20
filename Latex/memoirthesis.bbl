@@ -83,6 +83,12 @@
 {\sc S.~T. Roweis and L.~K. Saul}, {\em {Nonlinear dimensionality reduction by
   locally linear embedding.}}, Science, 290 (2000), pp.~2323--6.
 
+\bibitem{fastPCA}
+{\sc M.~Turk and A.~Pentland}, {\em Eigenfaces for recognition"}.
+\newblock
+  \url{http://www.cse.unr.edu/~bebis/MathMethods/PCA/case_study_pca1.pdf},
+  1991.
+
 \bibitem{aug4}
 {\sc R.~C. UK}, {\em Cutting edge 2012: The research behind sport}.
 \newblock \url{http://www.rcuk.ac.uk/media/CuttingEdge2012/#bike}, 2012.

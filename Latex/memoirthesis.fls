@@ -51,6 +51,8 @@ INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsgen.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsgen.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/fmtcount/fc-english.def
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/fmtcount/fc-english.def
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/wrapfig/wrapfig.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/wrapfig/wrapfig.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/fouriernc/fouriernc.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/fouriernc/fouriernc.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/fourier/fourier.sty
@@ -502,11 +504,26 @@ INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/kinSkel.p
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/kinSkel.png
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/design.tex
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/design.tex
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/ncntrsbk/pncb8t.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/ncntrsbk/pncb8t.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/ncntrsbk/pncb8t.vf
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/public/fouriernc/fncmii.vf
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/fourier/fourier-mlit.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/fourier/fourier-ml.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/ncntrsbk/pncri8r.tfm
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/PCA.pdf
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/PCA.pdf
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/markov.png
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/markov.png
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/markov.png
+INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/ncntrsbk/pncr8t.vf
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/public/fouriernc/fncsy.vf
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/fourier/fourier-ms.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/fourier/fourier-mcl.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/diffmap1.pdf
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/diffmap1.pdf
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/fig03/balls.pdf
@@ -575,6 +592,8 @@ OUTPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/memoirthesis.lof
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/memoirthesis.aux
 INPUT C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc
 INPUT C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mex.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mlit.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ms.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1095.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncb8a.pfb

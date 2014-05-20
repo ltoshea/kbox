@@ -1,3 +1,4 @@
+%changed line 172 with math
 %\title{University of Bristol Thesis Template}
 \RequirePackage[l2tabu]{nag}		% Warns for incorrect (obsolete) LaTeX usage
 %
@@ -32,6 +33,8 @@
 % Adding metadata:
 \usepackage{datetime}
 \usepackage{ifpdf}
+% \usepackage{amsmath}
+\usepackage{wrapfig}
 \ifpdf
 \pdfinfo{
    /Author (Liam O'Shea)
@@ -144,7 +147,7 @@
 % Fills blank pages until next odd-numbered page. Used to emulate single-sided
 % frontmatter. This will work for title, abstract and declaration. Though the
 % contents sections will each start on an odd-numbered page they will
-% spill over onto the even-numbered pages if extending beyond one page
+% spill over\usepackage{amsmath} onto the even-numbered pages if extending beyond one page
 % (hopefully, this is ok).
 \newcommand{\clearemptydoublepage}{\newpage{\thispagestyle{empty}\cleardoublepage}}
 %

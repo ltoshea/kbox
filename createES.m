@@ -8,14 +8,14 @@ function [Xm,EV,Ev]=createES(X,K)
 [M N]=size(X);
 Xm=mean(X,2);
 Xd=X-repmat(Xm,1,N);
-if (N < M) %less images than image length
+if (N < M) %less frames than frame length
     Q=Xd'*Xd;
     [V L Vt]=svd(Q);
     EV=Xd*V;
     EV=EV./repmat(sqrt(diag(L)'),M,1);
-else %more images than image length
+else %more frames than frame length
     Q=Xd*Xd';
-    [EV L Vt]=svd(Q); %EV = unity matrix
+    [EV L Vt]=svd(Q); %EV = unity matrix SVD = Singular Value Decomposition
 end;
 Ev=diag(L)'/N;
 

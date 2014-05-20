@@ -3,6 +3,8 @@
 % Author: Liam O'Shea
 % Description: Introduction chapter where the boxing goes.
 %
+
+
 \let\textcircled=\pgftextcircled
 \chapter{Specification and Design}
 
@@ -32,20 +34,42 @@ Dimensionality Reduction is the process of reducing the number of variables unde
 \label{subsec:subsec01}
 Principal Component Analysis is a statistical procedure that transforms a set of observations of potentially correlated variables into a set of linearly uncorrelated variables called principal components. The number of principal components should always be less than or equal to the number of original values with the first principal component having the largest possible variance. Each following component will attempt to represent as much variance in the data as possible. In my case I will be looking to reduce my 60 data points per frame into a low dimensionality set that will help me to uniquely identify punches.
 
-The principal components
+\paragraph{Eigenvectors \& Eigenvalues}
+The eigenvector of a matrix $M$ is a vector $V$ such that $M\times V$ yields a constant multiple of $V$, the multiplier of which is denoted by $\lambda.$
+*******$Av = \lambda v$.********
+$\lambda$ is known as the eigenvalue of $M$ which corresponds to $v$. Any multiple of an eigenvector will have the same eigenvalue as as original eigenvector.
+
+The principal components produced by PCA correspond to the principal eigenvectors of the covariance matrix which are calculated by eigenvalue decomposition. The principal eigenvectors are those with the highest eigenvalues and so are easily deduced. 
+
+\paragraph{Covariance Matrix \& Optimisations }
+\begin{wrapfigure}{R}{0.20\textwidth}
+\vspace{-15pt}
+\hspace{15pt}
+\bf{X = } $\begin{bmatrix} X_i\\.\\.\\X_n \end{bmatrix}$\newline
+\end{wrapfigure}
+If the data is represented in a column vector each with a finite variance then the covariance matrix $\mathbf{\sum}$ is the matrix whose (i,j) entry is the covariance
+$\mathbf{\sum_{ij}} = \mathbf{COV}(X_i,X_j) = \mathbf{E}[(X_i - \mu_i )(X_j - \mu_j )]$    Where $\mu_i = E(X_i)$  $\mu_j = E(X_j)$\newline
+The is equivalent to $\mathbf{\sum} = \frac{1} {n-1} E[(X-E[X])(X-E[X])^T]$ with $\frac{1} {n-1}$ added to make the estimate unbiased.
+
+The number of data points in each frame is 60 and the Kinect is capable of 30 FPS which over 120 seconds produces 216,000 data points to represent that sequence. A matrix of this size is costly and slow to find eigenvectors for. Let us say that 60n is the number of data points for frame and m is the number of frames. Take X as size (d x 60n) and $X^T$ as (60n x d) meaning $X^TX$ is of size (60n x 60n), while $XX^T$ is of size (d x d). It is however known that the eigenvalues for $X^TX$ are the same as for $XX^T$ which is useful since this is of a much smaller size and hence less costly.\cite{fastPCA}
+The eigenvectors ($v_i$) of $X^TX$ are related to the eigenvectors ($U_i$) of $XX^T$ by the equation $V_i = X^TU_i$ with $V_i$ needing to be normalised afterwards. This method can reduce the eigenvalues and eigenvectors produced from a maximum possible $N^2$ for $X^TX$ to M values for $X^TX$.
+
+The M eigenvalues of $XX^T$ will be identical to the first M largest eigenvalues from $X^TX$. This is an important performance step since the goal of my system is to run in real time and this will reduce the time taken.
 
 \begin{figure}[h]
     \centering
     \includegraphics[height=0.25\textheight]{fig03/PCA.pdf}
-    \mycaption[PCA Example]{Example of PCA reduction}
+    \mycaption[PCA Example]{PCA example showing the 1st and 2nd largest eigenvalues and the component space}
     \label{fig:kinect}
 \end{figure}
+
 
 \section{Manifold Learning}
 Manifold learning is a Non-Linear Dimensionality Reduction process that transforms high dimensionality data that typically requires multiple dimension to represent it which is difficult to interpret. To simplify the data it is possible to assume that the date lies on an embedded non-linear manifold within the high-dimensionality space. Assuming the manifold has low enough dimensions it can then be visualised in this lower-dimensionality space.
 
 \subsection{Markov Chains}
 Markov chains are a series of `states' which have a probability for each transition and are used to model real world events.
+
 
 \begin{figure}[h]
     \centering
