@@ -33,11 +33,13 @@
 % Adding metadata:
 \usepackage{datetime}
 \usepackage{ifpdf}
+\usepackage{epstopdf}
+\usepackage{epsfig}
 % \usepackage{amsmath}
 \usepackage{wrapfig}
 \ifpdf
 \pdfinfo{
-   /Author (Liam O'Shea)
+   /Author (Liam O'Shea)9
    /Title (Bsc Thesis)
    /Supervisor ('Dr. Majid Mirmenhdi')
    % /Subtitle ('A Punch Recognition \& Quality Assessment System.')
@@ -408,7 +410,7 @@
 \backmatter
 \bibliographystyle{siam}
 \refstepcounter{chapter}
-\bibliography{mendleybiblo/Thesis,thesisbiblio}
+\bibliography{mendleybiblo/library,thesisbiblio}
 \clearemptydoublepage
 %
 % Add index

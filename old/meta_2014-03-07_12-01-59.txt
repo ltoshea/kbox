@@ -1,1 +1,0 @@
-subject,ev, action, gait, variant, medium left sided sciatica

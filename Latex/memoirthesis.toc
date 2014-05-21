@@ -5,7 +5,8 @@
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Goals}{2}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Limitations \& Scope}{2}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}Other applications/usefulness?}{2}{subsection.1.1.2}
+\contentsline {section}{\numberline {1.2}Scope of Project}{2}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Other applications/usefulness?}{2}{subsection.1.2.1}
 \contentsline {chapter}{\chapternumberline {2}Background \& Research}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Boxing Background}{3}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Motivation}{4}{subsection.2.1.1}
@@ -20,43 +21,43 @@
 \contentsline {paragraph}{Depth \& Infrared Stream}{6}{section*.10}
 \contentsline {subsection}{\numberline {2.3.1}Skeleton \& Joint Tracking}{7}{subsection.2.3.1}
 \contentsline {section}{\numberline {2.4}Literature Review}{8}{section.2.4}
-\contentsline {section}{\numberline {2.5}Existing Products}{9}{section.2.5}
-\contentsline {paragraph}{Kinect sports boxing game}{9}{section*.11}
-\contentsline {paragraph}{Fighers Uncaged}{10}{section*.12}
-\contentsline {paragraph}{Conclusion}{10}{section*.13}
-\contentsline {chapter}{\chapternumberline {3}Specification and Design}{11}{chapter.3}
-\contentsline {section}{\numberline {3.1}Scope of Project}{11}{section.3.1}
-\contentsline {section}{\numberline {3.2}Dimensionality}{11}{section.3.2}
-\contentsline {paragraph}{Curse of Dimensionality}{11}{section*.14}
-\contentsline {subsection}{\numberline {3.2.1}Dimensionality Reduction}{12}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Principal Component Analysis (PCA)}{12}{subsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.2.1}Eigenvectors \& Eigenvalues}{12}{subsubsection.3.2.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2.2}Covariance Matrix \& Optimisations }{12}{subsubsection.3.2.2.2}
-\contentsline {section}{\numberline {3.3}Manifold Learning}{13}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Markov Chains}{14}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Diffusion Maps}{14}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Locally Linear Embedding (LLE)}{14}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Laplacian Eigenmaps}{15}{subsection.3.3.4}
-\contentsline {subsection}{\numberline {3.3.5}Local Tangent Space Alignment (LTSA)}{15}{subsection.3.3.5}
-\contentsline {subsection}{\numberline {3.3.6}Curvilinear Component Analysis (CCA)}{16}{subsection.3.3.6}
-\contentsline {subsection}{\numberline {3.3.7}Comparison Methods}{16}{subsection.3.3.7}
-\contentsline {section}{\numberline {3.4}Segmentation Methods}{17}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Dynamic Time Warping (DTW)}{17}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Fourier Transformation}{17}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Punch Segmentation Algorithm}{18}{subsection.3.4.3}
-\contentsline {section}{\numberline {3.5}Classification Methods}{19}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Support Vector Machines}{19}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Neural Networks}{20}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Decision Trees \& Random Forest}{20}{subsection.3.5.3}
-\contentsline {section}{\numberline {3.6}Punch Quality Algorithm}{21}{section.3.6}
-\contentsline {chapter}{\chapternumberline {4}Implementation}{23}{chapter.4}
-\contentsline {section}{\numberline {4.1}Comparison Methods}{23}{section.4.1}
-\contentsline {paragraph}{Dimensionality Reduction Comparison}{24}{section*.15}
-\contentsline {paragraph}{Automated Punch Segmentation}{24}{section*.16}
-\contentsline {paragraph}{Heuristic Rules}{25}{section*.17}
-\contentsline {paragraph}{Data Format}{25}{section*.18}
-\contentsline {chapter}{\chapternumberline {5}Results, Conclusions, and future work}{29}{chapter.5}
-\contentsline {section}{\numberline {5.1}Section}{29}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Subsection}{29}{subsection.5.1.1}
-\contentsline {appendix}{\chapternumberline {A}Appendix A}{31}{appendix.A}
-\contentsline {chapter}{Bibliography}{33}{section*.20}
+\contentsline {paragraph}{auto seg}{10}{section*.11}
+\contentsline {section}{\numberline {2.5}Existing Products}{10}{section.2.5}
+\contentsline {paragraph}{Kinect sports boxing game}{11}{section*.12}
+\contentsline {paragraph}{Fighers Uncaged}{11}{section*.13}
+\contentsline {paragraph}{Literature \& Product Conclusion}{11}{section*.14}
+\contentsline {section}{\numberline {2.6}Dimensionality}{12}{section.2.6}
+\contentsline {paragraph}{Curse of Dimensionality}{12}{section*.15}
+\contentsline {subsection}{\numberline {2.6.1}Dimensionality Reduction}{12}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Principal Component Analysis (PCA)}{12}{subsection.2.6.2}
+\contentsline {paragraph}{Eigenvectors \& Eigenvalues}{13}{section*.16}
+\contentsline {paragraph}{Covariance Matrix \& Optimisations }{13}{section*.17}
+\contentsline {section}{\numberline {2.7}Manifold Learning}{14}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Diffusion Maps}{14}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Locally Linear Embedding (LLE)}{14}{subsection.2.7.2}
+\contentsline {subsection}{\numberline {2.7.3}Laplacian Eigenmaps}{15}{subsection.2.7.3}
+\contentsline {subsection}{\numberline {2.7.4}Local Tangent Space Alignment (LTSA)}{15}{subsection.2.7.4}
+\contentsline {subsection}{\numberline {2.7.5}Curvilinear Component Analysis (CCA)}{16}{subsection.2.7.5}
+\contentsline {section}{\numberline {2.8}Segmentation Methods}{16}{section.2.8}
+\contentsline {subsection}{\numberline {2.8.1}Dynamic Time Warping (DTW)}{16}{subsection.2.8.1}
+\contentsline {subsection}{\numberline {2.8.2}Fourier Transformation (FT)}{16}{subsection.2.8.2}
+\contentsline {section}{\numberline {2.9}Classification Methods}{17}{section.2.9}
+\contentsline {subsection}{\numberline {2.9.1}Support Vector Machines}{17}{subsection.2.9.1}
+\contentsline {subsection}{\numberline {2.9.2}Neural Networks}{18}{subsection.2.9.2}
+\contentsline {paragraph}{Back Propagation (BP)}{19}{section*.18}
+\contentsline {subsection}{\numberline {2.9.3}Decision Trees \& Random Forest}{19}{subsection.2.9.3}
+\contentsline {section}{\numberline {2.10}Punch Quality Algorithm}{20}{section.2.10}
+\contentsline {chapter}{\chapternumberline {3}Design}{23}{chapter.3}
+\contentsline {chapter}{\chapternumberline {4}Implementation}{25}{chapter.4}
+\contentsline {section}{\numberline {4.1}Comparison Methods}{25}{section.4.1}
+\contentsline {paragraph}{Dimensionality Reduction Comparison}{26}{section*.19}
+\contentsline {paragraph}{Automated Punch Segmentation}{26}{section*.20}
+\contentsline {paragraph}{Heuristic Rules}{27}{section*.21}
+\contentsline {paragraph}{Data Format}{27}{section*.22}
+\contentsline {subsection}{\numberline {4.1.1}Comparison Methods}{29}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Punch Segmentation Algorithm}{31}{subsection.4.1.2}
+\contentsline {chapter}{\chapternumberline {5}Results, Conclusions, and future work}{33}{chapter.5}
+\contentsline {section}{\numberline {5.1}Section}{33}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Subsection}{33}{subsection.5.1.1}
+\contentsline {appendix}{\chapternumberline {A}Appendix A}{35}{appendix.A}
+\contentsline {chapter}{Bibliography}{37}{section*.24}

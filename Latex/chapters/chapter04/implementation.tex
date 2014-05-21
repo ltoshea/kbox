@@ -181,3 +181,52 @@ The position of the camera is (0,0,0).
     \end{tabular}
 \end{center}
 %=========================================================
+
+\subsection{Comparison Methods}
+Each comparison method was evaluated on it's ability to produce useful, smooth and sinusoidal output to aid automatic segmentation. Automatic segmentation is a crucial step in the project since on a larger scale much greater data sets will need to be used and collated from multiple sources. If these can be processed and automatically segmented this will remove any manual work required and make this a truly useful system.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[height=0.25\textheight]{fig04/drcomp.pdf}
+    \mycaption[Kinect Device]{1st PCA comparison}
+    \label{fig:drcomp}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    \includegraphics[height=0.25\textheight]{fig04/drcomp2.pdf}
+    \mycaption[Kinect Device]{1st PCA comparison}
+    \label{fig:drcomp}
+\end{figure}
+
+We can see from the first principal component plotted from multiple dimensionality reduction method that PCA does in fact give the most useful results, followed closely by CCA. If we then look at the second principal components we can see that PCA performs second to LTSA but since LTSA performs poorly for the first component it makes PCA the obvious choice.
+
+
+DTW
+After using dynamic time warping I found that there was not enough difference between the various punch signals to give me an effective way at segmentation. Comparing jabs to other jabs yielded similarity values from $0 - 1.589$ with an average difference of $0.499$, comparing jabs to crosses yielded similarity values from $0-2.113$ with the average $0.716$. Therefore there was not enough of a consistent difference score to be able to classify they type of punch using this method.
+
+FFT
+ I investigated the possibility of running a fast Fourier transform (FFT) on the raw data as well as each segmented punch that was later obtained from using PCA and my own segmentation algorithm. The range for the coefficients was $0 - (63.030 - 0i)$ with a spread across all of the different types of punches. 
+Unfortunately this meant the coefficients obtained in both cases proved to be a poor differentiator between punches due to the coefficients being so variable even within the same punch types.
+
+PCA
+
+Once the data has been successfully segmented into individual punches we can begin to extract features that can be used to train a classifier. Between 12 and 15 evenly spaced samples are taken for each individual punch, depending on the classifier to be used later. Each sample corresponds to a point in time which is used to extract the 3 principal coefficients for each point which results in a $36 - 45$ features for each punch.
+
+Once all the different punch sequences are sampled for each type of punch we can use this data to train a classifier. A multi-class SVM, decision tree, Random Forest and neural network were tested. .............
+
+Results
+
+\subsection{Punch Segmentation Algorithm}
+After failing to find a way to automatically segment punches using existing methods It became apparent that a custom algorithm will be needed for this task, which can be broken down into several steps.
+
+\begin{enumerate}[noitemsep]
+  \item Perform PCA on raw data.
+  \item Smooth the principal coefficients. \textcolor{red}{Rember 1st pc}
+  \item Find the local maxima and minima for the punch sequence.
+  \item Remove erroneous Minima\/Maxima using heuristic rules.
+  \item Take a number of evenly spaced samples from between two maximum points, the length of one punch.
+  \item Fetch all PCA components that correspond to the time the samples were taken.
+  \item Train classifier on new data.
+\end{enumerate}
+
+Each frame representing 20 joint positions is reduced from 60 dimensions to 3 principal components per frame. Next the principal components are smoothed to remove any {\bf wrong minima/maxima} which would prevent the automated segmentation of punches. All remaining maxima are then passed through a set of heuristic rules that checks the location of a maxima point relative to it's neighbourhood points to determine if it is legitimate. The simplest form of this is using the Pythagorean theorem to calculate the distance between a maxima and it's neighbours, if the distance is too small it is clear that one of the points is erroneous and that only one of these will be necessary for segmentation. Likewise if a neighbour is too far away it becomes obvious that one of the maxima is incorrect and needs to be removed.\textcolor{red}{image showing points really far down compared to baseline} Thresholding is also used for each punch, with all maxima below a certain threshold removed since the cyclical signature of the punch guarantees the end of the punch will be approximately close to the end of the last punch.

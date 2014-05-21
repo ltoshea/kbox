@@ -1,1 +1,0 @@
-subject, massi, action, gait, variant, normal

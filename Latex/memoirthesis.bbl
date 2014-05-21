@@ -17,9 +17,30 @@
 {\sc M.~Belkin and P.~Niyogi}, {\em {Laplacian eigenmaps for dimensionality
   reduction and data representation}}, Neural Comput.,  (2003).
 
+\bibitem{karate}
+{\sc S.~Bianco and F.~Tisato}, {\em Karate moves recognition from skeletal
+  motion}, 2012.
+
+\bibitem{chr}
+{\sc E.~B. C.~Keskin and L.~Akarun}, {\em A unified framework for concurrent
+  usage of hand gesture, shape and pose}, CVPR - 2012.
+
 \bibitem{winSDK}
 {\sc D.~Catuhe}, {\em Programming with the kinect for windows software
   development kit}.
+
+\bibitem{Celiktutan2013a}
+{\sc O.~\c{C}eliktutan, C.~B. Akg\"{u}l, C.~Wolf, and B.~Sankur}, {\em
+  {Graph-Based Analysis of Physical Exercise Actions}},  (2013).
+
+\bibitem{Kinect2012}
+{\sc C.~Chang, B.~Lange, and M.~Zhang}, {\em {Towards pervasive physical
+  rehabilitation using Microsoft Kinect}}, Pervasive \ldots,  (2012).
+
+\bibitem{physio}
+{\sc S.-F.~C. Chang, Yao-Jen and J.-D. Huang.}, {\em "a kinect-based system for
+  physical rehabilitation: A pilot study for young adults with motor
+  disabilities."}, ICIAR - 2011.
 
 \bibitem{Coifman2006}
 {\sc R.~R. Coifman and S.~Lafon}, {\em {Diffusion maps}}, Appl. Comput. Harmon.
@@ -61,6 +82,23 @@
   \url{http://www.theguardian.com/sport/2012/jul/04/london-2012-olympic-games-sport-technology},
   2012.
 
+\bibitem{Kaewplee}
+{\sc K.~Kaewplee, N.~Khamsemanan, and C.~Nattee}, {\em {Muay Thai Posture
+  Classification using Skeletal Data from Kinect and k-Nearest Neighbors}}.
+
+\bibitem{randforest}
+{\sc C.-C.~C. L.~Xia and J.~K. Aggarwal.}, {\em A decision forest based feature
+  selection framework for action recognition from rgb-depth cameras.}, ICIAR -
+  2013.
+
+\bibitem{hmm1}
+\leavevmode\vrule height 2pt depth -1.6pt width 23pt, {\em View invariant human
+  action recognition using histograms of 3d joints.}, IEEE CVPR - 2012.
+
+\bibitem{Manjuatha2014}
+{\sc M.~B. Manjuatha, B.~P. Pradeep, and S.~Y. Santhosh}, {\em {Survey on
+  Skeleton Gesture Recognition Provided by Kinect}},  (2014), pp.~8475--8483.
+
 \bibitem{gamerev3}
 {\sc Metacritic}, {\em Fighters uncaged critic reviews for xbox 360}.
 \newblock
@@ -71,8 +109,30 @@
 {\sc Microsoft}, {\em Infrared stream - msdn}.
 \newblock \url{http://msdn.microsoft.com/en-us/library/jj663793.aspx}, 2012.
 
+\bibitem{Miranda2012}
+{\sc L.~Miranda, T.~Vieira, D.~Martinez, T.~Lewiner, A.~W. Vieira, and M.~F.~M.
+  Campos}, {\em {Real-Time Gesture Recognition from Depth Data through Key
+  Poses Learning and Decision Forests}}, 2012 25th SIBGRAPI Conf. Graph.
+  Patterns Images,  (2012), pp.~268--275.
+
+\bibitem{Miranda2014}
+{\sc L.~Miranda, T.~Vieira, D.~Mart\'{\i}nez, T.~Lewiner, A.~W. Vieira, and
+  M.~F. {M. Campos}}, {\em {Online gesture recognition from pose kernel
+  learning and decision forests}}, Pattern Recognit. Lett., 39 (2014),
+  pp.~65--73.
+
+\bibitem{SMIJ}
+{\sc C.~R. K. G. V. R. B.~R. Ofli, Ferda}, {\em Sequence of the most
+  informative joints (smij): A new representation for human skeletal action
+  recognition}, 2012.
+
 \bibitem{dynprog}
 {\sc R.~E. B. P.~U. Press}, {\em "dynamic programming"}.
+
+\bibitem{Raptis2011a}
+{\sc M.~Raptis, D.~Kirovski, and H.~Hoppe}, {\em {Real-time classification of
+  dance gestures from skeleton animation}}, Proc. 2011 ACM
+  SIGGRAPH/Eurographics Symp. Comput. Animat. - SCA '11,  (2011), p.~147.
 
 \bibitem{Rector2013}
 {\sc K.~Rector, C.~L. Bennett, and J.~A. Kientz}, {\em {Eyes-Free Yoga : An
@@ -83,8 +143,22 @@
 {\sc S.~T. Roweis and L.~K. Saul}, {\em {Nonlinear dimensionality reduction by
   locally linear embedding.}}, Science, 290 (2000), pp.~2323--6.
 
+\bibitem{dtw1}
+{\sc T.~T.~T. S.~Celebi, A. S.~Aydın and T.~Arici}, {\em Gesture recognition
+  using skeleton data with weighted dynamic time warping}, VISAPP - 2013.
+
+\bibitem{vdpe}
+{\sc R.~T. M. G. P. K. D. M. P. D. A.~D. S.~Essid, D.~Alexiadis and N.~E.
+  O’Connor}, {\em An advanced virtual dance performance evaluator}, ICASSP -
+  2012.
+
+\bibitem{Shotton2011}
+{\sc J.~Shotton, A.~Fitzgibbon, M.~Cook, T.~Sharp, M.~Finocchio, R.~Moore,
+  A.~Kipman, and A.~Blake}, {\em {Real-time human pose recognition in parts
+  from single depth images}}, Cvpr 2011,  (2011), pp.~1297--1304.
+
 \bibitem{fastPCA}
-{\sc M.~Turk and A.~Pentland}, {\em Eigenfaces for recognition"}.
+{\sc M.~Turk and A.~Pentland}, {\em Eigenfaces for recognition}.
 \newblock
   \url{http://www.cse.unr.edu/~bebis/MathMethods/PCA/case_study_pca1.pdf},
   1991.
@@ -100,6 +174,15 @@
 \newblock
   \url{http://www.rcuk.ac.uk/RCUK-prod/assets/documents/submissions/SportsExercise.pdf},
   2012.
+
+\bibitem{rehab}
+{\sc N.~L. M. B. T.~R. V.~Venkataraman, P.~Turaga and S.~L. Wolf.}, {\em
+  Attractor-shape for dynamical analysis of human movement: Applications in
+  stroke rehabilitation and action recognition}, HAU3D'13 - 2012.
+
+\bibitem{3dbag}
+{\sc Z.~Y.~Z. W.~Q.~Li and Z.~C. Liu}, {\em Action recognition based on a bag
+  of 3d points.}, CVPR4HB10 - 2010.
 
 \bibitem{olymp1}
 {\sc Wikipedia}, {\em Great britain at the 2012 summer olympics}.
