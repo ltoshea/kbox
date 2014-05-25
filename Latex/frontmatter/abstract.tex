@@ -1,7 +1,6 @@
 %
 % File: abstract.tex
-% Author: V?ctor Bre?a-Medina
-% Description: Contains the text for thesis abstract
+% Author: Liam O'Shea
 %
 % UoB guidelines:
 %
@@ -15,7 +14,7 @@
 \begin{SingleSpace}
 \initial{I}n ZeroToHero we present a real time punch recognition and quality assessment algorithm which has the potential to bring specialist boxing coaching into a home environment. Human poses were recorded using the Kinect \& Microsoft SDK, an already widespread, low cost consumer device with high accessibility. 
 We investigated the efficacy of a number of dimensionality reduction techniques when applied to pose sequences including CCA, LLE, Hessian LLE, Laplacian Eigenmaps, LTSA and PCA. We found that PCA was most suitable for facilitating time series segmentation since we could consistently obtain a sinosidal-like sequence. This enabled us to perform automatic punch segmentation on the reduced dimensionality pose-time series and extract useful features from the original unsmoothed reduced dimensionality data set. Segmentation was achieved by smoothing the projection coefficients for the first principal components before extracting local maxima from across the time series. Each maxima was then inspected by a set of heuristics which determine whether it signifies the start of a punch or is just a local maxima that still exists after smoothing.
-Finally, the optimal number of principal components retained and the suitability of a variety of classifiers was empirically assessed including SVM, Neural Networks(NN) and Decision trees(DT). 
+Finally, the optimal number of principal components retained and the suitability of a variety of classifiers was empirically assessed including SVM, Neural Networks (NN) and Decision trees (DT). 
 On a 6 class problem of punch classification ZeroToHero achieved accuracy results of {\bf 94.90\%} with NN and {\bf 93.22\%} accuracy using SVM and DT. On a two-class problem of good and bad jabs an accuracy of {\bf 98.60\%} was achieved using NN, {\bf 97.83\%} by SVM and {\bf 91.21\%} by DT.
 
 
