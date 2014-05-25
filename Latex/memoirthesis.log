@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.11)  21 MAY 2014 15:49
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.4.11)  23 MAY 2014 03:19
 entering extended mode
 **C:/Users/liam/Desktop/KINECT/kbox/Latex/memoirthesis.tex
 (C:/Users/liam/Desktop/KINECT/kbox/Latex/memoirthesis.tex
@@ -1889,9 +1889,6 @@ LaTeX Warning: Label `fig:kinect' multiply defined.
 LaTeX Warning: Label `subsec:subsec01' multiply defined.
 
 
-LaTeX Warning: Label `fig:kinect' multiply defined.
-
-
 LaTeX Warning: Label `fig:1' multiply defined.
 
 
@@ -1908,105 +1905,111 @@ LaTeX Warning: Label `fig:kinect' multiply defined.
 
 
 LaTeX Warning: Label `fig:kinect' multiply defined.
-
-
-LaTeX Warning: Label `fig:kinect' multiply defined.
-
-
-LaTeX Warning: Label `fig:1' multiply defined.
-
-
-LaTeX Warning: Label `fig:2' multiply defined.
 
 
 LaTeX Warning: Label `chap:intro' multiply defined.
 
 
-LaTeX Warning: Label `sec:sec01' multiply defined.
+LaTeX Warning: Label `fig:1' multiply defined.
 
 
-LaTeX Warning: Label `fig:kinect' multiply defined.
+LaTeX Warning: Label `fig:2' multiply defined.
 
 
-LaTeX Warning: Label `fig:kinect' multiply defined.
+LaTeX Warning: Label `fig:1' multiply defined.
 
 
-LaTeX Warning: Label `fig:kinect' multiply defined.
-
-
-LaTeX Warning: Label `fig:kinect' multiply defined.
-
-
-LaTeX Warning: Label `fig:kinect2' multiply defined.
-
-
-LaTeX Warning: Label `fig:kinect2' multiply defined.
-
-
-LaTeX Warning: Label `fig:kinect' multiply defined.
+LaTeX Warning: Label `fig:2' multiply defined.
 
 
 LaTeX Warning: Label `fig:drcomp' multiply defined.
 
 
+LaTeX Warning: Label `fig:kinect3' multiply defined.
+
+
+LaTeX Warning: Label `fig:a' multiply defined.
+
+
+LaTeX Warning: Label `fig:b' multiply defined.
+
+
+LaTeX Warning: Label `fig:a' multiply defined.
+
+
+LaTeX Warning: Label `fig:b' multiply defined.
+
+
+LaTeX Warning: Label `fig:kinect2' multiply defined.
+
+
+LaTeX Warning: Label `fig:kinect3' multiply defined.
+
+
+LaTeX Warning: Label `fig:kinect3' multiply defined.
+
+
 LaTeX Warning: Label `chap:intro' multiply defined.
 
 
-LaTeX Warning: Label `sec:sec01' multiply defined.
+LaTeX Warning: Label `fig:drcomp' multiply defined.
 
 
-LaTeX Warning: Label `subsec:subsec01' multiply defined.
+LaTeX Warning: Label `fig:drcomp' multiply defined.
+
+
+LaTeX Warning: Label `fig:drcomp' multiply defined.
 
 )
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 341.
-LaTeX Font Info:    ... okay on input line 341.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 341.
-LaTeX Font Info:    ... okay on input line 341.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 341.
-LaTeX Font Info:    ... okay on input line 341.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 341.
-LaTeX Font Info:    ... okay on input line 341.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 341.
-LaTeX Font Info:    ... okay on input line 341.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 341.
-LaTeX Font Info:    ... okay on input line 341.
-LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 341.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 343.
+LaTeX Font Info:    ... okay on input line 343.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 343.
+LaTeX Font Info:    ... okay on input line 343.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 343.
+LaTeX Font Info:    ... okay on input line 343.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 343.
+LaTeX Font Info:    ... okay on input line 343.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 343.
+LaTeX Font Info:    ... okay on input line 343.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 343.
+LaTeX Font Info:    ... okay on input line 343.
+LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 343.
 LaTeX Font Info:    Try loading font information for FML+fncmi on input line 34
-1.
+3.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\fouriernc\fmlfncmi.fd"
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
-LaTeX Font Info:    ... okay on input line 341.
-LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 341.
-LaTeX Font Info:    Try loading font information for FMS+fncm on input line 341
+LaTeX Font Info:    ... okay on input line 343.
+LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 343.
+LaTeX Font Info:    Try loading font information for FMS+fncm on input line 343
 .
 ("C:\Program Files\MiKTeX 2.9\tex\latex\fouriernc\fmsfncm.fd"
 File: fmsfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FMS/fncm.
 )
-LaTeX Font Info:    ... okay on input line 341.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 341.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 341
+LaTeX Font Info:    ... okay on input line 343.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 343.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 343
 .
 ("C:\Program Files\MiKTeX 2.9\tex\latex\fourier\fmxfutm.fd"
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 341.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 341.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 341.
+LaTeX Font Info:    ... okay on input line 343.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 343.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 343.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 341.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 341.
-LaTeX Font Info:    ... okay on input line 341.
-LaTeX Font Info:    Try loading font information for T1+fnc on input line 341.
+LaTeX Font Info:    ... okay on input line 343.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 343.
+LaTeX Font Info:    ... okay on input line 343.
+LaTeX Font Info:    Try loading font information for T1+fnc on input line 343.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\fouriernc\t1fnc.fd"
 File: t1fnc.fd 2005/12/13 scaled font definitions for T1/fnc.
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 10.18341pt on input line 341.
-Package nag Info: pgf.sty is broken: disabling dollar check on input line 341.
+(Font)              scaled to size 10.18341pt on input line 343.
+Package nag Info: pgf.sty is broken: disabling dollar check on input line 343.
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count339
@@ -2023,20 +2026,20 @@ Package nag Info: pgf.sty is broken: disabling dollar check on input line 341.
 )
 \symgns@font=\mathgroup13
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/fnc/m/n --> TS1/fnc/bx/n on input line 341.
-Package gensymb Info: Math companion symbols declared on input line 341.
-LaTeX Info: Redefining \degree on input line 341.
-LaTeX Info: Redefining \celsius on input line 341.
+(Font)                  TS1/fnc/m/n --> TS1/fnc/bx/n on input line 343.
+Package gensymb Info: Math companion symbols declared on input line 343.
+LaTeX Info: Redefining \degree on input line 343.
+LaTeX Info: Redefining \celsius on input line 343.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 341.
-LaTeX Info: Redefining \ohm on input line 341.
-Package gensymb Info: Using \textohm for \ohm on input line 341.
-Package gensymb Info: Using \textmu for \micro on input line 341.
+erthousand on input line 343.
+LaTeX Info: Redefining \ohm on input line 343.
+Package gensymb Info: Using \textohm for \ohm on input line 343.
+Package gensymb Info: Using \textmu for \micro on input line 343.
 
-Package layouts Warning: Layout scale set to 0.5 on input line 341.
+Package layouts Warning: Layout scale set to 0.5 on input line 343.
 
 \AtBeginShipoutBox=\box78
-Package hyperref Info: Link coloring ON on input line 341.
+Package hyperref Info: Link coloring ON on input line 343.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
@@ -2046,14 +2049,14 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 341.
-LaTeX Info: Redefining \ref on input line 341.
-LaTeX Info: Redefining \pageref on input line 341.
-LaTeX Info: Redefining \nameref on input line 341.
+LaTeX Info: Redefining \nameref on input line 343.
+LaTeX Info: Redefining \ref on input line 343.
+LaTeX Info: Redefining \pageref on input line 343.
+LaTeX Info: Redefining \nameref on input line 343.
 (C:\Users\liam\Desktop\KINECT\kbox\Latex\memoirthesis.out) (C:\Users\liam\Deskt
 op\KINECT\kbox\Latex\memoirthesis.out)
 \@outlinefile=\write6
-LaTeX Info: Redefining \microtypecontext on input line 341.
+LaTeX Info: Redefining \microtypecontext on input line 343.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2069,15 +2072,15 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
 ABD: EveryShipout initializing macros
 Package nag Info: Command \caption@xlabel not defined, skipping amendment on in
-put line 341.
+put line 343.
 Package nag Info: Command \captionabove not defined, skipping amendment on inpu
-t line 341.
+t line 343.
 Package nag Info: Command \captionbelow not defined, skipping amendment on inpu
-t line 341.
+t line 343.
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
-line 341.
+line 343.
 Package nag Info: Command \topcaption not defined, skipping amendment on input 
-line 341.
+line 343.
 (C:\Users\liam\Desktop\KINECT\kbox\Latex\frontmatter/title.tex
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 23.13821pt on input line 25.
@@ -2091,7 +2094,7 @@ LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 11.15991pt on input line 32.
 
 <C:/Users/liam/Desktop/KINECT/kbox/Latex/frontmatter/logos/bristolcrestColour.p
-df, id=182, 114.4275pt x 137.51375pt>
+df, id=186, 114.4275pt x 137.51375pt>
 File: C:/Users/liam/Desktop/KINECT/kbox/Latex/frontmatter/logos/bristolcrestCol
 our.pdf Graphic file (type pdf)
 
@@ -2165,8 +2168,6 @@ LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
 (Font)              scaled to size 7.71893pt on input line 46.
 LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
 (Font)              scaled to size 5.57996pt on input line 46.
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 9.29993pt on input line 52.
 [1
 
 
@@ -2195,16 +2196,13 @@ been already used, duplicate ignored
 l.18 \clearpage
                 [1
 
-]) (C:\Users\liam\Desktop\KINECT\kbox\Latex\frontmatter/dedication.texpdfTeX wa
-rning (ext4): destination with the same identifier (name{page.ii}) has been alr
-eady used, duplicate ignored
+]) (C:\Users\liam\Desktop\KINECT\kbox\Latex\frontmatter/declaration.texpdfTeX w
+arning (ext4): destination with the same identifier (name{page.ii}) has been al
+ready used, duplicate ignored
 <to be read again> 
                    \relax 
-l.7 \chapter
-            *{Dedication and acknowledgements} [2
-
-
-] [3]) (C:\Users\liam\Desktop\KINECT\kbox\Latex\frontmatter/declaration.tex [4
+l.21 \chapter
+             *{Author's declaration} [2
 
 
 ]
@@ -2213,7 +2211,7 @@ Overfull \hbox (1.05093pt too wide) in paragraph at lines 27--29
 ....... DATE: .......................................... 
  []
 
-[5]) (C:\Users\liam\Desktop\KINECT\kbox\Latex\memoirthesis.toc
+[3]) (C:\Users\liam\Desktop\KINECT\kbox\Latex\memoirthesis.toc
 
 Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
 (nag)                Use \bfseries or \textbf instead on input line 2.
@@ -2222,21 +2220,23 @@ LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/fnc/b/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 10.18341pt on input line 2.
-[6
+[4
 
 ])
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 9.29993pt on input line 380.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 9.29993pt on input line 378.
-[7] [8
+(Font)              scaled to size 9.29993pt on input line 380.
+[5] [6
 
 ] (C:\Users\liam\Desktop\KINECT\kbox\Latex\memoirthesis.lot
 LaTeX Font Info:    Font shape `T1/fnc/bx/sc' in size <10.95> not available
 (Font)              Font shape `T1/fnc/b/sc' tried instead on input line 2.
 LaTeX Font Info:    Font shape `T1/fnc/b/sc' will be
 (Font)              scaled to size 10.18341pt on input line 2.
-) [9] [10
+) [7] [8
 
-] (C:\Users\liam\Desktop\KINECT\kbox\Latex\memoirthesis.lof) [11] [12
+] (C:\Users\liam\Desktop\KINECT\kbox\Latex\memoirthesis.lof) [9] [10
 
 ] (C:\Users\liam\Desktop\KINECT\kbox\Latex\chapters/chapter01/intro.tex
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
@@ -2260,82 +2260,90 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 ] [3
 
 ] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 56--59
+Underfull \hbox (badness 10000) in paragraph at lines 57--60
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--64
+Underfull \hbox (badness 10000) in paragraph at lines 62--65
 
  []
 
-[5] <chapters/chapter02/fig02/kinect.png, id=376, 432.86719pt x 222.07968pt>
+[5] <chapters/chapter02/fig02/kinect.png, id=382, 432.86719pt x 222.07968pt>
 File: chapters/chapter02/fig02/kinect.png Graphic file (type png)
 <use chapters/chapter02/fig02/kinect.png>
 Package pdftex.def Info: chapters/chapter02/fig02/kinect.png used on input line
- 73.
+ 74.
 (pdftex.def)             Requested size: 186.11604pt x 95.48615pt.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 73.
+(Font)              scaled to size 8.36993pt on input line 74.
 
-Package nag Warning: \label in float, but not after \caption on input line 74.
+Package nag Warning: \label in float, but not after \caption on input line 75.
 
-<chapters/chapter02/fig02/xyz.png, id=377, 179.16937pt x 198.7425pt>
+<chapters/chapter02/fig02/xyz.png, id=383, 179.16937pt x 198.7425pt>
 File: chapters/chapter02/fig02/xyz.png Graphic file (type png)
 <use chapters/chapter02/fig02/xyz.png>
-Package pdftex.def Info: chapters/chapter02/fig02/xyz.png used on input line 78
+Package pdftex.def Info: chapters/chapter02/fig02/xyz.png used on input line 79
 .
 (pdftex.def)             Requested size: 86.08507pt x 95.48615pt.
 
-Package nag Warning: \label in float, but not after \caption on input line 79.
+Package nag Warning: \label in float, but not after \caption on input line 80.
 
-<chapters/chapter02/fig02/kinspecs.jpg, id=378, 1082.54437pt x 376.40625pt>
+<chapters/chapter02/fig02/kinspecs.jpg, id=384, 1082.54437pt x 376.40625pt>
 File: chapters/chapter02/fig02/kinspecs.jpg Graphic file (type jpg)
 <use chapters/chapter02/fig02/kinspecs.jpg>
 Package pdftex.def Info: chapters/chapter02/fig02/kinspecs.jpg used on input li
-ne 88.
+ne 89.
 (pdftex.def)             Requested size: 457.72142pt x 159.15007pt.
 
-Overfull \hbox (9.72142pt too wide) in paragraph at lines 88--89
+Overfull \hbox (9.72142pt too wide) in paragraph at lines 89--90
  [][] 
  []
 
-<chapters/chapter02/fig02/pipeline.png, id=379, 432.11438pt x 83.5622pt>
+<chapters/chapter02/fig02/pipeline.png, id=385, 432.11438pt x 83.5622pt>
 File: chapters/chapter02/fig02/pipeline.png Graphic file (type png)
 <use chapters/chapter02/fig02/pipeline.png>
 Package pdftex.def Info: chapters/chapter02/fig02/pipeline.png used on input li
-ne 94.
+ne 95.
 (pdftex.def)             Requested size: 493.81552pt x 95.48615pt.
 
-Overfull \hbox (45.81552pt too wide) in paragraph at lines 94--95
+Overfull \hbox (45.81552pt too wide) in paragraph at lines 95--96
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+
+Underfull \vbox (badness 1796) has occurred while \output is active []
+
 [6 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/kinect.png
 > <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/xyz.png> <C
 :/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/kinspecs.jpg>] 
-<chapters/chapter02/fig02/kinDepth.png, id=390, 452.4403pt x 496.85625pt>
+<chapters/chapter02/fig02/kinDepth.png, id=395, 452.4403pt x 496.85625pt>
 File: chapters/chapter02/fig02/kinDepth.png Graphic file (type png)
 <use chapters/chapter02/fig02/kinDepth.png>
 Package pdftex.def Info: chapters/chapter02/fig02/kinDepth.png used on input li
-ne 104.
+ne 105.
 (pdftex.def)             Requested size: 260.86223pt x 286.46817pt.
 [7 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/pipeline.p
 ng> <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/kinDepth.
-png>] <chapters/chapter02/fig02/kinSkel.png, id=397, 462.22687pt x 386.19281pt>
+png>] <chapters/chapter02/fig02/kinSkel.png, id=404, 462.22687pt x 386.19281pt>
 File: chapters/chapter02/fig02/kinSkel.png Graphic file (type png)
 <use chapters/chapter02/fig02/kinSkel.png>
 Package pdftex.def Info: chapters/chapter02/fig02/kinSkel.png used on input lin
-e 116.
+e 117.
 (pdftex.def)             Requested size: 304.7674pt x 254.63622pt.
 [8 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/kinSkel.pn
 g>]
-Underfull \vbox (badness 1024) has occurred while \output is active []
+Underfull \vbox (badness 1629) has occurred while \output is active []
 
-[9] [10]
+[9]
+
+Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
+(nag)                Use \bfseries or \textbf instead on input line 153.
+
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 168--170
 
  []
@@ -2375,12 +2383,28 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 7.71893pt on input line 205.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 5.57996pt on input line 205.
-<chapters/chapter02/fig02/PCA.pdf, id=478, 866.43701pt x 321.2pt>
+<chapters/chapter02/fig02/PCA.pdf, id=484, 866.43701pt x 321.2pt>
 File: chapters/chapter02/fig02/PCA.pdf Graphic file (type pdf)
 <use chapters/chapter02/fig02/PCA.pdf>
 Package pdftex.def Info: chapters/chapter02/fig02/PCA.pdf used on input line 21
 9.
 (pdftex.def)             Requested size: 429.31732pt x 159.15007pt.
+
+Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
+(nag)                Use \bfseries or \textbf instead on input line 220.
+
+
+Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
+(nag)                Use \bfseries or \textbf instead on input line 220.
+
+
+Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
+(nag)                Use \bfseries or \textbf instead on input line 220.
+
+
+Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
+(nag)                Use \bfseries or \textbf instead on input line 220.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -2388,20 +2412,20 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 .1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.235     \subtop
+l.234     \subtop
                  []{\includegraphics[height=0.25\textheight]{fig02/diffmap1....
-<chapters/chapter02/fig02/diffmap1.pdf, id=489, 423.5825pt x 317.185pt>
+<chapters/chapter02/fig02/diffmap1.pdf, id=496, 423.5825pt x 317.185pt>
 File: chapters/chapter02/fig02/diffmap1.pdf Graphic file (type pdf)
 <use chapters/chapter02/fig02/diffmap1.pdf>
 Package pdftex.def Info: chapters/chapter02/fig02/diffmap1.pdf used on input li
-ne 235.
+ne 234.
 (pdftex.def)             Requested size: 212.54047pt x 159.15007pt.
 
-Package nag Warning: \label in float, but not after \caption on input line 236.
+Package nag Warning: \label in float, but not after \caption on input line 235.
 
 
 
-Overfull \hbox (13.37119pt too wide) in paragraph at lines 235--237
+Overfull \hbox (13.37119pt too wide) in paragraph at lines 234--236
  [][] 
  []
 
@@ -2409,20 +2433,20 @@ pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.241     \subtop
+l.240     \subtop
                  []{\includegraphics[height=0.25\textheight]{fig02/diffmap2....
-<chapters/chapter02/fig02/diffmap2.pdf, id=490, 423.5825pt x 317.185pt>
+<chapters/chapter02/fig02/diffmap2.pdf, id=497, 423.5825pt x 317.185pt>
 File: chapters/chapter02/fig02/diffmap2.pdf Graphic file (type pdf)
 <use chapters/chapter02/fig02/diffmap2.pdf>
 Package pdftex.def Info: chapters/chapter02/fig02/diffmap2.pdf used on input li
-ne 241.
+ne 240.
 (pdftex.def)             Requested size: 212.54047pt x 159.15007pt.
 
-Package nag Warning: \label in float, but not after \caption on input line 242.
+Package nag Warning: \label in float, but not after \caption on input line 241.
 
 
 
-Overfull \hbox (13.37119pt too wide) in paragraph at lines 241--243
+Overfull \hbox (13.37119pt too wide) in paragraph at lines 240--242
  [][] 
  []
 
@@ -2431,58 +2455,58 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 251.
+(nag)                Use \bfseries or \textbf instead on input line 250.
 
 [14 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/PCA.pdf>]
 
 Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 254.
+(nag)                Use \bfseries or \textbf instead on input line 253.
 
 [15 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/diffmap1.
 pdf> <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/diffmap2
-.pdf>] <chapters/chapter02/fig02/dtw.png, id=523, 600.2425pt x 489.83pt>
+.pdf>] <chapters/chapter02/fig02/dtw.png, id=530, 600.2425pt x 489.83pt>
 File: chapters/chapter02/fig02/dtw.png Graphic file (type png)
 <use chapters/chapter02/fig02/dtw.png>
 Package pdftex.def Info: chapters/chapter02/fig02/dtw.png used on input line 27
-5.
+4.
 (pdftex.def)             Requested size: 195.02155pt x 159.15007pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 282.
+(nag)                Use \bfseries or \textbf instead on input line 281.
 
 [16]
 
 Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 292.
+(nag)                Use \bfseries or \textbf instead on input line 291.
 
 [17 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/dtw.png>]
-<chapters/chapter02/fig02/svm.jpg, id=536, 722.7pt x 542.025pt>
-File: chapters/chapter02/fig02/svm.jpg Graphic file (type jpg)
-<use chapters/chapter02/fig02/svm.jpg>
-Package pdftex.def Info: chapters/chapter02/fig02/svm.jpg used on input line 30
-4.
-(pdftex.def)             Requested size: 212.20216pt x 159.15007pt.
-[18 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/svm.jpg>]
-<chapters/chapter02/fig02/nnsimple.pdf, id=541, 455.7025pt x 341.275pt>
+<chapters/chapter02/fig02/svm.png, id=542, 712.16063pt x 462.97969pt>
+File: chapters/chapter02/fig02/svm.png Graphic file (type png)
+<use chapters/chapter02/fig02/svm.png>
+Package pdftex.def Info: chapters/chapter02/fig02/svm.png used on input line 30
+3.
+(pdftex.def)             Requested size: 244.80461pt x 159.15007pt.
+[18 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/svm.png>]
+<chapters/chapter02/fig02/nnsimple.pdf, id=547, 455.7025pt x 341.275pt>
 File: chapters/chapter02/fig02/nnsimple.pdf Graphic file (type pdf)
 <use chapters/chapter02/fig02/nnsimple.pdf>
 Package pdftex.def Info: chapters/chapter02/fig02/nnsimple.pdf used on input li
-ne 322.
+ne 321.
 (pdftex.def)             Requested size: 212.51137pt x 159.15007pt.
-<chapters/chapter02/fig02/nn.pdf, id=542, 455.7025pt x 341.275pt>
+<chapters/chapter02/fig02/nn.pdf, id=548, 455.7025pt x 341.275pt>
 File: chapters/chapter02/fig02/nn.pdf Graphic file (type pdf)
 <use chapters/chapter02/fig02/nn.pdf>
-Package pdftex.def Info: chapters/chapter02/fig02/nn.pdf used on input line 335
+Package pdftex.def Info: chapters/chapter02/fig02/nn.pdf used on input line 334
 .
 (pdftex.def)             Requested size: 212.51137pt x 159.15007pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [19 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/nnsimple.
-pdf>] <chapters/chapter02/fig02/dtree.jpg, id=584, 339.2675pt x 149.55875pt>
+pdf>] <chapters/chapter02/fig02/dtree.jpg, id=591, 339.2675pt x 149.55875pt>
 File: chapters/chapter02/fig02/dtree.jpg Graphic file (type jpg)
 <use chapters/chapter02/fig02/dtree.jpg>
 Package pdftex.def Info: chapters/chapter02/fig02/dtree.jpg used on input line 
@@ -2491,30 +2515,45 @@ Package pdftex.def Info: chapters/chapter02/fig02/dtree.jpg used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 [20 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/nn.pdf>])
-(C:\Users\liam\Desktop\KINECT\kbox\Latex\chapters/chapter03/design.tex [21 <C:/
-Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/dtree.jpg>] [22
+(C:\Users\liam\Desktop\KINECT\kbox\Latex\chapters/chapter04/implementation.tex 
+[21 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/dtree.jpg
+>] [22
 
-]) (C:\Users\liam\Desktop\KINECT\kbox\Latex\chapters/chapter04/implementation.t
-ex [23] [24
+] <chapters/chapter04/fig04/lwrist.pdf, id=645, 419.166pt x 322.806pt>
+File: chapters/chapter04/fig04/lwrist.pdf Graphic file (type pdf)
+<use chapters/chapter04/fig04/lwrist.pdf>
+Package pdftex.def Info: chapters/chapter04/fig04/lwrist.pdf used on input line
+ 19.
+(pdftex.def)             Requested size: 206.65953pt x 159.15007pt.
 
-]pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1}
-) has been already used, duplicate ignored
+Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
+(nag)                Use \bfseries or \textbf instead on input line 28.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[23] [24 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/lwri
+st.pdf>]pdfTeX warning (ext4): destination with the same identifier (name{subfi
+gure.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.24     \subtop
+l.38     \subtop
                 []{\includegraphics[height=0.25\textheight]{fig04/fig06}} <chap
-ters/chapter04/fig04/fig06.png, id=647, 435.12563pt x 292.09125pt>
+ters/chapter04/fig04/fig06.png, id=658, 435.12563pt x 292.09125pt>
 File: chapters/chapter04/fig04/fig06.png Graphic file (type png)
 <use chapters/chapter04/fig04/fig06.png>
 Package pdftex.def Info: chapters/chapter04/fig04/fig06.png used on input line 
-24.
+38.
 (pdftex.def)             Requested size: 237.08896pt x 159.15007pt.
 
-Package nag Warning: \label in float, but not after \caption on input line 25.
+Package nag Warning: \label in float, but not after \caption on input line 39.
 
 
-Overfull \hbox (66.37244pt too wide) in paragraph at lines 24--26
+Overfull \hbox (66.37244pt too wide) in paragraph at lines 38--40
  [][] 
  []
 
@@ -2522,37 +2561,29 @@ pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.29     \subtop
+l.44     \subtop
                 []{\includegraphics[height=0.25\textheight]{fig04/fig07}} <chap
-ters/chapter04/fig04/fig07.png, id=648, 392.96812pt x 304.88907pt>
+ters/chapter04/fig04/fig07.png, id=659, 392.96812pt x 304.88907pt>
 File: chapters/chapter04/fig04/fig07.png Graphic file (type png)
 <use chapters/chapter04/fig04/fig07.png>
 Package pdftex.def Info: chapters/chapter04/fig04/fig07.png used on input line 
-29.
+44.
 (pdftex.def)             Requested size: 205.1301pt x 159.15007pt.
 
-Package nag Warning: \label in float, but not after \caption on input line 30.
+Package nag Warning: \label in float, but not after \caption on input line 45.
 
 
-Overfull \hbox (34.41357pt too wide) in paragraph at lines 29--31
+Overfull \hbox (34.41357pt too wide) in paragraph at lines 44--46
  [][] 
  []
 
-<chapters/chapter04/fig04/fig01.png, id=649, 374.14781pt x 289.83281pt>
-File: chapters/chapter04/fig04/fig01.png Graphic file (type png)
-<use chapters/chapter04/fig04/fig01.png>
-Package pdftex.def Info: chapters/chapter04/fig04/fig01.png used on input line 
-41.
-(pdftex.def)             Requested size: 205.45079pt x 159.15007pt.
-[25 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig06.png
-> <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig07.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.56     \subtop
                 []{\includegraphics[height=0.25\textheight]{fig04/fig02}} <chap
-ters/chapter04/fig04/fig02.png, id=656, 385.44pt x 310.15875pt>
+ters/chapter04/fig04/fig02.png, id=660, 385.44pt x 310.15875pt>
 File: chapters/chapter04/fig04/fig02.png Graphic file (type png)
 <use chapters/chapter04/fig04/fig02.png>
 Package pdftex.def Info: chapters/chapter04/fig04/fig02.png used on input line 
@@ -2570,70 +2601,81 @@ pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.63     \subtop
-                []{\includegraphics[height=0.25\textheight]{fig04/fig04}} <chap
-ters/chapter04/fig04/fig04.png, id=657, 367.3725pt x 298.11375pt>
-File: chapters/chapter04/fig04/fig04.png Graphic file (type png)
-<use chapters/chapter04/fig04/fig04.png>
-Package pdftex.def Info: chapters/chapter04/fig04/fig04.png used on input line 
-63.
-(pdftex.def)             Requested size: 196.12471pt x 159.15007pt.
-
-Package nag Warning: \label in float, but not after \caption on input line 64.
-
-
-Overfull \hbox (25.40819pt too wide) in paragraph at lines 63--65
- [][] 
- []
-
-<chapters/chapter04/fig04/fig05.png, id=658, 198.7425pt x 161.10187pt>
-File: chapters/chapter04/fig04/fig05.png Graphic file (type png)
-<use chapters/chapter04/fig04/fig05.png>
-Package pdftex.def Info: chapters/chapter04/fig04/fig05.png used on input line 
-68.
-(pdftex.def)             Requested size: 117.79988pt x 95.48615pt.
-
-Package nag Warning: \label in float, but not after \caption on input line 69.
-
-
-Overfull \hbox (18.21524pt too wide) in paragraph at lines 68--70
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<chapters/chapter04/fig04/fig03.png, id=659, 384.6872pt x 316.18124pt>
+l.62     \subtop
+                []{\includegraphics[height=0.25\textheight]{fig04/fig03}} <chap
+ters/chapter04/fig04/fig03.png, id=661, 384.6872pt x 316.18124pt>
 File: chapters/chapter04/fig04/fig03.png Graphic file (type png)
 <use chapters/chapter04/fig04/fig03.png>
 Package pdftex.def Info: chapters/chapter04/fig04/fig03.png used on input line 
-81.
+62.
 (pdftex.def)             Requested size: 193.63448pt x 159.15007pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Package nag Warning: \label in float, but not after \caption on input line 63.
+
+
+Overfull \hbox (22.91795pt too wide) in paragraph at lines 62--64
+ [][] 
+ []
 
 
 Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 90.
+(nag)                Use \bfseries or \textbf instead on input line 70.
+
+[25
+
+ <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig06.png> <
+C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig07.png> <C:
+/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig02.png> <C:/U
+sers/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig03.png>] [26]
+
+Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
+(nag)                Use \bfseries or \textbf instead on input line 76.
+
+
+Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
+(nag)                Use \bfseries or \textbf instead on input line 78.
+
+<chapters/chapter04/fig04/drcomp.pdf, id=673, 1345.025pt x 734.745pt>
+File: chapters/chapter04/fig04/drcomp.pdf Graphic file (type pdf)
+<use chapters/chapter04/fig04/drcomp.pdf>
+Package pdftex.def Info: chapters/chapter04/fig04/drcomp.pdf used on input line
+ 83.
+(pdftex.def)             Requested size: 291.3297pt x 159.15007pt.
+[27
+
+ <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/drcomp.pdf>]
+<chapters/chapter04/fig04/drcomp2.pdf, id=682, 1335.38902pt x 729.92702pt>
+File: chapters/chapter04/fig04/drcomp2.pdf Graphic file (type pdf)
+<use chapters/chapter04/fig04/drcomp2.pdf>
+Package pdftex.def Info: chapters/chapter04/fig04/drcomp2.pdf used on input lin
+e 90.
+(pdftex.def)             Requested size: 291.15794pt x 159.15007pt.
+
+Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
+(nag)                Use \bfseries or \textbf instead on input line 96.
+
+
+Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
+(nag)                Use \bfseries or \textbf instead on input line 112.
 
 pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.99     \subtop
-                []{\includegraphics[height=0.25\textheight]{fig04/fig08}} <chap
-ters/chapter04/fig04/fig08.png, id=660, 1445.4pt x 781.41937pt>
-File: chapters/chapter04/fig04/fig08.png Graphic file (type png)
-<use chapters/chapter04/fig04/fig08.png>
-Package pdftex.def Info: chapters/chapter04/fig04/fig08.png used on input line 
-99.
-(pdftex.def)             Requested size: 294.36807pt x 159.15007pt.
+l.118     \subtop
+                 []{\includegraphics[height=0.25\textheight]{fig04/fig04}} <cha
+pters/chapter04/fig04/fig04.png, id=683, 367.3725pt x 298.11375pt>
+File: chapters/chapter04/fig04/fig04.png Graphic file (type png)
+<use chapters/chapter04/fig04/fig04.png>
+Package pdftex.def Info: chapters/chapter04/fig04/fig04.png used on input line 
+118.
+(pdftex.def)             Requested size: 196.12471pt x 159.15007pt.
 
-Package nag Warning: \label in float, but not after \caption on input line 100.
+Package nag Warning: \label in float, but not after \caption on input line 119.
 
 
 
-Overfull \hbox (123.65155pt too wide) in paragraph at lines 99--101
+Overfull \hbox (25.40819pt too wide) in paragraph at lines 118--120
  [][] 
  []
 
@@ -2641,105 +2683,344 @@ pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.105     \subtop
-                 []{\includegraphics[height=0.25\textheight]{fig04/fig09}} <cha
-pters/chapter04/fig04/fig09.png, id=661, 1445.4pt x 784.43062pt>
-File: chapters/chapter04/fig04/fig09.png Graphic file (type png)
-<use chapters/chapter04/fig04/fig09.png>
-Package pdftex.def Info: chapters/chapter04/fig04/fig09.png used on input line 
-105.
-(pdftex.def)             Requested size: 293.24327pt x 159.15007pt.
-
-Package nag Warning: \label in float, but not after \caption on input line 106.
-
-
-
-Overfull \hbox (122.52675pt too wide) in paragraph at lines 105--107
- [][] 
- []
-
-<chapters/chapter04/fig04/fig10.png, id=662, 1260.20813pt x 761.84625pt>
-File: chapters/chapter04/fig04/fig10.png Graphic file (type png)
-<use chapters/chapter04/fig04/fig10.png>
-Package pdftex.def Info: chapters/chapter04/fig04/fig10.png used on input line 
-110.
-(pdftex.def)             Requested size: 263.24779pt x 159.15007pt.
-
-Package nag Warning: \label in float, but not after \caption on input line 111.
-
-
-
-Overfull \hbox (92.53127pt too wide) in paragraph at lines 110--112
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+l.124     \subtop
+                 []{\includegraphics[height=0.25\textheight]{fig04/fig10}} <cha
+pters/chapter04/fig04/fig10.png, id=684, 1083.29718pt x 645.16031pt>
 File: chapters/chapter04/fig04/fig10.png Graphic file (type png)
 <use chapters/chapter04/fig04/fig10.png>
 Package pdftex.def Info: chapters/chapter04/fig04/fig10.png used on input line 
 124.
-(pdftex.def)             Requested size: 263.24779pt x 159.15007pt.
+(pdftex.def)             Requested size: 267.22014pt x 159.15007pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 139.
+Package nag Warning: \label in float, but not after \caption on input line 125.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--144
 
+Overfull \hbox (96.50362pt too wide) in paragraph at lines 124--126
+ [][] 
+ []
+
+<chapters/chapter04/fig04/fig05.png, id=685, 198.7425pt x 161.10187pt>
+File: chapters/chapter04/fig04/fig05.png Graphic file (type png)
+<use chapters/chapter04/fig04/fig05.png>
+Package pdftex.def Info: chapters/chapter04/fig04/fig05.png used on input line 
+132.
+(pdftex.def)             Requested size: 117.79988pt x 95.48615pt.
+
+Package nag Warning: \label in float, but not after \caption on input line 133.
+
+
+
+Overfull \hbox (18.21524pt too wide) in paragraph at lines 132--134
+ [][] 
+ []
+
+[28
+
+ <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/drcomp2.pdf>
+] [29 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig04.p
+ng> <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig10.png
+> <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig05.png>]
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.146     \subtop
+                 []{\includegraphics[height=0.25\textheight]{fig04/rp1-crop}} <
+chapters/chapter04/fig04/rp1-crop.pdf, id=708, 390.45876pt x 282.05376pt>
+File: chapters/chapter04/fig04/rp1-crop.pdf Graphic file (type pdf)
+<use chapters/chapter04/fig04/rp1-crop.pdf>
+Package pdftex.def Info: chapters/chapter04/fig04/rp1-crop.pdf used on input li
+ne 146.
+(pdftex.def)             Requested size: 220.31766pt x 159.15007pt.
+
+Package nag Warning: \label in float, but not after \caption on input line 147.
+
+
+
+Overfull \hbox (49.60114pt too wide) in paragraph at lines 146--148
+ [][] 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.152     \subtop
+                 []{\includegraphics[height=0.25\textheight]{fig04/rp2-crop}} <
+chapters/chapter04/fig04/rp2-crop.pdf, id=709, 390.45876pt x 282.05376pt>
+File: chapters/chapter04/fig04/rp2-crop.pdf Graphic file (type pdf)
+<use chapters/chapter04/fig04/rp2-crop.pdf>
+Package pdftex.def Info: chapters/chapter04/fig04/rp2-crop.pdf used on input li
+ne 152.
+(pdftex.def)             Requested size: 220.31766pt x 159.15007pt.
+
+Package nag Warning: \label in float, but not after \caption on input line 153.
+
+
+
+Overfull \hbox (49.60114pt too wide) in paragraph at lines 152--154
+ [][] 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.3})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.159     \subtop
+                 []{\includegraphics[height=0.25\textheight]{fig04/rp3-crop}} <
+chapters/chapter04/fig04/rp3-crop.pdf, id=710, 390.45876pt x 282.05376pt>
+File: chapters/chapter04/fig04/rp3-crop.pdf Graphic file (type pdf)
+<use chapters/chapter04/fig04/rp3-crop.pdf>
+Package pdftex.def Info: chapters/chapter04/fig04/rp3-crop.pdf used on input li
+ne 159.
+(pdftex.def)             Requested size: 220.31766pt x 159.15007pt.
+
+Package nag Warning: \label in float, but not after \caption on input line 160.
+
+
+
+Overfull \hbox (49.60114pt too wide) in paragraph at lines 159--161
+ [][] 
+ []
+
+<chapters/chapter04/fig04/rp4-crop.pdf, id=711, 390.45876pt x 282.05376pt>
+File: chapters/chapter04/fig04/rp4-crop.pdf Graphic file (type pdf)
+<use chapters/chapter04/fig04/rp4-crop.pdf>
+Package pdftex.def Info: chapters/chapter04/fig04/rp4-crop.pdf used on input li
+ne 165.
+(pdftex.def)             Requested size: 220.31766pt x 159.15007pt.
+
+Package nag Warning: \label in float, but not after \caption on input line 166.
+
+
+
+Overfull \hbox (49.60114pt too wide) in paragraph at lines 165--167
+ [][] 
+ []
+
+<chapters/chapter04/fig04/rp5-crop.pdf, id=712, 390.45876pt x 282.05376pt>
+File: chapters/chapter04/fig04/rp5-crop.pdf Graphic file (type pdf)
+<use chapters/chapter04/fig04/rp5-crop.pdf>
+Package pdftex.def Info: chapters/chapter04/fig04/rp5-crop.pdf used on input li
+ne 172.
+(pdftex.def)             Requested size: 220.31766pt x 159.15007pt.
+
+Package nag Warning: \label in float, but not after \caption on input line 173.
+
+
+
+Overfull \hbox (49.60114pt too wide) in paragraph at lines 172--174
+ [][] 
+ []
+
+<chapters/chapter04/fig04/rp6-crop.pdf, id=713, 390.45876pt x 282.05376pt>
+File: chapters/chapter04/fig04/rp6-crop.pdf Graphic file (type pdf)
+<use chapters/chapter04/fig04/rp6-crop.pdf>
+Package pdftex.def Info: chapters/chapter04/fig04/rp6-crop.pdf used on input li
+ne 178.
+(pdftex.def)             Requested size: 220.31766pt x 159.15007pt.
+
+Package nag Warning: \label in float, but not after \caption on input line 179.
+
+
+
+Overfull \hbox (49.60114pt too wide) in paragraph at lines 178--180
+ [][] 
  []
 
 
-Underfull \vbox (badness 1629) has occurred while \output is active []
+Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
+(nag)                Use \bfseries or \textbf instead on input line 184.
 
-[26 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig01.png
->] [27 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig02.
-png> <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig04.pn
-g> <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig05.png>
-] [28 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig03.p
-ng>] <chapters/chapter04/fig04/drcomp.pdf, id=681, 1345.025pt x 734.745pt>
-File: chapters/chapter04/fig04/drcomp.pdf Graphic file (type pdf)
-<use chapters/chapter04/fig04/drcomp.pdf>
-Package pdftex.def Info: chapters/chapter04/fig04/drcomp.pdf used on input line
- 190.
-(pdftex.def)             Requested size: 291.3297pt x 159.15007pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<chapters/chapter04/fig04/drcomp2.pdf, id=682, 1335.38902pt x 729.92702pt>
-File: chapters/chapter04/fig04/drcomp2.pdf Graphic file (type pdf)
-<use chapters/chapter04/fig04/drcomp2.pdf>
-Package pdftex.def Info: chapters/chapter04/fig04/drcomp2.pdf used on input lin
-e 196.
-(pdftex.def)             Requested size: 291.15794pt x 159.15007pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 1577) has occurred while \output is active []
-
-[29 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig08.png
-> <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig09.png> 
-<C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig10.png>] [
-30 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/drcomp.pdf
->]
 
 Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 232.
+(nag)                Use \bfseries or \textbf instead on input line 184.
 
-) (C:\Users\liam\Desktop\KINECT\kbox\Latex\chapters/chapter05/conclusion.tex [3
-1 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/drcomp2.pdf
->] [32]) [33
 
-] [34
+Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
+(nag)                Use \bfseries or \textbf instead on input line 184.
 
-] (C:\Users\liam\Desktop\KINECT\kbox\Latex\chapters/appendices/app0A.tex) [35
 
-] [36
+Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
+(nag)                Use \bfseries or \textbf instead on input line 184.
+
+
+Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
+(nag)                Use \bfseries or \textbf instead on input line 184.
+
+
+Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
+(nag)                Use \bfseries or \textbf instead on input line 184.
+
+
+Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
+(nag)                Use \bfseries or \textbf instead on input line 184.
+
+
+Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
+(nag)                Use \bfseries or \textbf instead on input line 184.
+
+
+Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
+(nag)                Use \bfseries or \textbf instead on input line 184.
+
+
+Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
+(nag)                Use \bfseries or \textbf instead on input line 184.
+
+
+Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
+(nag)                Use \bfseries or \textbf instead on input line 184.
+
+
+Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
+(nag)                Use \bfseries or \textbf instead on input line 184.
+
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.192     \subtop
+                 []{\includegraphics[height=0.25\textheight]{fig04/pc1}} <chapt
+ers/chapter04/fig04/pc1.png, id=714, 392.96812pt x 304.88907pt>
+File: chapters/chapter04/fig04/pc1.png Graphic file (type png)
+<use chapters/chapter04/fig04/pc1.png>
+Package pdftex.def Info: chapters/chapter04/fig04/pc1.png used on input line 19
+2.
+(pdftex.def)             Requested size: 205.1301pt x 159.15007pt.
+
+Package nag Warning: \label in float, but not after \caption on input line 193.
+
+
+
+Overfull \hbox (34.41357pt too wide) in paragraph at lines 192--194
+ [][] 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.198     \subtop
+                 []{\includegraphics[height=0.25\textheight]{fig04/pc2}} <chapt
+ers/chapter04/fig04/pc2.png, id=715, 384.6872pt x 289.83281pt>
+File: chapters/chapter04/fig04/pc2.png Graphic file (type png)
+<use chapters/chapter04/fig04/pc2.png>
+Package pdftex.def Info: chapters/chapter04/fig04/pc2.png used on input line 19
+8.
+(pdftex.def)             Requested size: 211.23816pt x 159.15007pt.
+
+Package nag Warning: \label in float, but not after \caption on input line 199.
+
+
+
+Overfull \hbox (40.52164pt too wide) in paragraph at lines 198--200
+ [][] 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.3})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.205     \subtop
+                 []{\includegraphics[height=0.25\textheight]{fig04/pc3}} <chapt
+ers/chapter04/fig04/pc3.png, id=716, 391.4625pt x 297.36093pt>
+File: chapters/chapter04/fig04/pc3.png Graphic file (type png)
+<use chapters/chapter04/fig04/pc3.png>
+Package pdftex.def Info: chapters/chapter04/fig04/pc3.png used on input line 20
+5.
+(pdftex.def)             Requested size: 209.511pt x 159.15007pt.
+
+Package nag Warning: \label in float, but not after \caption on input line 206.
+
+
+
+Overfull \hbox (38.79448pt too wide) in paragraph at lines 205--207
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (C:\Users\liam\Desktop\KINECT\kbox\Latex\chapters/chapter05/results.tex [30
+
+] [31 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/rp1-cro
+p.pdf> <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/rp2-cr
+op.pdf> <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/rp3-c
+rop.pdf> <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/rp4-
+crop.pdf> <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/rp5
+-crop.pdf> <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/rp
+6-crop.pdf>] [32 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fi
+g04/pc1.png> <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/
+pc2.png> <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/pc3.
+png>]
+
+Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
+(nag)                Use \bfseries or \textbf instead on input line 43.
+
+
+Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
+(nag)                Use \bfseries or \textbf instead on input line 44.
+
+
+Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
+(nag)                Use \bfseries or \textbf instead on input line 49.
+
+
+Package nag Warning: `center' environment in table.
+(nag)                Maybe you want \centering instead on input line 53.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
+(nag)                Use \bfseries or \textbf instead on input line 64.
+
+
+Package nag Warning: `center' environment in table.
+(nag)                Maybe you want \centering instead on input line 69.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+<chapters/chapter05/fig05/CMtrain-crop.pdf, id=770, 320.19624pt x 338.26375pt>
+File: chapters/chapter05/fig05/CMtrain-crop.pdf Graphic file (type pdf)
+<use chapters/chapter05/fig05/CMtrain-crop.pdf>
+Package pdftex.def Info: chapters/chapter05/fig05/CMtrain-crop.pdf used on inpu
+t line 76.
+(pdftex.def)             Requested size: 150.65347pt x 159.15007pt.
+<chapters/chapter05/fig05/CMtest-crop.pdf, id=771, 320.19624pt x 338.26375pt>
+File: chapters/chapter05/fig05/CMtest-crop.pdf Graphic file (type pdf)
+<use chapters/chapter05/fig05/CMtest-crop.pdf>
+Package pdftex.def Info: chapters/chapter05/fig05/CMtest-crop.pdf used on input
+ line 83.
+(pdftex.def)             Requested size: 150.65347pt x 159.15007pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+<chapters/chapter05/fig05/2classcm-crop.pdf, id=772, 310.15875pt x 328.22626pt>
+File: chapters/chapter05/fig05/2classcm-crop.pdf Graphic file (type pdf)
+<use chapters/chapter05/fig05/2classcm-crop.pdf>
+Package pdftex.def Info: chapters/chapter05/fig05/2classcm-crop.pdf used on inp
+ut line 90.
+(pdftex.def)             Requested size: 150.38895pt x 159.15007pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [33
+
+ <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter05/fig05/CMtrain-crop
+.pdf>] [34] [35 <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter05/fig
+05/CMtest-crop.pdf> <C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter05
+/fig05/2classcm-crop.pdf>] [36
+
+] (C:\Users\liam\Desktop\KINECT\kbox\Latex\chapters/appendices/app0A.tex) [37
+
+] [38
 
 ] (C:\Users\liam\Desktop\KINECT\kbox\Latex\memoirthesis.bbl
 
@@ -2816,7 +3097,7 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 62.
 
-[37
+[39
 
 
 ]
@@ -2885,7 +3166,7 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 130.
 
-[38]
+[40]
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 133.
@@ -2950,54 +3231,57 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 199.
 
-[39]) [40]
+[41]) [42]
 
 Package nag Warning: Package epsfig is deprecated.
 (nag)                Use the graphicx package directly instead.
 
 
-Package nag Warning: 63 complaints in total.
+Package nag Warning: 97 complaints in total.
 
 \tf@toc=\write7
 \tf@lot=\write8
 \tf@lof=\write9
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 419.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 419.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 423.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 423.
 (C:\Users\liam\Desktop\KINECT\kbox\Latex\memoirthesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 419.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 419.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 423.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 423.
 Package rerunfilecheck Info: File `memoirthesis.out' has not changed.
-(rerunfilecheck)             Checksum: 3DD0A668DD588AF9F8B60366A9A9220C;3004.
+(rerunfilecheck)             Checksum: 374190D7953C7FAAF1CFFF65D48C1A6D;3106.
 
 LaTeX Warning: There were multiply-defined labels.
 
  )
-(\end occurred when \ifx on line 197 was incomplete)
-(\end occurred when \ifx on line 191 was incomplete)
-(\end occurred when \ifx on line 125 was incomplete)
-(\end occurred when \ifx on line 113 was incomplete)
-(\end occurred when \ifx on line 82 was incomplete)
-(\end occurred when \ifx on line 71 was incomplete)
-(\end occurred when \ifx on line 42 was incomplete)
-(\end occurred when \ifx on line 33 was incomplete)
+(\end occurred when \ifx on line 91 was incomplete)
+(\end occurred when \ifx on line 84 was incomplete)
+(\end occurred when \ifx on line 77 was incomplete)
+(\end occurred when \ifx on line 210 was incomplete)
+(\end occurred when \ifx on line 184 was incomplete)
+(\end occurred when \ifx on line 136 was incomplete)
+(\end occurred when \ifx on line 91 was incomplete)
+(\end occurred when \ifx on line 84 was incomplete)
+(\end occurred when \ifx on line 65 was incomplete)
+(\end occurred when \ifx on line 49 was incomplete)
+(\end occurred when \ifx on line 20 was incomplete)
 (\end occurred when \ifx on line 361 was incomplete)
 (\end occurred when \ifx on line 336 was incomplete)
-(\end occurred when \ifx on line 323 was incomplete)
-(\end occurred when \ifx on line 305 was incomplete)
-(\end occurred when \ifx on line 276 was incomplete)
-(\end occurred when \ifx on line 245 was incomplete)
+(\end occurred when \ifx on line 322 was incomplete)
+(\end occurred when \ifx on line 304 was incomplete)
+(\end occurred when \ifx on line 275 was incomplete)
+(\end occurred when \ifx on line 244 was incomplete)
 (\end occurred when \ifx on line 220 was incomplete)
-(\end occurred when \ifx on line 117 was incomplete)
-(\end occurred when \ifx on line 105 was incomplete)
-(\end occurred when \ifx on line 95 was incomplete)
-(\end occurred when \ifx on line 89 was incomplete)
-(\end occurred when \ifx on line 82 was incomplete) 
+(\end occurred when \ifx on line 118 was incomplete)
+(\end occurred when \ifx on line 106 was incomplete)
+(\end occurred when \ifx on line 96 was incomplete)
+(\end occurred when \ifx on line 90 was incomplete)
+(\end occurred when \ifx on line 83 was incomplete) 
 Here is how much of TeX's memory you used:
- 27872 strings out of 493921
- 492516 string characters out of 3147285
- 756522 words of memory out of 3000000
- 29973 multiletter control sequences out of 15000+200000
- 96614 words of font info for 278 fonts, out of 3000000 for 9000
+ 27939 strings out of 493921
+ 494136 string characters out of 3147285
+ 757882 words of memory out of 3000000
+ 30014 multiletter control sequences out of 15000+200000
+ 97406 words of font info for 290 fonts, out of 3000000 for 9000
  846 hyphenation exceptions out of 8191
  53i,13n,69p,1252b,698s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9
@@ -3010,9 +3294,9 @@ ogram Files/MiKTeX 2.9/fonts/type1/urw/ncntrsbk/uncb8a.pfb><C:/Program Files/Mi
 KTeX 2.9/fonts/type1/urw/ncntrsbk/uncr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/urw/ncntrsbk/uncri8a.pfb>
 Output written on C:/Users/liam/Desktop/KINECT/kbox/Latex/memoirthesis.pdf (54 
-pages, 2383456 bytes).
+pages, 2458238 bytes).
 PDF statistics:
- 837 PDF objects out of 1000 (max. 8388607)
- 192 named destinations out of 1000 (max. 500000)
- 44532 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 920 PDF objects out of 1000 (max. 8388607)
+ 198 named destinations out of 1000 (max. 500000)
+ 44590 words of extra memory for PDF output out of 51595 (max. 10000000)
 

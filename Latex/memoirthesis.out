@@ -1,5 +1,5 @@
-\BOOKMARK [0][-]{section*.4}{List of Tables}{}% 1
-\BOOKMARK [0][-]{section*.5}{List of Figures}{}% 2
+\BOOKMARK [0][-]{section*.3}{List of Tables}{}% 1
+\BOOKMARK [0][-]{section*.4}{List of Figures}{}% 2
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 3
 \BOOKMARK [1][-]{section.1.1}{Goals}{chapter.1}% 4
 \BOOKMARK [2][-]{subsection.1.1.1}{Limitations \046 Scope}{section.1.1}% 5
@@ -32,13 +32,14 @@
 \BOOKMARK [2][-]{subsection.2.9.2}{Neural Networks}{section.2.9}% 32
 \BOOKMARK [2][-]{subsection.2.9.3}{Decision Trees \046 Random Forest}{section.2.9}% 33
 \BOOKMARK [1][-]{section.2.10}{Punch Quality Algorithm}{chapter.2}% 34
-\BOOKMARK [0][-]{chapter.3}{Design}{}% 35
-\BOOKMARK [0][-]{chapter.4}{Implementation}{}% 36
-\BOOKMARK [1][-]{section.4.1}{Comparison Methods}{chapter.4}% 37
-\BOOKMARK [2][-]{subsection.4.1.1}{Comparison Methods}{section.4.1}% 38
-\BOOKMARK [2][-]{subsection.4.1.2}{Punch Segmentation Algorithm}{section.4.1}% 39
-\BOOKMARK [0][-]{chapter.5}{Results, Conclusions, and future work}{}% 40
-\BOOKMARK [1][-]{section.5.1}{Section}{chapter.5}% 41
-\BOOKMARK [2][-]{subsection.5.1.1}{Subsection}{section.5.1}% 42
-\BOOKMARK [0][-]{appendix.A}{Appendix A}{}% 43
-\BOOKMARK [0][-]{section*.24}{Bibliography}{}% 44
+\BOOKMARK [0][-]{chapter.3}{Implementation}{}% 35
+\BOOKMARK [1][-]{section.3.1}{Exploring Hand Movement \046 Periodicity}{chapter.3}% 36
+\BOOKMARK [1][-]{section.3.2}{Pose Representation}{chapter.3}% 37
+\BOOKMARK [1][-]{section.3.3}{Dimensionality Reduction \(DR\) Comparison}{chapter.3}% 38
+\BOOKMARK [2][-]{subsection.3.3.1}{Pose Reconstruction}{section.3.3}% 39
+\BOOKMARK [1][-]{section.3.4}{Punch Segmentation Algorithm}{chapter.3}% 40
+\BOOKMARK [1][-]{section.3.5}{Classification}{chapter.3}% 41
+\BOOKMARK [1][-]{section.3.6}{Difficulties}{chapter.3}% 42
+\BOOKMARK [0][-]{chapter.4}{Results}{}% 43
+\BOOKMARK [0][-]{appendix.A}{Appendix A}{}% 44
+\BOOKMARK [0][-]{section*.21}{Bibliography}{}% 45

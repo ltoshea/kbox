@@ -1,0 +1,10 @@
+\select@language {english}
+\par \penalty \@M \textbf {{\scshape Table} \hfill Page}\par \penalty \@M 
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Neural Network Percentage Error}}{30}{table.3.1}
+\contentsline {table}{\numberline {3.2}{\ignorespaces SVM testing}}{31}{table.3.2}
+\addvspace {10pt}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Results table for punch classification}}{38}{table.4.1}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Results table for good and bad jab classification}}{39}{table.4.2}

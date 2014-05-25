@@ -2,10 +2,11 @@ global PNUM;
 PNUM = 1;
 debug = 0;
 NORM = 1; %flag=1 normalise for hip centroid
-clearvars dataAll
-clearvars X
-clearvars Y
-clearvars labels
+COMP = 6;
+clearvars dataAll;
+clearvars X;
+clearvars Y;
+clearvars labels;
 
 %Hip centre is first joint
 
@@ -43,7 +44,6 @@ load M_ORIG
 M = [M,M_ORIG]; 
 
 % [Xm1,EV1,Ev1]=createES(M,3); %Create Eigenspace., New data !contribute to eigenspace
-%close all
 for i=1:PNUM
     dataAll(i).jred=reconstructPose(dataAll(i).data,Xm1,EV1);
     dataAll(i).jredSmooth = kinsmooth2(dataAll(i).jred);
@@ -67,7 +67,7 @@ end
 
 
 nsamples = 15;
-ncomponents = 3;
+% ncomponents = 3;
 
 X = [];
 Y = [];
@@ -76,12 +76,11 @@ lbl = [];
 for i=1:PNUM
     nelem = length(dataAll(i).imax);
     dataAll(i).labels = ones(nelem,1) * i;
-    dataAll(i).features =  zeros(nelem,nsamples * ncomponents);%HERE
+    dataAll(i).features =  zeros(nelem,nsamples * COMP);
     for j = 1:nelem - 1
         inds = round(linspace(dataAll(i).imax(j), dataAll(i).imax(j+1), nsamples));
-        %dataAll(i).features(j,:) = dataAll(i).jred(1,inds);
-        foo = dataAll(i).jred(1:ncomponents,inds);%HERE
-        dataAll(i).features(j,:) = foo(:);%HERE
+        temp = dataAll(i).jred(1:COMP,inds);
+        dataAll(i).features(j,:) = temp(:);
         
         if debug
             plot(dataAll(i).features(j,:))
@@ -92,43 +91,20 @@ for i=1:PNUM
    X = [X;dataAll(i).features];
    Y = [Y;dataAll(i).labels];
    Y = gensvclabels(Y);
-   lbl = [lbl;ceil(0.2*(length(dataAll(i).labels)))]; %for labels
-   %lbl = ceil(lbl);
+   lbl = [lbl;ceil(0.2*(length(dataAll(i).labels)))];
 end
 
-
-
  [predicted_label, accuracy, probest] = svmpredict(Y,X,svmStruct,['-b 1']);
-
-% diff = size(labels,1) - size(X,1);
-% if diff < 0
-%     for i=1:abs(diff)
-%         labels = vertcat(labels,6);
-%     end
-% end
-% if diff > 0
-%    labels(end-(abs(diff)-1):end,:) = [];
-% end
-
- 
- 
- 
-  %close all
- 
-%%
-%NVarToSample, 'all' deciscion tree, otherwise random forest
-%X = M';
-% B = TreeBagger(75,X(trainInds,:),Y(trainInds),'OOBPred','On');
  C = B.predict(X);
  C = cellfun(@str2num,C);
-% 
  count = 0;
+
  for i=1:length(C)
      if C(i) == Y(i)
         count = count+1;
     end
 end
 correct = (count/length(C))*100;
-sprintf('Random Forest Correct: %f%%', correct)
+sprintf('Decision Correct: %f%%', correct)
         
 

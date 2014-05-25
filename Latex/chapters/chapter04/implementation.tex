@@ -4,202 +4,213 @@
 % Description: Introduction chapter where the boxing goes.
 %
 \let\textcircled=\pgftextcircled
-\chapter{Implementation}
+\chapter{My Approach}
 \label{chap:intro}
 
-\initial{B}egging implementation chapter. How the hell do I start this. What even goes here.
+\initial{T}his chapter will discuss each step of the implementation stage such as ***the collection of skeleton data,*** dimensionality reduction, comparison,  punch segmentation, punch classification and quality assessment.
+
 
 %=======
-\section{Comparison Methods}
-\label{sec:sec01}
+\section{Exploring Hand Movement \& Periodicity}
+My first step was to organise the data in such a way that it could be usefully visualised so that I could comprehend the nature of the data that needed to be processed. I began by recording a sequence of 5 jabs, being careful to evenly time the punches before manually isolating the left wrist joint over time. In this instance the timing was important as my aim was to produce a sinusoidal-like sequence with five full `cycles' demonstrating the movement of the left hand over time.
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[height=0.25\textheight]{fig04/lwrist.pdf}
+    \mycaption[Position of the left wrist joint over time]{This figure shows the left wrist joints movement in the z direction over time. The x-axis represents time (kinect frames) and the y-axis the distance of the fist from the Kinect}
+\end{figure}
+
+This result was promising since I could now confirm that punches could be represented by a periodic sequence. As a proof of concept isolating a single joint was a sensible first step however this cannot be reliably used to perform action recognition since it would be a single point of failure.  
+If for example the joint was obscured or the Kinect mis-tracked the joint you would lose the ability to recognise an action. Since a boxing punch is based on the transference of weight and the rotation of the hip the whole pose must be considered to ensure other periodic aspects are not missed. The use of dimensionality reduction offers increased robustness against these sorts of problems since it allows the entire skeleton to represented in low dimensionality data and as such will not be as sensitive to noise or failures to track. 
 
 
-I began by plotting the initial Kinect Data over time in an attempt to understand \& visualise the nature of the data. I differentiated the data as a method of smoothing and to get the velocity data from distance.
+\section{Pose Representation}
+Next I needed to find a meaningful way of visualising the entire skeleton over a period of time since I now knew that the pose as whole needed to be represented and assessed. I naively began by plotting the entire data set which produced a reasonably jagged signal with two troughs followed by a large peak before levelling of again. At this point I realised attempting to plot the skeleton data in this way would not be useful but as a test I differentiated the raw data to produce a {\bf velocity as opposed to distance with the hope that this might show something more meaningful or smooth out the data.} 
 
+Realising that for now I needed to look at individual joints I took the central hip joint and plotted it's movement in the Z direction over time as well as plotting the differential of that to give me the velocity. As you can see from Figure 3.1, the velocity data was much more useful and produced a reasonably smooth periodic sequence. Since the initial recording was 10 jabs one after the other I expected a periodic, cyclical signal to be produced.
 
-\begin{figure}[t!]
+Since PCA was a familiar method I implemented it in Matlab with 3 principal components and plotted the first projection coefficient for the first principal component with both the distance and velocity data. From this we can see that the distance data was slightly jagged with a local maxima which might obstruct attempts to automatically segment punches. The velocity data produced a smoother series but introduced unwanted noise towards the beginning and end of a sequence.\clearpage
+
+\begin{figure}[h]
 \centering
 \begin{minipage}{6.0cm}
     \centering
     \subtop[]{\includegraphics[height=0.25\textheight]{fig04/fig06}}
     \label{fig:1}
 \end{minipage}
+\hspace{2.0cm}
 \begin{minipage}{6.0cm}
     \centering
     \subtop[]{\includegraphics[height=0.25\textheight]{fig04/fig07}}
     \label{fig:2}
 \end{minipage}
-\mycaption[ALLData] {(a) Kinect Skeleton vs Time. 
-(b) Hip Joint vs Time, Blue = Raw data, Green = Differentiated data.}
+\mycaption[Pose representation using distance and velocity]{Distance data is shown in green and velocity data shown in blue.
+(a) All skeleton data has been plotted, with the x-axis corresponding to a joint co-ordinate. There are 20 joints each represented by 3 co-ordinates (x,y,z) hence the range 0-60. We can see a spike at ~40 which corresponds to joints 15 and onwards which are the right hip,right knee,right ankle and right foot. The y-axis represents distance from the Kinect in the Z direction which would explain the spike since in a boxing stance the right hand side of the body should be further away.
+(b) Hip Joint over Time}
+
 \end{figure}
-
-After recording a punch sequence my first inclination was to look at the left hand (jab) over time. I plotted the z co-ordinate of the left wrist joint over each frame which produced a periodic pattern for which looked promising.
-
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[height=0.25\textheight]{fig04/fig01}
-    \mycaption[Kinect Device]{Depth of left wrist joint over time}
-    \label{fig:kinect}
-\end{figure}
-
-
-
-My next step was to look at  punch segmentation. Due the cyclical nature of the punch movement I needed to develop a method for segmenting the punches. I decided the best way to do this was to smooth the signal and use local maxima/minima as a means of successfully segmenting the beginning and end of each punch. As you can see from Figure 4.2 some smoothing was required due to local maxima/minima which did not signify the beginning or end of a punch.
-
-
-
 \begin{figure}[h]
 \centering
 \begin{minipage}{6.0cm}
     \centering
     \subtop[]{\includegraphics[height=0.25\textheight]{fig04/fig02}}
-    \label{fig:kinect}
+    \label{fig:1}
 \end{minipage}
+\hspace{2.0cm}
+\begin{minipage}{6.0cm}
+    \centering
+    \subtop[]{\includegraphics[height=0.25\textheight]{fig04/fig03}}
+    \label{fig:2}
+\end{minipage}
+\mycaption[Projection coefficient of a jab over time]{A plot of the projection coefficient for the first principal component for a jab over time for (a) Distance, (b) Velocity}
+\end{figure}
 
-\hspace{0.5cm}
+
+
+Next I plotted all three projection coefficients for the three principal components for both distance and velocity {\bf(fig 3.8)}. We can see for the first projection coefficient both distance and velocity are similar with distance being slightly more jagged at the peaks of the punching period and velocity being more jagged at the start and end.
+For the second they are both fairly similar but with distance having less peaks and troughs and with only one dramatic spike at 250 as opposed to two at 50 and 275.
+For the third the depth comes out ahead with a smoother signal which again has less `spikes' (which will make it hard to segment.) Although by eye it looks like the depth data under PCA produces a more useful periodic type wave neither are convincing and we should do some comparisons.\clearpage
+
+\section {Dimensionality Reduction (DR) Comparison}
+Each dimensionality reduction method was evaluated on it's ability to produce useful, smooth and sinusoidal output to aid automatic segmentation. Automatic segmentation is a crucial step in the project since on a larger scale much greater data sets will need to be used and collated from multiple sources. If these can be processed and automatically segmented this will remove any manual work required and make this a truly useful system. I used the Matlab Dimensionality Toolbox and the `intrinsic_dim' function that performs an estimation of the intrinsic dimensionality of a dataset X given a specific method. This was calculated six different methods, maximum-likelihood estimation (MLE), correlation dimension estimation (CorrDim), nearest neighbourhood, packing numbers and Geodesic minimum spanning tree (GMST) and eigenvalue estimation.
+These results were then combined and averaged to produce a dimension {\bf d} to be used as an argument for LLE, LLE with d, Laplacian, LTSA, CCA and PCA (see background). The lower dimensionality data was then plotted and analysed.
+
+We can see from the first principal component plotted from multiple dimensionality reduction method that PCA does in fact give the most useful results, followed closely by CCA. If we then look at the second {\bf principal components} we can see that PCA performs second to LTSA but since LTSA performs poorly for the first component it makes PCA the obvious choice. Despite PCA being an older, simpler technique than more modern techniques such as diffusion maps it actually produced the most consistently smooth cyclical signal making it a sensible choice.
+\vspace{2.0cm}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[height=0.25\textheight]{fig04/drcomp.pdf}
+    \mycaption[Dimensionality reduction comparison graph for PC1]{This shows the projection coefficient for the first principal component as produced by a variety of DR techniques over time}
+    \label{fig:drcomp}
+\end{figure}
+\clearpage
+\begin{figure}[t]
+    \centering
+    \includegraphics[height=0.25\textheight]{fig04/drcomp2.pdf}
+    \mycaption[Dimensionality reduction comparison graph for PC2]{This shows the projection coefficient for the second principal component as produced by a variety of DR techniques over time}
+    \label{fig:drcomp}
+\end{figure}
+
+\subsection{Pose Reconstruction}
+Another benefit of using PCA is that it is possible to reconstruct the original pose using the equation $$y = U*a+Xm$$ where U is the eigenvectors, a is the projection coefficients and Xm the mean of the original data. Since we are going from low dimensionality data back to high dimensionality data it is inevitable there will be some reconstruction error. However by plotting this reconstruction along with the original it is possible to visualise how closely the lower dimensionality representation generated represent the original. This is crucial because the decomposition can be verified to make sure that important information is not lost during the reduction process.\qquad
+
+
+\section{Punch Segmentation Algorithm}
+After failing to find a way to automatically segment punches using existing methods It became apparent that a custom algorithm will be needed for this task, which can be broken down into several steps.
+
+\begin{enumerate}[noitemsep]
+  \item Perform PCA on raw data.
+  \item Smooth the principal coefficients.
+  \item Find the local maxima and minima for the punch sequence.
+  \item Remove erroneous Minima\/Maxima using heuristic rules.
+  \item Take a number of evenly spaced samples from between two maximum points, the length of one punch.
+  \item Fetch all PCA components that correspond to the time the samples were taken.
+  \item Train classifier on new data.
+\end{enumerate}
+
+Each frame representing 20 joint positions is reduced from 60 dimensions to 3 principal components per frame. Next the principal components are smoothed to remove any local minima/maxima *wrong minima/maxima*} which would prevent the automated segmentation of punches. All remaining maxima are then passed through a set of heuristic rules that checks the location of a maxima point relative to it's neighbourhood points to determine if it is legitimate. The simplest form of this is using the Pythagorean theorem to calculate the distance between a maxima and it's neighbours, if the distance is too small it is clear that one of the points is erroneous and that only one of these will be necessary for segmentation. Likewise if a neighbour is too far away it becomes obvious that one of the maxima is incorrect and needs to be removed.Thresholding is also used for each punch, with all maxima below a certain threshold removed since the cyclical signature of the punch guarantees the end of the punch will be approximately close to the end of the last punch.
+\begin{figure}[h]
+\hspace{-1.5cm}
+\centering
 \begin{minipage}{6.0cm}
     \centering
     \subtop[]{\includegraphics[height=0.25\textheight]{fig04/fig04}}
     \label{fig:kinect2}
 \end{minipage}
-\begin{minipage}{3.5cm}
-    \centering
-    \includegraphics[height=0.15\textheight]{fig04/fig05}
-    \label{fig:kinect3}
-\end{minipage}
-\mycaption[WAT]{(a) Periodic punch signal over time (frame number).(b) Periodic signal with local maxima/minima labelled. (c) Close up of local maxima/minima.}
-\end{figure}
-
-
-Smoothing.
-I looked at using differentiation as a means of obtaining the velocity and using that as a sensible measure to mark my punches. This did a good job of smoothing out the curve which would allow me to successfully segment my punches. 
-
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[height=0.25\textheight]{fig04/fig03}
-    \mycaption[Kinect Device]{Depth of left wrist joint over time}
-    \label{fig:kinect}
-\end{figure}
-
-
-\paragraph {Dimensionality Reduction Comparison}
-It was important to find a way to successfully reduce my data into a cyclical signal that I could automatically segment. I tested a variety of both linear and non-linear techniques (see design section) and analysed the principal components produced. Despite PCA being an older, simple technique than more modern techniques such as diffusion maps it actually produced the most uniform, cyclical signal for the first component making it an obvious choice.
-
-{\bf Maybe talk about using LTSA here in some way as a second component}
-
-
-
-
-\begin{figure}[h]
-\centering
-\begin{minipage}{6.0cm}
-    \centering
-    \subtop[]{\includegraphics[height=0.25\textheight]{fig04/fig08}}
-    \label{fig:kinect}
-\end{minipage}
-\hspace{0.5cm}
-\begin{minipage}{6.0cm}
-    \centering
-    \subtop[]{\includegraphics[height=0.25\textheight]{fig04/fig09}}
-    \label{fig:kinect2}
-\end{minipage}
+\hspace{1.0cm}
 \begin{minipage}{6.0cm}
     \centering
     \subtop[]{\includegraphics[height=0.25\textheight]{fig04/fig10}}
+    \label{fig:kinect3}
+\end{minipage}
+\qquad
+\qquad
+\centering
+\begin{minipage}{3.5cm}
+    \centering
+    \subtop[]{\includegraphics[height=0.15\textheight]{fig04/fig05}}
+    \label{fig:kinect3}
+\end{minipage}
+\mycaption[Punch segmentation graphs]{(a) The projection coefficient of the 1st PC of a Jab sequence over time with local maxima/minima labelled. 
+(b) Smoothed sequence with maxima/minima correctly identified. (c) A close up example of multiple local minima/maxima making segmentation difficult.}
+\end{figure}
+\clearpage
+
+\begin{figure}[t]
+ % \hspace{-1.5cm}
+\begin{flushleft}
+\centering
+\begin{minipage}{6.0cm}
+    \centering
+    \subtop[]{\includegraphics[height=0.25\textheight]{fig04/rp1-crop}}
+    \label{fig:a}
+\end{minipage}
+\hspace{2.0cm}
+\begin{minipage}{6.0cm}
+    \centering
+    \subtop[]{\includegraphics[height=0.25\textheight]{fig04/rp2-crop}}
+    \label{fig:b}
+\end{minipage}
+\qquad
+% \centering
+\begin{minipage}{6.0cm}
+    \centering
+    \subtop[]{\includegraphics[height=0.25\textheight]{fig04/rp3-crop}}
+    \label{fig:a}
+\end{minipage}
+\hspace{2.0cm}
+\begin{minipage}{6.0cm}
+    \centering
+    \subtop[]{\includegraphics[height=0.25\textheight]{fig04/rp4-crop}}
+    \label{fig:b}
+\end{minipage}
+\qquad
+\centering
+\begin{minipage}{6.0cm}
+    \centering
+    \subtop[]{\includegraphics[height=0.25\textheight]{fig04/rp5-crop}}
+    \label{fig:a}
+\end{minipage}
+\hspace{2.0cm}
+\begin{minipage}{6.0cm}
+    \centering
+    \subtop[]{\includegraphics[height=0.25\textheight]{fig04/rp6-crop}}
+    \label{fig:b}
+\end{minipage}
+\qquad
+\end{flushleft}
+\mycaption[Comparison of original pose and reconstructed pose]{Each graph represents a single pose with the original data in green and the reconstructed data in red obtained from back propagation.
+{\bf(a)} Jab  {\bf(b)} Cross {\bf(c)} Left-Hook {\bf(d)} Right-Hook {\bf(e)} Left-Uppercut {\bf(f)} Right-Uppercut}
+\end{figure}
+
+\begin{figure}[h]
+\hspace{-1.5cm}
+\centering
+\begin{minipage}{6.0cm}
+    \centering
+    \subtop[]{\includegraphics[height=0.25\textheight]{fig04/pc1}}
     \label{fig:kinect2}
 \end{minipage}
-\mycaption[WAT]{(a) Comparison of Dimensionality Reduction Techniques. PLotting first and second principal components.}
-\end{figure}
-
-
-
-Now lets see the first Principal Component (from PCA) for each punch.
-TALK about normalisation of data.
-Talk about getting better data.
-
-\begin{figure}[h]
+\hspace{1.0cm}
+\begin{minipage}{6.0cm}
     \centering
-    \includegraphics[height=0.25\textheight]{fig04/fig10}
-    \mycaption[Kinect Device]{Depth of left wrist joint over time}
-    \label{fig:kinect}
-\end{figure}
-
-
-\paragraph{Automated Punch Segmentation}
-After obtaining a smooth cyclical representation of the Jab
-
-
-
-\paragraph{Heuristic Rules}
-
-
-
-{\bf Hidden Markov models?}
-Chapter 4: Implementation\newline
-Chapter 5: Data capture??\newline
-Need to make and collect data consent forms to run a study?\newline
-Need to gather more data?\newline
-
-\paragraph{Data Format}
-I record data from the Kinect in a space separated text file with each line corresponding to one timeframe. The structure of a line is: 
-tracking_flag x_0 y_0 z_0 tracking_flag x_1 y_1 z_1 ... tracking_flag x_19 y_19 z_19,
-where x_i,y_i,z_i are the x,y,z coordinates representing the position of the ith joint.
-Each new line is represented by a very large value that could not represent a Kinect measurement. (e.g. 2000000) 
-The tracking_flag is an integer which describes the status of the joint:
-Joint not tracked = 0, Joint position inferred = 1, Join position tracked = 2.
-If the joint is not tracked the position is set to (-10000, -10000, -10000) and it should not be used.
-The position of the camera is (0,0,0).
-
-
-\begin{center}
-    \begin{tabular}{| l | l |}
-    \hline
-    Joint Number & Joint Name \\ \hline
-    0 & NUI_SKELETON_POSITION_HIP_CENTER \\ \hline
-    1 & NUI_SKELETON_POSITION_SPINE\\ \hline
-    2 & NUI_SKELETON_POSITION_SHOULDER_CENTER\\ \hline
-    3 & NUI_SKELETON_POSITION_HEAD\\ \hline
-    4 & NUI_SKELETON_POSITION_SHOULDER_LEFT\\ \hline
-    5 & NUI_SKELETON_POSITION_ELBOW_LEFT\\ \hline
-    6 & NUI_SKELETON_POSITION_WRIST_LEFT\\ \hline
-    7 & NUI_SKELETON_POSITION_HAND_LEFT\\ \hline
-    8 & NUI_SKELETON_POSITION_SHOULDER_RIGHT\\ \hline
-    9 & NUI_SKELETON_POSITION_ELBOW_RIGHT\\ \hline
-    10 & NUI_SKELETON_POSITION_WRIST_RIGHT\\ \hline
-    11 & NUI_SKELETON_POSITION_HAND_RIGHT\\ \hline
-    12 & NUI_SKELETON_POSITION_HIP_LEFT\\ \hline
-    13 & NUI_SKELETON_POSITION_KNEE_LEFT\\ \hline
-    14 & NUI_SKELETON_POSITION_ANKLE_LEFT\\ \hline
-    15 & NUI_SKELETON_POSITION_FOOT_LEFT\\ \hline
-    16 & NUI_SKELETON_POSITION_HIP_RIGHT\\ \hline
-    17 & NUI_SKELETON_POSITION_KNEE_RIGHT\\ \hline
-    18 & NUI_SKELETON_POSITION_ANKLE_RIGHT\\ \hline
-    19 & NUI_SKELETON_POSITION_FOOT_RIGHT\\ \hline
-    \hline
-    \end{tabular}
-\end{center}
-%=========================================================
-
-\subsection{Comparison Methods}
-Each comparison method was evaluated on it's ability to produce useful, smooth and sinusoidal output to aid automatic segmentation. Automatic segmentation is a crucial step in the project since on a larger scale much greater data sets will need to be used and collated from multiple sources. If these can be processed and automatically segmented this will remove any manual work required and make this a truly useful system.
-
-\begin{figure}[h]
+    \subtop[]{\includegraphics[height=0.25\textheight]{fig04/pc2}}
+    \label{fig:kinect3}
+\end{minipage}
+\qquad
+\centering
+\begin{minipage}{6.0cm}
     \centering
-    \includegraphics[height=0.25\textheight]{fig04/drcomp.pdf}
-    \mycaption[Kinect Device]{1st PCA comparison}
-    \label{fig:drcomp}
-\end{figure}
-\begin{figure}[h]
-    \centering
-    \includegraphics[height=0.25\textheight]{fig04/drcomp2.pdf}
-    \mycaption[Kinect Device]{1st PCA comparison}
-    \label{fig:drcomp}
+    \subtop[]{\includegraphics[height=0.25\textheight]{fig04/pc3}}
+    \label{fig:kinect3}
+\end{minipage}
+\mycaption[Graphs of the projection coefficient for the first principal component of distance \& velocity]{These figures shows the projection coefficient for the first principal component for distance data (green) and
+velocity data(red).
+(a) first projection coefficient (b) second projection coefficient (c) third projection coefficient}
 \end{figure}
 
-We can see from the first principal component plotted from multiple dimensionality reduction method that PCA does in fact give the most useful results, followed closely by CCA. If we then look at the second principal components we can see that PCA performs second to LTSA but since LTSA performs poorly for the first component it makes PCA the obvious choice.
-
+\section{Classification}
 
 DTW
 After using dynamic time warping I found that there was not enough difference between the various punch signals to give me an effective way at segmentation. Comparing jabs to other jabs yielded similarity values from $0 - 1.589$ with an average difference of $0.499$, comparing jabs to crosses yielded similarity values from $0-2.113$ with the average $0.716$. Therefore there was not enough of a consistent difference score to be able to classify they type of punch using this method.
@@ -216,17 +227,8 @@ Once all the different punch sequences are sampled for each type of punch we can
 
 Results
 
-\subsection{Punch Segmentation Algorithm}
-After failing to find a way to automatically segment punches using existing methods It became apparent that a custom algorithm will be needed for this task, which can be broken down into several steps.
 
-\begin{enumerate}[noitemsep]
-  \item Perform PCA on raw data.
-  \item Smooth the principal coefficients. \textcolor{red}{Rember 1st pc}
-  \item Find the local maxima and minima for the punch sequence.
-  \item Remove erroneous Minima\/Maxima using heuristic rules.
-  \item Take a number of evenly spaced samples from between two maximum points, the length of one punch.
-  \item Fetch all PCA components that correspond to the time the samples were taken.
-  \item Train classifier on new data.
-\end{enumerate}
+\section{Difficulties}
+I found this project to be an excellent way to combine my interest in boxing with my Computer Science background. It was however a difficult project and I ran into a few problems.
 
-Each frame representing 20 joint positions is reduced from 60 dimensions to 3 principal components per frame. Next the principal components are smoothed to remove any {\bf wrong minima/maxima} which would prevent the automated segmentation of punches. All remaining maxima are then passed through a set of heuristic rules that checks the location of a maxima point relative to it's neighbourhood points to determine if it is legitimate. The simplest form of this is using the Pythagorean theorem to calculate the distance between a maxima and it's neighbours, if the distance is too small it is clear that one of the points is erroneous and that only one of these will be necessary for segmentation. Likewise if a neighbour is too far away it becomes obvious that one of the maxima is incorrect and needs to be removed.\textcolor{red}{image showing points really far down compared to baseline} Thresholding is also used for each punch, with all maxima below a certain threshold removed since the cyclical signature of the punch guarantees the end of the punch will be approximately close to the end of the last punch.
+\paragraph{Normalisation}

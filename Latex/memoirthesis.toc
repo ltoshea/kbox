@@ -1,7 +1,7 @@
 \select@language {english}
 \par \penalty \@M \unhbox \voidb@x \hbox {}\hfill {\nag@@warning@vi \bfseries Page}\par \penalty \@M 
-\contentsline {chapter}{List of Tables}{ix}{section*.4}
-\contentsline {chapter}{List of Figures}{xi}{section*.5}
+\contentsline {chapter}{List of Tables}{vii}{section*.3}
+\contentsline {chapter}{List of Figures}{ix}{section*.4}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Goals}{2}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Limitations \& Scope}{2}{subsection.1.1.1}
@@ -13,25 +13,25 @@
 \contentsline {section}{\numberline {2.2}Boxing Technique}{4}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Stance}{4}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Punches}{5}{subsection.2.2.2}
-\contentsline {paragraph}{Jab}{5}{section*.6}
-\contentsline {paragraph}{Cross}{5}{section*.7}
-\contentsline {paragraph}{Hooks}{5}{section*.8}
-\contentsline {paragraph}{Uppercuts}{5}{section*.9}
-\contentsline {section}{\numberline {2.3}Kinect}{5}{section.2.3}
-\contentsline {paragraph}{Depth \& Infrared Stream}{6}{section*.10}
-\contentsline {subsection}{\numberline {2.3.1}Skeleton \& Joint Tracking}{7}{subsection.2.3.1}
+\contentsline {paragraph}{Jab}{5}{section*.5}
+\contentsline {paragraph}{Cross}{5}{section*.6}
+\contentsline {paragraph}{Hooks}{5}{section*.7}
+\contentsline {paragraph}{Uppercuts}{5}{section*.8}
+\contentsline {section}{\numberline {2.3}Kinect}{6}{section.2.3}
+\contentsline {paragraph}{Depth \& Infrared Stream}{7}{section*.9}
+\contentsline {subsection}{\numberline {2.3.1}Skeleton \& Joint Tracking}{8}{subsection.2.3.1}
 \contentsline {section}{\numberline {2.4}Literature Review}{8}{section.2.4}
-\contentsline {paragraph}{auto seg}{10}{section*.11}
+\contentsline {paragraph}{Automated segmentation}{10}{section*.10}
 \contentsline {section}{\numberline {2.5}Existing Products}{10}{section.2.5}
-\contentsline {paragraph}{Kinect sports boxing game}{11}{section*.12}
-\contentsline {paragraph}{Fighers Uncaged}{11}{section*.13}
-\contentsline {paragraph}{Literature \& Product Conclusion}{11}{section*.14}
+\contentsline {paragraph}{Kinect sports boxing game}{11}{section*.11}
+\contentsline {paragraph}{Fighers Uncaged}{11}{section*.12}
+\contentsline {paragraph}{Literature \& Product Conclusion}{11}{section*.13}
 \contentsline {section}{\numberline {2.6}Dimensionality}{12}{section.2.6}
-\contentsline {paragraph}{Curse of Dimensionality}{12}{section*.15}
+\contentsline {paragraph}{Curse of Dimensionality}{12}{section*.14}
 \contentsline {subsection}{\numberline {2.6.1}Dimensionality Reduction}{12}{subsection.2.6.1}
 \contentsline {subsection}{\numberline {2.6.2}Principal Component Analysis (PCA)}{12}{subsection.2.6.2}
-\contentsline {paragraph}{Eigenvectors \& Eigenvalues}{13}{section*.16}
-\contentsline {paragraph}{Covariance Matrix \& Optimisations }{13}{section*.17}
+\contentsline {paragraph}{Eigenvectors \& Eigenvalues}{13}{section*.15}
+\contentsline {paragraph}{Covariance Matrix \& Optimisations }{13}{section*.16}
 \contentsline {section}{\numberline {2.7}Manifold Learning}{14}{section.2.7}
 \contentsline {subsection}{\numberline {2.7.1}Diffusion Maps}{14}{subsection.2.7.1}
 \contentsline {subsection}{\numberline {2.7.2}Locally Linear Embedding (LLE)}{14}{subsection.2.7.2}
@@ -44,20 +44,19 @@
 \contentsline {section}{\numberline {2.9}Classification Methods}{17}{section.2.9}
 \contentsline {subsection}{\numberline {2.9.1}Support Vector Machines}{17}{subsection.2.9.1}
 \contentsline {subsection}{\numberline {2.9.2}Neural Networks}{18}{subsection.2.9.2}
-\contentsline {paragraph}{Back Propagation (BP)}{19}{section*.18}
+\contentsline {paragraph}{Back Propagation (BP)}{19}{section*.17}
 \contentsline {subsection}{\numberline {2.9.3}Decision Trees \& Random Forest}{19}{subsection.2.9.3}
-\contentsline {section}{\numberline {2.10}Punch Quality Algorithm}{20}{section.2.10}
-\contentsline {chapter}{\chapternumberline {3}Design}{23}{chapter.3}
-\contentsline {chapter}{\chapternumberline {4}Implementation}{25}{chapter.4}
-\contentsline {section}{\numberline {4.1}Comparison Methods}{25}{section.4.1}
-\contentsline {paragraph}{Dimensionality Reduction Comparison}{26}{section*.19}
-\contentsline {paragraph}{Automated Punch Segmentation}{26}{section*.20}
-\contentsline {paragraph}{Heuristic Rules}{27}{section*.21}
-\contentsline {paragraph}{Data Format}{27}{section*.22}
-\contentsline {subsection}{\numberline {4.1.1}Comparison Methods}{29}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Punch Segmentation Algorithm}{31}{subsection.4.1.2}
-\contentsline {chapter}{\chapternumberline {5}Results, Conclusions, and future work}{33}{chapter.5}
-\contentsline {section}{\numberline {5.1}Section}{33}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Subsection}{33}{subsection.5.1.1}
-\contentsline {appendix}{\chapternumberline {A}Appendix A}{35}{appendix.A}
-\contentsline {chapter}{Bibliography}{37}{section*.24}
+\contentsline {section}{\numberline {2.10}Punch Quality Algorithm}{21}{section.2.10}
+\contentsline {chapter}{\chapternumberline {3}Implementation}{23}{chapter.3}
+\contentsline {section}{\numberline {3.1}Exploring Hand Movement \& Periodicity}{23}{section.3.1}
+\contentsline {section}{\numberline {3.2}Pose Representation}{24}{section.3.2}
+\contentsline {section}{\numberline {3.3}Dimensionality Reduction (DR) Comparison}{27}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Pose Reconstruction}{28}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.4}Punch Segmentation Algorithm}{28}{section.3.4}
+\contentsline {section}{\numberline {3.5}Classification}{30}{section.3.5}
+\contentsline {section}{\numberline {3.6}Difficulties}{30}{section.3.6}
+\contentsline {paragraph}{Normalisation}{30}{section*.18}
+\contentsline {chapter}{\chapternumberline {4}Results}{33}{chapter.4}
+\contentsline {paragraph}{Accuracy \& Precision}{33}{section*.19}
+\contentsline {appendix}{\chapternumberline {A}Appendix A}{37}{appendix.A}
+\contentsline {chapter}{Bibliography}{39}{section*.21}

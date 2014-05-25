@@ -1,0 +1,7 @@
+PWD C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter01
+INPUT C:/Users/liam/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter01/intro.tex
+OUTPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter01/intro.log
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmu10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmti10.tfm

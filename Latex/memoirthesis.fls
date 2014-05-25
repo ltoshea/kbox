@@ -425,7 +425,6 @@ INPUT C:/Program Files/MiKTeX 2.9/tex/latex/fouriernc/ts1fnc.fd
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/ncntrsbk/pncr8c.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/ncntrsbk/pncr8c.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/ncntrsbk/pncr8c.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/ncntrsbk/pncr8t.vf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
 INPUT C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map
@@ -438,8 +437,6 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/ncntrsbk/pncr8t.vf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/ncntrsbk/pncrc8t.vf
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/ncntrsbk/pncr8t.vf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/frontmatter/abstract.tex
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/frontmatter/abstract.tex
@@ -454,8 +451,6 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/ncntrsbk/pncrc8t.vf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
-INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/frontmatter/dedication.tex
-INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/frontmatter/dedication.tex
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/frontmatter/declaration.tex
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/frontmatter/declaration.tex
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/memoirthesis.toc
@@ -463,8 +458,10 @@ INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/memoirthesis.toc
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/ncntrsbk/pncb8t.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/ncntrsbk/pncb8t.vf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/ncntrsbk/pncrc8t.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/ncntrsbk/pncrc8t.vf
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/memoirthesis.lot
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/memoirthesis.lot
@@ -542,9 +539,9 @@ INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/diffmap2.
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/dtw.png
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/dtw.png
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/dtw.png
-INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/svm.jpg
-INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/svm.jpg
-INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/svm.jpg
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/svm.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/svm.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/svm.png
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/nnsimple.pdf
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/nnsimple.pdf
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/nn.pdf
@@ -552,47 +549,64 @@ INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/nn.pdf
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/dtree.jpg
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/dtree.jpg
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter02/fig02/dtree.jpg
-INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/design.tex
-INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter03/design.tex
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/implementation.tex
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/implementation.tex
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/lwrist.pdf
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/lwrist.pdf
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig06.png
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig06.png
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig06.png
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig07.png
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig07.png
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig07.png
-INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig01.png
-INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig01.png
-INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig01.png
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig02.png
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig02.png
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig02.png
-INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig04.png
-INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig04.png
-INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig04.png
-INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig05.png
-INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig05.png
-INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig05.png
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig03.png
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig03.png
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig03.png
-INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig08.png
-INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig08.png
-INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig08.png
-INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig09.png
-INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig09.png
-INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig09.png
-INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig10.png
-INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig10.png
-INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig10.png
-INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig10.png
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/drcomp.pdf
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/drcomp.pdf
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/drcomp2.pdf
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/drcomp2.pdf
-INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter05/conclusion.tex
-INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter05/conclusion.tex
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig04.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig04.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig04.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig10.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig10.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig10.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig05.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig05.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/fig05.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/rp1-crop.pdf
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/rp1-crop.pdf
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/rp2-crop.pdf
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/rp2-crop.pdf
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/rp3-crop.pdf
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/rp3-crop.pdf
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/rp4-crop.pdf
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/rp4-crop.pdf
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/rp5-crop.pdf
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/rp5-crop.pdf
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/rp6-crop.pdf
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/rp6-crop.pdf
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/pc1.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/pc1.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/pc1.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/pc2.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/pc2.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/pc2.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/pc3.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/pc3.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/fig04/pc3.png
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter05/results.tex
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter05/results.tex
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter05/fig05/CMtrain-crop.pdf
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter05/fig05/CMtrain-crop.pdf
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter05/fig05/CMtest-crop.pdf
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter05/fig05/CMtest-crop.pdf
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter05/fig05/2classcm-crop.pdf
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter05/fig05/2classcm-crop.pdf
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/appendices/app0A.tex
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/appendices/app0A.tex
 INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/memoirthesis.bbl

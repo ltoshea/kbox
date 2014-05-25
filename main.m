@@ -1,5 +1,7 @@
 global PNUM;
 PNUM = 6;
+% global COMP;
+COMP=6;
 debug = 0;
 NORM = 1; %flag=1 normalise for hip centroid
 %Hip centre is first joint
@@ -40,7 +42,7 @@ for i = 1:length(dataAll(i))
     M = [M, dataAll(i).data]; 
 end
 
-[Xm1,EV1,Ev1]=createES(M,3); %Create Eigenspace., New data !contribute to eigenspace
+[Xm1,EV1,Ev1]=createES(M,COMP); %Create Eigenspace., New data !contribute to eigenspace
 %close all
 for i=1:PNUM
     dataAll(i).jred=reconstructPose(dataAll(i).data,Xm1,EV1);
@@ -65,13 +67,13 @@ end
 %     %plot(dataAll(i).imax, dataAll(i).jred(1,dataAll(i).imax),'.g');
 % end
 % 
-% for i=1:PNUM
-%     figure
-%     hold on;
-%     % plot(dataAll(i).jred(1,:),'-r');
-%      plot(dataAll(i).jredSmooth(1,:),'b');
-%      plot(dataAll(i).imax, dataAll(i).jredSmooth(1,dataAll(i).imax),'.g');
-% end
+for i=1:PNUM
+    figure
+    hold on;
+    plot(dataAll(i).jred(1,:),'-r');
+    plot(dataAll(i).jredSmooth(1,:),'b');
+    plot(dataAll(i).imax, dataAll(i).jredSmooth(1,dataAll(i).imax),'.g');
+end
 % figure
 % hold on
 % plot(dataAll(4).jred(1,:),'-r');
@@ -80,13 +82,11 @@ end
 
 
 
-% tilefigs();
-% pause;
+tilefigs();
+pause;
 % close all;
 
 nsamples = 15;
-ncomponents = 3;
-
 X = [];
 Y = [];
 lbl = [];
@@ -94,11 +94,11 @@ lbl = [];
 for i=1:PNUM
     nelem = length(dataAll(i).imax);
     dataAll(i).labels = ones(nelem,1) * i;
-    dataAll(i).features =  zeros(nelem,nsamples * ncomponents);%HERE
+    dataAll(i).features =  zeros(nelem,nsamples * COMP);%HERE
     for j = 1:nelem - 1
         inds = round(linspace(dataAll(i).imax(j), dataAll(i).imax(j+1), nsamples));
         %dataAll(i).features(j,:) = dataAll(i).jred(1,inds);
-        foo = dataAll(i).jred(1:ncomponents,inds);%HERE
+        foo = dataAll(i).jred(1:COMP,inds);%HERE
         dataAll(i).features(j,:) = foo(:);%HERE
         
         if debug
@@ -138,7 +138,7 @@ testInds(trainInds) = [];
  
 %NVarToSample, 'all' deciscion tree, otherwise random forest
 %X = M'; %Changed this, this is full pose pose.
-B = TreeBagger(75,X(trainInds,:),Y(trainInds),'OOBPred','On');
+B = TreeBagger(75,X(trainInds,:),Y(trainInds),'OOBPred','On', 'NVarToSample',5);
 C = B.predict(X(testInds,:));
 C = cellfun(@str2num,C);
 
@@ -162,17 +162,17 @@ for i=1:length(C)
     end
 end
 correct = (count/length(C))*100;
-sprintf('Random Forest Correct: %f%%', correct)
+sprintf('Decision Correct: %f%%', correct)
 
-X = X';
-for i=1:length(X)
-    drel(i)  = dtw(X(:,1),X(:,i));
-end
+% X = X';
+% for i=1:length(X)
+%     drel(i)  = dtw(X(:,1),X(:,i));
+% end
+% % close all
+% %Diffusion Maps
+% %dtw
 % close all
-%Diffusion Maps
-%dtw
-close all
-mappedX = diffusion_maps(X,3,1,1);
+% mappedX = diffusion_maps(X,3,1,1);
 
 
 %mappedA = compute_mapping(A, type, no_dims, parameters)

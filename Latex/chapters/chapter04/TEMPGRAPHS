@@ -1,0 +1,43 @@
+\begin{figure}[h]
+\centering
+\begin{minipage}{6.0cm}
+    \centering
+    \subtop[]{\includegraphics[height=0.25\textheight]{fig04/fig06}}
+    \label{fig:1}
+\end{minipage}
+\hspace{2.0cm}
+\begin{minipage}{6.0cm}
+    \centering
+    \subtop[]{\includegraphics[height=0.25\textheight]{fig04/fig07}}
+    \label{fig:2}
+\end{minipage}
+\mycaption[Pose representation using distance and velocity]{Distance data is shown in blue and velocity data shown in green.
+(a) All skeleton data has been plotted, with the x-axis corresponding to a joint co-ordinate. There are 20 joints each represented by 3 co-ordinates (x,y,z) hence the range 0-60. We can see a spike at ~40 which corresponds to joints 15 and onwards which are the right hip, right knee, right ankle and right foot. The y-axis represents distance from the Kinect in the z direction which explains the spike since in a boxing stance the right hand side of the body should be further away.
+(b) Hip Joint over Time}
+\end{figure}
+
+\begin{figure}[h]
+\hspace{-1.5cm}
+\centering
+\begin{minipage}{6.0cm}
+    \centering
+    \subtop[]{\includegraphics[height=0.25\textheight]{fig04/pc1}}
+    \label{fig:kinect2}
+\end{minipage}
+\hspace{1.0cm}
+\begin{minipage}{6.0cm}
+    \centering
+    \subtop[]{\includegraphics[height=0.25\textheight]{fig04/pc2}}
+    \label{fig:kinect3}
+\end{minipage}
+\qquad
+\centering
+\begin{minipage}{6.0cm}
+    \centering
+    \subtop[]{\includegraphics[height=0.25\textheight]{fig04/pc3}}
+    \label{fig:kinect3}
+\end{minipage}
+\mycaption[Graphs of the projection coefficient for the first principal component of distance \& velocity]{These figures shows the projection coefficient for the first principal component for distance data (green) and
+velocity data(red).
+(a) first projection coefficient (b) second projection coefficient (c) third projection coefficient}
+\end{figure}

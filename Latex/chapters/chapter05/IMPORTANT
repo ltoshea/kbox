@@ -1,0 +1,26 @@
+\paragraph{Further Work}
+Introduce movement
+Deal with normalisation via joint angles.
+
+
+talk about effect of EigenVectors
+
+
+
+\paragraph{Conclusion}
+Conclude in some way
+
+\paragraph{Normalisation}
+HIP.
+
+
+
+Notes:
+Missing why some classifiers perform better than others?
+Why does random forest do a worst job than a descicion tree?
+
+
+
+\paragraph{LIMITATIONS}
+*Cannot deal with movement while punch is being thrown
+*Need to be a set distance from the Kinect

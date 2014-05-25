@@ -14,7 +14,7 @@
 % Memoir is a flexible class for typesetting poetry, fiction, 
 % non-fiction and mathematical works as books, reports, articles or
 % manuscripts. CTAN repository is found at:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/memoir/
+% http://www.ctan.org/tex-aurchive/macros/latex/contrib/memoir/
 %
 %
 % UoB guidelines for thesis presentation were found at:
@@ -37,20 +37,22 @@
 \usepackage{epsfig}
 % \usepackage{amsmath}
 \usepackage{wrapfig}
+% \usepackage{subfig} % for subfigures
+% \usepackage{caption}
+% \usepackage{geometry}
 \ifpdf
 \pdfinfo{
-   /Author (Liam O'Shea)9
+   /Author (Liam O'Shea)
    /Title (Bsc Thesis)
    /Supervisor ('Dr. Majid Mirmenhdi')
-   % /Subtitle ('A Punch Recognition \& Quality Assessment System.')
-   /Keywords (One; Two;Three;four)
+   /Keywords (One; Two;Three)
    /CreationDate (D:\pdfdate)
 
 }
 \fi
 % When draft option is on. 
 \ifdraftdoc 
-	\usepackage{draftwatermark}				%Sets watermarks up.
+	\usepackage{draftwatermark				%Sets watermarks up.
 	\SetWatermarkScale{0.3}
 	\SetWatermarkText{\bf Draft: \today}
 \fi
@@ -365,7 +367,7 @@
 \input{frontmatter/abstract}
 % \clearemptydoublepage
 %
-\input{frontmatter/dedication}
+% \input{frontmatter/dedication}
 % \clearemptydoublepage
 %
 \input{frontmatter/declaration}
@@ -392,18 +394,20 @@
 %
 \import{chapters/chapter01/}{intro.tex}
 \import{chapters/chapter02/}{background.tex}
-\import{chapters/chapter03/}{design.tex}
 \import{chapters/chapter04/}{implementation.tex}
-\import{chapters/chapter05/}{conclusion.tex}
+% \import{chapters/chapter03/}{design.tex}
+\import{chapters/chapter05/}{results.tex}
+%\import{chapters/chapter05/}{results.tex}
+
 \clearemptydoublepage
 % \import{chapters/chapter02/}{chap02.tex}
 % \clearemptydoublepage
 %
 %
 % And the appendix goes here
-\appendix
-\import{chapters/appendices/}{app0A.tex}
-\clearemptydoublepage
+% \appendix
+% \import{chapters/appendices/}{app0A.tex}
+% \clearemptydoublepage
 %
 % Apparently the guidelines don't say anything about citations or
 % bibliography styles so I guess we can use anything.

@@ -1,0 +1,124 @@
+\documentclass{article}
+% \usepackage{math}
+\usepackage{mathrsfs}	
+\usepackage{math2}
+
+% \usepackage{amssymb} 
+% \usepackage{mathdef} 
+% \usepackage{asmptote}
+
+\title{\sc Principal Component Analysis}
+
+\begin{document}
+\maketitle
+
+Let $x$ be a zero-mean random variable.  Suppose we want the direction $w$ such that the projection of $x$ along this direction has maximum variance:
+\begin{equation}
+\max_w \var(w'x) \quad \text{st.} \quad \norm{w}=1.
+\end{equation}
+We have
+\begin{align}
+\var(w'x) & = \E w'xx'w \\
+& = w' \Sigma w.
+\end{align}
+The Lagrangian is
+\begin{equation}
+L = w' \Sigma w + \lambda (w'w-1).
+\end{equation}
+The stationary condition is
+\begin{align}
+\frac{\partial L}{\partial w} = 2\Sigma w - 2\lambda w = 0, \\
+\Sigma w = \lambda w.
+\end{align}
+Thus $w$ is an eigenvector of $\Sigma$.  Since
+\begin{equation}
+w' \Sigma w = w' (\lambda w) = \lambda,
+\end{equation}
+the direction with maximum variance is the largest eigenvector.  This procedure can be iterated to get the second largest variance projection (orthogonal to the first one), and so on.  For a set of data points, we use the ML estimate of the covariance matrix.
+
+\section{High-Dimensional Data}
+
+Let $X$ be the $d{\times}n$ matrix of high-dimensional points ($d > n$). Instead of explicitly estimating the covariance matrix, we use the following trick:
+\begin{align}
+\Big( \frac{1}{n} XX' \Big) W & = W\Lambda, \\
+\Big( \frac{1}{n} X'X \Big) X'W & = X'W\Lambda, \\
+\Big( \frac{1}{n} X'X \Big) V & = V\Lambda.
+\end{align}
+% We've reduced the problem to finding the eigen-decomposition of $\frac{1}{n}X'X$, which is $n \times n$, instead of $d \times d$.  By re-projecting,
+\begin{align}
+\frac{1}{n} X(X'X)F & = XFV, \\
+\Big( \frac{1}{n} XX' \Big) (XF) & = (XF)V,
+\end{align}
+so $XF$ are the eigenvectors of $\frac{1}{n} XX'$.  Since
+\begin{align}
+\frac{1}{n} X'XF = FV, \\
+(F'X')(XF) = nF'FV \\
+(XF)'(XF) = nV,
+\end{align}
+we have $E = \frac{1}{\sqrt{n}} XFV^{-1/2}$.
+
+\section{Maximum Information Preservation}
+
+Let 
+\begin{equation}
+y = w'x,
+\end{equation}
+
+where $\norm{w} = 1$.
+
+We want to maximize $I(X;Y)$ or $H(Y)$ under the constraint on $w$:
+\begin{equation}
+J = 1/2(\log (2 \pi e)^D + \log |Cy|) + a w'w.
+\end{equation}
+\begin{equation}
+Cy = \E[w'xx'w] = w'\E[xx']w = w'Cw.
+\end{equation}
+
+Thus we maximize
+\begin{equation}
+L = \log |w'Cw| + a w'w \\
+dL/dw = 2Cw/|w'Cw| + 2aw \\
+Cw = a|w'Cw|w
+\end{equation}
+
+Thus, $w$ is an eigenvector of the covariance matrix $C$ of $x$, and the maximum occurs with the eigenvector with the largest eigenvalue.
+
+\section{Maximum Likelihood}
+
+The data matrix is modeled as linear combinations of a small set of basis vectors plus noise.
+\begin{equation}
+X = UV + Y
+\end{equation}
+
+X is DxN, where each column is a datum.
+U is DxK, where each column is a factor.
+V is KxN, where each column is a vector of coefficients.
+Y is DxN noise.
+
+Assuming normal noise with equal variance for all points, ML estimation of UV gives a least squares cost function.
+\begin{equation}
+J = (X-UV)^2.
+\end{equation}
+The stationary conditions are
+\begin{equation}
+dJ/dU = (X-UV)V' = 0 \\
+dJ/dV = U'(X-UV) = 0 \\
+XV' = UVV' \\
+U'X = U'UV
+\end{equation}
+To make the solution unique against rotations and scalings of U and V, we constrain U'U = I and V'V diagonal:
+\begin{equation}
+V = U'X \\
+XX'U = SU \\
+1/N XX'U = S/N U
+\end{equation}
+The basis functions are the eigenvectors of the covariance matrix, assuming $X$ is zero mean .
+
+\section{Generalized PCA}
+
+To generalize PCA to other data the noise distribution can be changed and a link function added:
+\begin{equation}
+X ~ p(f(g(A)h(B))).
+\end{equation}
+
+\end{document}

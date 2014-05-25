@@ -1,0 +1,89 @@
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[height=0.25\textheight]{fig04/fig01}
+    \mycaption[Kinect Device]{Depth of left wrist joint over time}
+    \label{fig:kinect}
+\end{figure}
+{\bf As you can see from Figure 4.2 some smoothing was required due to local maxima/minima which did not signify the beginning or end of a punch.}
+
+
+
+
+\begin{figure}[h]
+\centering
+\begin{minipage}{6.0cm}
+    \centering
+    \subtop[]{\includegraphics[height=0.25\textheight]{fig04/fig02}}
+    \label{fig:kinect}
+\end{minipage}
+
+\hspace{0.5cm}
+\begin{minipage}{6.0cm}
+    \centering
+    \subtop[]{\includegraphics[height=0.25\textheight]{fig04/fig04}}
+    \label{fig:kinect2}
+\end{minipage}
+\begin{minipage}{3.5cm}
+    \centering
+    \includegraphics[height=0.15\textheight]{fig04/fig05}
+    \label{fig:kinect3}
+\end{minipage}
+\mycaption[WAT]{(a) Periodic punch signal over time (frame number).(b) Periodic signal with local maxima/minima labelled. (c) Close up of local maxima/minima.}
+\end{figure}
+
+
+
+
+
+\paragraph{Heuristic Rules}
+
+
+Need to make and collect data consent forms to run a study?\newline
+
+
+\paragraph{Data Format}
+I record data from the Kinect in a space separated text file with each line corresponding to one timeframe. The structure of a line is: 
+tracking_flag x_0 y_0 z_0 tracking_flag x_1 y_1 z_1 ... tracking_flag x_19 y_19 z_19,
+where x_i,y_i,z_i are the x,y,z coordinates representing the position of the ith joint.
+Each new line is represented by a very large value that could not represent a Kinect measurement. (e.g. 2000000) 
+The tracking_flag is an integer which describes the status of the joint:
+Joint not tracked = 0, Joint position inferred = 1, Join position tracked = 2.
+If the joint is not tracked the position is set to (-10000, -10000, -10000) and it should not be used.
+The position of the camera is (0,0,0).
+
+
+\begin{center}
+    \begin{tabular}{| l | l |}
+    \hline
+    Joint Number & Joint Name \\ \hline
+    0 & NUI_SKELETON_POSITION_HIP_CENTER \\ \hline
+    1 & NUI_SKELETON_POSITION_SPINE\\ \hline
+    2 & NUI_SKELETON_POSITION_SHOULDER_CENTER\\ \hline
+    3 & NUI_SKELETON_POSITION_HEAD\\ \hline
+    4 & NUI_SKELETON_POSITION_SHOULDER_LEFT\\ \hline
+    5 & NUI_SKELETON_POSITION_ELBOW_LEFT\\ \hline
+    6 & NUI_SKELETON_POSITION_WRIST_LEFT\\ \hline
+    7 & NUI_SKELETON_POSITION_HAND_LEFT\\ \hline
+    8 & NUI_SKELETON_POSITION_SHOULDER_RIGHT\\ \hline
+    9 & NUI_SKELETON_POSITION_ELBOW_RIGHT\\ \hline
+    10 & NUI_SKELETON_POSITION_WRIST_RIGHT\\ \hline
+    11 & NUI_SKELETON_POSITION_HAND_RIGHT\\ \hline
+    12 & NUI_SKELETON_POSITION_HIP_LEFT\\ \hline
+    13 & NUI_SKELETON_POSITION_KNEE_LEFT\\ \hline
+    14 & NUI_SKELETON_POSITION_ANKLE_LEFT\\ \hline
+    15 & NUI_SKELETON_POSITION_FOOT_LEFT\\ \hline
+    16 & NUI_SKELETON_POSITION_HIP_RIGHT\\ \hline
+    17 & NUI_SKELETON_POSITION_KNEE_RIGHT\\ \hline
+    18 & NUI_SKELETON_POSITION_ANKLE_RIGHT\\ \hline
+    19 & NUI_SKELETON_POSITION_FOOT_RIGHT\\ \hline
+    \hline
+    \end{tabular}
+\end{center}
+%=========================================================
+
+
+
+
+

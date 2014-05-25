@@ -1,0 +1,131 @@
+START FROM BEGINNING
+EV1
+Accuracy = 80.1418% (226/282) (classification)
+Random Forest Correct: 79.787234%
+--
+Accuracy = 72.8814% (43/59) (classification)
+Decision Correct: 74.576271%
+
+EV2
+Accuracy = 90.0709% (254/282) (classification)
+Random Forest Correct: 87.588652%
+--
+Accuracy = 81.3559% (48/59) (classification)
+Decision Correct: 83.050847%
+
+EV3
+Accuracy = 93.617% (264/282) (classification)
+Random Forest Correct: 94.326241%
+---
+Accuracy = 76.2712% (45/59) (classification)
+Decision Correct: 79.661017%
+
+
+EV4
+Accuracy = 98.5816% (278/282) (classification)
+Random Forest Correct: 96.099291%
+--
+Accuracy = 86.4407% (51/59) (classification)
+Decision Correct: 93.220339%
+
+
+EV5
+Accuracy = 98.227% (277/282) (classification)
+Random Forest Correct: 93.262411%
+----
+Accuracy = 93.2203% (55/59) (classification)
+Decision Correct: 91.525424%
+
+
+EV6
+Accuracy = 97.8723% (276/282) (classification)
+Random Forest Correct: 91.843972%
+--------
+Accuracy = 93.2203% (55/59) (classification)
+Decision Correct: 93.220339%
+
+
+
+EV7
+Accuracy = 97.1631% (274/282) (classification)
+Random Forest Correct: 92.553191%
+--
+Accuracy = 91.5254% (54/59) (classification)
+Decision Correct: 94.915254%
+
+
+
+
+
+
+
+
+-------------------------------------
+_-------------
+Did not bother adding to main code in the thesis folder to get main/main2 up to scratch
+with EV since it has now been submitted. Purely evaluation.
+NEURAL NETWORKS
+1ev
+85.1%
+74.6^
+
+2ev (but only smoothing and using 1pc)
+93.5%
+86.4%
+
+3ev
+mainNeural 
+97.3
+mainNeural2
+79.7%
+4ev
+98.4%
+91.5%
+
+5ev
+99.1%
+94.9%
+
+6ev
+mainNeural
+82.1
+mainNeural2
+76.3%
+
+7ev
+mainNeural
+98.9
+mainNeural2
+94.9%
+-------------------------
+
+Two-class
+EV6
+nsamples = 10;
+Accuracy = 97.83% (45/46) (classification)
+Random Forest Correct: 91.21%
+98.60\% NN
+
+---------------------
+
+
+All main/main2 with 15 samples try
+10: 93.22\%, 91.53
+20: 91.52, 91.52
+
+
+% \begin{center}
+%     \begin{tabular}{ | l | l | l | p{5cm} |}
+%     \hline
+%     Classifier & Eigenvectors & Accuracy & Summary \\ \hline
+%     Monday & 11C & 22C & A clear day with lots of sunshine.  
+%     However, the strong breeze will bring down the temperatures. \\ \hline
+%     Tuesday & 9C & 19C & Cloudy with rain, across many northern regions. Clear spells
+%     across most of Scotland and Northern Ireland,
+%     but rain reaching the far northwest. \\ \hline
+%     Wednesday & 10C & 21C & Rain will still linger for the morning.
+%     Conditions will improve by early afternoon and continue
+%     throughout the evening. \\
+%     \hline
+%     \end{tabular}
+% \end{center}

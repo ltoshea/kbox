@@ -1,0 +1,21 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{math}
+\RequirePackage{amsmath,amsthm,amsfonts,amssymb}
+
+% Math
+\providecommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+
+\providecommand{\abs}[1]{\lvert #1 \rvert}
+\providecommand{\norm}[1]{\lVert #1 \rVert}
+\providecommand{\inprod}[2]{\langle{#1},{#2}\rangle}
+\providecommand{\avg}[1]{\langle#1\rangle}
+
+\providecommand{\set}[1]{\{#1\}}
+
+\DeclareMathOperator{\Prob}{P}
+\DeclareMathOperator{\E}{E}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\var}{var}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\cov}{cov}
+\DeclareMathOperator{\diag}{diag}

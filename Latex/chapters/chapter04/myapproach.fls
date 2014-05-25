@@ -1,0 +1,6 @@
+PWD C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04
+INPUT C:/Users/liam/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt
+INPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/myapproach.tex
+OUTPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/myapproach.log
+OUTPUT C:/Users/liam/Desktop/KINECT/kbox/Latex/chapters/chapter04/myapproach.pdf
+INPUT C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map

@@ -1,0 +1,92 @@
+
+% \begin{wrapfigure}{R}{0.50\textwidth}
+% % \vspace{-15pt}
+% % \hspace{15pt}
+% \begin{center}
+%     \includegraphics[width=0.48\textwidth]{fig04/3pcs.png}
+%     \caption{SOME CAPTION}
+%     \label{fig:WHAT}
+% \end{center}
+% % \vspace{}
+% % \vspace{}
+% \end{wrapfigure}
+
+
+
+
+
+
+% \begin{figure}[!htb]
+% \minipage{0.50\textwidth}
+%   \includegraphics[width=\linewidth]{fig04/rp1.pdf}
+%   \caption{A really Awesome Image}\label{fig:awesome_image1}
+% \endminipage\hfill
+% \minipage{0.50\textwidth}
+%   \includegraphics[width=\linewidth]{fig04/rp2.pdf}
+%   \caption{A really Awesome Image}\label{fig:awesome_image2}
+% \endminipage\hfill
+% \minipage{0.50\textwidth}%
+%   \includegraphics[width=\linewidth]{fig04/rp3.pdf}
+%   \caption{A really Awesome Image}\label{fig:awesome_image3}
+% \endminipage
+% \end{figure}
+
+% \begin{figure}[!htb]
+% \centering
+% \begin{minipage}{5.0cm}
+%     % \centering
+%     \subtop[]{\includegraphics[height=0.50\textheight]{fig04/rp1.pdf}\label{sf:multiRH02a}}
+% \end{minipage}
+% \hspace{1.0cm}
+% \begin{minipage}{3.3cm}
+%     \centering
+%     \subtop[]{\includegraphics[height=0.35\textheight]{fig04/rp2.pdf}\label{sf:multiRH02b}}
+% \end{minipage}
+% \hspace{1.0cm}
+% \begin{minipage}{3.3cm}
+%     \centering
+%     \subtop[]{\includegraphics[height=0.50\textheight]{fig04/rp3.pdf}\label{sf:multiRH02c}}
+% \end{minipage}
+% \\ \vspace{1.0cm}
+% \begin{minipage}{3.3cm}
+%     \centering
+%     \subtop[]{\includegraphics[height=0.35\textheight]{fig04/rp4.pdf}\label{sf:multiRH02d}}
+% \end{minipage}
+% \hspace{1.0cm}
+% \begin{minipage}{3.3cm}
+%     \centering
+%     \subtop[]{\includegraphics[height=0.35\textheight]{fig04/rp5.pdf}\label{sf:multiRH02e}}
+% \end{minipage}
+% \hspace{1.0cm}
+% \begin{minipage}{3.3cm}
+%     \centering
+%     \subtop[]{\includegraphics[height=0.35\textheight]{fig04/rp6.pdf}\label{sf:multiRH02e}}
+% \end{minipage}
+% \mycaption[Hair-forming mutant cells.]{(a) A mutant RH cell. Asterisks show multiple sites of RH initiation in a single root hair cell (indicated by the arrows). Figure reproduced from \cite{rigas01}. (b)~Hair-forming cell with three RH initiation locations. The bar represents $50\mu m$. Figure reproduced from \cite{massuci01}. (c) Large bump in mutant {\itshape rhd1}. Figure reproduced from \cite{griersonRH}. (d) Mutant overexpressing gene {\itshape ROP2}; from right-hand to left-hand, numbers indicate progressive snapshots at different times. RH initiation sites are indicated by the arrows. The bar represents $75\mu m$. Figure reproduced from~\cite{mjones01}. (e)~Mutants affected by auxin. On the left-hand side, RH site is farther away from the apical end (left arrow cap); on the right-hand side, multiple RH locations (arrows). Figure reproduced from~\cite{payne01}.}
+% \label{fig:multiRH02}
+% \end{figure}
+
+
+
+% \newsubfloat{figure} % Subfigures
+%  \begingroup
+ % \makeatletter
+ % \renewcommand{\p@subfigure}{}% Void parent macro for figures
+ % \makeatother
+% \begin{figure}[h]
+%   % \centering
+%   \subtop[This is a subfigure\label{fig:label:a}]{\includegraphics[height=0.75\textheight]{fig04/rp1}}
+%   \subtop[This is a subfigure\label{fig:label:b}]{\includegraphics[height=0.75\textheight]{fig04/rp1}}
+%   \caption{These are some awesome figures}
+%   \label{fig:label1}
+% \end{figure}
+% See Figure~\ref{fig:label1}. It has subfigures~\ref{fig:label:a} and~\ref{fig:label:b}.
+
+% \begin{figure}[ht]
+%   \centering
+%   \subtop[This is a subfigure\label{fig:label:c}]{\includegraphics[height=0.5\textheight]{fig04/rp1}}
+%   \subtop[This is a subfigure\label{fig:label:d}]{\includegraphics[height=0.5\textheight]{fig04/rp1}}
+%   \caption{These are some awesome figures}
+%   \label{fig:label2}
+% \end{figure}
+% See Figure~\ref{fig:label2}. It has subfigures~\ref{fig:label:c} and~\ref{fig:label:d}.

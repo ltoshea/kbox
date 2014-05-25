@@ -1,0 +1,12 @@
+*~
+*.pyc
+samthesis/
+lansim-code/
+LANSim.ppt
+*.pcap
+*.tr
+ns3/
+lansim/
+tmp/
+reading/
+netsim/bin

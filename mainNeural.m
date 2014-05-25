@@ -3,7 +3,7 @@ PNUM = 6;
 debug = 0;
 NORM = 1; %flag=1 normalise for hip centroid
 %Hip centre is first joint
-
+COMP=5;
 
 for i=1:PNUM
      %path = ['C:\Users\liam\Desktop\KINECT\kbox\data\' num2str(i) '\'];
@@ -44,7 +44,7 @@ for i = 1:length(dataAll(i))
     M = [M, dataAll(i).data]; 
 end
 
-[Xm1,EV1,Ev1]=createES(M,3); %Create Eigenspace., New data !contribute to eigenspace
+[Xm1,EV1,Ev1]=createES(M,COMP); %Create Eigenspace., New data !contribute to eigenspace
 %close all
 for i=1:PNUM
     dataAll(i).jred=reconstructPose(dataAll(i).data,Xm1,EV1);
@@ -67,7 +67,7 @@ for i=1:PNUM
 end
 
 nsamples = 12;
-ncomponents = 3; %%HERE
+% ncomponents = 3; %%HERE
 
 X = [];
 Y = [];
@@ -76,12 +76,12 @@ lbl = [];
 for i=1:PNUM
     nelem = length(dataAll(i).imax);
     dataAll(i).labels = ones(nelem,1) * i;
-    dataAll(i).features =  zeros(nelem,nsamples * ncomponents);%HERE
+    dataAll(i).features =  zeros(nelem,nsamples * COMP);%HERE
     for j = 1:nelem - 1
         inds = round(linspace(dataAll(i).imax(j), dataAll(i).imax(j+1), nsamples));
         %dataAll(i).features(j,:) = dataAll(i).jred(1,inds);
         
-        foo = dataAll(i).jred(1:ncomponents,inds);%HERE
+        foo = dataAll(i).jred(1:COMP,inds);%HERE
         dataAll(i).features(j,:) = foo(:);%HERE
         
         if debug

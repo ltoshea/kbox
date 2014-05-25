@@ -1,0 +1,73 @@
+\select@language {english}
+\par \penalty \@M \unhbox \voidb@x \hbox {}\hfill {\nag@@warning@vi \bfseries Page}\par \penalty \@M 
+\contentsline {chapter}{List of Tables}{vii}{section*.3}
+\contentsline {chapter}{List of Figures}{ix}{section*.4}
+\contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Goals}{2}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Scope}{2}{subsection.1.1.1}
+\contentsline {chapter}{\chapternumberline {2}Background \& Research}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Boxing Background}{3}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Motivation}{4}{subsection.2.1.1}
+\contentsline {section}{\numberline {2.2}Boxing Technique}{4}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Stance}{4}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Punches}{5}{subsection.2.2.2}
+\contentsline {paragraph}{Jab}{5}{section*.5}
+\contentsline {paragraph}{Cross}{5}{section*.6}
+\contentsline {paragraph}{Hooks}{5}{section*.7}
+\contentsline {paragraph}{Uppercuts}{5}{section*.8}
+\contentsline {paragraph}{Pose}{6}{section*.9}
+\contentsline {section}{\numberline {2.3}Kinect}{6}{section.2.3}
+\contentsline {paragraph}{Depth \& Infrared Stream}{6}{section*.10}
+\contentsline {subsection}{\numberline {2.3.1}Skeleton \& Joint Tracking}{7}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.4}Literature Review}{8}{section.2.4}
+\contentsline {paragraph}{Automated segmentation}{10}{section*.11}
+\contentsline {section}{\numberline {2.5}Existing Products}{11}{section.2.5}
+\contentsline {paragraph}{UFC Personal Trainer}{11}{section*.12}
+\contentsline {paragraph}{Kinect sports boxing game}{11}{section*.13}
+\contentsline {paragraph}{Fighters Uncaged}{11}{section*.14}
+\contentsline {paragraph}{Literature \& Product Conclusion}{11}{section*.15}
+\contentsline {section}{\numberline {2.6}Dimensionality}{13}{section.2.6}
+\contentsline {paragraph}{Curse of Dimensionality}{13}{section*.16}
+\contentsline {subsection}{\numberline {2.6.1}Dimensionality Reduction}{13}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Principal Component Analysis (PCA)}{13}{subsection.2.6.2}
+\contentsline {paragraph}{Eigenvectors \& Eigenvalues}{14}{section*.17}
+\contentsline {paragraph}{Covariance Matrix \& Optimisations }{14}{section*.18}
+\contentsline {section}{\numberline {2.7}Manifold Learning}{15}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Diffusion Maps}{15}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Locally Linear Embedding (LLE)}{16}{subsection.2.7.2}
+\contentsline {subsection}{\numberline {2.7.3}Laplacian Eigenmaps}{16}{subsection.2.7.3}
+\contentsline {subsection}{\numberline {2.7.4}Local Tangent Space Alignment (LTSA)}{17}{subsection.2.7.4}
+\contentsline {subsection}{\numberline {2.7.5}Curvilinear Component Analysis (CCA)}{17}{subsection.2.7.5}
+\contentsline {section}{\numberline {2.8}Segmentation Methods}{17}{section.2.8}
+\contentsline {subsection}{\numberline {2.8.1}Dynamic Time Warping (DTW)}{17}{subsection.2.8.1}
+\contentsline {subsection}{\numberline {2.8.2}Fourier Transformation (FT)}{18}{subsection.2.8.2}
+\contentsline {section}{\numberline {2.9}Classification Methods}{19}{section.2.9}
+\contentsline {subsection}{\numberline {2.9.1}Support Vector Machines (SVM)}{19}{subsection.2.9.1}
+\contentsline {subsection}{\numberline {2.9.2}Neural Networks}{19}{subsection.2.9.2}
+\contentsline {paragraph}{Back Propagation (BP)}{20}{section*.19}
+\contentsline {subsection}{\numberline {2.9.3}Decision Trees \& Random Forest}{21}{subsection.2.9.3}
+\contentsline {section}{\numberline {2.10}Punch Quality Assessment}{22}{section.2.10}
+\contentsline {chapter}{\chapternumberline {3}My Approach}{23}{chapter.3}
+\contentsline {section}{\numberline {3.1}Data collection}{23}{section.3.1}
+\contentsline {section}{\numberline {3.2}Exploring Hand Movement \& Periodicity}{24}{section.3.2}
+\contentsline {section}{\numberline {3.3}Pose Representation}{25}{section.3.3}
+\contentsline {section}{\numberline {3.4}Dimensionality Reduction (DR) Comparison}{26}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Pose Reconstruction}{28}{subsection.3.4.1}
+\contentsline {section}{\numberline {3.5}Punch Segmentation Algorithm}{28}{section.3.5}
+\contentsline {paragraph}{Heuristic Rules}{29}{section*.20}
+\contentsline {section}{\numberline {3.6}Classification}{29}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Feature Extraction (PCA)}{29}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Feature Extraction (DTW)}{29}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Fast Fourier Transform (FFT)}{30}{subsection.3.6.3}
+\contentsline {subsection}{\numberline {3.6.4}Neural Networks (NN)}{30}{subsection.3.6.4}
+\contentsline {subsection}{\numberline {3.6.5}Support Vector Machines (SVM)}{30}{subsection.3.6.5}
+\contentsline {chapter}{\chapternumberline {4}Results, Evaluation \& Conclusion}{37}{chapter.4}
+\contentsline {paragraph}{Accuracy \& Precision}{37}{section*.21}
+\contentsline {section}{\numberline {4.1}Final results \& Discussion}{37}{section.4.1}
+\contentsline {paragraph}{Neural Networks}{39}{section*.22}
+\contentsline {section}{\numberline {4.2}Difficulties}{40}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Normalisation}{41}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Further Work \& Improvements}{41}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Other Applications}{43}{subsection.4.2.3}
+\contentsline {paragraph}{Conclusion}{44}{section*.23}
+\contentsline {chapter}{Bibliography}{45}{section*.25}
